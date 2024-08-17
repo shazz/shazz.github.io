@@ -1,7 +1,6 @@
 AUTHOR = "shazz"
 SITENAME = "Retrovirology"
 SITEURL = ""
-THEME = "themes/Peli-Kiera"
 THEME = "themes/pelican-chunk"
 
 PLUGIN_PATHS = ["pelican-plugins"]
