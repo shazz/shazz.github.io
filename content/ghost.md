@@ -342,7 +342,9 @@ So in order, the reset vector routine:
  1. Set a specific target address: end of ST RAM (`PHYSTOP` (`0x42E`) depends on model 520, 1040..., for example that's 0x80000 on a 520, 0x100000 on a 1040), then minus 0x8000 and minus 0x200 (basically 32KB + 512 bytes before the end of the available memory)
     1. It has to be on a 0x200 (512) bytes boundary
     1. It is better to be near the end of the memory to limit chances to be overlapped and erased after reset
-    1. You'll notice the memory substraction in done in 2 steps and not a "simple" SUBA.L #$8200,A1. Why? It looks to be linked to 68K SUBA opcode which considered the offset as signed as $8000 is half a word. I need to investigate what the assember generates for the size specification:
+    1. You'll notice the memory substraction in done in 2 steps and not a "simple" SUBA.L #$8200,A1.
+    
+Why? It looks to be linked to 68K SUBA opcode which considered the offset as signed as $8000 is half a word. I need to investigate what the assember generates for the size specification:
 
 ```
 Object Code:  1001 ddds 11 ff ffff
