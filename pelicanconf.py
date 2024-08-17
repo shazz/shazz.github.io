@@ -4,7 +4,7 @@ SITEURL = ""
 THEME = "themes/pelican-chunk"
 
 PLUGIN_PATHS = ["pelican-plugins"]
-PLUGINS = ["readtime", "neighbors"]
+PLUGINS = ["pelican-readtime"]
 
 PATH = "content"
 
