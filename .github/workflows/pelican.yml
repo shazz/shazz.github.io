@@ -12,6 +12,6 @@ jobs:
       id-token: "write"
     with:
       settings: "publishconf.py"
-      requirements: "pelican[markdown] typogrify"
-      theme: "https://github.com/onlyhavecans/pelican-chunk.git"
+      requirements: "pelican[markdown]"
+      # theme: "https://github.com/onlyhavecans/pelican-chunk.git"
       python: "3.12"      
