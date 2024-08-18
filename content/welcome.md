@@ -4,7 +4,7 @@ Location: Stockholm / Sweden
 Category: Atari ST, Virus
 Lang: en
 Author: shazz
-
+status: published
 
 While I'm waiting for my flight from the pretty high tech and green Arlandia airport in Stockholm, that's a good start to rewind the clock and go back to the 80s. I must admit, at this time, I was at little too young to understand the technical details behind the first digital living organisms created by coders: the first computer viruses.
 
