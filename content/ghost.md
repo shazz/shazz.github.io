@@ -4,6 +4,7 @@ Location: Stockholm / Sweden
 Category: Atari ST, Virus
 Lang: en
 Author: shazz
+status: published
 
 
 ## Introduction
