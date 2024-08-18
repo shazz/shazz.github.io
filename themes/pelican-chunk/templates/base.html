@@ -10,10 +10,16 @@
 	<link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/style.css" />
 	<link rel='stylesheet' id='oswald-css' href='https://fonts.googleapis.com/css?family=Oswald&#038;ver=3.3.2'
 		type='text/css' media='all' />
+
+	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+		rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+		rel="stylesheet" />
+	
 	<style type="text/css">
 		body.custom-background {
 			background-color: #f5f5f5;
-			background-image: "{{ SITEURL }}/theme/back2.jpg";
+			background-image: "{{ SITEURL }}/theme/back3.png";
 		}
 	</style>
 	<link rel="alternate" type="application/atom+xml" title="{{ SITENAME }} — Flux Atom"
@@ -32,9 +38,9 @@
 <body class="home blog custom-background {% if SINGLE_AUTHOR %}single-author{% endif %}">
 	<div id="container">
 		<div id="header">
-			<h1 id="site-title"><a href="{{ SITEURL }}">{{ SITENAME }}</a></h1>
+			<!-- <h1 id="site-title"><a href="{{ SITEURL }}">{{ SITENAME }}</a></h1> -->
 			{% if SITESUBTITLE %}<h2 id="site-description">{{ SITESUBTITLE }}</h2>{% endif %}
-			<img src="{{ SITEURL }}/theme/back2.jpg" width="100%">
+			<img src="{{ SITEURL }}/theme/back3.png" width="100%">
 		</div><!-- /#banner -->
 
 		<div id="menu">
