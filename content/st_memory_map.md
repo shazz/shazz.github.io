@@ -1,9 +1,10 @@
 Title: The Atari ST/TT/Falcon Memory Map
-Date: 2024-08-17 08:08
-Location: Stockholm / Sweden
+Date: 1994-01-22 08:08
+Location: Ohio / US
 Category: Atari ST, Virus
 Lang: en
 Author: shazz
+status: hidden
 
 
 
