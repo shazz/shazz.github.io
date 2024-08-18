@@ -19,7 +19,8 @@ body {
 	background-image: -moz-linear-gradient( rgba(0,0,0,0.22), rgba(255,255,255,0) 80px );
 	background-image: -webkit-linear-gradient( rgba(0,0,0,0.22), rgba(255,255,255,0) 80px );
 	color: #555;
-	font-family: 'Lato', 'DM Serif Text', 'Courier New', Courier, monospace
+	/* font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; */
+	font-family: 'Lato', 'DM Serif Text','dmserif-css', 'Courier New', Courier, monospace;
 	font-size: 16px;
 	margin: 0;
 	text-align: center;
@@ -31,7 +32,7 @@ body {
 }
 #header {
 	min-height: 180px;
-	padding-top: 70px;
+	padding-top: 10px;
 	width: 100%;
 }
 #contents {
@@ -186,8 +187,9 @@ body {
 	float: left;
 	line-height: 175%;
 	padding: 29px 5px 15px 15px;
+	font-family: 'Lato';
 	text-align: left;
-	width: 580px;
+	width: 90%;
 }
 .hentry .entry-meta {
 	font-family: 'Oswald', Helvetica, Arial, sans-serif;
