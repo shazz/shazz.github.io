@@ -23,6 +23,7 @@ AUTHOR_FEED_RSS = None
 LINKS = (
     ("UVK Book", "https://st-news.com/uvk-book"),
     ("Metacodes", "https://www.metacodes.pro/blog/computer_archeology_exploring_the_anatomy_of_an_ms_dos_virus/"),
+    ("Memory map", "the-atari-stttfalcon-memory-map-en.html"),    
 )
 
 # Social widget
