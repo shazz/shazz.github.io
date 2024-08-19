@@ -422,20 +422,21 @@ What is important to understand, and took me some time and debug:
 
 I drawed a kind of timeline, trying to show the various steps and where the relocatable virus code is copied and executed.
 
-<!-- ![timeline]({attach}images/ghost_timeline.png "Ghost virus timeline") -->
 <a href="{attach}images/ghost_timeline.png" target="_blank"><img src="{attach}images/ghost_timeline.png" width="400"></a>
 
 ## Conclusion
 
 I start to think this is why this virus was called the **Ghost Virus**, and not the mouse inversion virus (or any name linked to the symptoms), as the magic is really in this transient routine automatically called then deleted, leaving no trace of its execution but making sure the replication vector (`hdv_bpb`) is still alive.
 
-You can download the full commented (and tested identical to the original virus after assembling with `vasm`) here: [GHOST.S]({attach}sources/GHOST.S)
+If technically, it think this is pretty impressive for 1988, it doesn't let much space for the symptoms themselves and even if using the "ghost" code to setup the `hdv_bpb` vector after a warm reset is pretty cool (and took me some time and debug to understand), I wonder what it would change to simply setup the `hdv_bpb` vector fron the `resvector` reset vector directly, as without `resvector`, the *ghost code* cannot be rewritten after each reset.
+
+You can download the full commented (and tested identical to the original virus after assembling with [vasm](http://www.compilers.de/vasm.html)) here: [GHOST.S]({attach}sources/GHOST.S)
 
 ## Appendices
 
 ### System calls (From the Atari Compendium)
 
-#### Floprd
+#### XBIOS Floprd
 
 ```
 Floprd()
@@ -466,7 +467,7 @@ Floprd() reads sectors from a floppy disk.
 - CAVEATS This function reads sectors in physical order (not taking interleave into account). Use Rwabs() to read logical sectors.
 ```
 
-#### Flopwr
+#### XBIOS Flopwr
 
 ```
 Flopwr()
