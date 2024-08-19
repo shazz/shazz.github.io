@@ -1,12 +1,16 @@
 AUTHOR = "shazz"
 SITENAME = "Retrovirology"
 SITEURL = ""
+THEME = "themes/Peli-Kiera"
 THEME = "themes/pelican-chunk"
 
 PLUGIN_PATHS = ["pelican-plugins"]
 PLUGINS = ["readtime"]
 
 PATH = "content"
+ARTICLE_PATHS = ["blog"]
+ARTICLE_SAVE_AS = "{date:%Y}/{slug}.html"
+ARTICLE_URL = "{date:%Y}/{slug}.html"
 
 TIMEZONE = "America/New_York"
 
@@ -23,7 +27,7 @@ AUTHOR_FEED_RSS = None
 LINKS = (
     ("UVK Book", "https://st-news.com/uvk-book"),
     ("Metacodes", "https://www.metacodes.pro/blog/computer_archeology_exploring_the_anatomy_of_an_ms_dos_virus/"),
-    ("Memory map", "/the-atari-stttfalcon-memory-map-en.html"),    
+    ("Memory map", "/the-atari-stttfalcon-memory-map-en.html"),
 )
 
 # Social widget

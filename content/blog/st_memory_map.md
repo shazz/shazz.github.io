@@ -1,11 +1,11 @@
 Title: The Atari ST/TT/Falcon Memory Map
 Date: 1994-01-22 08:08
-Location: Ohio / US
+Location: Ohio, US
 Category: Atari ST, Virus
 Lang: en
 Author: shazz
 status: hidden
-
+Summary: Atari ST/STe/MSTe/TT/F030 Hardware Register Listing
 
 
 ```
