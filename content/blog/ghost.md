@@ -1,9 +1,12 @@
 Title: The infamous Ghost Virus
+Slug: infamousGhostVirus
 Date: 2024-08-17 07:13
+Modified: 2024-08-18 22:44
 Location: Stockholm / Sweden
 Category: Atari ST, Virus
 Lang: en
 Author: shazz
+Summary: How the Ghost Virus infested every Atari ST on the planet...
 
 
 ## Introduction
@@ -432,6 +435,44 @@ If technically, it think this is pretty impressive for 1988, it doesn't let much
 You can download the full commented (and tested identical to the original virus after assembling with [vasm](http://www.compilers.de/vasm.html)) here: [GHOST.S]({attach}sources/GHOST.S)
 
 ## Appendices
+
+### Fun facts
+
+In the source code of one of my preferred demo, Mindbomb from The Lost Boys, there are 2 [commented disassemblies](https://github.com/ggnkua/Atari_ST_Sources/tree/master/ASM/The%20Lost%20Boys%20(TLB)/Mindbomb/Vector) of the Ghost virus in the same folder as the reset demo screen (Vector) so maybe written by Mainikin? I was pleased to see that he was not able to undertand some parts of the virus that took me some time to figure out, especially the mouse inversion part which causes most disassemblers to misinterpret the XBIOS call:
+
+```asm
+	CLR.L	(A0)			WAIT FOR 5 MORE TIMES
+	MOVE.W	#$22,-(A7)		GET ADDRESS OF MOUSE VEC
+	TRAP	#14
+	ADDQ.L	#2,A7
+	ADD.L	#$10,D0			NOT SURE HOW IT MAKES MOUSE GO!
+	EXG	D0,A0
+	MOVE.L	(A0),-(A7)
+	PEA	L2110A(PC)
+	MOVE.L	#1,-(A7)       <========
+	TRAP	#14
+	ADDA.L	#$C,A7
+	LEA 	SHIT(PC),A0
+	EORI.B	#1,$(A0)
+```
+
+As `MOVE.L	#1,-(A7)` should not be considered as a call to `ssbrk()` (opcode 1) but `initmouse()` (opcode 0). 
+And no comment about the undocumented TOS feature, I guess few people were aware.
+
+Another English demoscener tried to also to [do the job](https://github.com/ggnkua/Atari_ST_Sources/blob/master/ASM/The%20Cenobytes/fink/B_SECTOR/GHOST_V.S) (I must admit I don't know him), The Fink from The Cenobytes but without better success:
+
+```asm
+    ADD.L	#$10,D0		GET ORIGIN FOR Y-AXIS IS UP
+	EXG	A0,D0		    EXCHANGE REGISTERS A0 WITH D0 
+				        (FUCK THE MOUSE UP!!!!!!)
+	MOVE.L	(A0),-(A7)
+	PEA	$1C4(PC)	    RESERVE 452 BYTES AT UPPER END OF MEMORY
+	MOVE.L	#1,-(A7)
+	TRAP	#14		    SAVE MEMORY SPACE
+	ADDA.L	#$C,A7
+	
+	EORI.B	#1,$2E6.W
+```
 
 ### System calls (From the Atari Compendium)
 
