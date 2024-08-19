@@ -18,22 +18,23 @@ It looks like it appeared in 1988, some people claim it originated from England 
 
 Anyway, to summarize and before going into the details, here are the main characteristics of the Ghost Virus:
 
- - executable bootsector virus
- - memory resident using the official reset vector
- - stealh executation at boot using an undocumented technique
- - replaces the orignal HDV_BPB vector to be activated on any floppy (A or B) reads
- - copied itself on unused User Vectors RAM space
- - activate symptoms after 10 copies then switched OFF/ON every 5 copies
+ - **executable bootsector** virus
+ - memory resident using the official **reset vector**
+ - **stealh execution at boot** using an undocumented technique
+ - replaces the original **HDV_BPB vector** to be activated on any floppy (A or B) reads
+ - copies itself over **unused User Vectors** RAM space
+ - activates symptoms after 10 copies then switched OFF/ON every 5 copies
 
 
 ## The details
 
 Finding the virus is straight forward, I'm sure I still have some infected disks and it was so wide-spread that some magazine disks or game compilations are still propragating it :) But, I was lazy, I simply extracted it from antivirus databases (which were not encrypted at all in most cases).
 
-Then I disassembling it using Eazy Rider on Hatari and checked with my preferred hex tools: [ImHex](https://imhex.werwolv.net/) which has a pretty good disassembler.
+Then I disassembling it using Eazy Rider on [Hatari](http://hatari.tuxfamily.org/) and checked with my preferred hex tools: [ImHex](https://imhex.werwolv.net/) which has a pretty good multi CPU disassembler.
+
 I reformatted and commented the code, line by line, to be sure I understood all the magic.
 
-I also hacked a simple testing tool to be sure my "cleaned" version was still working as expected, so basically a TOS program to load the virus in memory, as the TOS boot loader is doing (if you're curious, check the [TOS disassembly code](https://github.com/th-otto/tos1x/blob/master/bios/startup.S)). I'll do another post later on this testing tool.
+I also hacked a simple sandbox testing tool to be sure my "cleaned" version was still working as expected, so basically a TOS program to load the virus in memory, as the TOS boot loader is doing (if you're curious, check the [TOS disassembly code](https://github.com/th-otto/tos1x/blob/master/bios/startup.S)). I'll do another post later on this testing tool.
 
 #### Setting some constants for readability
 
@@ -81,7 +82,7 @@ What to note at this point, the virus is using some XBIOS functions, the reset v
 
 #### The Loader
 
-Then, the bootsector code starts with what I call the `Loader` part, dedicated to set the official reset vector to be "reset-proof" then copy itself in the ST memory at a "stealh" location, into the unused user vectors space (ST only) from $140 to $380, so 576 bytes available, more than the bootsector itself. Please refer to this post to check the [ST memory map](/the-atari-stttfalcon-memory-map-en.html)
+Then, the bootsector code starts with what I call the `Loader` part, dedicated to set the official reset vector to be "reset-proof" then copy itself in the ST memory at a "stealh" location, into the unused user vectors space (ST only) from `0x140` to `0x380`, so 576 bytes available, more than the bootsector itself. Please refer to this post to check the [ST memory map](/the-atari-stttfalcon-memory-map-en.html)
 
 
 Let's see the details:
@@ -297,7 +298,7 @@ COUNTER:
 
 END:        DC.B      $00,$00
 
-PROG_END:DCB.W        24,0
+PROG_END:   DCB.W        24,0
             DC.B      'J',$97
 
     END
@@ -429,3 +430,69 @@ I drawed a kind of timeline, trying to show the various steps and where the relo
 I start to think this is why this virus was called the **Ghost Virus**, and not the mouse inversion virus (or any name linked to the symptoms), as the magic is really in this transient routine automatically called then deleted, leaving no trace of its execution but making sure the replication vector (`hdv_bpb`) is still alive.
 
 You can download the full commented (and tested identical to the original virus after assembling with `vasm`) here: [GHOST.S]({attach}sources/GHOST.S)
+
+## Appendices
+
+### System calls (From the Atari Compendium)
+
+#### Floprd
+
+```
+Floprd()
+WORD Floprd( buf, rsrvd, dev, sector, track, side, count )
+
+Parameters:
+- VOIDP buf;
+- LONG rsrvd;
+- WORD dev, sector, track, side, count;
+
+Floprd() reads sectors from a floppy disk.
+
+- OPCODE: 8 (0x08)
+- AVAILABILITY: All TOS versions.
+- PARAMETERS: buf points to a word-aligned buffer where the data to be read will be stored. rsrvd is currently unused and should be 0. dev specifies the floppy drive to read from (‘A:’ = FLOP_DRIVEA (0), ‘B:’ = FLOP_DRIVEB (1)). The function reads count physical sectors starting at sector sector, track track, side side.
+- BINDING: 
+    move.w count,-(sp)
+    move.w side,-(sp)
+    move.w track,-(sp)
+    move.w sector,-(sp)
+    move.w dev,-(sp)
+    move.l rsrvd,-(sp)
+    pea buf
+    move.w #$08,-(sp)
+    trap #14
+    lea 20(sp),sp
+- RETURN VALUE: Floprd() returns 0 if the operation was successful or non-zero otherwise.
+- CAVEATS This function reads sectors in physical order (not taking interleave into account). Use Rwabs() to read logical sectors.
+```
+
+#### Flopwr
+
+```
+Flopwr()
+WORD Flopwr( buf, rsrvd, dev, sector, track, side, count )
+
+Parameters:
+- VOIDP buf;
+- LONG rsrvd;
+- WORD dev, sector, track, side, count;
+
+Flopwr() writes sectors to the floppy drive.
+
+- OPCODE: 9 (0x09)
+- AVAILABILITY All TOS versions.
+- PARAMETERS buf is a pointer containing data to write. rsrvd is currently unused and should be set to 0. dev specifies the floppy drive to write to (‘A:’ = 0,’B:’ = 1). This function writes count sectors starting at sector sector, track track, side side.
+- BINDING:
+    move.w count,-(sp)
+    move.w side,-(sp)
+    move.w track,-(sp)
+    move.w sector,-(sp)
+    move.w dev,-(sp)
+    move.l rsrvd,-(sp)
+    pea buf
+    move.w #$09,-(sp)
+    trap #14
+    lea 20(sp),sp
+- RETURN VALUE Flopwr() returns 0 if the sectors were successfully written or non-zero otherwise.
+- CAVEATS This function writes sectors in physical order only (ignoring interleave). Use Rwabs() to write sectors in logical order
+```
