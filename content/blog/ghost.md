@@ -8,7 +8,7 @@ Author: shazz
 
 ## Introduction
 
-To start this journey in the world of Atari ST viruses, I decided to reverse engineered probably the most well known ST virus, it spreaded like cold in the winter, everybody had loppy infected. And I must admit, the first times I "caught" it, I did not even notice it was a virus, I thought it was an OS bug and I learnt to live with it! A little like the flu, the Ghost Virus was not lethal, maybe coded as a joke, we'll probably never know. Its symptoms where simple, after 10 replications, the vertical mouse direction was inverted. And "fixed" after 5 new replications, and so on.
+To start this journey in the world of Atari ST viruses, I decided to reverse engineered probably the most well known ST virus, it spread like cold in the winter, everybody had floppies infected. And I must admit, the first times I "caught" it, I did not even notice it was a virus, I thought it was an OS bug and I learnt to live with it! A little like the flu, the Ghost Virus was not lethal, maybe coded as a joke, we'll probably never know. Its symptoms where simple, after 10 replications, the vertical mouse direction was inverted. And "fixed" after 5 new replications, and so on.
 So basically, it was like using your mouse like in typical flight simulators, go up... to go down.
 Yeah... like the flu, a little bothering but nothing that bad :)
 
@@ -20,7 +20,7 @@ Anyway, to summarize and before going into the details, here are the main charac
 
  - **executable bootsector** virus
  - memory resident using the official **reset vector**
- - **stealh execution at boot** using an undocumented technique
+ - **stealth execution at boot** using an undocumented technique
  - replaces the original **HDV_BPB vector** to be activated on any floppy (A or B) reads
  - copies itself over **unused User Vectors** RAM space
  - activates symptoms after 10 copies then switched OFF/ON every 5 copies
@@ -34,7 +34,7 @@ Then I disassembling it using Eazy Rider on [Hatari](http://hatari.tuxfamily.org
 
 I reformatted and commented the code, line by line, to be sure I understood all the magic.
 
-I also hacked a simple sandbox testing tool to be sure my "cleaned" version was still working as expected, so basically a TOS program to load the virus in memory, as the TOS boot loader is doing (if you're curious, check the [TOS disassembly code](https://github.com/th-otto/tos1x/blob/master/bios/startup.S)). I'll do another post later on this testing tool.
+I also hacked a simple sandbox testing tool to be sure my "cleaned" version was still working as expected, so basically a TOS program to load the virus in memory, as the TOS boot loader is doing (if you're curious, check the [TOS disassembly code](https://github.com/th-otto/tos1x/blob/master/bios/startup.S)). I will do another post later on this testing tool.
 
 #### Setting some constants for readability
 
@@ -205,9 +205,9 @@ Getbpb() returns the address of the current BPB (Bios Parameter Block) for a mou
 ```
 
 So each time an application or the GEM needs to read the disk information, this function is called... and so the virus routine.
-The code is detailled but in brief, here is what happens, the routine reads and buffers the bootsector, copy the `LOADER` on top of it, patchs it to make it executable and writes it back.
+The code is detailed but in brief, here is what happens, the routine reads and buffers the bootsector, copy the `LOADER` on top of it, patches it to make it executable and writes it back.
 
-Each time it happens, a counter is incremented. And if the counter reaches 5 (starting from -5 the first time), the routine will retrieve the `mousevec` vector and then usse it to call the `initmouse` XBIOS function which has an option to inverse the mouse vertical axis.
+Each time it happens, a counter is incremented. And if the counter reaches 5 (starting from -5 the first time), the routine will retrieve the `mousevec` vector and then will use it to call the `initmouse` XBIOS function which has an option to inverse the mouse vertical axis.
 
 ```asm
 ; ----------------------------------------------------------------------------------------------------------
@@ -302,7 +302,6 @@ PROG_END:   DCB.W        24,0
             DC.B      'J',$97
 
     END
-
 ```
 
 In details, this routine:
@@ -311,17 +310,17 @@ In details, this routine:
  1. If A or B (meaning this is a floppy), reads the bootsector using XBIOS `FLOPRD` and stores it in a buffer (`BOOTSECT_BUF`), which is also where the TOS copies bootsector when read.
  1. Patches the buffer adding the classic `0x601C` BRA instruction to branch to the bootsector code.
  1. Copies the `LOADER` into the buffer at `0x1E` location.
- 1. Compute the checksum andset the lasst word to be equals to `0x1234` rquired to make the bootsector executable.
- 1. Write back the buffer to the bootsector using XBIOS `FLOPWR`.
- 1. Increment the counter `COUNTER_ADDR` (initilialized at -5).
+ 1. Computes the checksum and sets the last word to be equals to `0x1234` required to make the bootsector executable.
+ 1. Writes back the buffer to the bootsector using XBIOS `FLOPWR`.
+ 1. Increments the counter `COUNTER_ADDR` (initilialized at -5).
  1. If `COUNTER_ADDR` equals to 5:
-    1. use XBIOS `KBDVBASE` call to retrieve keyboard, midi... and especially the mousevec vector (located at `MOUSEVEC_OFFSET` in the returned structure)
-    1. Call XBIOS `initmouse(mode, params, mouse vector)` while setting the first param, y origin at top, to 1 to invert the Y axis
-    1. Patch the params data with a XOR to reset the y origin to 0 and remove the virus effect... for 5 copies!
+    1. Uses XBIOS `KBDVBASE` call to retrieve keyboard, midi... and especially the mousevec vector (located at `MOUSEVEC_OFFSET` in the returned structure)
+    1. Calls XBIOS `initmouse(mode, params, mouse vector)` while setting the first param, y origin at top, to 1 to invert the Y axis
+    1. Patches the params data with a XOR to reset the y origin to 0 and removes the virus effect... for 5 copies!
 
 #### The Reset Vector
 
-The Reset Vector, installed by the `LOADER`, will use an undocumented TOS feature which allow a routine to be run after reset, before the RAM is flushed, if a magic value is set at some predefined locations and if the routine checksu is equals to `0x5678` (you'll notice the symetry with the bootsector checksum: `0x1234`).
+The Reset Vector, installed by the `LOADER`, will use an undocumented TOS feature which allow a routine to be run after reset, before the RAM is flushed, if a magic value is set at some predefined locations and if the routine checksum is equals to `0x5678` (you'll appreciate the symetry with the bootsector checksum: `0x1234`).
 
 ```asm
 ; ----------------------------------------------------------------------------------------------------------
@@ -405,7 +404,7 @@ Object Code:  1001 ddds 11 ff ffff
 
  1. Then, as not documented :) at this special location the magic number `RESIDENT_MAGIC` (`0x12123456`) as long should be written
  1. And in the next long, the value of this specific location, so in this case `PHYSTOP` - `0x8200`
- 1. After this kind of "header", the reset vector copy the `INSTALL_HDV_HPB` routine, the "replicator", word by word.
+ 1. After this kind of "header", the reset vector copies the `INSTALL_HDV_HPB` routine, the "replicator", word by word.
  1. I also copied, at the end, the `INSTALL_HDV_HPB` address but I don't know why (yet?)
  1. Finally it has to compute the checksum of this resident routine, starting from the location address in the header up to 2 pages (255 words - last word) and fix it to be equals to `RESIDENT_CHK` (`0x5678`) and stores it in the last word.
  1. It disables the reset vector as the resident routine is installed
