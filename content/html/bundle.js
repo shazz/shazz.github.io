@@ -8,9 +8,9 @@ var loadingStatus = utils.loadingStatus(document.querySelector('.pcejs-loading-s
 atarist({
   'arguments': ['-c','pce-config.cfg','-r'],
   autoloadFiles: [
-    'tos-1.02-us.rom',
-    'pce-config.cfg',
-    'flu.st',
+    'html/tos-1.02-us.rom',
+    'html/pce-config.cfg',
+    'html/flu.st',
   ],
   print: console.log.bind(console),
   printErr: console.warn.bind(console),
