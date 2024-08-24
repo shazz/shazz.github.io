@@ -5,12 +5,13 @@ Location: Germany
 Category: Atari ST
 Lang: en
 Author: Thomas Koziel, Guido Leister
+status: hidden
 
 
 # The viruses are here
 ## Boot sector viruses conquer the Atari ST
 
-By Thomas Koziel, Guido Leister
+By Thomas Koziel, Guido Leister (C'T July 1988, translated from German)
 
 The subject of computer viruses has now completely lost its theoretical character. For some computer models, a wide range of the unpopular species is haunting the country. The Atari ST is at the top of the group of computers at risk. The small programs often cause considerable damage; but even harmless versions can, if poorly programmed, have ugly side effects. Using the example of the 'disk virus', a specimen that recently penetrated the author's system, one such case is documented and early detection and treatment are discussed.
 
@@ -35,33 +36,33 @@ Now the situation was fairly clear: sector zero of the hard disk contains, among
 
 The listing shows the virus in disassembled form. It has two headers, each 32 bytes long. The first contains the description of the diskette format, which differs from the information on a healthy diskette only by the jump command used by the virus and three insignificant filler words. The virus later uses the second head in memory to remember important information.
 
-To get into the computer, it takes advantage of the good nature of the TOS. When booting, the TOS automatically loads the first sector of the diskette into drive A: into memory and calculates the sum of all the bytes it contains. The result is shortened to word length (modulo SFFFF) and compared with $1234. If these values ​​match, the operating system calls the boot sector as a subroutine, without suspecting that it might be bringing a virus to life. 
+To get into the computer, it takes advantage of the good nature of the TOS. When booting, the TOS automatically loads the first sector of the diskette into drive A: into memory and calculates the sum of all the bytes it contains. The result is shortened to word length (modulo SFFFF) and compared with `$1234`. If these values ​​match, the operating system calls the boot sector as a subroutine, without suspecting that it might be bringing a virus to life. 
 
-This begins with the jump command mentioned above, which skips the two virus heads with the diskette and program information and branches to the virus's installation routine. This then determines whether the system is already infected by examining the byte sequence starting at $200 bytes below the upper limit of the user memory (memtop). To do this, it checks for the presence of two magic long words. The virus thus plays it safe; the first long word $12123456 could also belong to another utility.
+This begins with the jump command mentioned above, which skips the two virus heads with the diskette and program information and branches to the virus's installation routine. This then determines whether the system is already infected by examining the byte sequence starting at `$200` bytes below the upper limit of the user memory (memtop). To do this, it checks for the presence of two magic long words. The virus thus plays it safe; the first long word `$12123456` could also belong to another utility.
 
-If one of the two values ​​is not present, the virus knows that none of its doubles has yet nested in memory. It therefore overwrites the first sixteen bytes of its second header with the two magic long words, its age, a jump command, the new start address ($200 below memtop) and the current values ​​of the system variables hdv_bpb and hdv_mediach, the vectors to the BIOS routines for fetching the BlOS parameter block and for detecting a disk change.
+If one of the two values ​​is not present, the virus knows that none of its doubles has yet nested in memory. It therefore overwrites the first sixteen bytes of its second header with the two magic long words, its age, a jump command, the new start address (`$200` below memtop) and the current values ​​of the system variables hdv_bpb and hdv_mediach, the vectors to the BIOS routines for fetching the BlOS parameter block and for detecting a disk change.
 
-It then copies itself to its chosen location. While moving, it simultaneously recalculates its checksum, which has changed due to the loading of the variables. Finally, it places a checksum value at the last word boundary before memtop so that the new virus receives the word sum $5678 in the top $200 bytes of the user memory. The installation routine then returns control to the TOS with an RTS command - without having changed a single system variable or vector!
+It then copies itself to its chosen location. While moving, it simultaneously recalculates its checksum, which has changed due to the loading of the variables. Finally, it places a checksum value at the last word boundary before memtop so that the new virus receives the word sum `$5678` in the top `$200` bytes of the user memory. The installation routine then returns control to the TOS with an RTS command - without having changed a single system variable or vector!
 
 ### Lab report
 
 A dud then? Not at all: In order to understand how the intruder is finally activated, it is necessary to know a peculiarity of TOS that is often overlooked in the literature.
 
-Even before the operating system ends its initialization phase by starting a program that may be in the AUTO folder, it searches the RAM area from the upper physical end down to address $600 for a boundary between two $200 byte pages that meets the following conditions:
+Even before the operating system ends its initialization phase by starting a program that may be in the AUTO folder, it searches the RAM area from the upper physical end down to address `$600` for a boundary between two `$200` bytes pages that meets the following conditions:
 
-- The first long word contains the magic number $12123456.
+- The first long word contains the magic number `$12123456`.
 - The second long word is a pointer to the memory page being examined.
-- The word sum of all 512 bytes of this field is $5678.
+- The word sum of all 512 bytes of this field is `$5678`.
 
 This mechanism is used to reactivate resident programs in the Atari ST after a reset [3]. But thanks to the preparatory work of the installation routines, the virus also meets these requirements and is therefore reset-resident at the same time. 
 
-The TOS therefore starts the virus again, which then manipulates the variables memtop, hdv_bpb and hdv_mediach. By changing memtop, it protects itself from being overwritten by user programs, and it hooks itself into the operating system via the hdv vectors; when the BIOS routines Getbpb and Mediach are called, the virus routines vir_med and vir_bpb are run first. 
+The TOS therefore starts the virus again, which then manipulates the variables `memtop`, `hdv_bpb` and `hdv_mediach`. By changing `memtop`, it protects itself from being overwritten by user programs, and it hooks itself into the operating system via the hdv vectors; when the BIOS routines `Getbpb` and `Mediach` are called, the virus routines `vir_med` and `vir_bpb` are run first. 
 
-These first copy the fourth-lowest stack word upwards, which contains the device word when the BIOS functions mentioned are called after the trap handler has been run through. A zero stands for drive A:, a one for B:, a two for C: and so on. The subroutine new_vir is then called, which first saves the registers and looks for the device word under the return address on the stack. The BIOS function Rwabs is used to read the boot sector of the addressed device and - if no error occurs - to check whether it is bootable.
+These first copy the fourth-lowest stack word upwards, which contains the device word when the BIOS functions mentioned are called after the trap handler has been run through. A zero stands for drive A:, a one for B:, a two for C: and so on. The subroutine new_vir is then called, which first saves the registers and looks for the device word under the return address on the stack. The BIOS function `Rwabs` is used to read the boot sector of the addressed device and - if no error occurs - to check whether it is bootable.
 
-If it is not yet bootable, the header bytes for the diskette version of the virus are entered, the age of the offspring is generated by increasing the virus's own age, the actual virus program is copied into the disk buffer and then a new boot sector is generated from it using the XBIOS function Protobt. A further call to Rwabs (again the device number is copied up from the fourth-lowest stack word) writes the new sector to the diskette; the virus has successfully replicated.
+If it is not yet bootable, the header bytes for the diskette version of the virus are entered, the age of the offspring is generated by increasing the virus's own age, the actual virus program is copied into the disk buffer and then a new boot sector is generated from it using the XBIOS function `Protobt`. A further call to Rwabs (again the device number is copied up from the fourth-lowest stack word) writes the new sector to the diskette; the virus has successfully replicated.
 
-At this point it looks at its own age. If it is older than twenty, it starts a rather chaotic-looking routine that I have called show_vir. This decrypts a coded message in a loop by moving and logical links and writes it across the desktop using the BIOS function Bconout. The virus has revealed itself.
+At this point it looks at its own age. If it is older than twenty, it starts a rather chaotic-looking routine that I have called `show_vir`. This decrypts a coded message in a loop by moving and logical links and writes it across the desktop using the BIOS function Bconout. The virus has revealed itself.
 
 Actually a fairly harmless representative of its species, you would think. Before overwriting a boot sector, it even checks whether a program is already there; nothing is deleted. And anyway, how could it have ended up on the physical sector zero of the hard disk? Rwobs can only address logical devices. At most, one would expect it to nest in the logical sectors zero of the partitions. And that would have no noticeable consequences.
 
@@ -73,13 +74,13 @@ The virus programmer has neatly placed the device word on top of the stack in th
 
 `move.w $4(A7),-{A7)`
 
-not to the device number, but to the lower word of register Dl. What is written there, however, is known only to the gods and the TOS, which uses this register as an auxiliary variable in some routines.
+not to the device number, but to the lower word of register `Dl`. What is written there, however, is known only to the gods and the TOS, which uses this register as an auxiliary variable in some routines.
 
-This means nothing other than that 'something' is passed to Rwabs as a device. This something often seems to be zero, because infecting the logical drive A: almost always works. Sometimes, however, there is a different value in register Dl. What then happens can be understood using the 'Test-Rwabs' program. It reads the device and sector number from the console and then calls Rwabs for a read operation. I have not tried all possible values, but I have at least found that when the fourth bit is set (for example $12 for C:), the function does not access the logical sector zero of this partition, but rather the physical sector zero of the hard disk.
+This means nothing other than that 'something' is passed to Rwabs as a device. This something often seems to be zero, because infecting the logical drive A: almost always works. Sometimes, however, there is a different value in register `Dl`. What then happens can be understood using the 'Test-Rwabs' program. It reads the device and sector number from the console and then calls Rwabs for a read operation. I have not tried all possible values, but I have at least found that when the fourth bit is set (for example `$12` for C:), the function does not access the logical sector zero of this partition, but rather the physical sector zero of the hard disk.
 
 ### Therapy
 
-Diskettes that are already infected should be cleaned immediately. To do this, it is absolutely necessary to boot the system virus-free. You can then use a diskette monitor to tinker with the boot sector. Although changing one byte is enough to make the sector 'unbootable', meticulous people can completely zero it; however, the diskette structure information in the $08-$1D area should be omitted.
+Diskettes that are already infected should be cleaned immediately. To do this, it is absolutely necessary to boot the system virus-free. You can then use a diskette monitor to tinker with the boot sector. Although changing one byte is enough to make the sector 'unbootable', meticulous people can completely zero it; however, the diskette structure information in the `$08-$1D` area should be omitted.
 
 Since an unnoticed infection can very quickly infect the entire disk box, a small C program should help you to check a large number of disks quickly and easily. After starting, the Boot Sector Check program asks you to insert the suspicious disk. The boot sector is read using the Rwabs function, checked for bootability and the result is displayed.
 
