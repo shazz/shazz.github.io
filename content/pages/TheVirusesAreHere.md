@@ -6,8 +6,11 @@ Category: Atari ST
 Lang: en
 Author: Thomas Koziel, Guido Leister
 
+
 # The viruses are here
 ## Boot sector viruses conquer the Atari ST
+
+By Thomas Koziel, Guido Leister
 
 The subject of computer viruses has now completely lost its theoretical character. For some computer models, a wide range of the unpopular species is haunting the country. The Atari ST is at the top of the group of computers at risk. The small programs often cause considerable damage; but even harmless versions can, if poorly programmed, have ugly side effects. Using the example of the 'disk virus', a specimen that recently penetrated the author's system, one such case is documented and early detection and treatment are discussed.
 
@@ -121,6 +124,9 @@ It is also to be expected that such programs will become more refined and thus m
 The public domain principle would also fall by the wayside. Who would want to copy a diskette if they were not aware of how dangerous it was? All virus programmers who see their work as a joke should keep such a situation in mind. They too will be among the victims, even if only indirectly. A user group will not be able to defend itself against ever new types of viruses by isolating each other, but only by increasing communication.
 
 Literature
-- [1] Eckhard Krabel: The viruses are coming, c't 4/87
-- [2] Jens Abraham: Blitzstart, c't 8/87
-- [3] Alfons Krämer; Thomas Riebl; Winfried Hübner: The TOS-Listing, Verlag Heinz Heise, Hannover 1988
+
+ - [l] Eckhard Krabel: The viruses are coming, c't 4/87
+
+ - [2] Jens Abraham: Blitzstart, c't 8/87
+
+ - [3] Alfons Krämer; Thomas Riebl; Winfried Hübner: The TOS-Listing, Verlag Heinz Heise, Hannover 1988
