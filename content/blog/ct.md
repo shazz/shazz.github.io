@@ -1,4 +1,4 @@
-Title: The (probably) first opensource selg-mutating virus
+Title: The (probably) first open-source self-mutating virus
 Slug: CTVirus
 Date: 2024-08-24 13:19
 Modified: 2024-08-24 13:19
@@ -7,13 +7,13 @@ Category: Atari ST, Virus
 Lang: en
 Author: shazz
 Summary: Decades before github, some virus code available freely!
-status: draft
+status: published
 
 ## Introduction
 
-After a first stop with the Ghos Virus, I reverse engineered other bootsector viruses which will appear on this blog soon. The latest one on my desk is the C'T Virus.
+After a first stop with the Ghost Virus, I reverse engineered other bootsector viruses which will appear on this blog soon. The latest one on my desk is the C'T Virus.
 His name doesn't describe his symptoms but his origin. C'T, stands for Computer & Technik, is a well known technical German magazine which is still alive by the way!
-And in his July 1988 issue, dedicated to computer viruses, a pretty in depth article from Thomas Koziel and Guido Leister. The author claims that his ST was infected by a virus brought by his friend on a floppy disk and it erased his hard drive. So they disassembled and reverse engineered the virus (like I did) and provided even some smal programs to fix it.
+And in his July 1988 issue, dedicated to computer viruses, a pretty in depth article from Thomas Koziel and Guido Leister. The author claims that his ST was infected by a virus brought by his friend on a floppy disk and it erased his hard drive. So they disassembled and reverse engineered the virus (like I did) and provided even some small programs to fix it.
 
 Even if I have some doubts on this article, 36 years later, I was pretty happy to find it scanned and compare my results with theirs. And it really helped me to figure out some parts I did not understand and some other parts they did not fully understand. And anyway, after the Ghost Virus I found pretty fascinating, this one was going one step further, by auto-mutating copies after copies but I'll describe this part later.
 
@@ -29,7 +29,7 @@ To summarize and before going into the details, here are the main characteristic
  - **stealth execution at boot** using an undocumented technique
  - protects itself against overwriting
  - replaces the original **HDV_BPB vector** and **HDV_MEDIACH vector**
- - replicates itself on non executable boosectors (on any drive unit, floppy or not in some cases, which causes the hard fatal drive bug)
+ - replicates itself on non executable bootsectors (on any drive unit, floppy or not in some cases, which causes the hard fatal drive bug)
  - mutates one word at each replication (which serves as an offspring generation counter)
  - activates symptoms after the 20th generation
  - symptoms message is encrypted
@@ -37,13 +37,13 @@ To summarize and before going into the details, here are the main characteristic
 
 ## The details
 
-As usual, I disassembled the virus bootsector using Easy Rider, imhex and then testing the re-assembling using my own made Test Tool. I finally found the C'T article that I translated and you can you the original article and the translation here. It helped me also to understand some weird bytes at the end, basically the "original" bootsector image I was using is corrupted (and looks to be used by most of the ST antiviruses), it doesn't prevent the virus to work but the "symptoms", the text message, was corrupted with random characters.
+As usual, I disassembled the virus bootsector using Easy Rider, imhex and then testing the re-assembling using my own made Test Tool. I finally found the C'T article that I translated and you can you the original article and the translation here. It helped me also to understand some weird bytes at the end, basically the "original" bootsector image I was using is corrupted (and looks to be used by most of the ST antivirus), it doesn't prevent the virus to work but the "symptoms", the text message, was corrupted with random characters.
 
 So let's start.
 
 ### The Loader
 
-First of all, important to notice, the executable bootsector entry point is not a traditional `BRA` (branch) but a `BSR` (branch sub routine). This is used to get the `DSKBUF` address where the bootsector is copied by the TOS direcly in the stack. That's dumb but it took me time to understand the first instruction after the `BSR` (at this time I did not notice it was a `BSR`) :
+First of all, important to notice, the executable bootsector entry point is not a traditional `BRA` (branch) but a `BSR` (branch sub routine). This is used to get the `DSKBUF` address where the bootsector is copied by the TOS directly in the stack. That's dumb but it took me time to understand the first instruction after the `BSR` (at this time I did not notice it was a `BSR`) :
 
 ```asm
 MOVEA.L   (sp)+,A0
@@ -51,14 +51,14 @@ SUBQ.L    #2,A0
 ```
 
 Basically, it means:
-- Load A0 with the address of DSKBUF + the BSR
-- Go back of 2 bytes to be located before the BSR (it's a BSR.B so 2 bytes)
+- Load `A0` with the address of `DSKBUF` + the `BSR`
+- Go back of 2 bytes to be located before the `BSR` (it's a `BSR.B` so 2 bytes)
 
-Then, this entry code will check that the virus in not yet installed in stealh memory (`MEMTOP - 0x200`) by checking:
+Then, this entry code will check that the virus in not yet installed in stealth memory (`MEMTOP - 0x200`) by checking:
 - is the magic number (see details in the Ghost Virus post) set at the beginning to indicate a resident program
-- is a custom virus ID (`VIRUS_ID: 0x07A31CDF) set a few bytes after (10) to distiguish the virus from any resident program using the same address.
+- is a custom virus ID (`VIRUS_ID: 0x07A31CDF) set a few bytes after (10) to distinguish the virus from any resident program using the same address.
 
-If not the case, this first part of the code will branch the `INSTALL_RESIDENT_VECTOR` routineto install the virus.
+If not the case, this first part of the code will branch the `INSTALL_RESIDENT_VECTOR` routine to install the virus.
 
 So here is the bootsector loader with more details:
 
@@ -113,7 +113,7 @@ HEADER:
 START:
         MOVEA.L   (sp)+,A0                          ; poping the stack returns the starting memory address
                                                     ; as the bootsector start is BSR $20 (0x611e), return address in the stack
-        SUBQ.L    #2,A0                             ; A0 points now to the begining of the bootsector in DSKBUFP
+        SUBQ.L    #2,A0                             ; A0 points now to the beginning of the bootsector in DSKBUFP
 
         SUBA.L    A2,A2                             ; clear A2
         MOVEA.L   MEMTOP(A2),A1                     ; A1 = 0x436 => _memtop: $long |End of TPA (user memory),
@@ -130,7 +130,7 @@ START:
 
 What to notice:
  1. As said the stack is used to set the `A0` register to the `DSKBUF` location without checking this system variable
- 1. The virus will be installed in stealh memory at `MEMTOP - 0x200` which is at a 512 bytes boundary so compatible with the undocumented TOS resident program check.
+ 1. The virus will be installed in stealth memory at `MEMTOP - 0x200` which is at a 512 bytes boundary so compatible with the undocumented TOS resident program check.
 
 Side notes:
 
@@ -138,9 +138,9 @@ As I did for the Ghost Virus, I added a list of constants and pointers to make t
 
 ### INSTALL_RESIDENT_VECTOR
 
-This routine will "patch" the bootsector copied in the `DSKBUF` buffer to replace 28 bytes reserved to describle the floppy (see the [bootsector format](/pages/boosector-en.html)) by the data structure required by the virus to operate, based on data spread in the bootsector data
+This routine will "patch" the bootsector copied in the `DSKBUF` buffer to replace 28 bytes reserved to describe the floppy (see the [bootsector format](/pages/boosector-en.html)) by the data structure required by the virus to operate, based on data spread in the bootsector data
 
-As for the Ghost Virus, this routine will take care to correctly set up the resident program header, a BRA instruction to "jump over" the program variable structure (check the `OFFSET_` structure in the source constants), and finally adjust the double-page checksum to validate the resident program in order to be executed (and deteled) during the next warm reset.
+As for the Ghost Virus, this routine will take care to correctly set up the resident program header, a BRA instruction to "jump over" the program variable structure (check the `OFFSET_` structure in the source constants), and finally adjust the double-page checksum to validate the resident program in order to be executed (and deleted) during the next warm reset.
 
 ```asm
 ; ----------------------------------------------------------------------------------------------------------
@@ -239,7 +239,7 @@ This routine is called in 3 places:
 And it is managing the replication part of the virus but also trigger the symptoms in a special case.
 This is where the self-mutating capability starts. At the 6th byte of the bootsector, instead of reserved OEM data, the virus stores here the generation number, meaning, like in a ancestry tree, how many generations of this virus existed before. Each time the virus is replicated, the generation number is equals to the virus generation + 1.
 So, while the virus is in memory,assuming it is in generation `n`, any new floppy infected will have a generation number of `n+1`.
-If the Atari is cold-resetted (memory totally erased) and boots with a newly infected floppy, the current generation number will be `n+1` and new offsprings `n+2`. And so on.
+If the Atari is cold-reseted (memory totally erased) and boots with a newly infected floppy, the current generation number will be `n+1` and new offsprings `n+2`. And so on.
 
 And... the symptoms will only sho if the generation if more than 20. So if you got infected by the "original" virus (1st generation), at least 20 infections after 20 cold resets will be needed to show the symptoms.
 For example, the Sagrotan virus database contains the generation 16, so before it was recorded by Henrik Alt, at least 16 generations have spread (in the lab? Nobody knows)
@@ -251,8 +251,8 @@ So, now what this routine does:
  - It loads a location in RAM to store the bootsector (FLOPPY_BUFFER)
  - Retrieves the boot device from the stack (0: A, 1: B...)
  - Use the `rwabs` system call to read the 1st sector of the 1st track: the boot sector
- - Check if the bootsector is executable (classic word chcksum of $1234), just do nothing if this is the case to keep the floppy usable
- - Else patch the floppy buffer containing the floopy bootsector and:
+ - Check if the bootsector is executable (classic word checksum of $1234), just do nothing if this is the case to keep the floppy usable
+ - Else patch the floppy buffer containing the floppy bootsector and:
    - Write the `BSR` bootsector start and virus ID
    - Write the generation number from the current resident virus, incremented by 1
    - Copy the virus code starting from the `START-2` `BRA`
