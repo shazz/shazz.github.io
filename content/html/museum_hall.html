@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style type="text/css">
+        div {
+            width: 320px;
+            height: 200px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            text-align: center;
+            vertical-align: middle;
+            background-color: white;
+        }
+
+        a {
+            text-decoration: none;
+            font-family: monospace;
+        }
+    </style>
+    <script>
+        function getVirus() {
+            const params = new URLSearchParams(window.location.search);
+            const virus = params.get('virus');
+            url = `/museum.html?virus=${virus}`;
+            document.write(`<h1><a href=${url}>Click here to run the ${virus} virus in the
+    museum!</a></h1>`
+            );
+        }
+    </script>
+</head>
+
+<body style="background-color: white;">
+    <div>
+        <script>getVirus()</script>
+    </div>
+</body>
+
+</html>
