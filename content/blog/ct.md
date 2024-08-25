@@ -71,7 +71,8 @@ RESIDENT_MAGIC              equ $12123456
 RESIDENT_CHK                equ $5678
 VIRUS_ID                    equ $07A31CDF
 MEMTOP                      equ $436                ; long |End of TPA (user memory)                        |_memtop (0x0f8000 on 1040)
-BOOTDEV                     equ $446                ; word |Default boot device, This value represents the device from which the system was booted (0 = A:, 1 = B:, etc.)                            |_bootdev
+BOOTDEV                     equ $446                ; word |Default boot device,                            |_bootdev
+                                                    ; This value represents the device from which the system was booted (0 = A:, 1 = B:, etc.)
 HDV_MEDIACH                 equ $47E                ; long |Vector for hard disk media change               |hdv_mediach
 HDV_BPB                     equ $472                ; long |Vector for getbpb for hard disk                 |hdv_bpb
 BOOTSECTOR_START            equ $611E
@@ -453,6 +454,10 @@ On a final not, less technical and more on ethics... There were some doubts and 
  - the symptoms data finishes with an undocumented checksum, not used in the code
 
 On the other side there are some mistakes or missing info but I guess it was on purpose. So you got it, I believe "his friend" was the real author of this virus and this article was a show off. But pretty well done I must admit.
+
+
+As usual, you can download the full commented (and tested identical to the original virus after assembling with [vasm](http://www.compilers.de/vasm.html)) here: [CT.S]({attach}sources/CT.S)
+
 
 ## Appendices
 
