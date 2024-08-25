@@ -55,6 +55,8 @@ OLD_HDV_BPB_VECTOR          equ START-$10
 OLD_HDV_MEDIACH_VECTOR      equ START-$C
 SET_SYSTEM_VECTORS_BRANCH   equ START-2
 
+BOOT_GENERATION_OFFSET      equ $e
+
         TEXT
 
 ; ----------------------------------------------------------------------------------------------------------
@@ -95,7 +97,7 @@ START:
 ; ----------------------------------------------------------------------------------------------------------
 INSTALL_RESIDENT_VECTOR:
         ; Set the preprogram variables OFFSET_ structure which fits the resident program constraints and the boot sector reserved block
-        MOVE.W    $GENERATION(A0),OFFSET_GENERATION(A0)         ; copy the generation counter from the bootsector to the generation variable
+        MOVE.W    BOOT_GENERATION_OFFSET(A0),OFFSET_GENERATION(A0)         ; copy the generation counter from the bootsector to the generation variable
         MOVE.L    #RESIDENT_MAGIC,(A0)                          ; Add magic word 0x12123456 that TOS looks for
         MOVE.L    A1,OFFSET_RESIDENT_ADDRESS(A0)                ; add vector address
         MOVE.W    #$6014,OFFSET_BRA(A0)                         ; add branch to 22 (0x16) to jump over the data and reach the next BRA
