@@ -28,7 +28,7 @@ LINKS = (
     ("Resources", "/pages/resources-en.html"),
     ("Virus Museum", "/museum.html"),
     ("UVK Book", "https://st-news.com/uvk-book"),
-    ("ST/TT/Falcon Memory map", "/the-atari-stttfalcon-memory-map-en.html"),
+    ("ST/TT/Falcon Memory map", "/pages/the-atari-stttfalcon-memory-map-en.html"),
 )
 
 # Social widget
