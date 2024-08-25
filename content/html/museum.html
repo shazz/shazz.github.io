@@ -7,26 +7,40 @@
             margin-left: auto;
             margin-right: auto;
             text-align: center;
-            font-family: sans-serif;
+            font-family: monospace;
+            vertical-align: middle;
             /* the canvas *must not* have any border or padding, or mouse coords will be wrong */
             border: 0px none;
             padding: 0;
         }
 
         .pcejs-container {
-            margin-top: 32px
+            margin-top: 0px;
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-bottom: 0px;
         }
     </style>
+    <script>
+        function getVirus() {
+            const params = new URLSearchParams(window.location.search);
+            const virus = params.get('virus');
+            var js = document.createElement("script");
+            js.src = `html/bundle_${virus}.js`;
+            document.head.appendChild(js);
+        }
+    </script>
 </head>
 
-<body>
+<body style="background-color: white;">
     <div class="pcejs pcejs-container">
-        <div class="pcejs pcejs-loading-status">Downloading...</div>
+        <div class="pcejs pcejs-loading-status">Initializing emulator...</div>
         <div class="pcejs">
             <canvas class="pcejs pcejs-canvas" oncontextmenu="event.preventDefault()"></canvas>
         </div>
     </div>
-    <script type="text/javascript" src="html/bundle.js"></script>
+    <!-- <script type="text/javascript" src="html/bundle.js"></script> -->
+    <script>getVirus()</script>
 </body>
 
 </html>
