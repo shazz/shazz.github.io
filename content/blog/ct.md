@@ -453,3 +453,29 @@ On a final not, less technical and more on ethics... There were some doubts and 
  - the symptoms data finishes with an undocumented checksum, not used in the code
 
 On the other side there are some mistakes or missing info but I guess it was on purpose. So you got it, I believe "his friend" was the real author of this virus and this article was a show off. But pretty well done I must admit.
+
+## Appendices
+
+### Fun facts
+
+ - In the UVK book, there is a few mistakes (at least for the C'T version I found and the C'T listing) in the description:
+    - `Discovery date: Summer 1988 (Wim Nottroth).`: I wonder... I would say C'T authors Thomas Koziel and Guido Leister were the first if not the authors themselves...
+    - `Virus attaches itself to: Undocumented RESET resistant.`: as you saw the virus also attaches to `hdv_bpb` and `hdv_mediach` vectors
+    - `What can happen: Deletes FAT of floppy-and hard disk (all data irretrievably lost).`: Possibly for hard drives due to be bug but not for floppies. Executable bootsectors are not replaced.
+    - `When does that happen: If date stamp is 1987.`: no, only after the 20th virus generation. No date check.
+    - `Can copy to hard disk: Yes.`: not really, let's say it thinks it is a floppy and erases the boot sector if not executable
+ - In the bootsectors images I found, usually the data section containing the message was corrupted and filled by garbage following the text (causing display glitches)
+
+
+### Still to do
+
+ - I need to check the undocumented behavior that may cause the virus to try to replicate on a hard drive
+ - I will provide a bugfixed version of it to prevent any hard drive issue
+ - I need to understand how the bootsector code execution in `DSKBUF` jumps to `SET_SYSTEM_VECTORS`, mystery to me.
+
+
+## Run the virus!
+
+<div class="aside" style>
+<iframe style="border-radius:5px;background-color=white" src="/museum_hall.html?virus=CT" scrolling="auto" marginwidth="0" marginheight="0" width="652" height="404" frameBorder="1" loading="lazy"></iframe>
+</div>
