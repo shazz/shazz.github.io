@@ -22,7 +22,9 @@ body {
 	/* font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; */
 	font-family: 'Lato', 'DM Serif Text','dmserif-css', 'Courier New', Courier, monospace;
 	font-size: 16px;
-	margin: 0;
+	margin-top: 40px;
+	margin-left: 0px;
+	margin-right: 0px;
 	text-align: center;
 }
 #container {
@@ -86,10 +88,10 @@ body {
 #menu {
 	border-bottom: 1px solid #ddd;
 	border-top: 1px solid #ddd;
-	margin-bottom: 25px;
-	padding: 10px;
+	margin-bottom: 20px;
+	padding: 3px;
 	text-align: right;
-	width: 800px;
+	width: 100%;
 }
 #menu img {
 	margin-bottom: 10px;
@@ -187,7 +189,6 @@ body {
 	float: left;
 	line-height: 175%;
 	padding: 29px 5px 15px 15px;
-	font-family: 'Lato';
 	text-align: justify;
 	width: 90%;
 }
