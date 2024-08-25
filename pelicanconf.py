@@ -25,10 +25,10 @@ AUTHOR_FEED_RSS = None
 
 # Blogroll
 LINKS = (
-    ("UVK Book", "https://st-news.com/uvk-book"),
-    ("Metacodes", "https://www.metacodes.pro/blog/computer_archeology_exploring_the_anatomy_of_an_ms_dos_virus/"),
-    ("Memory map", "/the-atari-stttfalcon-memory-map-en.html"),
+    ("Resources", "/pages/resources-en.html"),
     ("Virus Museum", "/museum.html"),
+    ("UVK Book", "https://st-news.com/uvk-book"),
+    ("ST/TT/Falcon Memory map", "/the-atari-stttfalcon-memory-map-en.html"),
 )
 
 # Social widget
