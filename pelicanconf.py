@@ -48,4 +48,4 @@ SUMMARY_MAX_PARAGRAPHS = None
 DISPLAY_PAGES_ON_MENU = True
 PAGE_PATHS = ["pages"]
 
-EXTRA_PATH_METADATA = {"html/museum.html": {"path": "museum.html"}}
+EXTRA_PATH_METADATA = {"html/museum.html": {"path": "museum.html"}, "html/museum_hall.html": {"path": "museum_hall.html"}}
