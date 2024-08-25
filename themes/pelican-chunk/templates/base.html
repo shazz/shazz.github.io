@@ -8,7 +8,7 @@
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
 	<link rel="icon" href="{{ SITEURL }}/theme/favicon-32x32.png" />
 	<link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/style.css" />
-	<link rel='stylesheet' id='oswald-css' href='https://fonts.googleapis.com/css?family=Oswald&#038;ver=3.3.2'
+	<link rel='stylesheet' id='oswald-css' href='http://fonts.googleapis.com/css?family=Oswald&#038;ver=3.3.2'
 		type='text/css' media='all' />
 
 	<link
@@ -19,6 +19,17 @@
 		body.custom-background {
 			background-color: #f5f5f5;
 			background-image: "{{ SITEURL }}/theme/back3.png";
+		}
+
+		#floppy {
+			position: absolute;
+			left: 50px;
+			top: 10px;
+			display: block;
+			max-width: 400px;
+			max-height: 400px;
+			width: auto;
+			height: auto;
 		}
 	</style>
 	<link rel="alternate" type="application/atom+xml" title="{{ SITENAME }} — Flux Atom"
@@ -39,7 +50,8 @@
 		<div id="header">
 			<!-- <h1 id="site-title"><a href="{{ SITEURL }}">{{ SITENAME }}</a></h1> -->
 			{% if SITESUBTITLE %}<h2 id="site-description">{{ SITESUBTITLE }}</h2>{% endif %}
-			<a href="/"><img src="{{ SITEURL }}/theme/back3.png" width="100%"></a>
+			<a href="/"><img src="{{ SITEURL }}/theme/back-devpac.png" width="100%"></a>
+			<img src="{{ SITEURL }}/theme/disk.png" id="floppy" />
 		</div><!-- /#banner -->
 
 		<div id="menu">
