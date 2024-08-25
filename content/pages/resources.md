@@ -1,7 +1,7 @@
 Title: Resources
-Slug: Resources
+Slug: resources
 Date: 2024-08-17 07:13
-Modified: 2024-08-18 22:44
+Modified: 2024-08-25 11:40
 Location: Stockholm / Sweden
 Category: Atari ST
 Lang: en
