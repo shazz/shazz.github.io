@@ -7,11 +7,12 @@ Lang: en
 Author: Thomas Koziel, Guido Leister
 status: hidden
 
-
-# The viruses are here
 ## Boot sector viruses conquer the Atari ST
 
-By Thomas Koziel, Guido Leister (C'T July 1988, translated from German)
+**By Thomas Koziel, Guido Leister / Computer & Technik - July 1988**
+
+
+> *Note: this article from C'T was translated using Google Translate and edited by myself. You can find the original issue of C'T on the [Internet Archive](https://archive.org/details/ct-1988.01/C%27t%20-%201988.01/) or ask me, I have a scanned copy.*
 
 The subject of computer viruses has now completely lost its theoretical character. For some computer models, a wide range of the unpopular species is haunting the country. The Atari ST is at the top of the group of computers at risk. The small programs often cause considerable damage; but even harmless versions can, if poorly programmed, have ugly side effects. Using the example of the 'disk virus', a specimen that recently penetrated the author's system, one such case is documented and early detection and treatment are discussed.
 
@@ -20,7 +21,7 @@ I first heard about 'viruses' in computer systems about four years ago - from a 
 ### Infection
 
 So I was not completely unprepared in March 1988 when the amateur who first penetrated my system to demonstrate his intellectual fruits with a diskette appeared, unwittingly aiding him. The virus also took advantage of the fact that I boot the driver for my hard disk from the AUTO folder of a diskette, which is usually not write-protected.
-The exact sequence of events was that I turned off the computer and started up the system with my friend's diskette. The hard disk remained in operation, but was not integrated into the system. I only managed to do this by subsequently starting the AHDI program. Later, after another reset, I noticed that only the standard Atari desktop appeared and the hard disk icons were completely missing. This indicated that there was no desktop info on the C: partition, which serves as the Atari's standard drive after the hard disk has been successfully initialized. However, I was completely sure that I had saved the DESKTOP.INF file there.
+The exact sequence of events was that I turned off the computer and started up the system with my friend's diskette. The hard disk remained in operation, but was not integrated into the system. I only managed to do this by subsequently starting the AHDI program. Later, after another reset, I noticed that only the standard Atari desktop appeared and the hard disk icons were completely missing. This indicated that there was no desktop info on the C: partition, which serves as the Atari's standard drive after the hard disk has been successfully initialized. However, I was completely sure that I had saved the `DESKTOP.INF` file there.
 
 Apparently the computer did not recognize the hard disk when starting AHDI and aborted the initialization. In this case, the experienced Atari user first checks that the numerous cables on his computer are properly seated - without success. The hard disk made its usual noise when switched on. After the computer was subsequently started, a brief flicker of the Busy LED revealed that TOS was accessing the boot sector, which simultaneously marked the climax and the end of the communication between the computer and the hard disk.
 
@@ -36,13 +37,13 @@ Now the situation was fairly clear: sector zero of the hard disk contains, among
 
 The listing shows the virus in disassembled form. It has two headers, each 32 bytes long. The first contains the description of the diskette format, which differs from the information on a healthy diskette only by the jump command used by the virus and three insignificant filler words. The virus later uses the second head in memory to remember important information.
 
-To get into the computer, it takes advantage of the good nature of the TOS. When booting, the TOS automatically loads the first sector of the diskette into drive A: into memory and calculates the sum of all the bytes it contains. The result is shortened to word length (modulo SFFFF) and compared with `$1234`. If these values ​​match, the operating system calls the boot sector as a subroutine, without suspecting that it might be bringing a virus to life. 
+To get into the computer, it takes advantage of the good nature of the TOS. When booting, the TOS automatically loads the first sector of the diskette into drive A: into memory and calculates the sum of all the bytes it contains. The result is shortened to word length (modulo `SFFFF`) and compared with `$1234`. If these values ​​match, the operating system calls the boot sector as a subroutine, without suspecting that it might be bringing a virus to life. 
 
-This begins with the jump command mentioned above, which skips the two virus heads with the diskette and program information and branches to the virus's installation routine. This then determines whether the system is already infected by examining the byte sequence starting at `$200` bytes below the upper limit of the user memory (memtop). To do this, it checks for the presence of two magic long words. The virus thus plays it safe; the first long word `$12123456` could also belong to another utility.
+This begins with the jump command mentioned above, which skips the two virus heads with the diskette and program information and branches to the virus's installation routine. This then determines whether the system is already infected by examining the byte sequence starting at `$200` bytes below the upper limit of the user memory (`memtop`). To do this, it checks for the presence of two magic long words. The virus thus plays it safe; the first long word `$12123456` could also belong to another utility.
 
-If one of the two values ​​is not present, the virus knows that none of its doubles has yet nested in memory. It therefore overwrites the first sixteen bytes of its second header with the two magic long words, its age, a jump command, the new start address (`$200` below memtop) and the current values ​​of the system variables hdv_bpb and hdv_mediach, the vectors to the BIOS routines for fetching the BlOS parameter block and for detecting a disk change.
+If one of the two values ​​is not present, the virus knows that none of its doubles has yet nested in memory. It therefore overwrites the first sixteen bytes of its second header with the two magic long words, its age, a jump command, the new start address (`$200` below `memtop`) and the current values ​​of the system variables `hdv_bpb` and `hdv_mediach`, the vectors to the BIOS routines for fetching the BlOS parameter block and for detecting a disk change.
 
-It then copies itself to its chosen location. While moving, it simultaneously recalculates its checksum, which has changed due to the loading of the variables. Finally, it places a checksum value at the last word boundary before memtop so that the new virus receives the word sum `$5678` in the top `$200` bytes of the user memory. The installation routine then returns control to the TOS with an RTS command - without having changed a single system variable or vector!
+It then copies itself to its chosen location. While moving, it simultaneously recalculates its checksum, which has changed due to the loading of the variables. Finally, it places a checksum value at the last word boundary before `memtop` so that the new virus receives the word sum `$5678` in the top `$200` bytes of the user memory. The installation routine then returns control to the TOS with an RTS command - without having changed a single system variable or vector!
 
 ### Lab report
 
@@ -58,19 +59,19 @@ This mechanism is used to reactivate resident programs in the Atari ST after a r
 
 The TOS therefore starts the virus again, which then manipulates the variables `memtop`, `hdv_bpb` and `hdv_mediach`. By changing `memtop`, it protects itself from being overwritten by user programs, and it hooks itself into the operating system via the hdv vectors; when the BIOS routines `Getbpb` and `Mediach` are called, the virus routines `vir_med` and `vir_bpb` are run first. 
 
-These first copy the fourth-lowest stack word upwards, which contains the device word when the BIOS functions mentioned are called after the trap handler has been run through. A zero stands for drive A:, a one for B:, a two for C: and so on. The subroutine new_vir is then called, which first saves the registers and looks for the device word under the return address on the stack. The BIOS function `Rwabs` is used to read the boot sector of the addressed device and - if no error occurs - to check whether it is bootable.
+These first copy the fourth-lowest stack word upwards, which contains the device word when the BIOS functions mentioned are called after the trap handler has been run through. A zero stands for drive A:, a one for B:, a two for C: and so on. The subroutine `new_vir` is then called, which first saves the registers and looks for the device word under the return address on the stack. The BIOS function `Rwabs` is used to read the boot sector of the addressed device and - if no error occurs - to check whether it is bootable.
 
-If it is not yet bootable, the header bytes for the diskette version of the virus are entered, the age of the offspring is generated by increasing the virus's own age, the actual virus program is copied into the disk buffer and then a new boot sector is generated from it using the XBIOS function `Protobt`. A further call to Rwabs (again the device number is copied up from the fourth-lowest stack word) writes the new sector to the diskette; the virus has successfully replicated.
+If it is not yet bootable, the header bytes for the diskette version of the virus are entered, the age of the offspring is generated by increasing the virus's own age, the actual virus program is copied into the disk buffer and then a new boot sector is generated from it using the XBIOS function `Protobt`. A further call to `Rwabs` (again the device number is copied up from the fourth-lowest stack word) writes the new sector to the diskette; the virus has successfully replicated.
 
-At this point it looks at its own age. If it is older than twenty, it starts a rather chaotic-looking routine that I have called `show_vir`. This decrypts a coded message in a loop by moving and logical links and writes it across the desktop using the BIOS function Bconout. The virus has revealed itself.
+At this point it looks at its own age. If it is older than twenty, it starts a rather chaotic-looking routine that I have called `show_vir`. This decrypts a coded message in a loop by moving and logical links and writes it across the desktop using the BIOS function `Bconout`. The virus has revealed itself.
 
-Actually a fairly harmless representative of its species, you would think. Before overwriting a boot sector, it even checks whether a program is already there; nothing is deleted. And anyway, how could it have ended up on the physical sector zero of the hard disk? Rwobs can only address logical devices. At most, one would expect it to nest in the logical sectors zero of the partitions. And that would have no noticeable consequences.
+Actually a fairly harmless representative of its species, you would think. Before overwriting a boot sector, it even checks whether a program is already there; nothing is deleted. And anyway, how could it have ended up on the physical sector zero of the hard disk? `Rwabs` can only address logical devices. At most, one would expect it to nest in the logical sectors zero of the partitions. And that would have no noticeable consequences.
 
 In this case, however, there is an unfortunate concatenation of two facts: 
  - The virus contains a bug and 
- - Rwabs can, under certain circumstances, access physical sectors in conjunction with the AHDI (although, to my knowledge, this is not documented anywhere).
+ - `Rwabs` can, under certain circumstances, access physical sectors in conjunction with the AHDI (although, to my knowledge, this is not documented anywhere).
 
-The virus programmer has neatly placed the device word on top of the stack in the vir_med and vir_bpb routines. After the jump to new_vir, the same process is required again before calling Rwabs, since the return address is placed on the stack when the subroutine is called. Before doing this, however, the programmer pushes the registers DO to D2 and AO to A3 onto the stack and therefore accesses them with the command:
+The virus programmer has neatly placed the device word on top of the stack in the `vir_med` and `vir_bpb` routines. After the jump to `new_vir`, the same process is required again before calling `Rwabs`, since the return address is placed on the stack when the subroutine is called. Before doing this, however, the programmer pushes the registers `D0` to `D2` and `A0` to `A3` onto the stack and therefore accesses them with the command:
 
 `move.w $4(A7),-{A7)`
 
@@ -126,8 +127,6 @@ The public domain principle would also fall by the wayside. Who would want to co
 
 Literature
 
- - [l] Eckhard Krabel: The viruses are coming, c't 4/87
-
+ - [1] Eckhard Krabel: The viruses are coming, c't 4/87
  - [2] Jens Abraham: Blitzstart, c't 8/87
-
  - [3] Alfons Krämer; Thomas Riebl; Winfried Hübner: The TOS-Listing, Verlag Heinz Heise, Hannover 1988
