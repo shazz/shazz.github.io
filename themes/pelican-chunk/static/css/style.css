@@ -1048,7 +1048,7 @@ pre {
 	content: "";
 	display: block;
 	height: 0;
-	padding-bottom: 70%;
+	padding-bottom: 100%;
 }
 
 .retro-computer__holder {
@@ -1073,8 +1073,8 @@ pre {
 .retro-computer__holder::after {
 	content: "";
 	position: absolute;
-	background-color: #F5F5F5;
-	inset: 4rem 6rem 2rem;
+	background-color: white;
+	inset: 6rem 6rem 10rem;
 	z-index: -1;
 }
 
