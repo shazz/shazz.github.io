@@ -1061,7 +1061,7 @@ pre {
 .retro-computer__holder::before {
 	content: "";
 	position: absolute;
-	background-image: url(../../images/retro-computer2.png);
+	background-image: url(../../images/retro-computer3.png);
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: center;
@@ -1073,7 +1073,7 @@ pre {
 .retro-computer__holder::after {
 	content: "";
 	position: absolute;
-	background-color: #ffffff;
+	background-color: #F5F5F5;
 	inset: 4rem 6rem 2rem;
 	z-index: -1;
 }
