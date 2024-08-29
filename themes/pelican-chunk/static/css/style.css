@@ -1048,7 +1048,7 @@ pre {
 	content: "";
 	display: block;
 	height: 0;
-	padding-bottom: 87%;
+	padding-bottom: 70%;
 }
 
 .retro-computer__holder {
@@ -1073,17 +1073,19 @@ pre {
 .retro-computer__holder::after {
 	content: "";
 	position: absolute;
-	background-color: #121212;
-	inset: 2rem 2rem 2rem;
+	background-color: #ffffff;
+	inset: 4rem 6rem 2rem;
 	z-index: -1;
 }
 
 .retro-computer iframe {
-	margin-top: 6%;
+	margin-top: -5%;
+	margin-left: 150px;
 }
 
 iframe {
 	width: 652;
+	border: 0;
 }
 
 .entry-content a img {
