@@ -481,12 +481,6 @@ As usual, you can download the full commented (and tested identical to the origi
 
 ## Run the virus!
 
-<div class="aside retro-computer">
-	<div class="aside retro-computer__holder">
-		<iframe style="border-radius:5px;background-color=white"
-			src="/museum_hall.html?virus=CT" scrolling="auto" marginwidth="0" marginheight="0"
-			width="652" height="404" frameBorder="1" loading="lazy"></iframe>
-	</div>
-</div>
-
+<div class="aside" style>
+<iframe style="border-radius:5px;background-color=white" src="/museum_hall.html?virus=CT" scrolling="auto" marginwidth="0" marginheight="0" width="652" height="404" frameBorder="1" loading="lazy"></iframe>
 </div>
