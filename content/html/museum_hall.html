@@ -4,17 +4,23 @@
 <head>
     <style type="text/css">
         div {
-            width: 320px;
-            height: 200px;
+            width: 600px;
+            height: 400px;
             position: absolute;
             top: 0;
-            bottom: 0;
+            bottom: 5%;
             left: 0;
             right: 0;
             margin: auto;
             text-align: center;
-            vertical-align: middle;
+            vertical-align: text-bottom;
             background-color: white;
+        }
+
+        .gem-image {
+            height: 90%;
+            width: 90%;
+            margin-top: 2%;
         }
 
         a {
@@ -27,16 +33,14 @@
             const params = new URLSearchParams(window.location.search);
             const virus = params.get('virus');
             url = `/museum.html?virus=${virus}`;
-            document.write(`<h1><a href=${url}>Click here to run the ${virus} virus in the
-    museum!</a></h1>`
-            );
+            location.href = url;
         }
     </script>
 </head>
 
-<body style="background-color: white;">
+<body>
     <div>
-        <script>getVirus()</script>
+        <a href="javascript:getVirus()"><img src="/images/gem.png" class="gem-image"></a>
     </div>
 </body>
 
