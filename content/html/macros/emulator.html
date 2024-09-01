@@ -1,0 +1,9 @@
+{% macro emulator(virus) -%}
+<div class="aside retro-computer">
+    <div class="aside retro-computer__holder">
+        <iframe style="border-radius:5px;background-color=white" src="/museum_hall.html?virus={{virus}}"
+            scrolling="auto" marginwidth="0" marginheight="0" width="652" height="404" frameBorder="1"
+            loading="lazy"></iframe>
+    </div>
+</div>
+{%- endmacro %}
