@@ -4,17 +4,17 @@ SITEURL = ""
 THEME = "themes/pelican-chunk"
 
 PLUGIN_PATHS = ["pelican-plugins"]
-PLUGINS = ["readtime"]
+PLUGINS = ["readtime", "jinja2content"]
 
 PATH = "content"
 ARTICLE_PATHS = ["blog"]
 ARTICLE_SAVE_AS = "{date:%Y}/{slug}.html"
 ARTICLE_URL = "{date:%Y}/{slug}.html"
 STATIC_PATHS = ["pages", "images", "html"]
-
 TIMEZONE = "America/New_York"
-
 DEFAULT_LANG = "English"
+DISPLAY_PAGES_ON_MENU = False
+DISPLAY_CATEGORIES_ON_MENU = False
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -37,10 +37,10 @@ SOCIAL = (
     ("Another social link", "#"),
 )
 
-DEFAULT_PAGINATION = 10
-SUMMARY_MAX_LENGTH = 50
-SUMMARY_END_SUFFIX = "…"
-SUMMARY_MAX_PARAGRAPHS = None
+DEFAULT_PAGINATION = 5
+SUMMARY_MAX_PARAGRAPHS = 2
+SUMMARY_MAX_LENGTH = 100
+SUMMARY_END_SUFFIX = "..."
 
 # Uncomment following line if you want document-relative URLs when developing
 # RELATIVE_URLS = True
