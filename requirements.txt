@@ -1,0 +1,2 @@
+pelican[markdown]
+lxml>=4.0
