@@ -4,7 +4,7 @@ SITEURL = ""
 THEME = "themes/pelican-chunk"
 
 PLUGIN_PATHS = ["pelican-plugins"]
-PLUGINS = ["readtime", "jinja2content"]
+PLUGINS = ["readtime", "jinja2content", "read_more_link"]
 
 PATH = "content"
 ARTICLE_PATHS = ["blog"]
@@ -13,8 +13,6 @@ ARTICLE_URL = "{date:%Y}/{slug}.html"
 STATIC_PATHS = ["pages", "images", "html"]
 TIMEZONE = "America/New_York"
 DEFAULT_LANG = "English"
-DISPLAY_PAGES_ON_MENU = False
-DISPLAY_CATEGORIES_ON_MENU = False
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -41,11 +39,10 @@ DEFAULT_PAGINATION = 5
 SUMMARY_MAX_PARAGRAPHS = 2
 SUMMARY_MAX_LENGTH = 100
 SUMMARY_END_SUFFIX = "..."
+DISPLAY_PAGES_ON_MENU = False
+DISPLAY_CATEGORIES_ON_MENU = False
 
 # Uncomment following line if you want document-relative URLs when developing
 # RELATIVE_URLS = True
-
-DISPLAY_PAGES_ON_MENU = True
 PAGE_PATHS = ["pages"]
-
 EXTRA_PATH_METADATA = {"html/museum.html": {"path": "museum.html"}, "html/museum_hall.html": {"path": "museum_hall.html"}}
