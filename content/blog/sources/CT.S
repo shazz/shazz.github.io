@@ -184,7 +184,7 @@ REPLICATE:
         CLR.W     -(sp)                             ; recno = 0
         MOVE.W    #1,-(sp)                          ; count = 1
         PEA       (A3)                              ; buf = A3
-        MOVE.W    #2,-(sp)                          ; mode = 2 / Disable retries
+        MOVE.W    #2,-(sp)                          ; mode = 0010 / read, don't read media change status
         MOVE.W    #4,-(sp)                          ; LONG Rwabs( mode, buf, count, recno, dev)
         TRAP      #$D
         ADDA.W    #$E,sp                            ; fix stack
@@ -229,7 +229,7 @@ REPLICATE:
         CLR.W     -(sp)                             ; recno = 0
         MOVE.W    #1,-(sp)                          ; count = 1
         PEA       (A3)                              ; buffer
-        MOVE.W    #3,-(sp)                          ; mode = 3 Do not translate logical sectors into physical sectors (recno specifies physical instead of logical sectors)
+        MOVE.W    #3,-(sp)                          ; mode = 0011 / Write, keep media change status
         MOVE.W    #4,-(sp)                          ; LONG Rwabs( mode, buf, count, recno, dev)
         TRAP      #$D
         ADDA.W    #$E,sp                            ; fix stack
