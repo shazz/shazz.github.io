@@ -23,6 +23,7 @@ AUTHOR_FEED_RSS = None
 
 # Blogroll
 LINKS = (
+    ("Status", "/pages/MuseumStatus-en.html"),
     ("Resources", "/pages/resources-en.html"),
     ("Virus Museum", "/museum.html"),
     ("UVK Book", "https://st-news.com/uvk-book"),
