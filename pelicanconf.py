@@ -1,6 +1,6 @@
 AUTHOR = "shazz"
 SITENAME = "Retrovirology"
-SITEURL = ""
+SITEURL = "https://retrovirology.metaverse.fr"
 THEME = "themes/pelican-chunk"
 
 PLUGIN_PATHS = ["pelican-plugins"]
