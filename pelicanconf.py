@@ -25,9 +25,9 @@ AUTHOR_FEED_RSS = None
 LINKS = (
     ("Status", "/pages/MuseumStatus-en.html"),
     ("Resources", "/pages/resources-en.html"),
-    ("Virus Museum", "/museum.html"),
-    ("UVK Book", "https://st-news.com/uvk-book"),
-    ("ST/TT/Falcon Memory map", "/pages/the-atari-stttfalcon-memory-map-en.html"),
+    ("ATARI Boot process", "/pages/HowAtariBoots-en.html"),
+    ("Bootsectors?", "/pages/HowBootsectorsWork-en.html"),
+    ("ST/TT/Falcon Memory map", "/pages/AtariMemoryMap-en.html"),
 )
 
 # Social widget
