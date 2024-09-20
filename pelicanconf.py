@@ -23,11 +23,13 @@ AUTHOR_FEED_RSS = None
 
 # Blogroll
 LINKS = (
-    ("Status", "/pages/MuseumStatus-en.html"),
-    ("Resources", "/pages/resources-en.html"),
+    ("ST/TT/Falcon Memory map", "/pages/AtariMemoryMap-en.html"),
+    ("Important vectors", "/pages/AtariVectors-en.html"),
     ("ATARI Boot process", "/pages/HowAtariBoots-en.html"),
     ("Bootsectors?", "/pages/HowBootsectorsWork-en.html"),
-    ("ST/TT/Falcon Memory map", "/pages/AtariMemoryMap-en.html"),
+    ("Resources", "/pages/resources-en.html"),
+    ("Status", "/pages/MuseumStatus-en.html"),
+    # ("Virus Museum", "/museum.html"),
 )
 
 # Social widget
