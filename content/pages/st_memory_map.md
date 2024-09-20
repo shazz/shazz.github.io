@@ -1,4 +1,5 @@
 Title: The Atari ST/TT/Falcon Memory Map
+Slug: AtariMemoryMap
 Date: 1994-01-22 08:08
 Location: Ohio, US
 Category: Atari ST, Virus
