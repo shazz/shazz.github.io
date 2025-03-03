@@ -101,6 +101,7 @@ Here is the list of known viruses on the Atari ST/TT/Falcon family.
 |        13        | SECTORONE TRASHER  | 5th Generation virus                                  |      Yes      |
 |         1        | SIGNUM             | Signum/BPL Virus A                                    |      Yes      |
 |                  | SHIT BUG           |                                                       |      Yes      |
+|                  | ST2AB              |                                                       |      Yes      |
 |        74        | SMALL              | Small Virus                                           |      Yes      |
 |        11        | SWISS              | Fat Virus, Sziss Virus, Blot Virus                    |      Yes      |
 |        85        | TINY               | Tiny Virus                                            |      Yes      |
