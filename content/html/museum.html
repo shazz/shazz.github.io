@@ -27,7 +27,7 @@
             const params = new URLSearchParams(window.location.search);
             const virus = params.get('virus');
             var js = document.createElement("script");
-            js.src = `html/bundle_${virus}.js`;
+            js.src = `bundle_${virus}.js`;
             document.head.appendChild(js);
         }
     </script>
