@@ -1,4 +1,4 @@
-Title: MIDI viruses
+Title: MIDI viruses ? Joke or reality ?
 Slug: MidiViruses
 Name: Midi viruses virus
 Date: 1990-12-21 12:34
@@ -13,6 +13,8 @@ Tags: learning, technical details, midi
 
 It's hard to know is this article was a joke or not... Niagani Dekcus looks to be a fictional character and the author of the article. The name appears to be a play on words, as "Niagani Dekcus" can be read as "I am a virus" when reversed. 
 This suggests that the character may be intended to represent a humorous or satirical take on the topic of computer viruses, particularly in the context of MIDI systems. The article itself is written in a style that combines technical information with a lighthearted tone.
+
+Moreover, I never found any trace of the Fire or Scramble viruses anywhere else...
 
 <pre>
                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
