@@ -5,7 +5,10 @@ Location: Germany
 Category: Atari ST
 Lang: en
 Author: Thomas Koziel, Guido Leister
-status: hidden
+status: published
+summary: "Boot sector viruses conquer the Atari ST", an articile from Computer & Technik in July 1988
+image: {filename}images/max_t.png
+Tags: magazine article, translation
 
 ## Boot sector viruses conquer the Atari ST
 

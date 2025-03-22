@@ -5,6 +5,10 @@ Location: San Francisco / US
 Category: Atari ST
 Lang: en
 Author: shazz
+status: published
+summary: The article describes techniques used by virus creators to avoid detection by antivirus software on Atari ST systems, including manipulating bootsector formats and checksums. It highlights how viruses obfuscate their code to evade static analysis and may delay activation to bypass boot checks. Additionally, some viruses employ social engineering tactics to disguise themselves as legitimate software. Overall, it illustrates the ongoing struggle between virus creators and antivirus developers.
+image: {filename}images/max_t.png
+Tags: learning, tricks, technical details
 
 Along the time, virus creators had to find technical solutions to have their viruses undetected if they wanted them to spread. Here is a list of common tricks I found in viruses to avoid detection.
 

@@ -8,7 +8,7 @@ Author: shazz
 status: published
 summary: Learn more about the lifecycle of computer viruses, particularly focusing on Atari ST bootsector viruses, which have two main phases: the initial phase when they are unknown and proliferate, and the subsequent phase when they become known and are targeted by antivirus software. <br>It outlines various characteristics and tactics of these viruses, including symptoms, replication mechanisms, incubation periods, and stealth techniques used to evade detection by antivirus programs.
 image: {filename}images/max_t.png
-Tags: Learning
+Tags: learning, patterns
 
 ## Virus lifetime phases
 

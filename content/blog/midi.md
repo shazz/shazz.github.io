@@ -1,17 +1,20 @@
 Title: MIDI viruses
 Slug: MidiViruses
 Name: Midi viruses virus
-Date: 2025-03-05 22:15
-Location: Montréal / CA
+Date: 1990-12-21 12:34
+Location: US ?
 Category: Atari ST, Virus
 Lang: en
-Author: shazz
-status: hidden
-summary: Article from 1990 on Atari MIDI viruses
+Author: Niagani Dekcus
+status: published
+summary: The article from 1990 discusses the emergence of MIDI viruses, specifically the Fires and Scramble viruses, which target MIDI systems on Atari ST computers. The Fire virus spreads by corrupting MIDI data and can go unnoticed unless users monitor their screens closely. The Scramble virus operates silently, altering MIDI parameters randomly and potentially disrupting live performances. Both viruses are spread through software rather than MIDI equipment, making detection challenging. Users are advised to back up their data and consult manufacturers for protection against these threats.
+image: {filename}images/max_t.png
+Tags: learning, technical details, midi
 
+It's hard to know is this article was a joke or not... Niagani Dekcus looks to be a fictional character and the author of the article you provided about MIDI viruses. The name appears to be a play on words, as "Niagani Dekcus" can be read as "I am a virus" when reversed. 
+This suggests that the character may be intended to represent a humorous or satirical take on the topic of computer viruses, particularly in the context of MIDI systems. The article itself is written in a style that combines technical information with a lighthearted tone.
 
-                                    Page 1
-
+```
                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
                     ~             MIDI - VIRUSES           ~
                     ~ ATARI-ST        by          ATARI-ST ~
@@ -31,11 +34,6 @@ summary: Article from 1990 on Atari MIDI viruses
                     ~          genie : virushunt 666.      ~
                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-
-
-
-
-                                   Page 2
                               Be on the ALERT!
                               ================
 
@@ -52,12 +50,6 @@ computers monitor showing that it is Active!
 Its obvious the programer had a warped sense of humor but no heart due to the
 results this virus shall do to your MIDI Studio,System,Etc.
 
-
-
-
-
-                                    Page 3
-
 The Fire Virus has a task to do and it does it without being noticed unless
 you are constantly looking at the monitor (in most cases no!) wich is not
 part of being a Musician Etc, It first checks to see if any MIDI Data is
@@ -73,11 +65,6 @@ is your choice?
 But some manufacturers have an override system built in to be activated by
 software eg, Editors Libraians which allow data to be changed or received
 via MIDI then saved without any prompt warnnings so updates can be quicker!
-
-
-
-
-                                    Page 4
 
 A good example of this type of unit is the Roland D110,MT32,D50,D10,D5,D20.
 Kawi K1,K4 just about any unit which saves its data internaly without needing
@@ -99,12 +86,6 @@ of course most times impossible to detect its presence until it causes
 some sort of corruption to data, To be safe follow normal procedures in
 avoidance against Viruses contact your local computer store they may give
 some valuable advice.
-
-
-
-
-                                   Page 6
-
 
 The other main problem and we can not advise you what to do is the Virus
 can link itself to a progam wich may have copy protection on it so there
@@ -130,7 +111,6 @@ carried by any type of program and shall keep looking for calls for the MIDI
 in out data ports! so be aware of any new or old software you put in your
 computer!
 
-                                    Page 7
 Like the FIRE Virus the SCRAMBLE Virus will mess around with all sorts of data
 mostly patches but will also send random program changes and corrupt patches
 quicker the the previous Virus. IT also has in some known cases destroyed
@@ -146,10 +126,6 @@ users lack of knowledge of the MIDI proticol to modify the program.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-
-
-
-
                                     THE END
 
 We hope this brief description on MIDI Viruses will help all people who have
@@ -162,8 +138,4 @@ they shall supply further updates on this topic thank you.
 
                                N. Dekcus 1990.
       Niagain. Dekcus is a Proffessor of Elctronic Music at the U.C.L.A
-==============================================================================
-  ==========================================================================
-    ======================================================================
-      ==================================================================
-         =============================================================
+```
