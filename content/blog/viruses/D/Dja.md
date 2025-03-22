@@ -1,14 +1,14 @@
 Title: Dja
-Slug: Dja
+Slug: dja
 Name: Dja virus
-Date: 2025-03-17 17:30
+Date: 2025-03-22 18:01
 Location: Montreal / Canada
 Category: Atari ST, Virus
 Lang: en
 Author: shazz
 status: hidden
 summary: This article is about the Dja virus...
-image: {filename}../../../gallery/viruses/Dja.png
+image: {filename}../../../gallery/viruses/dja.png
 Source: no
 UVK: 
 OtherName: |25|[Dja](/Dja-en.html)|DJA Virus|yes|45||DJA.S|
@@ -46,4 +46,4 @@ In the UVK book, Richard wrote...
 ## See the virus in action!
 
 {% from '/html/macros/emulator.html' import emulator %}
-{{ emulator("Dja", False) }}
+{{ emulator("dja", False) }}

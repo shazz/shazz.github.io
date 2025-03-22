@@ -1,14 +1,14 @@
 Title: Media Change
-Slug: Mediachg
+Slug: mediachg
 Name: Media Change virus
-Date: 2025-03-17 17:30
+Date: 2025-03-22 18:01
 Location: Montreal / Canada
 Category: Atari ST, Virus
 Lang: en
 Author: shazz
 status: hidden
 summary: This article is about the Media Change virus...
-image: {filename}../../../gallery/viruses/Mediachg.png
+image: {filename}../../../gallery/viruses/mediachg.png
 Source: no
 UVK: 
 OtherName: |58|[Media Change](/Mediachg-en.html)|Media Change Virus|yes|39||MEDIACHG.S|
@@ -50,4 +50,4 @@ The following symptoms may happen: occurs every modulo 5 generations, invert the
 ## See the virus in action!
 
 {% from '/html/macros/emulator.html' import emulator %}
-{{ emulator("Mediachg", False) }}
+{{ emulator("mediachg", False) }}

@@ -1,14 +1,14 @@
 Title: Evil Nick
-Slug: EvilNick
+Slug: evilnick
 Name: Evil Nick virus
-Date: 2025-03-17 17:30
+Date: 2025-03-22 18:01
 Location: Montreal / Canada
 Category: Atari ST, Virus
 Lang: en
 Author: shazz
 status: hidden
 summary: This article is about the Evil Nick virus...
-image: {filename}../../../gallery/viruses/EvilNick.png
+image: {filename}../../../gallery/viruses/evilnick.png
 Source: no
 UVK: 
 OtherName: |27|[Evil Nick](/EvilNick-en.html)|Evil Virus|yes|25||EVIL_NICK.S|
@@ -46,4 +46,4 @@ In the UVK book, Richard wrote...
 ## See the virus in action!
 
 {% from '/html/macros/emulator.html' import emulator %}
-{{ emulator("EvilNick", False) }}
+{{ emulator("evilnick", False) }}

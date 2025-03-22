@@ -1,14 +1,14 @@
 Title: Gauweil
-Slug: Gauweil
+Slug: gauweil
 Name: Gauweil virus
-Date: 2025-03-17 17:30
+Date: 2025-03-22 18:01
 Location: Montreal / Canada
 Category: Atari ST, Virus
 Lang: en
 Author: shazz
 status: hidden
 summary: This article is about the Gauweil virus...
-image: {filename}../../../gallery/viruses/Gauweil.png
+image: {filename}../../../gallery/viruses/gauweil.png
 Source: no
 UVK: 
 OtherName: |34|[Gauweil](/Gauweil-en.html)|Gauweiler Virus|yes|24||GAUWEIL.S|
@@ -46,4 +46,4 @@ In the UVK book, Richard wrote...
 ## See the virus in action!
 
 {% from '/html/macros/emulator.html' import emulator %}
-{{ emulator("Gauweil", False) }}
+{{ emulator("gauweil", False) }}

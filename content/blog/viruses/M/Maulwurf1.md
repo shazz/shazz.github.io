@@ -1,14 +1,14 @@
 Title: Maulwurf 1 US version
-Slug: Maulwurf1
+Slug: maulwurf1
 Name: Maulwurf 1 US version virus
-Date: 2025-03-17 17:30
+Date: 2025-03-22 18:01
 Location: Montreal / Canada
 Category: Atari ST, Virus
 Lang: en
 Author: shazz
 status: hidden
 summary: This article is about the Maulwurf 1 US version virus...
-image: {filename}../../../gallery/viruses/Maulwurf1.png
+image: {filename}../../../gallery/viruses/maulwurf1.png
 Source: no
 UVK: 
 OtherName: |55|[Maulwurf 1 US version](/Maulwurf1-en.html)|Maulwurf I Virus B|yes|8||MAULWURF_US.S|
@@ -46,4 +46,4 @@ In the UVK book, Richard wrote...
 ## See the virus in action!
 
 {% from '/html/macros/emulator.html' import emulator %}
-{{ emulator("Maulwurf1", False) }}
+{{ emulator("maulwurf1", False) }}

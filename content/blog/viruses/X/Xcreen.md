@@ -1,14 +1,14 @@
 Title: Screen
-Slug: Xcreen
+Slug: xcreen
 Name: Screen virus
-Date: 2025-03-17 17:30
+Date: 2025-03-22 18:01
 Location: Montreal / Canada
 Category: Atari ST, Virus
 Lang: en
 Author: shazz
 status: hidden
 summary: This article is about the Screen virus...
-image: {filename}../../../gallery/viruses/Xcreen.png
+image: {filename}../../../gallery/viruses/xcreen.png
 Source: no
 UVK: 
 OtherName: |71|[Screen](/Xcreen-en.html)|Screen Virus|yes|6||SCREEN.S|
@@ -46,4 +46,4 @@ In the UVK book, Richard wrote...
 ## See the virus in action!
 
 {% from '/html/macros/emulator.html' import emulator %}
-{{ emulator("Xcreen", False) }}
+{{ emulator("xcreen", False) }}

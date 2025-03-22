@@ -1,14 +1,14 @@
 Title: St2ab
-Slug: St2ab
+Slug: st2ab
 Name: St2ab virus
-Date: 2025-03-17 17:30
+Date: 2025-03-22 18:01
 Location: Montreal / Canada
 Category: Atari ST, Virus
 Lang: en
 Author: shazz
 status: hidden
 summary: This article is about the St2ab virus...
-image: {filename}../../../gallery/viruses/St2ab.png
+image: {filename}../../../gallery/viruses/st2ab.png
 Source: no
 UVK: 
 OtherName: |76|[St2ab](/St2ab-en.html)||yes|||ST2AB.S|
@@ -46,4 +46,4 @@ In the UVK book, Richard wrote...
 ## See the virus in action!
 
 {% from '/html/macros/emulator.html' import emulator %}
-{{ emulator("St2ab", False) }}
+{{ emulator("st2ab", False) }}

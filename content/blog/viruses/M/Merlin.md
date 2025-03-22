@@ -1,14 +1,14 @@
 Title: Merlin
-Slug: Merlin
+Slug: merlin
 Name: Merlin virus
-Date: 2025-03-17 17:30
+Date: 2025-03-22 18:01
 Location: Montreal / Canada
 Category: Atari ST, Virus
 Lang: en
 Author: shazz
 status: hidden
 summary: This article is about the Merlin virus...
-image: {filename}../../../gallery/viruses/Merlin.png
+image: {filename}../../../gallery/viruses/merlin.png
 Source: no
 UVK: 
 OtherName: |60|[Merlin](/Merlin-en.html)|Merlin’s Mad Virus|yes|60||MERLIN.S|
@@ -46,4 +46,4 @@ In the UVK book, Richard wrote...
 ## See the virus in action!
 
 {% from '/html/macros/emulator.html' import emulator %}
-{{ emulator("Merlin", False) }}
+{{ emulator("merlin", False) }}

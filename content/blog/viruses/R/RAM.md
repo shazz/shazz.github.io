@@ -1,14 +1,14 @@
 Title: RAM
-Slug: RAM
+Slug: ram
 Name: RAM virus
-Date: 2025-03-17 17:30
+Date: 2025-03-22 18:01
 Location: Montreal / Canada
 Category: Atari ST, Virus
 Lang: en
 Author: shazz
 status: hidden
 summary: This article is about the RAM virus...
-image: {filename}../../../gallery/viruses/RAM.png
+image: {filename}../../../gallery/viruses/ram.png
 Source: no
 UVK: 
 OtherName: |28|[RAM](/RAM-en.html)|Exception virus|yes|23||EXEP_VIR.S|
@@ -46,4 +46,4 @@ In the UVK book, Richard wrote...
 ## See the virus in action!
 
 {% from '/html/macros/emulator.html' import emulator %}
-{{ emulator("RAM", False) }}
+{{ emulator("ram", False) }}

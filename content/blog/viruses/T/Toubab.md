@@ -1,14 +1,14 @@
 Title: Toubab
-Slug: Toubab
+Slug: toubab
 Name: Toubab virus
-Date: 2025-03-17 17:30
+Date: 2025-03-22 18:01
 Location: Montreal / Canada
 Category: Atari ST, Virus
 Lang: en
 Author: shazz
 status: hidden
 summary: This article is about the Toubab virus...
-image: {filename}../../../gallery/viruses/Toubab.png
+image: {filename}../../../gallery/viruses/toubab.png
 Source: no
 UVK: 
 OtherName: |80|[Toubab](/Toubab-en.html)|Finland Virus|yes|55||TOUBAB.S|
@@ -51,4 +51,4 @@ In the UVK book, Richard wrote...
 ## See the virus in action!
 
 {% from '/html/macros/emulator.html' import emulator %}
-{{ emulator("Toubab", False) }}
+{{ emulator("toubab", False) }}

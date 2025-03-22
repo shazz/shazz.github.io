@@ -1,14 +1,14 @@
 Title: Vdu
-Slug: VDU
+Slug: vdu
 Name: Vdu virus
-Date: 2025-03-17 17:30
+Date: 2025-03-22 18:01
 Location: Montreal / Canada
 Category: Atari ST, Virus
 Lang: en
 Author: shazz
 status: hidden
 summary: This article is about the Vdu virus...
-image: {filename}../../../gallery/viruses/VDU.png
+image: {filename}../../../gallery/viruses/vdu.png
 Source: no
 UVK: 
 OtherName: |87|[Vdu](/VDU-en.html)|N/A|yes|||VDU.S|
@@ -46,4 +46,4 @@ In the UVK book, Richard wrote...
 ## See the virus in action!
 
 {% from '/html/macros/emulator.html' import emulator %}
-{{ emulator("VDU", False) }}
+{{ emulator("vdu", False) }}

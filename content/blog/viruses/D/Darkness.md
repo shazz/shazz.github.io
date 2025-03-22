@@ -1,14 +1,14 @@
 Title: Darkness
-Slug: Darkness
+Slug: darkness
 Name: Darkness virus
-Date: 2025-03-17 17:30
+Date: 2025-03-22 18:01
 Location: Montreal / Canada
 Category: Atari ST, Virus
 Lang: en
 Author: shazz
 status: hidden
 summary: This article is about the Darkness virus...
-image: {filename}../../../gallery/viruses/Darkness.png
+image: {filename}../../../gallery/viruses/darkness.png
 Source: no
 UVK: 
 OtherName: |22|[Darkness](/Darkness-en.html)|Darkness Virus (Nightmare of Brooklyn #2 Darkness)|yes|73||DARKNESS.S|
@@ -46,4 +46,4 @@ In the UVK book, Richard wrote...
 ## See the virus in action!
 
 {% from '/html/macros/emulator.html' import emulator %}
-{{ emulator("Darkness", False) }}
+{{ emulator("darkness", False) }}

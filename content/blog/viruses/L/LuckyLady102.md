@@ -1,14 +1,14 @@
 Title: Lucky Lady 1.02
-Slug: LuckyLady102
+Slug: luckylady102
 Name: Lucky Lady 1.02 virus
-Date: 2025-03-17 17:30
+Date: 2025-03-22 18:01
 Location: Montreal / Canada
 Category: Atari ST, Virus
 Lang: en
 Author: shazz
 status: hidden
 summary: This article is about the Lucky Lady 1.02 virus...
-image: {filename}../../../gallery/viruses/LuckyLady102.png
+image: {filename}../../../gallery/viruses/luckylady102.png
 Source: no
 UVK: 
 OtherName: |47|[Lucky Lady 1.02](/LuckyLady102-en.html)|Lucky Lady 1.02 Virus|yes|77||LUCKY102.S|
@@ -46,4 +46,4 @@ In the UVK book, Richard wrote...
 ## See the virus in action!
 
 {% from '/html/macros/emulator.html' import emulator %}
-{{ emulator("LuckyLady102", False) }}
+{{ emulator("luckylady102", False) }}

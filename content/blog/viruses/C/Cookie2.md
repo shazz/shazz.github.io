@@ -1,14 +1,14 @@
 Title: Cookie 2
-Slug: Cookie2
+Slug: cookie2
 Name: Cookie 2 virus
-Date: 2025-03-17 17:30
+Date: 2025-03-22 18:01
 Location: Montreal / Canada
 Category: Atari ST, Virus
 Lang: en
 Author: shazz
 status: hidden
 summary: This article is about the Cookie 2 virus...
-image: {filename}../../../gallery/viruses/Cookie2.png
+image: {filename}../../../gallery/viruses/cookie2.png
 Source: no
 UVK: 
 OtherName: |20|[Cookie 2](/Cookie2-en.html)|Cookie Monster 2 Virus|yes|33||COOKIE2.S|
@@ -46,4 +46,4 @@ In the UVK book, Richard wrote...
 ## See the virus in action!
 
 {% from '/html/macros/emulator.html' import emulator %}
-{{ emulator("Cookie2", False) }}
+{{ emulator("cookie2", False) }}

@@ -1,14 +1,14 @@
 Title: Oli 2
-Slug: Oli2
+Slug: oli2
 Name: Oli 2 virus
-Date: 2025-03-17 17:30
+Date: 2025-03-22 18:01
 Location: Montreal / Canada
 Category: Atari ST, Virus
 Lang: en
 Author: shazz
 status: hidden
 summary: This article is about the Oli 2 virus...
-image: {filename}../../../gallery/viruses/Oli2.png
+image: {filename}../../../gallery/viruses/oli2.png
 Source: no
 UVK: 
 OtherName: |65|[Oli 2](/Oli2-en.html)|N/A|yes|||OLI2.S|
@@ -48,4 +48,4 @@ The following symptoms may happen: aftter 20 generations of the virus, decreased
 ## See the virus in action!
 
 {% from '/html/macros/emulator.html' import emulator %}
-{{ emulator("Oli2", False) }}
+{{ emulator("oli2", False) }}

@@ -1,14 +1,14 @@
 Title: Trojan Horse 1
-Slug: TrojanHorse1
+Slug: trojanhorse1
 Name: Trojan Horse 1 virus
-Date: 2025-03-17 17:30
+Date: 2025-03-22 18:01
 Location: Montreal / Canada
 Category: Atari ST, Virus
 Lang: en
 Author: shazz
 status: hidden
 summary: This article is about the Trojan Horse 1 virus...
-image: {filename}../../../gallery/viruses/TrojanHorse1.png
+image: {filename}../../../gallery/viruses/trojanhorse1.png
 Source: no
 UVK: 
 OtherName: |82|[Trojan Horse 1](/TrojanHorse1-en.html)|N/A|yes|||TROJAN_HORSE1.S|
@@ -47,4 +47,4 @@ In the UVK book, Richard wrote...
 ## See the virus in action!
 
 {% from '/html/macros/emulator.html' import emulator %}
-{{ emulator("TrojanHorse1", False) }}
+{{ emulator("trojanhorse1", False) }}

@@ -1,14 +1,14 @@
 Title: Flying Chimp
-Slug: FlyingChimp
+Slug: flyingchimp
 Name: Flying Chimp virus
-Date: 2025-03-17 17:30
+Date: 2025-03-22 18:01
 Location: Montreal / Canada
 Category: Atari ST, Virus
 Lang: en
 Author: shazz
 status: hidden
 summary: This article is about the Flying Chimp virus...
-image: {filename}../../../gallery/viruses/FlyingChimp.png
+image: {filename}../../../gallery/viruses/flyingchimp.png
 Source: no
 UVK: 
 OtherName: |32|[Flying Chimp](/FlyingChimp-en.html)|Flying Chimp Virus|yes|47||FLYING_CHIMP.S|
@@ -46,4 +46,4 @@ In the UVK book, Richard wrote...
 ## See the virus in action!
 
 {% from '/html/macros/emulator.html' import emulator %}
-{{ emulator("FlyingChimp", False) }}
+{{ emulator("flyingchimp", False) }}

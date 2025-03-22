@@ -1,14 +1,14 @@
 Title: Monitor
-Slug: Monitor
+Slug: monitor
 Name: Monitor virus
-Date: 2025-03-17 17:30
+Date: 2025-03-22 18:01
 Location: Montreal / Canada
 Category: Atari ST, Virus
 Lang: en
 Author: shazz
 status: hidden
 summary: This article is about the Monitor virus...
-image: {filename}../../../gallery/viruses/Monitor.png
+image: {filename}../../../gallery/viruses/monitor.png
 Source: no
 UVK: 
 OtherName: |61|[Monitor](/Monitor-en.html)|Monitor|no|29||N/A|
@@ -46,4 +46,4 @@ In the UVK book, Richard wrote...
 ## See the virus in action!
 
 {% from '/html/macros/emulator.html' import emulator %}
-{{ emulator("Monitor", False) }}
+{{ emulator("monitor", False) }}

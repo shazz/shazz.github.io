@@ -1,14 +1,14 @@
 Title: Kobold2
-Slug: Kobold2
+Slug: kobold2
 Name: Kobold2 virus
-Date: 2025-03-17 17:30
+Date: 2025-03-22 18:01
 Location: Montreal / Canada
 Category: Atari ST, Virus
 Lang: en
 Author: shazz
 status: hidden
 summary: This article is about the Kobold2 virus...
-image: {filename}../../../gallery/viruses/Kobold2.png
+image: {filename}../../../gallery/viruses/kobold2.png
 Source: no
 UVK: 
 OtherName: |43|[Kobold2](/Kobold2-en.html)|Kobold #2 Virus|yes|16||KOBOLD2.S|
@@ -46,4 +46,4 @@ In the UVK book, Richard wrote...
 ## See the virus in action!
 
 {% from '/html/macros/emulator.html' import emulator %}
-{{ emulator("Kobold2", False) }}
+{{ emulator("kobold2", False) }}

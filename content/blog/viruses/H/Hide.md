@@ -1,14 +1,14 @@
 Title: Hide
-Slug: Hide
+Slug: hide
 Name: Hide virus
-Date: 2025-03-17 17:30
+Date: 2025-03-22 18:01
 Location: Montreal / Canada
 Category: Atari ST, Virus
 Lang: en
 Author: shazz
 status: hidden
 summary: This article is about the Hide virus...
-image: {filename}../../../gallery/viruses/Hide.png
+image: {filename}../../../gallery/viruses/hide.png
 Source: no
 UVK: 
 OtherName: |41|[Hide](/Hide-en.html)|Flash and Sound|yes|||HIDE.S|
@@ -46,4 +46,4 @@ In the UVK book, Richard wrote...
 ## See the virus in action!
 
 {% from '/html/macros/emulator.html' import emulator %}
-{{ emulator("Hide", False) }}
+{{ emulator("hide", False) }}

@@ -1,14 +1,14 @@
 Title: Dir Waster
-Slug: Dirwaster
+Slug: dirwaster
 Name: Dir Waster virus
-Date: 2025-03-17 17:30
+Date: 2025-03-22 18:01
 Location: Montreal / Canada
 Category: Atari ST, Virus
 Lang: en
 Author: shazz
 status: hidden
 summary: This article is about the Dir Waster virus...
-image: {filename}../../../gallery/viruses/Dirwaster.png
+image: {filename}../../../gallery/viruses/dirwaster.png
 Source: no
 UVK: 
 OtherName: |24|[Dir Waster](/Dirwaster-en.html)|Directory Waster Virus|yes|59||DIRWASTER.S|
@@ -46,4 +46,4 @@ In the UVK book, Richard wrote...
 ## See the virus in action!
 
 {% from '/html/macros/emulator.html' import emulator %}
-{{ emulator("Dirwaster", False) }}
+{{ emulator("dirwaster", False) }}

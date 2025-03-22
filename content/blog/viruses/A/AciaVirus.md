@@ -1,14 +1,14 @@
 Title: ACIA
-Slug: AciaVirus
+Slug: aciavirus
 Name: ACIA virus
-Date: 2025-03-17 17:30
+Date: 2025-03-22 18:01
 Location: Montreal / Canada
 Category: Atari ST, Virus
 Lang: en
 Author: shazz
 status: hidden
 summary: This article is about the ACIA virus...
-image: {filename}../../../gallery/viruses/AciaVirus.png
+image: {filename}../../../gallery/viruses/aciavirus.png
 Source: no
 UVK: 
 OtherName: |3|[ACIA](/AciaVirus-en.html)|Temporary Madness Virus|yes|72||ACIA.S|
@@ -52,4 +52,4 @@ How to trigger the symptoms?
 ## See the virus in action!
 
 {% from '/html/macros/emulator.html' import emulator %}
-{{ emulator("AciaVirus", False) }}
+{{ emulator("aciavirus", False) }}

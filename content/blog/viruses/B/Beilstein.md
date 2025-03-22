@@ -1,14 +1,14 @@
 Title: Beilsten
-Slug: Beilstein
+Slug: beilstein
 Name: Beilsten virus
-Date: 2025-03-17 17:30
+Date: 2025-03-22 18:01
 Location: Montreal / Canada
 Category: Atari ST, Virus
 Lang: en
 Author: shazz
 status: hidden
 summary: This article is about the Beilsten virus...
-image: {filename}../../../gallery/viruses/Beilstein.png
+image: {filename}../../../gallery/viruses/beilstein.png
 Source: no
 UVK: 
 OtherName: |14|[Beilsten](/Beilstein-en.html)|Beilstein Virus|yes|71||BEILSTEN.S|
@@ -46,4 +46,4 @@ In the UVK book, Richard wrote...
 ## See the virus in action!
 
 {% from '/html/macros/emulator.html' import emulator %}
-{{ emulator("Beilstein", False) }}
+{{ emulator("beilstein", False) }}

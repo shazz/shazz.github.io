@@ -1,14 +1,14 @@
 Title: UVD
-Slug: UVD
+Slug: uvd
 Name: UVD virus
-Date: 2025-03-17 17:30
+Date: 2025-03-22 18:01
 Location: Montreal / Canada
 Category: Atari ST, Virus
 Lang: en
 Author: shazz
 status: hidden
 summary: This article is about the UVD virus...
-image: {filename}../../../gallery/viruses/UVD.png
+image: {filename}../../../gallery/viruses/uvd.png
 Source: no
 UVK: 
 OtherName: |85|[UVD](/UVD-en.html)|UVD Virus|yes|84||UVD1.S|
@@ -46,4 +46,4 @@ In the UVK book, Richard wrote...
 ## See the virus in action!
 
 {% from '/html/macros/emulator.html' import emulator %}
-{{ emulator("UVD", False) }}
+{{ emulator("uvd", False) }}

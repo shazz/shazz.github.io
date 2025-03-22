@@ -1,14 +1,14 @@
 Title: Lietuva
-Slug: Lietuva
+Slug: lietuva
 Name: Lietuva virus
-Date: 2025-03-17 17:30
+Date: 2025-03-22 18:01
 Location: Montreal / Canada
 Category: Atari ST, Virus
 Lang: en
 Author: shazz
 status: hidden
 summary: This article is about the Lietuva virus...
-image: {filename}../../../gallery/viruses/Lietuva.png
+image: {filename}../../../gallery/viruses/lietuva.png
 Source: no
 UVK: 
 OtherName: |46|[Lietuva](/Lietuva-en.html)|Lietuva Virus|yes|65||LIETUVA.S|
@@ -46,4 +46,4 @@ In the UVK book, Richard wrote...
 ## See the virus in action!
 
 {% from '/html/macros/emulator.html' import emulator %}
-{{ emulator("Lietuva", False) }}
+{{ emulator("lietuva", False) }}

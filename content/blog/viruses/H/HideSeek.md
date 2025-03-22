@@ -1,14 +1,14 @@
 Title: Hide Seek
-Slug: HideSeek
+Slug: hideseek
 Name: Hide Seek virus
-Date: 2025-03-17 17:30
+Date: 2025-03-22 18:01
 Location: Montreal / Canada
 Category: Atari ST, Virus
 Lang: en
 Author: shazz
 status: hidden
 summary: This article is about the Hide Seek virus...
-image: {filename}../../../gallery/viruses/HideSeek.png
+image: {filename}../../../gallery/viruses/hideseek.png
 Source: no
 UVK: 
 OtherName: |42|[Hide Seek](/HideSeek-en.html)|Angle of Death|yes|||HIDE_SEEK.S|
@@ -46,4 +46,4 @@ In the UVK book, Richard wrote...
 ## See the virus in action!
 
 {% from '/html/macros/emulator.html' import emulator %}
-{{ emulator("HideSeek", False) }}
+{{ emulator("hideseek", False) }}

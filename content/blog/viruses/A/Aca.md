@@ -1,14 +1,14 @@
 Title: ACA
-Slug: Aca
+Slug: aca
 Name: ACA virus
-Date: 2025-03-17 17:30
+Date: 2025-03-22 18:01
 Location: Montreal / Canada
 Category: Atari ST, Virus
 Lang: en
 Author: shazz
 status: hidden
 summary: This article is about the ACA virus...
-image: {filename}../../../gallery/viruses/Aca.png
+image: {filename}../../../gallery/viruses/aca.png
 Source: no
 UVK: 
 OtherName: |1|[ACA](/Aca-en.html)|ACA Virus|yes|4||ACA.S|
@@ -50,4 +50,4 @@ The following symptoms may happen: When the counter will reach zero (starting at
 ## See the virus in action!
 
 {% from '/html/macros/emulator.html' import emulator %}
-{{ emulator("Aca", False) }}
+{{ emulator("aca", False) }}

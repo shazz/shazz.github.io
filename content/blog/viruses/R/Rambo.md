@@ -1,14 +1,14 @@
 Title: Rambo
-Slug: Rambo
+Slug: rambo
 Name: Rambo virus
-Date: 2025-03-17 17:30
+Date: 2025-03-22 18:01
 Location: Montreal / Canada
 Category: Atari ST, Virus
 Lang: en
 Author: shazz
 status: hidden
 summary: This article is about the Rambo virus...
-image: {filename}../../../gallery/viruses/Rambo.png
+image: {filename}../../../gallery/viruses/rambo.png
 Source: no
 UVK: 
 OtherName: |70|[Rambo](/Rambo-en.html)|Arnold/Rambo Virus|yes|28||RAMBO.S|
@@ -46,4 +46,4 @@ In the UVK book, Richard wrote...
 ## See the virus in action!
 
 {% from '/html/macros/emulator.html' import emulator %}
-{{ emulator("Rambo", False) }}
+{{ emulator("rambo", False) }}

@@ -1,14 +1,14 @@
 Title: Ghost
-Slug: Ghost
+Slug: ghost
 Name: Ghost virus
-Date: 2025-03-17 17:30
+Date: 2025-03-22 18:01
 Location: Montreal / Canada
 Category: Atari ST, Virus
 Lang: en
 Author: shazz
 status: hidden
 summary: This article is about the Ghost virus...
-image: {filename}../../../gallery/viruses/Ghost.png
+image: {filename}../../../gallery/viruses/ghost.png
 Source: no
 UVK: 
 OtherName: |35|[Ghost](/Ghost-en.html)|Ghost Virus|yes|12||GHOST.S|
@@ -46,4 +46,4 @@ In the UVK book, Richard wrote...
 ## See the virus in action!
 
 {% from '/html/macros/emulator.html' import emulator %}
-{{ emulator("Ghost", False) }}
+{{ emulator("ghost", False) }}

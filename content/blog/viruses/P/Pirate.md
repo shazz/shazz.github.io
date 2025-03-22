@@ -1,14 +1,14 @@
 Title: Pirate
-Slug: Pirate
+Slug: pirate
 Name: Pirate virus
-Date: 2025-03-17 17:30
+Date: 2025-03-22 18:01
 Location: Montreal / Canada
 Category: Atari ST, Virus
 Lang: en
 Author: shazz
 status: hidden
 summary: This article is about the Pirate virus...
-image: {filename}../../../gallery/viruses/Pirate.png
+image: {filename}../../../gallery/viruses/pirate.png
 Source: no
 UVK: 
 OtherName: |67|[Pirate](/Pirate-en.html)|P.M.S. Virus|yes|26||PIRATE.S|
@@ -46,4 +46,4 @@ In the UVK book, Richard wrote...
 ## See the virus in action!
 
 {% from '/html/macros/emulator.html' import emulator %}
-{{ emulator("Pirate", False) }}
+{{ emulator("pirate", False) }}

@@ -1,14 +1,14 @@
 Title: Grim Reaper
-Slug: GrimReaper
+Slug: grimreaper
 Name: Grim Reaper virus
-Date: 2025-03-17 17:30
+Date: 2025-03-22 18:01
 Location: Montreal / Canada
 Category: Atari ST, Virus
 Lang: en
 Author: shazz
 status: hidden
 summary: This article is about the Grim Reaper virus...
-image: {filename}../../../gallery/viruses/GrimReaper.png
+image: {filename}../../../gallery/viruses/grimreaper.png
 Source: no
 UVK: 
 OtherName: |39|[Grim Reaper](/GrimReaper-en.html)|Grim Reaper Virus|yes|42||GRIM_REAPER.S|
@@ -46,4 +46,4 @@ In the UVK book, Richard wrote...
 ## See the virus in action!
 
 {% from '/html/macros/emulator.html' import emulator %}
-{{ emulator("GrimReaper", False) }}
+{{ emulator("grimreaper", False) }}

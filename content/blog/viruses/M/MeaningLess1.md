@@ -1,14 +1,14 @@
 Title: Meaning Less
-Slug: MeaningLess1
+Slug: meaningless1
 Name: Meaning Less virus
-Date: 2025-03-17 17:30
+Date: 2025-03-22 18:01
 Location: Montreal / Canada
 Category: Atari ST, Virus
 Lang: en
 Author: shazz
 status: hidden
 summary: This article is about the Meaning Less virus...
-image: {filename}../../../gallery/viruses/MeaningLess1.png
+image: {filename}../../../gallery/viruses/meaningless1.png
 Source: no
 UVK: 
 OtherName: |56|[Meaning Less](/MeaningLess1-en.html)|N/A|yes|||MEANING1.S|
@@ -46,4 +46,4 @@ In the UVK book, Richard wrote...
 ## See the virus in action!
 
 {% from '/html/macros/emulator.html' import emulator %}
-{{ emulator("MeaningLess1", False) }}
+{{ emulator("meaningless1", False) }}

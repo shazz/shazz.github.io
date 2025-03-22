@@ -1,14 +1,14 @@
 Title: Lab
-Slug: Lab
+Slug: lab
 Name: Lab virus
-Date: 2025-03-17 17:30
+Date: 2025-03-22 18:01
 Location: Montreal / Canada
 Category: Atari ST, Virus
 Lang: en
 Author: shazz
 status: hidden
 summary: This article is about the Lab virus...
-image: {filename}../../../gallery/viruses/Lab.png
+image: {filename}../../../gallery/viruses/lab.png
 Source: no
 UVK: 
 OtherName: |44|[Lab](/Lab-en.html)|Lab-Virus|yes|10||LAB.S|
@@ -42,4 +42,4 @@ The following symptoms may happen: after 10 calls to Getbpb() it will fill the s
 ## See the virus in action!
 
 {% from '/html/macros/emulator.html' import emulator %}
-{{ emulator("Lab", False) }}
+{{ emulator("lab", False) }}

@@ -1,14 +1,14 @@
 Title: Chopin
-Slug: Chopin
+Slug: chopin
 Name: Chopin virus
-Date: 2025-03-17 17:30
+Date: 2025-03-22 18:01
 Location: Montreal / Canada
 Category: Atari ST, Virus
 Lang: en
 Author: shazz
 status: hidden
 summary: This article is about the Chopin virus...
-image: {filename}../../../gallery/viruses/Chopin.png
+image: {filename}../../../gallery/viruses/chopin.png
 Source: no
 UVK: 
 OtherName: |18|[Chopin](/Chopin-en.html)|Chopin Virus|yes|31||CHOPIN.S|
@@ -46,4 +46,4 @@ In the UVK book, Richard wrote...
 ## See the virus in action!
 
 {% from '/html/macros/emulator.html' import emulator %}
-{{ emulator("Chopin", False) }}
+{{ emulator("chopin", False) }}

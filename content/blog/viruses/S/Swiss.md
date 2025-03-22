@@ -1,14 +1,14 @@
 Title: Swiss
-Slug: Swiss
+Slug: swiss
 Name: Swiss virus
-Date: 2025-03-17 17:30
+Date: 2025-03-22 18:01
 Location: Montreal / Canada
 Category: Atari ST, Virus
 Lang: en
 Author: shazz
 status: hidden
 summary: This article is about the Swiss virus...
-image: {filename}../../../gallery/viruses/Swiss.png
+image: {filename}../../../gallery/viruses/swiss.png
 Source: no
 UVK: 
 OtherName: |77|[Swiss](/Swiss-en.html)|Fat Virus, Sziss Virus, Blot Virus|yes|11||SWISS.S|
@@ -46,4 +46,4 @@ In the UVK book, Richard wrote...
 ## See the virus in action!
 
 {% from '/html/macros/emulator.html' import emulator %}
-{{ emulator("Swiss", False) }}
+{{ emulator("swiss", False) }}

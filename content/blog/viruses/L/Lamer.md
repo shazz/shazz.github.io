@@ -1,14 +1,14 @@
 Title: Lamer
-Slug: Lamer
+Slug: lamer
 Name: Lamer virus
-Date: 2025-03-17 17:30
+Date: 2025-03-22 18:01
 Location: Montreal / Canada
 Category: Atari ST, Virus
 Lang: en
 Author: shazz
 status: hidden
 summary: This article is about the Lamer virus...
-image: {filename}../../../gallery/viruses/Lamer.png
+image: {filename}../../../gallery/viruses/lamer.png
 Source: no
 UVK: 
 OtherName: |45|[Lamer](/Lamer-en.html)|N/A|yes|||LAMER.S|
@@ -46,4 +46,4 @@ In the UVK book, Richard wrote...
 ## See the virus in action!
 
 {% from '/html/macros/emulator.html' import emulator %}
-{{ emulator("Lamer", False) }}
+{{ emulator("lamer", False) }}

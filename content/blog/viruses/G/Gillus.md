@@ -1,14 +1,14 @@
 Title: Gillus
-Slug: Gillus
+Slug: gillus
 Name: Gillus virus
-Date: 2025-03-17 17:30
+Date: 2025-03-22 18:01
 Location: Montreal / Canada
 Category: Atari ST, Virus
 Lang: en
 Author: shazz
 status: hidden
 summary: This article is about the Gillus virus...
-image: {filename}../../../gallery/viruses/Gillus.png
+image: {filename}../../../gallery/viruses/gillus.png
 Source: no
 UVK: 
 OtherName: |36|[Gillus](/Gillus-en.html)|Vaccin-Gillus Virus|yes|89||GILLUS.S|
@@ -46,4 +46,4 @@ In the UVK book, Richard wrote...
 ## See the virus in action!
 
 {% from '/html/macros/emulator.html' import emulator %}
-{{ emulator("Gillus", False) }}
+{{ emulator("gillus", False) }}

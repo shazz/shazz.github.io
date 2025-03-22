@@ -1,14 +1,14 @@
 Title: Trojan Horse 2
-Slug: TrojanHorse2
+Slug: trojanhorse2
 Name: Trojan Horse 2 virus
-Date: 2025-03-17 17:30
+Date: 2025-03-22 18:01
 Location: Montreal / Canada
 Category: Atari ST, Virus
 Lang: en
 Author: shazz
 status: hidden
 summary: This article is about the Trojan Horse 2 virus...
-image: {filename}../../../gallery/viruses/TrojanHorse2.png
+image: {filename}../../../gallery/viruses/trojanhorse2.png
 Source: no
 UVK: 
 OtherName: |83|[Trojan Horse 2](/TrojanHorse2-en.html)|N/A|yes|||TROJAN_HORSE2.S|
@@ -47,4 +47,4 @@ In the UVK book, Richard wrote...
 ## See the virus in action!
 
 {% from '/html/macros/emulator.html' import emulator %}
-{{ emulator("TrojanHorse2", False) }}
+{{ emulator("trojanhorse2", False) }}

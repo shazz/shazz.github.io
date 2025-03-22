@@ -1,14 +1,14 @@
 Title: Puke A
-Slug: PukeA
+Slug: pukea
 Name: Puke A virus
-Date: 2025-03-17 17:30
+Date: 2025-03-22 18:01
 Location: Montreal / Canada
 Category: Atari ST, Virus
 Lang: en
 Author: shazz
 status: hidden
 summary: This article is about the Puke A virus...
-image: {filename}../../../gallery/viruses/PukeA.png
+image: {filename}../../../gallery/viruses/pukea.png
 Source: no
 UVK: 
 OtherName: |68|[Puke A](/PukeA-en.html)|Puke A Virus|yes|34||PUKE1.S|
@@ -46,4 +46,4 @@ In the UVK book, Richard wrote...
 ## See the virus in action!
 
 {% from '/html/macros/emulator.html' import emulator %}
-{{ emulator("PukeA", False) }}
+{{ emulator("pukea", False) }}

@@ -1,14 +1,14 @@
 Title: Dent
-Slug: Dent
+Slug: dent
 Name: Dent virus
-Date: 2025-03-17 17:30
+Date: 2025-03-22 18:01
 Location: Montreal / Canada
 Category: Atari ST, Virus
 Lang: en
 Author: shazz
 status: hidden
 summary: This article is about the Dent virus...
-image: {filename}../../../gallery/viruses/Dent.png
+image: {filename}../../../gallery/viruses/dent.png
 Source: no
 UVK: 
 OtherName: |23|[Dent](/Dent-en.html)|Reset Virus|yes|48||DENT.S|
@@ -46,4 +46,4 @@ In the UVK book, Richard wrote...
 ## See the virus in action!
 
 {% from '/html/macros/emulator.html' import emulator %}
-{{ emulator("Dent", False) }}
+{{ emulator("dent", False) }}

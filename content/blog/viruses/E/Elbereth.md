@@ -1,14 +1,14 @@
 Title: Elbereth
-Slug: Elbereth
+Slug: elbereth
 Name: Elbereth virus
-Date: 2025-03-17 17:30
+Date: 2025-03-22 18:01
 Location: Montreal / Canada
 Category: Atari ST, Virus
 Lang: en
 Author: shazz
 status: hidden
 summary: This article is about the Elbereth virus...
-image: {filename}../../../gallery/viruses/Elbereth.png
+image: {filename}../../../gallery/viruses/elbereth.png
 Source: no
 UVK: 
 OtherName: |26|[Elbereth](/Elbereth-en.html)|DNA Menace, Menace virus|yes|63||MENACE.S|
@@ -48,4 +48,4 @@ The following symptoms may happen: after 10 replications, it will fill the 64 se
 ## See the virus in action!
 
 {% from '/html/macros/emulator.html' import emulator %}
-{{ emulator("Elbereth", False) }}
+{{ emulator("elbereth", False) }}

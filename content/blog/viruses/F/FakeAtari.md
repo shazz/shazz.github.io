@@ -1,14 +1,14 @@
 Title: Fake Atari
-Slug: FakeAtari
+Slug: fakeatari
 Name: Fake Atari virus
-Date: 2025-03-17 17:30
+Date: 2025-03-22 18:01
 Location: Montreal / Canada
 Category: Atari ST, Virus
 Lang: en
 Author: shazz
 status: hidden
 summary: This article is about the Fake Atari virus...
-image: {filename}../../../gallery/viruses/FakeAtari.png
+image: {filename}../../../gallery/viruses/fakeatari.png
 Source: no
 UVK: 
 OtherName: |29|[Fake Atari](/FakeAtari-en.html)|Joe Virus|yes|58||FAKE_ATARI.S|
@@ -46,4 +46,4 @@ The following symptoms may happen:
 ## See the virus in action!
 
 {% from '/html/macros/emulator.html' import emulator %}
-{{ emulator("FakeAtari", False) }}
+{{ emulator("fakeatari", False) }}

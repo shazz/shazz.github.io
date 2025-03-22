@@ -1,14 +1,14 @@
 Title: Gotcha
-Slug: Gotcha
+Slug: gotcha
 Name: Gotcha virus
-Date: 2025-03-17 17:30
+Date: 2025-03-22 18:01
 Location: Montreal / Canada
 Category: Atari ST, Virus
 Lang: en
 Author: shazz
 status: hidden
 summary: This article is about the Gotcha virus...
-image: {filename}../../../gallery/viruses/Gotcha.png
+image: {filename}../../../gallery/viruses/gotcha.png
 Source: no
 UVK: 
 OtherName: |38|[Gotcha](/Gotcha-en.html)|Gotcha Xeno Virus|yes|83||GOTCHA.S|
@@ -46,4 +46,4 @@ In the UVK book, Richard wrote...
 ## See the virus in action!
 
 {% from '/html/macros/emulator.html' import emulator %}
-{{ emulator("Gotcha", False) }}
+{{ emulator("gotcha", False) }}

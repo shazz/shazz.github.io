@@ -1,14 +1,14 @@
 Title: Sectorone Trasher
-Slug: SectorOneTrasher
+Slug: sectoronetrasher
 Name: Sectorone Trasher virus
-Date: 2025-03-17 17:30
+Date: 2025-03-22 18:01
 Location: Montreal / Canada
 Category: Atari ST, Virus
 Lang: en
 Author: shazz
 status: hidden
 summary: This article is about the Sectorone Trasher virus...
-image: {filename}../../../gallery/viruses/SectorOneTrasher.png
+image: {filename}../../../gallery/viruses/sectoronetrasher.png
 Source: no
 UVK: 
 OtherName: |72|[Sectorone Trasher](/SectorOneTrasher-en.html)|5th Generation virus|yes|13||SECTORONE.S|
@@ -52,4 +52,4 @@ The following symptoms may happen: Each time it replicates on a non-executable b
 ## See the virus in action!
 
 {% from '/html/macros/emulator.html' import emulator %}
-{{ emulator("SectorOneTrasher", False) }}
+{{ emulator("sectoronetrasher", False) }}

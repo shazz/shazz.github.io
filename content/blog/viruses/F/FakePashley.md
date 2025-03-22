@@ -1,14 +1,14 @@
 Title: Fake pashley
-Slug: FakePashley
+Slug: fakepashley
 Name: Fake pashley virus
-Date: 2025-03-17 17:30
+Date: 2025-03-22 18:01
 Location: Montreal / Canada
 Category: Atari ST, Virus
 Lang: en
 Author: shazz
 status: hidden
 summary: This article is about the Fake pashley virus...
-image: {filename}../../../gallery/viruses/FakePashley.png
+image: {filename}../../../gallery/viruses/fakepashley.png
 Source: no
 UVK: 
 OtherName: |30|[Fake pashley](/FakePashley-en.html)|Pashley Virus|yes|82||FAKE_PASHLEY.S|
@@ -46,4 +46,4 @@ In the UVK book, Richard wrote...
 ## See the virus in action!
 
 {% from '/html/macros/emulator.html' import emulator %}
-{{ emulator("FakePashley", False) }}
+{{ emulator("fakepashley", False) }}

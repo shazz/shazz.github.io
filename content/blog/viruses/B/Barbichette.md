@@ -1,14 +1,14 @@
 Title: Barbichette
-Slug: Barbichette
+Slug: barbichette
 Name: Barbichette virus
-Date: 2025-03-17 17:30
+Date: 2025-03-22 18:01
 Location: Montreal / Canada
 Category: Atari ST, Virus
 Lang: en
 Author: shazz
 status: hidden
 summary: This article is about the Barbichette virus...
-image: {filename}../../../gallery/viruses/Barbichette.png
+image: {filename}../../../gallery/viruses/barbichette.png
 Source: no
 UVK: 
 OtherName: |12|[Barbichette](/Barbichette-en.html)|No Virus virus|yes|||NOVIRUS.S|
@@ -48,4 +48,4 @@ In the UVK book, Richard wrote...
 ## See the virus in action!
 
 {% from '/html/macros/emulator.html' import emulator %}
-{{ emulator("Barbichette", False) }}
+{{ emulator("barbichette", False) }}

@@ -1,14 +1,14 @@
 Title: Signum
-Slug: Signum
+Slug: signum
 Name: Signum virus
-Date: 2025-03-17 17:30
+Date: 2025-03-22 18:01
 Location: Montreal / Canada
 Category: Atari ST, Virus
 Lang: en
 Author: shazz
 status: hidden
 summary: This article is about the Signum virus...
-image: {filename}../../../gallery/viruses/Signum.png
+image: {filename}../../../gallery/viruses/signum.png
 Source: no
 UVK: 
 OtherName: |74|[Signum](/Signum-en.html)|Signum/BPL Virus A|yes|1||SIGNUM.S|
@@ -46,4 +46,4 @@ In the UVK book, Richard wrote...
 ## See the virus in action!
 
 {% from '/html/macros/emulator.html' import emulator %}
-{{ emulator("Signum", False) }}
+{{ emulator("signum", False) }}

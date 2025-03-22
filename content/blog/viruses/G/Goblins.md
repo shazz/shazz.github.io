@@ -1,14 +1,14 @@
 Title: Goblins
-Slug: Goblins
+Slug: goblins
 Name: Goblins virus
-Date: 2025-03-17 17:30
+Date: 2025-03-22 18:01
 Location: Montreal / Canada
 Category: Atari ST, Virus
 Lang: en
 Author: shazz
 status: hidden
 summary: This article is about the Goblins virus...
-image: {filename}../../../gallery/viruses/Goblins.png
+image: {filename}../../../gallery/viruses/goblins.png
 Source: no
 UVK: 
 OtherName: |37|[Goblins](/Goblins-en.html)|Goblin Virus|yes|19||GOBLINS.S|
@@ -46,4 +46,4 @@ In the UVK book, Richard wrote...
 ## See the virus in action!
 
 {% from '/html/macros/emulator.html' import emulator %}
-{{ emulator("Goblins", False) }}
+{{ emulator("goblins", False) }}

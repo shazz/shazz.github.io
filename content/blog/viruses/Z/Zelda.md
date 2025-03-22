@@ -1,14 +1,14 @@
 Title: Zelda
-Slug: Zelda
+Slug: zelda
 Name: Zelda virus
-Date: 2025-03-17 17:30
+Date: 2025-03-22 18:01
 Location: Montreal / Canada
 Category: Atari ST, Virus
 Lang: en
 Author: shazz
 status: hidden
 summary: This article is about the Zelda virus...
-image: {filename}../../../gallery/viruses/Zelda.png
+image: {filename}../../../gallery/viruses/zelda.png
 Source: no
 UVK: 
 OtherName: |88|[Zelda](/Zelda-en.html)||no|||N/A|
@@ -46,4 +46,4 @@ In the UVK book, Richard wrote...
 ## See the virus in action!
 
 {% from '/html/macros/emulator.html' import emulator %}
-{{ emulator("Zelda", False) }}
+{{ emulator("zelda", False) }}

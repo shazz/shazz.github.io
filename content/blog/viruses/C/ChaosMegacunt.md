@@ -1,14 +1,14 @@
 Title: Chaos Megacunt
-Slug: ChaosMegacunt
+Slug: chaosmegacunt
 Name: Chaos Megacunt virus
-Date: 2025-03-17 17:30
+Date: 2025-03-22 18:01
 Location: Montreal / Canada
 Category: Atari ST, Virus
 Lang: en
 Author: shazz
 status: hidden
 summary: This article is about the Chaos Megacunt virus...
-image: {filename}../../../gallery/viruses/ChaosMegacunt.png
+image: {filename}../../../gallery/viruses/chaosmegacunt.png
 Source: no
 UVK: 
 OtherName: |17|[Chaos Megacunt](/ChaosMegacunt-en.html)|Megacunt V2.0 virus|yes|43||CHAOS_MEGACUNT.S|
@@ -51,4 +51,4 @@ The following symptoms may happen: after 20 getBPB() calls it will change every 
 ## See the virus in action!
 
 {% from '/html/macros/emulator.html' import emulator %}
-{{ emulator("ChaosMegacunt", False) }}
+{{ emulator("chaosmegacunt", False) }}

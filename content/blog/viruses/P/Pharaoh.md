@@ -1,14 +1,14 @@
 Title: Pharaoh
-Slug: Pharaoh
+Slug: pharaoh
 Name: Pharaoh virus
-Date: 2025-03-17 17:30
+Date: 2025-03-22 18:01
 Location: Montreal / Canada
 Category: Atari ST, Virus
 Lang: en
 Author: shazz
 status: hidden
 summary: This article is about the Pharaoh virus...
-image: {filename}../../../gallery/viruses/Pharaoh.png
+image: {filename}../../../gallery/viruses/pharaoh.png
 Source: no
 UVK: 
 OtherName: |66|[Pharaoh](/Pharaoh-en.html)|Pharaoh|yes|94||N/A|
@@ -46,4 +46,4 @@ In the UVK book, Richard wrote...
 ## See the virus in action!
 
 {% from '/html/macros/emulator.html' import emulator %}
-{{ emulator("Pharaoh", False) }}
+{{ emulator("pharaoh", False) }}

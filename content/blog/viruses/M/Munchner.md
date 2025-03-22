@@ -1,14 +1,14 @@
 Title: Munchner BHP
-Slug: Munchner
+Slug: munchner
 Name: Munchner BHP virus
-Date: 2025-03-17 17:30
+Date: 2025-03-22 18:01
 Location: Montreal / Canada
 Category: Atari ST, Virus
 Lang: en
 Author: shazz
 status: hidden
 summary: This article is about the Munchner BHP virus...
-image: {filename}../../../gallery/viruses/Munchner.png
+image: {filename}../../../gallery/viruses/munchner.png
 Source: no
 UVK: 
 OtherName: |62|[Munchner BHP](/Munchner-en.html)|Bayrische Hacker Post (BHP) Virus|yes|9||MUNCHNER.S|
@@ -46,4 +46,4 @@ In the UVK book, Richard wrote...
 ## See the virus in action!
 
 {% from '/html/macros/emulator.html' import emulator %}
-{{ emulator("Munchner", False) }}
+{{ emulator("munchner", False) }}

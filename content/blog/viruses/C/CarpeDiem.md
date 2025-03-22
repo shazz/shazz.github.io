@@ -1,14 +1,14 @@
 Title: Carpe Diem
-Slug: CarpeDiem
+Slug: carpediem
 Name: Carpe Diem virus
-Date: 2025-03-17 17:30
+Date: 2025-03-22 18:01
 Location: Montreal / Canada
 Category: Atari ST, Virus
 Lang: en
 Author: shazz
 status: hidden
 summary: This article is about the Carpe Diem virus...
-image: {filename}../../../gallery/viruses/CarpeDiem.png
+image: {filename}../../../gallery/viruses/carpediem.png
 Source: no
 UVK: 
 OtherName: |16|[Carpe Diem](/CarpeDiem-en.html)|Carpe Diem Virus|yes|95||CARPEDIEM.S|
@@ -46,4 +46,4 @@ In the UVK book, Richard wrote...
 ## See the virus in action!
 
 {% from '/html/macros/emulator.html' import emulator %}
-{{ emulator("CarpeDiem", False) }}
+{{ emulator("carpediem", False) }}

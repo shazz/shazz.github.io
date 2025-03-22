@@ -1,14 +1,14 @@
 Title: G data Fake
-Slug: G-Data
+Slug: g-data
 Name: G data Fake virus
-Date: 2025-03-17 17:30
+Date: 2025-03-22 18:01
 Location: Montreal / Canada
 Category: Atari ST, Virus
 Lang: en
 Author: shazz
 status: hidden
 summary: This article is about the G data Fake virus...
-image: {filename}../../../gallery/viruses/G-Data.png
+image: {filename}../../../gallery/viruses/g-data.png
 Source: no
 UVK: 
 OtherName: |40|[G data Fake](/G-Data-en.html)|G-DATA Virus|yes|38||G_DATA_FAKE.S|
@@ -53,4 +53,4 @@ The following symptoms may happen: Shows G-DATA like boot message "ANTI-VIREN KI
 ## See the virus in action!
 
 {% from '/html/macros/emulator.html' import emulator %}
-{{ emulator("G-Data", False) }}
+{{ emulator("g-data", False) }}

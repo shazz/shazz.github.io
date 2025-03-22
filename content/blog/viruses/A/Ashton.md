@@ -1,14 +1,14 @@
 Title: Ashton
-Slug: Ashton
+Slug: ashton
 Name: Ashton virus
-Date: 2025-03-17 17:30
+Date: 2025-03-22 18:01
 Location: Montreal / Canada
 Category: Atari ST, Virus
 Lang: en
 Author: shazz
 status: hidden
 summary: This article is about the Ashton virus...
-image: {filename}../../../gallery/viruses/Ashton.png
+image: {filename}../../../gallery/viruses/ashton.png
 Source: no
 UVK: 
 OtherName: |63|[Ashton](/Ashton-en.html)|Ashton Nirvana Virus|yes|64||ASHTON.S|
@@ -49,4 +49,4 @@ The following symptoms may happen: Mess with the floppy after 5 replications, an
 ## See the virus in action!
 
 {% from '/html/macros/emulator.html' import emulator %}
-{{ emulator("Ashton", False) }}
+{{ emulator("ashton", False) }}

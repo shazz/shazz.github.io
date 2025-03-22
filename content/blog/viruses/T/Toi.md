@@ -1,14 +1,14 @@
 Title: Toi
-Slug: Toi
+Slug: toi
 Name: Toi virus
-Date: 2025-03-17 17:30
+Date: 2025-03-22 18:01
 Location: Montreal / Canada
 Category: Atari ST, Virus
 Lang: en
 Author: shazz
 status: hidden
 summary: This article is about the Toi virus...
-image: {filename}../../../gallery/viruses/Toi.png
+image: {filename}../../../gallery/viruses/toi.png
 Source: no
 UVK: 
 OtherName: |79|[Toi](/Toi-en.html)|TOI Virus|yes|46||TOI.S|
@@ -46,4 +46,4 @@ In the UVK book, Richard wrote...
 ## See the virus in action!
 
 {% from '/html/macros/emulator.html' import emulator %}
-{{ emulator("Toi", False) }}
+{{ emulator("toi", False) }}

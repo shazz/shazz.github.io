@@ -1,14 +1,14 @@
 Title: Avenger 2
-Slug: Avenger2
+Slug: avenger2
 Name: Avenger 2 virus
-Date: 2025-03-17 17:30
+Date: 2025-03-22 18:01
 Location: Montreal / Canada
 Category: Atari ST, Virus
 Lang: en
 Author: shazz
 status: hidden
 summary: This article is about the Avenger 2 virus...
-image: {filename}../../../gallery/viruses/Avenger2.png
+image: {filename}../../../gallery/viruses/avenger2.png
 Source: no
 UVK: 
 OtherName: |6|[Avenger 2](/Avenger2-en.html)|N/A|yes|||AVENGER2.S|
@@ -48,4 +48,4 @@ In the UVK book, Richard wrote...
 ## See the virus in action!
 
 {% from '/html/macros/emulator.html' import emulator %}
-{{ emulator("Avenger2", False) }}
+{{ emulator("avenger2", False) }}

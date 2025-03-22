@@ -1,14 +1,14 @@
 Title: Night Force
-Slug: NightForceVirus
+Slug: nightforcevirus
 Name: Night Force virus
-Date: 2025-03-17 17:30
+Date: 2025-03-22 18:01
 Location: Montreal / Canada
 Category: Atari ST, Virus
 Lang: en
 Author: shazz
 status: hidden
 summary: This article is about the Night Force virus...
-image: {filename}../../../gallery/viruses/NightForceVirus.png
+image: {filename}../../../gallery/viruses/nightforcevirus.png
 Source: no
 UVK: 
 OtherName: |89|[Night Force](/NightForceVirus-en.html)|Zoch Virus|yes|68||ZOCH.S|
@@ -45,4 +45,4 @@ The following symptoms may happen:
 ## See the virus in action!
 
 {% from '/html/macros/emulator.html' import emulator %}
-{{ emulator("NightForceVirus", False) }}
+{{ emulator("nightforcevirus", False) }}

@@ -1,14 +1,14 @@
 Title: Bad taste code 2
-Slug: BadTasteCode2
+Slug: badtastecode2
 Name: Bad taste code 2 virus
-Date: 2025-03-17 17:30
+Date: 2025-03-22 18:01
 Location: Montreal / Canada
 Category: Atari ST, Virus
 Lang: en
 Author: shazz
 status: hidden
 summary: This article is about the Bad taste code 2 virus...
-image: {filename}../../../gallery/viruses/BadTasteCode2.png
+image: {filename}../../../gallery/viruses/badtastecode2.png
 Source: no
 UVK: 
 OtherName: |8|[Bad taste code 2](/BadTasteCode2-en.html)|N/A|yes|||BAD_TASTE_CODE2.S|
@@ -46,4 +46,4 @@ In the UVK book, Richard wrote...
 ## See the virus in action!
 
 {% from '/html/macros/emulator.html' import emulator %}
-{{ emulator("BadTasteCode2", False) }}
+{{ emulator("badtastecode2", False) }}

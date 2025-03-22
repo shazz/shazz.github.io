@@ -1,14 +1,14 @@
 Title: Bad taste code 1
-Slug: BadTasteCode1
+Slug: badtastecode1
 Name: Bad taste code 1 virus
-Date: 2025-03-17 17:30
+Date: 2025-03-22 18:01
 Location: Montreal / Canada
 Category: Atari ST, Virus
 Lang: en
 Author: shazz
 status: hidden
 summary: This article is about the Bad taste code 1 virus...
-image: {filename}../../../gallery/viruses/BadTasteCode1.png
+image: {filename}../../../gallery/viruses/badtastecode1.png
 Source: no
 UVK: 
 OtherName: |7|[Bad taste code 1](/BadTasteCode1-en.html)|N/A|yes|||BAD_TASTE_CODE1.S|
@@ -46,4 +46,4 @@ In the UVK book, Richard wrote...
 ## See the virus in action!
 
 {% from '/html/macros/emulator.html' import emulator %}
-{{ emulator("BadTasteCode1", False) }}
+{{ emulator("badtastecode1", False) }}

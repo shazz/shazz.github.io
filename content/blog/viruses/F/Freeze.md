@@ -1,14 +1,14 @@
 Title: Freeze
-Slug: Freeze
+Slug: freeze
 Name: Freeze virus
-Date: 2025-03-17 17:30
+Date: 2025-03-22 18:01
 Location: Montreal / Canada
 Category: Atari ST, Virus
 Lang: en
 Author: shazz
 status: hidden
 summary: This article is about the Freeze virus...
-image: {filename}../../../gallery/viruses/Freeze.png
+image: {filename}../../../gallery/viruses/freeze.png
 Source: no
 UVK: 
 OtherName: |33|[Freeze](/Freeze-en.html)|Freeze Virus|yes|5||FREEZE.S|
@@ -46,4 +46,4 @@ In the UVK book, Richard wrote...
 ## See the virus in action!
 
 {% from '/html/macros/emulator.html' import emulator %}
-{{ emulator("Freeze", False) }}
+{{ emulator("freeze", False) }}
