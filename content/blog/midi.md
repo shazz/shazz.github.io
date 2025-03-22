@@ -14,7 +14,7 @@ Tags: learning, technical details, midi
 It's hard to know is this article was a joke or not... Niagani Dekcus looks to be a fictional character and the author of the article you provided about MIDI viruses. The name appears to be a play on words, as "Niagani Dekcus" can be read as "I am a virus" when reversed. 
 This suggests that the character may be intended to represent a humorous or satirical take on the topic of computer viruses, particularly in the context of MIDI systems. The article itself is written in a style that combines technical information with a lighthearted tone.
 
-```
+<pre>
                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
                     ~             MIDI - VIRUSES           ~
                     ~ ATARI-ST        by          ATARI-ST ~
@@ -138,4 +138,5 @@ they shall supply further updates on this topic thank you.
 
                                N. Dekcus 1990.
       Niagain. Dekcus is a Proffessor of Elctronic Music at the U.C.L.A
-```
+
+</pre>

@@ -9,7 +9,7 @@ status: hidden
 Summary: Atari ST/STe/MSTe/TT/F030 Hardware Register Listing
 
 
-```
+<pre>
              .---------------------------------------------------.
              |Atari ST/STe/MSTe/TT/F030 Hardware Register Listing|
              `---------------------------------------------------'
@@ -1477,4 +1477,4 @@ MiNT   | MiNT
        | number of the MiNT kernel in hex (0x104 = 1.04)
 -------+----------------------------------------------------------------------
 
-```
+</pre>
