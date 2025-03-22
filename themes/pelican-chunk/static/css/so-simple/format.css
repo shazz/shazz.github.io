@@ -1,0 +1,54 @@
+/* =Post Formats
+-------------------------------------------------------------- */
+
+/* Aside */
+.format-aside .entry-title {
+    display: none;
+}
+
+.format-aside .entry-content p:first-child {
+    margin-top: 0;
+}
+
+/* Link */
+.format-link .entry-title:after {
+    content: "\2192";
+    font-size: 26px;
+    padding-left: 10px;
+    text-decoration: none;
+}
+
+/* Quote */
+.format-quote blockquote {
+    font-size: 16px;
+}
+
+.format-quote blockquote p:last-child {
+    margin-bottom: 0;
+}
+
+/* Chat */
+.format-chat .entry-title {
+    display: none;
+}
+
+.format-chat .entry-content p {
+    margin: 0.5em 0;
+}
+
+.format-chat .entry-content p:nth-child(odd) {
+    font-weight: bold;
+}
+
+
+.attachment .hentry .entry-meta .navigation {
+    margin: 10px 0 0;
+}
+
+.attachment .navigation img {
+    border: 5px solid #ddd;
+}
+
+.attachment .navigation a:hover img {
+    border-color: #000;
+}

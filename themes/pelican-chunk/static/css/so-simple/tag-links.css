@@ -1,0 +1,26 @@
+.tag-links {
+    display: inline-block;
+    text-align: left;
+    margin-left: -150px;
+    padding-left: 0px;
+    font-size: 12px;
+}
+
+.tag-links a {
+    text-decoration: none;
+}
+
+.tag-links :hover {
+    text-decoration: underline;
+}
+
+.tag-links strong {
+    text-align: left;
+    background: #eee;
+    border-radius: 3px;
+    color: #666;
+    font-weight: normal;
+    font-size: 12px;
+    margin-right: 4px;
+    padding: 3px 6px;
+}

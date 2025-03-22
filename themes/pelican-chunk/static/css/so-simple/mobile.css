@@ -1,0 +1,111 @@
+/* ********************** ONLY MOBILE ********************** */
+
+@media (max-width: 61.1875rem)
+/* up to 979px */
+    {
+
+    body {
+        --_menu-h: 4.4rem;
+    }
+
+    #menu {
+        height: var(--_menu-h);
+    }
+
+    :root #floppy {
+        transform: translate(0, -30%);
+        left: calc(var(--_content-space-x));
+    }
+
+    .post {
+        display: block;
+    }
+
+    .hentry .entry-meta {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        box-sizing: border-box;
+        background-color: var(--_body-bg);
+        padding-inline: var(--_content-space-x);
+        justify-content: flex-start;
+        text-align: left;
+        gap: 0 2rem;
+        top: calc(var(--_menu-h) - 1px);
+        border-bottom: 1px solid #ddd;
+        padding-block: 1.2rem;
+    }
+
+    .hentry .entry-meta .date {
+        width: 100%;
+    }
+
+    .post .main {
+        border-left: none;
+    }
+
+
+}
+
+/* ********************** ONLY MOBILE ********************** */
+
+@media (max-width: 47.9375rem)
+/* up to 767px */
+    {
+
+    body {
+        --_disc-w: 25vw;
+        --_menu-h: 4rem;
+    }
+
+    iframe {
+        width: 100%;
+        height: auto;
+    }
+
+    :root #floppy {
+        transform: translate(0, -90%);
+    }
+
+    #menu {
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        padding-inline: 20px;
+        width: 100vw;
+        overflow: auto;
+        overflow-x: scroll;
+        margin-bottom: 0;
+        padding-block: 0;
+    }
+
+    #menu a {
+        display: block;
+        padding: 0.7em 0.5em;
+        font-size: 15px;
+    }
+
+    #menu-navigation {
+        text-align: left;
+        white-space: nowrap;
+        display: flex;
+        align-items: center;
+    }
+
+    pre * {
+        max-width: 100%;
+        overflow: auto;
+        word-break: break-word;
+    }
+
+    .hentry .entry-meta .date {
+        font-size: 18px;
+    }
+
+    .hentry .entry-meta .cat-links,
+    .entry-meta .byline {
+        font-size: 15px;
+        margin-top: 7px;
+    }
+
+}

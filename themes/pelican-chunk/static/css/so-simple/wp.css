@@ -1,0 +1,33 @@
+/* =WP.com
+----------------------------------------------- */
+.sharedaddy {
+    clear: both;
+}
+
+.wp-caption {
+    background: #eee;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    max-width: 100%;
+    padding: .8em;
+    text-align: center;
+}
+
+.wp-caption img {
+    margin: 0;
+}
+
+.wp-caption a img,
+.wp-caption a:hover img {
+    border: none;
+}
+
+.wp-caption .wp-caption-text {
+    color: #666;
+    font-size: 12px;
+    margin: .5em;
+}
+
+.wp-smiley {
+    margin: 0;
+}

@@ -1,0 +1,87 @@
+/* =Comments
+----------------------------------------------- */
+#comments {
+    clear: both;
+    margin: 20px 0;
+    padding: 15px;
+    text-align: left;
+    width: 600px;
+}
+
+article.comment {
+    display: block;
+}
+
+#comments #comments-title {
+    background: #555;
+    border-radius: 3px;
+    color: #eee;
+    color: rgba(255, 255, 255, 0.7);
+    display: block;
+    font-size: 20px;
+    font-weight: normal;
+    padding: 5px 20px;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.1);
+}
+
+#comments #comments-title em {
+    color: #fff;
+    font-style: normal;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+}
+
+.commentlist {
+    margin-left: 40px;
+    padding-left: 0;
+}
+
+.commentlist .comment,
+.commentlist .reblog {
+    list-style-type: none;
+    margin: 40px 0;
+    padding-left: 10px;
+}
+
+.comment {
+    position: relative;
+}
+
+.comment .comment-author cite {
+    font-style: normal;
+    font-weight: bold;
+}
+
+.comment .comment-meta {
+    font-size: 11px;
+    position: absolute;
+    right: 0;
+    top: 5px;
+}
+
+.comment .comment-meta a {
+    color: #666;
+}
+
+.comment p,
+.reblog p {
+    color: #555;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.comment img.avatar {
+    border: 1px solid #ccc;
+    background: #36bcab;
+    border-radius: 3px;
+    color: #c8f1ec;
+    font-size: 13px;
+    padding: 3px 5px;
+}
+
+#respond .form-allowed-tags {
+    display: none;
+}
+
+#respond input[type=submit] {
+    font-size: 18px;
+}

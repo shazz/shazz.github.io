@@ -1,10 +1,14 @@
 Title: A time window on an exciting past....
+Slug: Welcome
 Date: 2024-08-17 06:40
 Location: Stockholm / Sweden
-Category: Atari ST, Virus
+Category: Article
 Lang: en
 Author: shazz
-
+status: published
+summary: Welcome to the Atari ST Malware Museum!
+image: {filename}images/max_t.png
+Tags: welcome
 
 While I'm waiting for my flight from the pretty high tech and green Arlandia airport in Stockholm, that's a good start to rewind the clock and go back to the 80s. I must admit, at this time, I was at little too young to understand the technical details behind the first digital living organisms created by coders: the first computer viruses.
 

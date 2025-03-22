@@ -1,0 +1,36 @@
+/* =Header
+----------------------------------------------- */
+#site-title {
+    color: #000;
+    font-family: 'Oswald', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 80px;
+    margin: 0px;
+    text-transform: uppercase;
+    text-rendering: optimizeLegibility;
+    text-align: left;
+}
+
+#site-title a {
+    color: #000;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+#site-title a:hover {
+    color: #36bcab;
+}
+
+#site-description {
+    background: #f1f1f1;
+    background-image: -webkit-linear-gradient(#f8f8f8, #eee);
+    background-image: -moz-linear-gradient(#f8f8f8, #eee);
+    border-radius: 3px;
+    color: #666;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 50px;
+    padding: 6px 10px;
+}

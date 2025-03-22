@@ -9,10 +9,36 @@
 	<div class="main">
 		<h2 class="entry-title"><a href="{{ SITEURL }}/{{ page.url }}" title="Permalink to {{ page.title|striptags }}" rel="bookmark">{{ page.title }}</a></h2>
 		<div class="entry-content">
+
+			{% if page.slug == "Status" %}
+			<div class="status-search">
+				<input type="text" id="searchInput" onkeyup="statusSearch()" placeholder="Filter table...">
+			</div>
+			{% endif %}
+
+			{% if page.photo_gallery %}
+
+			<div class="gallery">
+				{% for title, gallery in page.photo_gallery %}
+				<div class="photo-search">
+					<input type="text" id="searchInput" onkeyup="localSearch()" placeholder="Search within the {{ gallery|length }} documented viruses...">
+				</div>
+				{% for name, photo, thumb, exif, caption in gallery %}
+				<div class="responsive">
+					<div class="photo-gallery">
+						<a href="{{ SITEURL }}/{{ name.split('.')[0].capitalize() + '-en.html' }}" title="{{ name }}" exif="{{ exif }}" caption="{{ caption }}"><img src="{{ SITEURL }}/{{ thumb }}" title="{{ caption.split(';')[0] }}" alt="{{ name }}"></a>
+						<div class="photo-link"><a href="{{ SITEURL }}/{{ name.split('.')[0] + '-en.html' }}">{{ caption.split(";")[0] }}</a></div>
+						<div class="photo-desc">{{ caption.split(";")[1] }}</div>
+					</div>
+				</div>
+				{% endfor %}
+				{% endfor %}
+			</div>
+			{% else %}
 			{{ page.content }}
+			{% endif %}
+
 		</div> <!-- /#entry-content -->
 	</div> <!-- /#main -->
 </div> <!-- /#post -->
 {% endblock %}
-
-

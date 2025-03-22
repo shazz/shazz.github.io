@@ -1,0 +1,87 @@
+/* =Footer
+----------------------------------------------- */
+#footer {
+    /* border-top: 1px solid #ddd; */
+    clear: both;
+    color: #555;
+    font-size: 11px;
+    font-weight: bold;
+    height: auto;
+    margin: 50px 0 30px;
+    padding-top: 25px;
+    text-align: center;
+    width: 800px;
+}
+
+#footer a {
+    color: #36bcab;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #f8f8f8;
+    /* Light background color */
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    position: relative;
+    /* display: flex; */
+    /* justify-content: space-between; */
+}
+
+
+
+.footer-logo {
+    position: absolute;
+    left: 0;
+    /* Aligns the image to the left */
+    top: -54px;
+    /* Adjusts the position of the image above the line */
+    width: 180px;
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+.footer-logo-link {
+    position: absolute;
+    left: 0;
+    /* Aligns the link to the left */
+    top: -15px;
+    /* Adjusts the position of the link above the line */
+    text-decoration: none;
+    /* Remove underline from link */
+}
+
+.footer-line {
+    border: none;
+    /* Remove default border */
+    height: 1px;
+    /* Set the height of the line */
+    background-color: #000;
+    /* Line color */
+    margin: 0;
+    /* Remove default margin */
+}
+
+.footer-text {
+    display: flex;
+    justify-content: space-between;
+    color: #504f4f;
+    align-items: center;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.footer-powered {
+    text-align: left;
+}
+
+.footer-theme {
+    text-align: right;
+}
+
+#footer {
+    width: 100vw;
+}

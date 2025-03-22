@@ -1,0 +1,73 @@
+/* **********************  Gallery  ********************** */
+
+div.photo-search {
+    width: 90%;
+    padding: 12px 12px 2px 12px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+}
+
+div.photo-search input {
+    background-image: url('/theme/searchicon.png');
+    background-position: 10px 12px;
+    background-repeat: no-repeat;
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 12px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+}
+
+div.photo-gallery {
+    border: 1px solid #ccc;
+    height: 350px;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+div.photo-gallery:hover {
+    border: 1px solid #7a1616;
+    height: 350px;
+    border-radius: 15px;
+    background-color: #ddd;
+}
+
+div.photo-gallery a img {
+    margin-top: 0.5em;
+    border: 0px;
+}
+
+div.photo-gallery a:hover img {
+    margin-top: 0.5em;
+    border: 0px;
+}
+
+div.photo-gallery img {
+    padding: 0.5em;
+    width: 250px;
+    height: auto;
+}
+
+div.photo-link {
+    padding: 0;
+    margin-top: 0;
+    text-align: center;
+}
+
+div.photo-link a {
+    padding: 0;
+    margin-top: 0;
+    text-decoration: none;
+}
+
+div.photo-desc {
+    padding: 1em;
+    margin-top: 0;
+    text-align: justify;
+    font-size: 0.8em;
+    line-height: 1.5em;
+}
+
+.gallery-caption {
+    color: #666;
+}
