@@ -22,7 +22,6 @@ Tags: light, white, fixed-width, one-column, custom-background, custom-header, c
 @import url("so-simple/menu.css");
 @import url("so-simple/entry.css");
 @import url("so-simple/comments.css");
-@import url("so-simple/mobile.css");
 @import url("so-simple/gallery.css");
 @import url("so-simple/images.css");
 @import url("so-simple/wp.css");
@@ -30,6 +29,7 @@ Tags: light, white, fixed-width, one-column, custom-background, custom-header, c
 @import url("so-simple/header.css");
 @import url("so-simple/root.css");
 @import url("so-simple/site.css");
+@import url("so-simple/mobile.css");
 
 
 /* =Base

@@ -5,6 +5,7 @@
     {
 
     body {
+        --_disc-w: 110vw;
         --_menu-h: 4.4rem;
     }
 
@@ -54,8 +55,8 @@
     {
 
     body {
-        --_disc-w: 25vw;
-        --_menu-h: 4rem;
+        --_disc-w: 10px;
+        --_menu-h: 2rem;
     }
 
     iframe {
@@ -64,25 +65,51 @@
     }
 
     :root #floppy {
-        transform: translate(0, -90%);
+        transform: translate(0%, -90%);
+        width: 70px;
+    }
+
+    .header-banner {
+        position: relative;
+        display: block;
+        min-height: 0px;
+        height: 40px;
+    }
+
+    .header-banner::before {
+        content: "";
+        display: block;
+        height: 0;
+        /* padding-bottom: 17.1875%; */
+    }
+
+    .header-banner img {
+        position: relative;
+        top: -90px;
+        left: 0;
+        width: 100%;
+        height: 200%;
+        object-fit: cover;
     }
 
     #menu {
-        display: flex;
+        display: inline-block;
         align-items: center;
         box-sizing: border-box;
-        padding-inline: 20px;
-        width: 100vw;
+        padding-inline: 0px;
+        padding-block: 10px;
+        width: 100%;
         overflow: auto;
         overflow-x: scroll;
         margin-bottom: 0;
-        padding-block: 0;
+        height: 40px;
     }
 
     #menu a {
-        display: block;
-        padding: 0.7em 0.5em;
-        font-size: 15px;
+        display: inline;
+        padding: 2.2em 5px;
+        width: 100%;
+        font-size: 12px;
     }
 
     #menu-navigation {
@@ -92,20 +119,48 @@
         align-items: center;
     }
 
+    .entry-title {
+        color: #666;
+        font-family: 'Oswald', Helvetica, Arial, sans-serif;
+        font-size: 15px;
+        line-height: 0px;
+        margin: -10px 0px 25px 0px;
+        text-align: left;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
     pre * {
         max-width: 100%;
         overflow: auto;
         word-break: break-word;
     }
 
+    .hentry .entry-meta {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        box-sizing: border-box;
+        background-color: var(--_body-bg);
+        padding-inline: var(--_content-space-x);
+        justify-content: flex-start;
+        text-align: left;
+        gap: 0 2rem;
+        top: calc(var(--_menu-h) - 1px);
+        border-bottom: 1px solid #ddd;
+        padding-block: 0.0rem;
+    }
+
     .hentry .entry-meta .date {
         font-size: 18px;
+        height: 0px;
     }
 
     .hentry .entry-meta .cat-links,
     .entry-meta .byline {
-        font-size: 15px;
-        margin-top: 7px;
+        font-size: 11px;
+        margin-top: 0px;
+        height: 0px;
     }
 
 }
