@@ -26,7 +26,11 @@
 				{% for name, photo, thumb, exif, caption in gallery %}
 				<div class="responsive">
 					<div class="photo-gallery">
-						<a href="{{ SITEURL }}/{{ name.split('.')[0] + '-en.html' }}" title="{{ name }}" exif="{{ exif }}" caption="{{ caption }}"><img src="{{ SITEURL }}/{{ thumb }}" title="{{ caption.split(';')[0] }}" alt="{{ name }}"></a>
+						<div class="photo-gallery-image">
+							<a href="{{ SITEURL }}/{{ name.split('.')[0] + '-en.html' }}" title="{{ name }}" exif="{{ exif }}" caption="{{ caption }}">
+								<img src="{{ SITEURL }}/{{ thumb }}" title="{{ caption.split(';')[0] }}" alt="{{ name }}">
+							</a>
+						</div>
 						<div class="photo-link"><a href="{{ SITEURL }}/{{ name.split('.')[0] + '-en.html' }}">{{ caption.split(";")[0] }}</a></div>
 						<div class="photo-desc">{{ caption.split(";")[1] }}</div>
 					</div>
