@@ -114,8 +114,8 @@
 							{% endfor %}
 							{% endif %}
 							{% if LINKS %}
-							{% for name, url in SORTED_LINKS %}
-							<li class="active" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="{{ url }}">{{ name[3:] }}</a></li>
+							{% for name, url in LINKS %}
+							<li class="active" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="{{ url }}">{{ name }}</a></li>
 							{% endfor %}
 							{% endif %}
 
