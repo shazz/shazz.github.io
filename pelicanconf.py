@@ -28,17 +28,20 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = (
+MY_LINKS = (
+    ("5. Boot", "/pages/HowAtariBoots-en.html"),
     ("1. Gallery", "/"),
     ("2. Articles", "/posts.html"),
     ("3. Memory map", "/pages/AtariMemoryMap-en.html"),
     ("4. Vectors", "/pages/AtariVectors-en.html"),
-    ("5. Boot", "/pages/HowAtariBoots-en.html"),
     ("6. Bootsectors?", "/pages/HowBootsectorsWork-en.html"),
     ("7. Resources", "/pages/resources-en.html"),
     ("8. Status", "/pages/Status-en.html"),
 )
-SORTED_LINKS = sorted(LINKS, key=lambda x: x[0], reverse=True)
+links_list = list(MY_LINKS)
+sorted_links = sorted(links_list, key=lambda x: int(x[0].split(".")[0]))
+sorted_links = [(title.split(". ", 1)[1], url) for title, url in sorted_links]
+LINKS = tuple(sorted_links)
 
 # Social widget
 SOCIAL = (
