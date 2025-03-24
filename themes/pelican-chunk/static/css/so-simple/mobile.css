@@ -85,7 +85,7 @@
 
     .header-banner img {
         position: relative;
-        top: -90px;
+        top: -85px;
         left: 0;
         width: 100%;
         height: 150%;
@@ -106,7 +106,8 @@
 
     #menu a {
         display: inline-block;
-        padding: 0.8em 5px;
+        padding: 10px 0px;
+        margin: 0px 5px;
         width: 100%;
         font-size: 12px;
         line-height: 1;
@@ -123,11 +124,14 @@
         color: #666;
         font-family: 'Oswald', Helvetica, Arial, sans-serif;
         font-size: 15px;
-        line-height: 0px;
-        margin: -10px 0px 25px 0px;
+        line-height: 1.2;
+        margin: 0px 0px 5px 0px;
         text-align: left;
         text-decoration: none;
         text-transform: uppercase;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        hyphens: auto;
     }
 
     pre * {
@@ -160,14 +164,14 @@
     }
 
     .hentry .entry-meta .date {
-        font-size: 18px;
+        font-size: 12px;
         height: 0px;
     }
 
     .hentry .entry-meta .cat-links,
     .entry-meta .byline {
         font-size: 11px;
-        margin-top: 0px;
+        margin-top: 30px;
         height: 0px;
     }
 
@@ -228,4 +232,156 @@
         align-items: center;
     }
 
+    div.photo-link {
+        padding: 0;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        text-align: center;
+    }
+
+    div.photo-link a {
+        padding: 0;
+        margin-top: 0;
+        text-decoration: none;
+    }
+
+    div.photo-desc {
+        padding: 0.5em;
+        margin-top: 0;
+        text-align: justify;
+        font-size: 0.8em;
+        line-height: 1.5em;
+    }
+
+    .hentry .main {
+        border-bottom: 1px dashed #ddd;
+        float: left;
+        line-height: 120%;
+        padding: 10px 5px 15px 15px;
+        text-align: left;
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .hentry .main p {
+        padding: 10px 10px 5px 0px;
+        text-align: justify;
+    }
+
+    .hentry .main ol li p {
+        padding: 0px 5px 0px 0px;
+        text-align: left;
+    }
+
+    .entry-content pre {
+        color: #586e75;
+        background-color: #fafafa;
+        border-style: solid;
+        border-width: 1pt;
+        border-color: #cccccc;
+        width: auto;
+        padding: 10px 5px 15px 15px;
+    }
+
+
+    .entry-content code {
+        color: #586e75;
+        margin: 0;
+        padding: 0.2em 0.4em;
+        font-size: 85%;
+        padding: 10px 5px 15px 15px;
+        font-family: Menlo, Consolas, Monaco, "Courier New", Courier, monospace;
+    }
+
+    .entry-content h3 {
+        display: block;
+        margin-block-start: 1.33em;
+        margin-block-end: 1.33em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+        unicode-bidi: isolate;
+        color: #000;
+        font-family: 'SourceSansPro', 'SourceSans3', 'Lato', 'DM Serif Text', 'dmserif-css', 'Courier New', Courier, monospace;
+    }
+
+    /* Table */
+    .entry-content table {
+        margin: 0 0 10px 0;
+        text-align: left;
+        width: 100%;
+        border-collapse: collapse;
+        display: block;
+        /* Change to block for wrapping */
+        overflow-x: auto;
+        /* Allow horizontal scrolling if needed */
+    }
+
+    .entry-content tr th,
+    .entry-content thead th {
+        color: #888;
+        font-weight: bold;
+        line-height: 10px;
+        padding: 14px 20px;
+        border-color: #333;
+        border-style: solid;
+        border-width: 1px;
+    }
+
+    .entry-content tr td {
+        padding: 0px 18px;
+        border-color: #949292;
+        border-style: solid;
+        border-width: 1px;
+        font-size: 12px;
+    }
+
+    .entry-content tr.alternate td {
+        background: #f5f5f5;
+    }
+
+    .entry-content a img {
+        border: 10px solid #ddd;
+    }
+
+    .entry-content a:hover img {
+        border: 10px solid #000;
+    }
+
+    .entry-content a img {
+        box-sizing: border-box;
+        width: 100%;
+        height: auto;
+    }
+
+    /* **********************  Status  ********************** */
+
+    div.status-search {
+        width: 100%;
+        padding: 10px 14px 0px 12px;
+        border: 1px solid #ddd;
+        border-radius: 15px;
+    }
+
+    div.status-search input {
+        background-image: url('/theme/searchicon.png');
+        background-position: 4px 6px;
+        background-repeat: no-repeat;
+        background-size: 14px;
+        width: 100%;
+        font-size: 12px;
+        padding: 6px 6px 10px 20px;
+        border: 1px solid #ddd;
+        margin-bottom: 12px;
+    }
+
+    pre {
+        margin: 5px 5px;
+        white-space: pre;
+        font-size: 11px;
+        line-height: 1.5;
+        border: 1px solid #ddd;
+        overflow: auto;
+        font-family: Menlo, Consolas, Monaco, "Courier New", Courier, monospace;
+    }
 }
