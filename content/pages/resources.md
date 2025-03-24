@@ -16,6 +16,10 @@ Author: shazz
 
 ## Podcasts and Videos
 
+### Must visit
+
+- [The Malware Museum by Mikko Hypponen](https://archive.org/details/malwaremuseum) on the Internet Archive.
+
 ### Must listen
 
  - [Why did people write viruses in the 80s and 90s?](https://open.spotify.com/episode/0xqCad31sUGVU0MmeIY16j?si=aa557387a97a49aa)
