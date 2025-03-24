@@ -29,6 +29,9 @@ Tags: light, white, fixed-width, one-column, custom-background, custom-header, c
 @import url("so-simple/header.css");
 @import url("so-simple/root.css");
 @import url("so-simple/site.css");
+@import url("so-simple/status.css");
+
+/* Mobile  */
 @import url("so-simple/mobile.css");
 
 
@@ -237,15 +240,6 @@ body {
 	box-sizing: border-box;
 }
 
-pre {
-	overflow: scroll;
-	width: calc(100% + 2rem);
-	max-width: 58em;
-	background: white;
-	margin: 0 -1rem;
-	padding: 1rem;
-}
-
 #header {
 	padding-top: 30px !important;
 	min-height: 0;
@@ -339,27 +333,6 @@ iframe {
 	}
 
 }
-
-/* **********************  Status  ********************** */
-
-div.status-search {
-	width: 100%;
-	padding: 12px 12px 2px 12px;
-	border: 1px solid #ddd;
-	border-radius: 15px;
-}
-
-div.status-search input {
-	background-image: url('/theme/searchicon.png');
-	background-position: 10px 12px;
-	background-repeat: no-repeat;
-	width: 100%;
-	font-size: 16px;
-	padding: 12px 12px 12px 40px;
-	border: 1px solid #ddd;
-	margin-bottom: 12px;
-}
-
 
 * {
 	box-sizing: border-box;
