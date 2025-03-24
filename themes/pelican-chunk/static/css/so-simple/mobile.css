@@ -460,12 +460,13 @@
     }
 
     pre {
+        max-width: 100%;
         margin: 5px 5px;
         white-space: pre;
         font-size: 11px;
         line-height: 1.5;
         border: 1px solid #ddd;
-        overflow: auto;
+        overflow-x: visible;
         font-family: Menlo, Consolas, Monaco, "Courier New", Courier, monospace;
     }
 

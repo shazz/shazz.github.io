@@ -151,12 +151,13 @@
 }
 
 pre {
-    overflow: scroll;
-    width: calc(100% + 2rem);
-    max-width: 58em;
+    overflow: auto;
+    scrollbar-width: 0px;
+    width: 100%;
     background: white;
-    margin: 0 -1rem;
+    margin: 0 0;
     padding: 1rem;
+    max-width: auto;
 }
 
 .cat-links {
