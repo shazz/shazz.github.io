@@ -150,3 +150,12 @@
 .page .entry-meta .comments {
     margin-top: 2px;
 }
+
+pre {
+    overflow: scroll;
+    width: calc(100% + 2rem);
+    max-width: 58em;
+    background: white;
+    margin: 0 -1rem;
+    padding: 1rem;
+}
