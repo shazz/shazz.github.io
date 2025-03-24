@@ -24,7 +24,7 @@
 .retro-computer__holder::before {
     content: "";
     position: absolute;
-    background-image: url(../../images/retro-computer3.png);
+    background-image: url(../../../images/retro-computer3.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;

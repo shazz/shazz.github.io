@@ -540,6 +540,11 @@
         z-index: -1;
     }
 
+    .aside {
+        padding: 0px 0px 0px 0px;
+        margin-bottom: -80px;
+    }
+
     .footer-logo {
         position: absolute;
         left: 0;
