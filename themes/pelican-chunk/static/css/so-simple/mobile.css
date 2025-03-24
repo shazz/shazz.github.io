@@ -271,6 +271,13 @@
         margin-bottom: 12px;
     }
 
+    div.photo-gallery:hover {
+        border: 1px solid #7a1616;
+        height: auto;
+        border-radius: 15px;
+        background-color: #ddd;
+    }
+
     div.photo-gallery {
         border: 1px solid #ccc;
         height: auto;
@@ -281,17 +288,16 @@
     }
 
     div.photo-gallery-image a img {
-        margin-top: 0.5em;
         border: 0px;
-        margin-top: 15px;
         width: 85%;
     }
 
     div.photo-gallery-image a:hover img {
-        margin-top: 0.5em;
         border: 0px;
-        margin-top: 15px;
-        width: 85%;
+        border: 1px solid #7a1616;
+        height: auto;
+        border-radius: 15px;
+        background-color: #ddd;
     }
 
     div.photo-gallery-image {
@@ -310,8 +316,7 @@
     }
 
     div.photo-link {
-        padding: 0;
-        margin-top: 10px;
+        padding: 5px 0px 0px 0px;
         margin-bottom: 0px;
         text-align: center;
     }
@@ -320,10 +325,11 @@
         padding: 0;
         margin-top: 0;
         text-decoration: none;
+        font-size: 15px;
     }
 
     div.photo-desc {
-        padding: 0.5em;
+        padding: 5px 5px 15px 15px;
         margin-top: 0;
         text-align: justify;
         font-size: 0.8em;
