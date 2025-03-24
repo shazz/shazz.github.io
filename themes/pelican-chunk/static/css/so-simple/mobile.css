@@ -141,7 +141,6 @@
     }
 
     .hentry .entry-meta {
-        position: sticky;
         top: 0;
         transition: opacity 0.3s ease;
         opacity: 1;
@@ -157,6 +156,8 @@
         top: calc(var(--_menu-h) - 1px);
         border-bottom: 1px solid #ddd;
         padding-block: 0.0rem;
+        margin-left: -20px;
+        margin-bottom: 20px;
     }
 
     body:has(.hentry .entry-meta:target) .hentry .entry-meta {
@@ -170,10 +171,85 @@
 
     .hentry .entry-meta .cat-links,
     .entry-meta .byline {
-        font-size: 11px;
-        margin-top: 30px;
+        font-size: 9px;
+        margin-top: 10px;
         height: 0px;
     }
+
+    /* summary */
+    div.summary {
+        border: 1px solid #ccc;
+        height: 130px;
+        width: 100%;
+        border-radius: 15px;
+        margin-top: 2px;
+        height: auto;
+    }
+
+
+    div.summary a {
+        padding: 0;
+        margin-top: 0;
+        text-decoration: none;
+    }
+
+    div.summary a img {
+        border: none;
+        padding: 0.5em;
+        width: 150px;
+        height: auto;
+        display: inline;
+        float: left;
+        margin: 1px 0 1ex 1ex;
+    }
+
+    div.summary a:hover img {
+        border: none;
+    }
+
+    div.summary-text {
+        display: -webkit-box;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: 3.5;
+        height: 160px;
+        padding: 0px 0px 0px 0px;
+        margin-left: 10px;
+        margin-top: -10px;
+        font-size: 11px;
+        line-height: 1.2;
+        color: #2d2d2d;
+        font-family: 'SourceSansPro', 'SourceSans3', 'Lato', 'DM Serif Text', 'dmserif-css', 'Courier New', Courier, monospace;
+        margin-bottom: 10px;
+    }
+
+    .tag-links {
+        display: inline-block;
+        text-align: left;
+        margin-left: 0px;
+        padding-left: 0px;
+        font-size: 12px;
+    }
+
+    .tag-links a {
+        text-decoration: none;
+    }
+
+    .tag-links :hover {
+        text-decoration: underline;
+    }
+
+    .tag-links strong {
+        text-align: left;
+        background: #eee;
+        border-radius: 3px;
+        color: #666;
+        font-weight: normal;
+        font-size: 12px;
+        margin-right: 4px;
+        padding: 3px 6px;
+    }
+
 
     div.photo-search {
         width: 100%;
@@ -383,5 +459,16 @@
         border: 1px solid #ddd;
         overflow: auto;
         font-family: Menlo, Consolas, Monaco, "Courier New", Courier, monospace;
+    }
+
+    .footer-logo {
+        position: absolute;
+        left: 0;
+        /* Aligns the image to the left */
+        top: -18px;
+        /* Adjusts the position of the image above the line */
+        width: 90px;
+        height: auto;
+        /* Maintain aspect ratio */
     }
 }
