@@ -1086,13 +1086,18 @@ class Image:
                 logger.warning(f"There was an error dumping exif data for image  '{self.output_filename}': {e}")
                 exif_data = b""
 
-        image.save(
-            self.output_filename,
-            self.type,
-            icc_profile=self.icc_profile,
-            exif=exif_data,
-            **image_options,
-        )
+        if image.is_animated:
+            print(f"Saving APNG: {image.info}")
+            frames = []
+            for frame in range(image.n_frames):
+                image.seek(frame)  # Move to the current frame
+                resized_frame = image.resize(image.size, PILImage.Resampling.NEAREST)  # Resize the frame
+                frames.append(resized_frame)
+
+            frames[0].save(self.output_filename, save_all=True, append_images=frames[1:], loop=0, format="PNG")
+
+        else:
+            image.save(self.output_filename, self.type, icc_profile=self.icc_profile, exif=exif_data, **image_options)
         return self.dst, self._load_result_info(image=image)
 
     def reduce_opacity(self, im: PILImage.Image, opacity) -> PILImage.Image:
@@ -1111,11 +1116,16 @@ class Image:
 
     @staticmethod
     def _operation_convert(image: PILImage.Image, *args, **kwargs):
+        if image.is_animated:
+            print(f"Trying to convert {image.info}")
         return image.convert(*args, **kwargs)
 
     @staticmethod
     def _operation_convert_mode_p(img: PILImage.Image) -> PILImage.Image:
         """Convert image into P mode if not already in this mode."""
+        if img.is_animated:
+            print(f"Trying to convert mode p {img.info}")
+
         if img.mode == "P":
             return img
         return img.convert("P")
@@ -1123,6 +1133,9 @@ class Image:
     @staticmethod
     def _operation_convert_mode_rgb(img: PILImage.Image) -> PILImage.Image:
         """Convert image into RGB mode if not already in this mode."""
+        if img.is_animated:
+            print(f"Trying to convert rgb {img.info}")
+
         if img.mode == "RGB":
             return img
         return img.convert("RGB")
@@ -1130,6 +1143,9 @@ class Image:
     @staticmethod
     def _operation_exif_rotate(image: PILImage.Image, image_meta: "Image") -> PILImage.Image:
         """Rotate the image with the information from exif data."""
+        if image.is_animated:
+            return image
+
         orientation = image_meta.exif_orig.get(EXIF_TAGS_NAME_CODE["Orientation"])
         if orientation is None:
             return image
@@ -1155,6 +1171,9 @@ class Image:
         return image
 
     def _operation_manipulate_exif(self, image: PILImage.Image, image_meta: "Image") -> PILImage.Image:
+        if image.is_animated:
+            return image
+
         if image_meta.exif_result is None:
             return image
 
@@ -1181,6 +1200,9 @@ class Image:
 
     def _operation_remove_alpha(self, image: PILImage.Image) -> PILImage.Image:
         """Remove the alpha channel."""
+        if image.is_animated:
+            print(f"Trying to remove alpha {image.info}")
+
         if not self.is_alpha(image):
             return image
         if image.mode == "P":
@@ -1190,16 +1212,41 @@ class Image:
         return background
 
     @staticmethod
-    def _operation_resize(image, *args, **kwargs):
+    def _resize_animated_png(img: PILImage.Image, new_size):
+        # Create a list to hold the resized frames
+        frames = []
+
+        # Iterate through each frame in the animated PNG
+        for frame in range(img.n_frames):
+            img.seek(frame)  # Move to the current frame
+            resized_frame = img.resize(new_size, PILImage.Resampling.BICUBIC)  # Resize the frame
+            frames.append(resized_frame)
+
+        # Save the frames as an animated PNG
+        frames[0].save(f"tmp/tmp_{id(img)}.png", save_all=True, append_images=frames[1:], loop=0, format="PNG")
+        new_img = PILImage.open(f"tmp/tmp_{id(img)}.png")
+        return new_img
+
+    @staticmethod
+    def _operation_resize(image: PILImage.Image, *args, **kwargs):
+        if image.is_animated:
+            print(f"animated! {image.info} {image.format}")
+            return Image._resize_animated_png(img=image, new_size=kwargs["size"])
         image.thumbnail(*args, **kwargs)
         return image
 
     @staticmethod
     def _operation_quantize(image: PILImage.Image, *args, **kwargs):
+        if image.is_animated:
+            print(f"Trying to quantize {image.info}")
+
         return image.quantize(*args, **kwargs)
 
     def _operation_watermark(self, image: PILImage.Image) -> PILImage.Image:
         """Add the watermark."""
+        if image.is_animated:
+            return image
+
         if not self._pelican_settings["PHOTO_WATERMARK"]:
             return image
         if self.is_thumb and not self._pelican_settings["PHOTO_WATERMARK_THUMB"]:
@@ -1645,7 +1692,7 @@ def process_image_process_wrapper(image: Image):
     try:
         return image.process()
     except Exception as e:  # noqa: BLE001 -- we are just warning here
-        logger.error(f"photos: {e}")
+        logger.error(f"ERROR: photos: {e}")
         logger.warning("photos: An exception occurred", exc_info=e)
 
 
@@ -1903,6 +1950,7 @@ def detect_meta_images(content: pelican.contents.Content):
     """
     image = content.metadata.get("image", None)
     if image:
+        # print(image)
         if image.startswith("{photo}") or image.startswith("{filename}"):
             try:
                 content.photo_image = ArticleImage(content=content, filename=image)
