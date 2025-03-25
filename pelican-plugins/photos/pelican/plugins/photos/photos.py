@@ -1223,8 +1223,8 @@ class Image:
             frames.append(resized_frame)
 
         # Save the frames as an animated PNG
-        frames[0].save(f"tmp/tmp_{id(img)}.png", save_all=True, append_images=frames[1:], loop=0, format="PNG")
-        new_img = PILImage.open(f"tmp/tmp_{id(img)}.png")
+        frames[0].save(f"/tmp/tmp_{id(img)}.png", save_all=True, append_images=frames[1:], loop=0, format="PNG")
+        new_img = PILImage.open(f"/tmp/tmp_{id(img)}.png")
         return new_img
 
     @staticmethod
