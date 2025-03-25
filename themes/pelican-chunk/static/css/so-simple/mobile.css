@@ -184,7 +184,6 @@
         width: 100%;
         border-radius: 15px;
         margin-top: 2px;
-        height: auto;
     }
 
 
@@ -224,10 +223,20 @@
         margin-bottom: 10px;
     }
 
+    div.summary-text p {
+        text-overflow: ellipsis;
+        word-wrap: break-word;
+        max-height: 10.6em;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+    }
+
     .tag-links {
         display: inline-block;
         text-align: left;
-        margin-left: 0px;
         margin-top: 5px;
         padding-left: 0px;
         font-size: 12px;
