@@ -208,30 +208,28 @@
     }
 
     div.summary-text {
-        display: -webkit-box;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        line-height: 3.5;
-        height: 160px;
+        line-height: 1.2;
+        height: 130px;
         padding: 0px 0px 0px 0px;
         margin-left: 10px;
         margin-top: -10px;
-        font-size: 11px;
-        line-height: 1.2;
         color: #2d2d2d;
         font-family: 'SourceSansPro', 'SourceSans3', 'Lato', 'DM Serif Text', 'dmserif-css', 'Courier New', Courier, monospace;
         margin-bottom: 10px;
     }
 
     div.summary-text p {
+        font-size: 11px;
+        line-height: 1.2;
         text-overflow: ellipsis;
-        word-wrap: break-word;
-        max-height: 10.6em;
         overflow: hidden;
         display: -webkit-box;
         -webkit-box-orient: vertical;
-        -webkit-line-clamp: 2;
-        line-clamp: 2;
+        -webkit-line-clamp: 8;
+        line-clamp: 8;
+        height: 120px;
+        word-wrap: break-word;
+        max-height: 10.6em;
     }
 
     .tag-links {
