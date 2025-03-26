@@ -116,3 +116,7 @@
     margin: 0;
     padding: 0;
 }
+
+#menu-navigation {
+    align-items: flex-start;
+}
