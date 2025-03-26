@@ -1,0 +1,334 @@
+/*
+Theme Name: Chunk
+Theme URI: http://theme.wordpress.com/themes/chunk/
+Author: Automattic
+Author URI: http://automattic.com
+Description: A straightforward theme with bold typography designed by <a href="http://twitter.com/#!/thisistran/">Tran N</a>. Featuring multiple post formats, custom background, custom menu, and custom header. Also comes with an optional footer widget area.
+Version: 1.0-wpcom
+License: GNU General Public License
+License URI: license.txt
+Tags: light, white, fixed-width, one-column, custom-background, custom-header, custom-menu, post-formats, rtl-language-support, sticky-post, translation-ready, art, blog, cartoon, holiday, journal, lifestream, photography, tumblelog, bright, clean, contemporary, flamboyant, modern
+*/
+
+@import url("pygment.css");
+@import url("../fonts/fonts.css");
+
+@import url("so-simple/summary.css");
+@import url("so-simple/footer.css");
+@import url("so-simple/retro-computer.css");
+@import url("so-simple/widget.css");
+@import url("so-simple/entry-content.css");
+@import url("so-simple/tag-links.css");
+@import url("so-simple/menu.css");
+@import url("so-simple/entry.css");
+@import url("so-simple/comments.css");
+@import url("so-simple/gallery.css");
+@import url("so-simple/images.css");
+@import url("so-simple/wp.css");
+@import url("so-simple/format.css");
+@import url("so-simple/header.css");
+@import url("so-simple/site.css");
+@import url("so-simple/status.css");
+
+/* Mobile  */
+@import url("so-simple/mobile.css");
+
+
+/* =Base
+----------------------------------------------- */
+body {
+	background-color: #fff;
+	background-image: -moz-linear-gradient(rgba(0, 0, 0, 0.22), rgba(255, 255, 255, 0) 80px);
+	background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.22), rgba(255, 255, 255, 0) 80px);
+	color: #3a3a3a;
+	/* font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; */
+	font-family: 'SourceSansPro', 'SourceSans3', 'Lato', 'DM Serif Text', 'dmserif-css', 'Courier New', Courier, monospace;
+	font-size: 15px;
+	margin-top: 40px;
+	margin-left: 0px;
+	margin-right: 0px;
+	text-align: center;
+	letter-spacing: 0.1px;
+}
+
+#container {
+	height: auto;
+	margin: 0 0;
+	width: 100%;
+}
+
+#contents {
+	border-left: 1px solid #ccc;
+	height: auto;
+	margin-left: 199px;
+	padding-bottom: 10px;
+}
+
+/* =Generic styles
+----------------------------------------------- */
+.hidden {
+	position: absolute;
+	left: -999999px;
+}
+
+
+blockquote {
+	background: #eee;
+	border-left: 10px solid #36bcab;
+	color: #000;
+	font-family: Georgia, Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	padding: 10px;
+	text-align: justify;
+}
+
+a {
+	color: #000;
+	text-decoration: underline;
+}
+
+a:hover {
+	color: #36bcab;
+}
+
+
+b,
+strong {
+	color: #000;
+}
+
+
+.digression {
+	background-color: #f8f8ff;
+	padding: calc(0.5rem* 3);
+	border-style: solid;
+	border-width: 1pt;
+	border-radius: calc(0.5rem* 2);
+	border-color: #cccccc;
+}
+
+
+.page-link a {
+	background: #36bcab;
+	border-radius: 26px;
+	color: #000;
+	font-weight: normal;
+	display: inline-block;
+	line-height: 26px;
+	margin: 0 0 1em;
+	text-align: center;
+	text-decoration: none;
+	width: 26px;
+}
+
+.page-link a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+.page-title h2 {
+	background: #333;
+	border-radius: 3px;
+	color: #eee;
+	display: inline-block;
+	font-weight: normal;
+	margin: 0 0 20px;
+	padding: 3px 14px;
+}
+
+.navigation {
+	font-size: 14px;
+}
+
+.navigation div {
+	display: block;
+	margin: 10px 45px;
+	text-align: right;
+}
+
+.nav a {
+	text-decoration: none;
+}
+
+
+/* Alignment */
+.alignleft {
+	display: inline;
+	float: left;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+}
+
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* General */
+ol ol {
+	list-style: upper-alpha;
+}
+
+ol ol ol {
+	list-style: lower-roman;
+}
+
+ul ul,
+ol ol,
+ul ol,
+ol ul {
+	margin-bottom: 0;
+}
+
+
+/* ! START: New styles
+----------------------------------------------- */
+
+body {
+	--_wrapper-size: 75rem;
+	--_side-nav-w: 190px;
+	--_disc-w: 20vw;
+	--_content-space-x: 2rem;
+	--_content-space-y: 2rem;
+	--_body-bg: #f5f5f5;
+	overflow: scroll;
+	max-width: 100vw;
+	margin-top: 0 !important;
+	background-color: var(--_body-bg);
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+iframe {
+	width: 652;
+	border: 0;
+}
+
+
+
+/* ********************** de Tablet a DESKTOP ********************** */
+
+@media (min-width: 61.25rem)
+/* 980px */
+	{
+
+	.retro-computer {
+		width: auto;
+		margin-inline: 0;
+		margin-block: 2rem;
+		max-width: 60rem;
+	}
+
+}
+
+
+/* ********************** de Desktop a DESKTOP 2 ********************** */
+
+@media (min-width: 75rem)
+/* 1200px */
+	{
+
+	body {
+		--_viewport-margins: calc(100vw - var(--_wrapper-size));
+		--_viewport-margin: calc(var(--_viewport-margins)/2);
+	}
+
+	/* :root #floppy {
+		left: calc(var(--_side-nav-w) + var(--_content-space-x) + var(--_viewport-margin));
+		transform: translate(-60%, -85%);
+	} */
+
+	:root #contents {
+		padding-top: 0;
+	}
+
+}
+
+/* ********************** de Desktop 2 a HD ********************** */
+
+@media (min-width: 87.5rem)
+/* 1400 */
+	{}
+
+
+@media (min-width: 112.5rem)
+/* 1800px */
+	{
+
+	body {
+		--_wrapper-size: 90rem;
+	}
+
+	#menu {
+		padding-right: 15rem;
+	}
+
+	pre {
+		max-width: 75em;
+		margin-block: 2rem;
+	}
+
+	/* :root #floppy {
+		width: min(var(--_disc-w), 22rem);
+		transform: translate(-50%, -90%);
+	} */
+
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.responsive {
+	padding: 6 6px;
+	margin-right: 6px;
+	float: left;
+	width: 250px;
+}
+
+@media only screen and (max-width: 700px) {
+	.responsive {
+		width: 49.99999%;
+		margin: 6px 0;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.responsive {
+		width: 100%;
+	}
+}
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+div.highlight {
+	font-size: 15px;
+	scrollbar-color: white white;
+}
+
+
+div.highlight code pre {
+	font-size: 15px;
+	overflow-x: hidden;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+
+
+/* ! END: New styles
+----------------------------------------------- */
