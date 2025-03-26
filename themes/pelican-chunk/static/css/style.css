@@ -27,7 +27,6 @@ Tags: light, white, fixed-width, one-column, custom-background, custom-header, c
 @import url("so-simple/wp.css");
 @import url("so-simple/format.css");
 @import url("so-simple/header.css");
-@import url("so-simple/root.css");
 @import url("so-simple/site.css");
 @import url("so-simple/status.css");
 
@@ -257,10 +256,10 @@ iframe {
 		--_viewport-margin: calc(var(--_viewport-margins)/2);
 	}
 
-	:root #floppy {
+	/* :root #floppy {
 		left: calc(var(--_side-nav-w) + var(--_content-space-x) + var(--_viewport-margin));
-		transform: translate(-50%, -85%);
-	}
+		transform: translate(-60%, -85%);
+	} */
 
 	:root #contents {
 		padding-top: 0;
@@ -292,10 +291,10 @@ iframe {
 		margin-block: 2rem;
 	}
 
-	:root #floppy {
+	/* :root #floppy {
 		width: min(var(--_disc-w), 22rem);
 		transform: translate(-50%, -90%);
-	}
+	} */
 
 }
 
