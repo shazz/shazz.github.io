@@ -57,13 +57,6 @@ body {
 	width: 100%;
 }
 
-#header {
-	position: relative;
-	min-height: 180px;
-	padding-top: 10px;
-	width: 100%;
-}
-
 #contents {
 	border-left: 1px solid #ccc;
 	height: auto;
@@ -214,13 +207,6 @@ body {
 *::after {
 	box-sizing: border-box;
 }
-
-#header {
-	padding-top: 30px !important;
-	min-height: 0;
-	background: var(--_body-bg);
-}
-
 
 iframe {
 	width: 652;
