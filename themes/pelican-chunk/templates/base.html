@@ -73,13 +73,25 @@
 
 			// Loop through all list items, and hide those who don't match the search query
 			for (i = 1; i < virusRows.length; i++) {
-				linkValue = virusRows[i].getElementsByTagName("a")[0].innerText;
-				otherNameValue = virusRows[i].getElementsByTagName("td")[2].innerText
+				row = virusRows[i];
+				if (row.getElementsByTagName("a").length > 0 && row.getElementsByTagName("a")[0].innerText !== undefined) {
+					linkValue = row.getElementsByTagName("a")[0].innerText.toUpperCase();
+				}
+				else {
+					linkValue = "";
+				}
 
-				if (linkValue.toUpperCase().indexOf(filter) > -1 | otherNameValue.toUpperCase().indexOf(filter) > -1) {
-					virusRows[i].style.display = "";
+				if (row.getElementsByTagName("td").length >= 2 && row.getElementsByTagName("td")[2].innerText !== undefined) {
+					otherNameValue = row.getElementsByTagName("td")[2].innerText.toUpperCase();
+				}
+				else {
+					otherNameValue = "";
+				}
+
+				if (linkValue.toUpperCase().indexOf(filter) > -1 || otherNameValue.toUpperCase().indexOf(filter) > -1) {
+					row.style.display = "";
 				} else {
-					virusRows[i].style.display = "none";
+					row.style.display = "none";
 				}
 			}
 		}
@@ -115,7 +127,9 @@
 							{% endif %}
 							{% if LINKS %}
 							{% for name, url in LINKS %}
-							<li class="active" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="{{ url }}">{{ name }}</a></li>
+							<li class="active" class="menu-item menu-item-type-post_type menu-item-object-page">
+								<a href="{{ url }}">{{ name }}</a>
+							</li>
 							{% endfor %}
 							{% endif %}
 
