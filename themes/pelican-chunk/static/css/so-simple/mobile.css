@@ -118,6 +118,8 @@
         white-space: nowrap;
         display: flex;
         align-items: flex-start;
+        flex-direction: row-reverse;
+        place-content: flex-end;
     }
 
     .entry-title {
