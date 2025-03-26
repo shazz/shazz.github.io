@@ -39,7 +39,7 @@ MY_LINKS = (
     ("8. Bootsectors?", "/pages/HowBootsectorsWork-en.html"),
 )
 links_list = list(MY_LINKS)
-sorted_links = sorted(links_list, key=lambda x: int(x[0].split(".")[0]))
+sorted_links = sorted(links_list, key=lambda x: int(x[0].split(".")[0]), reverse=True)
 sorted_links = [(title.split(". ", 1)[1], url) for title, url in sorted_links]
 LINKS = tuple(sorted_links)
 
