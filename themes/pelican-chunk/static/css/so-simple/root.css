@@ -10,13 +10,19 @@
 }
 
 :root #floppy {
-    left: calc(var(--_side-nav-w) + var(--_content-space-x));
-    transform: translate(-50%, -50%);
-    max-height: none;
-    max-width: none;
-    width: min(var(--_disc-w), 18rem);
-    top: 100%;
-    bottom: auto;
+    display: block;
+    position: absolute;
+    max-height: 100%;
+    max-width: 100%;
+    top: 20px;
+    left: 10%;
+    /* left: calc(var(--_side-nav-w) + var(--_content-space-x)); */
+    /* top: 220px; */
+    /* transform: translate(-50%, -50%); */
+    /* max-height: none; */
+    /* max-width: none; */
+    /* width: min(var(--_disc-w), 20rem); */
+    /* bottom: auto; */
     /* box-shadow: 0 -20px 30px -10px #0000009c; */
     z-index: 11;
 }

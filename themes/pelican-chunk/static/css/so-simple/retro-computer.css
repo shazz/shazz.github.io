@@ -1,7 +1,6 @@
 .retro-computer {
     position: relative;
     box-sizing: border-box;
-    overflow: hidden;
     margin-left: calc(var(--_content-space-x)* -1);
     width: calc(100% + calc(var(--_content-space-x)* 2));
     overflow: hidden;
@@ -12,6 +11,14 @@
     display: block;
     height: 0;
     padding-bottom: 100%;
+}
+
+.retro-computer__holder img {
+    width: 80%;
+    align-items: center;
+    text-align: center;
+    padding: 0px 0px 30px 0px;
+    margin-left: 120px;
 }
 
 .retro-computer__holder {
