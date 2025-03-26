@@ -506,8 +506,9 @@
         position: relative;
         box-sizing: border-box;
         overflow: hidden;
-        margin-left: calc(var(--_content-space-x)* -1);
-        width: calc(100% + calc(var(--_content-space-x)* 2));
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
         overflow: hidden;
     }
 
@@ -517,6 +518,7 @@
         height: 200px;
         padding-bottom: 0;
         align-items: center;
+        width: 100%;
     }
 
     .retro-computer__holder img {
@@ -524,7 +526,7 @@
         align-items: center;
         text-align: center;
         padding: 0px 0px 0px 0px;
-        margin-left: 110px;
+        margin-left: 90px;
     }
 
     .retro-computer__holder {
@@ -532,6 +534,7 @@
         inset: 0;
         display: flex;
         align-items: center;
+        width: 100%;
     }
 
     .retro-computer__holder::before {
