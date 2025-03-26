@@ -311,6 +311,7 @@
         height: auto;
         border-radius: 15px;
         background-color: #ddd;
+        margin-left: 0px;
     }
 
     div.photo-gallery-image {
