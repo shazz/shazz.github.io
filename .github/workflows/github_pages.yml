@@ -1,5 +1,5 @@
 # Workflow for building the site and (optionally) publishing it to GitHub Pages.
-name: Deploy to GitHub Pages
+name: Deploy to GitHub Pages template
 on:
   workflow_call:
     inputs:
