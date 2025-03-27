@@ -1,0 +1,197 @@
+/* =Content
+----------------------------------------------- */
+.hentry {
+    height: auto;
+    clear: both;
+    position: relative;
+}
+
+.hentry:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.hentry .main {
+    border-bottom: 1px dashed #ddd;
+    float: left;
+    line-height: 175%;
+    padding: 29px 5px 15px 15px;
+    text-align: justify;
+    width: 90%;
+}
+
+.hentry .entry-meta {
+    font-family: 'Oswald', Helvetica, Arial, sans-serif;
+    font-size: 25px;
+    float: left;
+    margin: 35px 0 0 -199px;
+    padding: 0px;
+    text-align: right;
+    text-transform: uppercase;
+    width: 190px;
+}
+
+.hentry .entry-meta a {
+    text-decoration: none;
+}
+
+.hentry .entry-meta div {
+    margin: 10px;
+}
+
+.hentry .entry-meta .date {
+    color: #000;
+    font-weight: bold;
+    margin: 0px;
+}
+
+.hentry .entry-meta .comments {
+    color: #36bcab;
+    display: block;
+    font-size: 16px;
+    margin: -4px 0 0;
+}
+
+.hentry .entry-meta .comments a {
+    color: #36bcab;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.hentry .entry-meta .cat-links {
+    color: #aaa;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 10px;
+}
+
+.hentry .entry-meta .cat-links a {
+    color: #777;
+}
+
+.hentry .entry-meta .cat-links a:hover {
+    color: #36bcab;
+}
+
+.hentry .entry-meta .edit-link a {
+    font-size: 16px;
+}
+
+.hentry div.margin {
+    margin: 10px;
+}
+
+.entry-title {
+    color: #666;
+    font-family: 'Oswald', Helvetica, Arial, sans-serif;
+    font-size: 25px;
+    line-height: 0px;
+    margin: -10px 0px 25px 0px;
+    text-align: left;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.entry-title a {
+    color: #666;
+    text-decoration: none;
+}
+
+.entry-meta .byline {
+    color: #aaa;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 10px;
+}
+
+.entry-meta .byline a {
+    color: #777;
+}
+
+.single-author .entry-meta .byline {
+    display: none;
+}
+
+.hentry .main {
+    padding-inline: var(--_content-space-x);
+    padding-block: var(--_content-space-y);
+    border-bottom: none;
+    width: 100%;
+}
+
+.hentry .entry-meta {
+    top: var(--_content-space-y) - 10px;
+    height: max-content;
+    margin-top: 0;
+    padding-block: 0;
+    margin-left: 0;
+    z-index: 2;
+}
+
+/* Sticky */
+.sticky .main {
+    background: #eee;
+}
+
+.sticky .date {
+    display: none;
+}
+
+.sticky .entry-meta .comments {
+    margin-top: 2px;
+}
+
+/* Page */
+.page .entry-meta .comments {
+    margin-top: 2px;
+}
+
+pre {
+    overflow: auto;
+    scrollbar-width: 0px;
+    width: 100%;
+    background: white;
+    margin: 0 0;
+    padding: 1rem;
+    max-width: auto;
+}
+
+.cat-links {
+    display: inline-block;
+    text-align: left;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+.article-tag-links {
+    display: inline-block;
+    text-align: right;
+    font-size: 13px;
+    padding-top: 20px;
+}
+
+.article-tag-links strong {
+    text-align: right;
+    background: #eee;
+    border-radius: 3px;
+    color: #666;
+    font-weight: normal;
+    font-size: 13px;
+    margin-right: 0px;
+    padding: 3px 6px;
+}
+
+.post {
+    display: grid;
+    gap: var(--_content-space-x);
+    grid-template-columns: var(--_side-nav-w) auto;
+    border-bottom: 1px dashed #ddd;
+}
+
+.post .main {
+    border-left: 1px solid #ccc;
+}
