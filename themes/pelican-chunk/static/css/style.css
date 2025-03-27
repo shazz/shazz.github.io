@@ -190,7 +190,8 @@ ol ul {
 ----------------------------------------------- */
 
 body {
-	--_wrapper-size: 75rem;
+	/* shazz: page width*/
+	--_wrapper-size: 85rem;
 	--_side-nav-w: 190px;
 	--_disc-w: 20vw;
 	--_content-space-x: 2rem;
