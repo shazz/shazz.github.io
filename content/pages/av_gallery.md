@@ -6,7 +6,7 @@ Category: Atari ST, Virus
 Lang: en
 Author: shazz
 status: hidden
-type: antiviruses
+type: most used antiviruses
 summary: Antivirus Gallery
 gallery: {filename}../gallery/antiviruses{Atari ST Malware Museum}
 save_as: antivirus.html
