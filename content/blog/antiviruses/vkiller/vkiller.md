@@ -40,8 +40,8 @@ Here you can exit the program and there is an option to select a file selector
 
 1. Apparently disables sounds in the program?
 2. Displays system information
-3. ![photo1]({attach}photo 3.png)
-4. ![photo1]({attach}photo 4.png)
+3. ![photo1]({attach}vkiller_photo_3.png)
+4. ![photo1]({attach}vkiller_photo_4.png)
 
 ## Main Functionality
 You can check drive A/B.

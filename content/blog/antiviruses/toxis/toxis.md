@@ -20,7 +20,11 @@ Tags: Antivirus
 * Version 5.50 creation date: 25/05/1993
 * Can detect 16 viruses, 92 regular boot sectors, 108 total
 # Main Part
-The antivirus was written by German programmer Henrik Alt after Sagrotan and can recognize 108 boot sectors. When launching the program, you are greeted with a welcome screen containing information about the author and the program (photo 0). The main menu contains several tabs. Let's go through them first!
+The antivirus was written by German programmer Henrik Alt after Sagrotan and can recognize 108 boot sectors. When launching the program, you are greeted with a welcome screen containing information about the author and the program.
+
+![photo]({attach}toxis_photo_0.png)
+
+The main menu contains several tabs. Let's go through them first!
 
 ### Tabs:
 1. _Toxis_
@@ -36,7 +40,7 @@ This tab contains:
 * **uber toXis**
 Just a splash screen
 
-![photo1]({attach}photo 0.png)
+![photo1]({attach}toxis_photo_0.png)
 
 ## Virus
 This tab contains:
@@ -79,19 +83,19 @@ This tab contains:
 1. Allows selecting drive A, B... Hard drive
 2. Allows configuring online memory
 
-![photo1]({attach}photo 2.png)
+![photo]({attach}toxis_photo_2.png)
 
 3. Allows configuring online drive
 
-![photo1]({attach}photo 3.png)
+![photo]({attach}toxis_photo_3.png)
 
 4. Allows configuring hard drive
 
-![photo1]({attach}photo 4.png)
+![photo]({attach}toxis_photo_4.png)
 
 5. Allows configuring the scan for Link viruses
 
-![photo1]({attach}photo 5.png)
+![photo]({attach}toxis_photo_5.png)
 
 6. Allows configuring the boot sector type
 7. Allows configuring the display method

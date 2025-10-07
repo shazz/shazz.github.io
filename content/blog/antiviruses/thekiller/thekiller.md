@@ -21,7 +21,9 @@ Tags: Antivirus
 * Program language: French
 
 # Main Part
-The program's interface is small compared to Sagrotan or Toxis, but I will tell you what each button does! Interface: (photo 0)
+The program's interface is small compared to Sagrotan or Toxis, but I will tell you what each button does! Interface:
+
+![photo]({attach}thekiller_photo_0.png)
 
 * **Quitter** - exit the program to the desktop
 * **Lecteur** - switch to another disk drive
@@ -30,8 +32,16 @@ The program's interface is small compared to Sagrotan or Toxis, but I will tell 
 * **Visualiser** - view the boot sector
 * **Tuer** - Write the vaccine to the disk
 * **Ajouter** - add something? This caused an error for me!
-* **Biblio** - list of what The Killer recognizes (photo 3)
-* **Option** - Killer settings (photo 2)
-* **Info** - information about the author (photo 1)
+* **Biblio** - list of what The Killer recognizes
+
+![photo]({attach}thekiller_photo_3.png)
+
+* **Option** - Killer settings
+
+![photo]({attach}thekiller_photo_2.png)
+
+* **Info** - information about the author
+
+![photo]({attach}thekiller_photo_1.png)
 
 And that's all the functionality! All genius is simple :).

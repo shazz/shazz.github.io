@@ -20,7 +20,11 @@ Tags: Antivirus
 * Can detect 12 viruses, 29 antivirus programs, 6 utilities, 6 miscellaneous programs, and 10 demos. 63 in total
 * Author's website with the latest version: [click!](https://www.raceme.org/atari/xtermine/)
 # Main part
-The antivirus was written by Frenchman Christophe Boyanique on 05/14/1993 and can detect 63 boot sectors. When entering the program, we are asked to select the amount of RAM (photo 0). Then we get to the main menu of the program, where our boot sector is displayed in ASCII on the right, and the boot sectors recognized by Xtermine are displayed on the left. Xtermine contains 4 databases from different antivirus programs: Sagrotan, The Killer, Exorcist II, and Xtermine itself. It has 4 tabs with different functions. Let's go through them first!
+The antivirus was written by Frenchman Christophe Boyanique on 05/14/1993 and can detect 63 boot sectors. When entering the program, we are asked to select the amount of RAM. 
+
+![photo]({attach}xtermine_photo_0.png)
+
+Then we get to the main menu of the program, where our boot sector is displayed in ASCII on the right, and the boot sectors recognized by Xtermine are displayed on the left. Xtermine contains 4 databases from different antivirus programs: Sagrotan, The Killer, Exorcist II, and Xtermine itself. It has 4 tabs with different functions. Let's go through them first!
 
 ### Tabs:
 1. _Xtermine_
@@ -44,7 +48,10 @@ In this tab, you can:
 * **Exit**
 
 1. Here you can select a disk from A to P.
-2. Here you can read information about the boot sector. Example: (photo 1)
+2. Here you can read information about the boot sector. Example:
+
+![photo]({attach}xtermine_photo_1.png)
+
 3. Save boot sector to disk
 4. Exit to desktop
 
