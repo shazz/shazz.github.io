@@ -18,7 +18,7 @@
 			<div class="gallery">
 				{% for title, gallery in page.photo_gallery %}
 				<div class="photo-search">
-					<input type="text" id="searchInput" onkeyup="localSearch()" placeholder="Search within the {{ gallery|length }} documented viruses...">
+					<input type="text" id="searchInput" onkeyup="localSearch()" placeholder="Search within the {{ gallery|length }} {{ page.type }}...">
 				</div>
 				{% for name, photo, thumb, exif, caption in gallery %}
 				<div class="responsive">
