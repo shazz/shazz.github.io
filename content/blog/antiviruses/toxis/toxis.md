@@ -77,10 +77,22 @@ This tab contains:
 * **Einstellung laden**
 
 1. Allows selecting drive A, B... Hard drive
-2. Allows configuring online memory (photo 2)
-3. Allows configuring online drive (photo 3)
-4. Allows configuring hard drive (photo 4)
-5. Allows configuring the scan for Link viruses (photo 5)
+2. Allows configuring online memory
+
+![photo1]({attach}photo 2.png)
+
+3. Allows configuring online drive
+
+![photo1]({attach}photo 3.png)
+
+4. Allows configuring hard drive
+
+![photo1]({attach}photo 4.png)
+
+5. Allows configuring the scan for Link viruses
+
+![photo1]({attach}photo 5.png)
+
 6. Allows configuring the boot sector type
 7. Allows configuring the display method
 8. Reset settings to default
