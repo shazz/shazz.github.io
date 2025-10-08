@@ -63,6 +63,10 @@ EXTRA_PATH_METADATA = {
     "theme/favicon.ico": {"path": "favicon.ico"},
     "html/museum.html": {"path": "museum.html"},
     "html/museum_hall.html": {"path": "museum_hall.html"},
+    "html/hatari/hatari.html": {"path": "museum/hatari.html"},
+    "html/hatari/hatari.wasm": {"path": "museum/hatari.wasm"},
+    "html/hatari/hatari.js": {"path": "museum/hatari.js"},
+    "html/hatari/hatari.data": {"path": "museum/hatari.data"},    
 }
 
 # PHOTOS plugin

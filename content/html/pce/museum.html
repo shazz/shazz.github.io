@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style type="text/css">
+        .pcejs {
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            font-family: monospace;
+            vertical-align: top;
+            /* the canvas *must not* have any border or padding, or mouse coords will be wrong */
+            border: 0px none;
+            padding: 0;
+            cursor: none;
+        }
+
+        .pcejs-container {
+            margin-top: 0px;
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+        }
+    </style>
+</head>
+
+<body style="background-color: white;">
+    <div class="pcejs pcejs-container">
+        <div class="pcejs pcejs-loading-status">Initializing emulator...</div>
+        <div class="pcejs">
+            <canvas class="pcejs pcejs-canvas" oncontextmenu="event.preventDefault()"></canvas>
+        </div>
+    </div>
+    <script>getVirus()</script>
+</body>
+
+</html>

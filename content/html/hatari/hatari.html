@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Atari ST Malware Museum - Hatari</title>
+  <style>
+    html,
+    body,
+    canvas {
+      margin-left: -30px;
+      margin-top: -10px;
+      padding: 0;
+      width: 102%;
+      height: 102%;
+    }
+
+    html,
+    body {
+      overflow: hidden;
+      background-color: #000;
+    }
+
+    canvas {
+      border: 0 none;
+      background-color: #000;
+      cursor: none;
+    }
+  </style>
+
+</head>
+
+<body>
+  <canvas id="canvas" oncontextmenu="event.preventDefault()" tabindex="-1"></canvas>
+
+  <script>
+    var Module = {
+      preRun: [],
+      postRun: [],
+      canvas: document.getElementById("canvas"),
+      totalDependencies: 0,
+
+      print: (t) => console.log("[Hatari]", t),
+      setStatus: (e) => console.log("[Hatari]", e),
+      monitorRunDependencies: function (e) {
+        (this.totalDependencies = Math.max(this.totalDependencies, e)),
+          this.setStatus(e
+            ? "Preparing... (" + (this.totalDependencies - e) + "/" + this.totalDependencies + ")"
+            : "All downloads complete."
+          );
+      },
+    };
+
+    Module.setStatus("Downloading...");
+    window.onerror = (e) => Module.setStatus("Error: " + e);
+  </script>
+  <script async src="./hatari.js"></script>
+</body>
+
+</html>
