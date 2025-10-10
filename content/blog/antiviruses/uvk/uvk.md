@@ -11,9 +11,9 @@ summary: This article is about UVK...
 image: {filename}../../../gallery/antiviruses/uvk.png
 Tags: Antivirus
 
-# UVK
+## History
 
-## 2.0PRE
+### 2.0PRE
 
 The first version was written by Richard Karsmakers and dates back to December 12, 1987, and was called "Virus Destruction Utility".
 This version could only recognize one virus, "Signum". It was not widely distributed and was only received by a few people at an ST club meeting in Eindhoven.
