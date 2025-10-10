@@ -5,22 +5,20 @@ Date: 2025-10-06 12:04
 Location: Montreal / Canada
 Category: Atari ST, Antivirus
 Lang: en
-Author: shazz
+Author: shazz & draedon
 status: hidden
 summary: This article is about Sagrotan...
 image: {filename}../../../gallery/antiviruses/sagrotan.png
 Tags: Antivirus
 
 # Sagrotan 4.17
-
 ## Basic Information
 * Version 4.17 released 1990/05/13
 * Author: Henrik Alt
 * Program language: German
 * Can detect 15 viruses, 91 regular boot sectors, 106 total
-
 # Main Part
-The antivirus was written by German programmer Henrik Alt on 1990/05/13 and can recognize 106 boot sectors. When launching the program, you are greeted with a welcome screen containing information about the author and the program. 
+The antivirus was written by German programmer Henrik Alt on 1990/05/13 and can recognize 106 boot sectors. When launching the program, you are greeted with a welcome screen containing information about the author and the program.
 
 ![photo]({attach}sagrotan_photo_0.png)
 
@@ -48,6 +46,7 @@ This tab contains:
 4. More detailed drive settings
 
 ![photo]({attach}sagrotan_photo_1.png)
+
 
 ## Virus
 This tab contains:
@@ -127,3 +126,8 @@ This tab contains:
 
 1. Extra help
 2. Warnings
+
+## Vaccine
+This antivirus has its own vaccine, and when you boot up, you'll see this: 
+
+![photo]({attach}sagrotan_photo_5.png)

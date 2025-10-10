@@ -1,16 +1,15 @@
-Title: Boot Protector II
+Title: Boot Protector
 Slug: bootprotectorii
-Name: Boot Protector II
+Name: Boot Protector
 Date: 2025-10-06 12:04
 Location: Montreal / Canada
 Category: Atari ST, Antivirus
 Lang: en
-Author: shazz
+Author: shazz & draedon
 status: hidden
-summary: This article is about Boot Protector II...
+summary: This article is about Boot Protector...
 image: {filename}../../../gallery/antiviruses/bootprotectorii.png
 Tags: Antivirus
-
 
 ## Basic Information
 * Version: 2.82
@@ -20,10 +19,14 @@ Tags: Antivirus
 * Recognizes 515 boot sectors
 
 ## Main Description
-Boot Protector 2.82 (1993-2024) is an antivirus program written by Michel GOUX that recognizes 515 boot sectors, 21 of which are viruses. Let's explore the interface! The antivirus warns us that we are infected right when launching the program: (photo 0).
+Boot Protector 2.82 (1993-2024) is an antivirus program written by Michel GOUX that recognizes 515 boot sectors, 21 of which are viruses. Let's explore the interface! The antivirus warns us that we are infected right when launching the program:
+
+![photo]({attach}bp2_photo_0.png)
 
 ## Interface
-(photo 1)
+
+![photo]({attach}bp2_photo_1.png)
+
 We can select disk A/B and scan it.
 
 ### Preferences:
@@ -45,7 +48,20 @@ We can select disk A/B and scan it.
 2. Play selected music using Play button
 3. Stop music using Stop button
 
-### Additional Functions:
-* **Info**: Displays author information (photo 3)
-* **Quit**: Exit to desktop
-* **Vaccine**: Vaccinate disk against viruses with Boot Protect v2.82 vaccine
+### Latest features: 
+* _Info:_ displays information about the author.
+
+![photo]({attach}bp2_photo_2.png)
+
+* _Quit:_ Exit to the desktop.
+* _Vaccine:_ Vaccinate the disk against viruses with boot protect v2.82
+* _Normal/Automatic mode:_
+1. In this mode, everything happens automatically. You just need to insert the floppy disks into drive A. They will be checked automatically, and if a virus is detected, the program will offer to vaccinate the floppy disk (RETURN button — vaccination, ESC — skip).
+    1. Other functions (Information, Exit, Display, Music, etc.) are not available in AUTOMATIC mode.
+    2. F1 to switch between modes.
+    3. The current mode is displayed on the screen above the syringe.
+
+## Vaccine
+When booting from the Boot Protect vaccine disk, we see this:
+
+![photo]({attach}bp2_photo_3.png)
