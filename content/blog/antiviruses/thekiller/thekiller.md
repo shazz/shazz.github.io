@@ -8,7 +8,7 @@ Lang: en
 Author: shazz & draedon
 status: hidden
 summary: This article is about The Killer...
-image: {filename}../../../gallery/antiviruses/thekiller.png
+image: {filename}../../../gallery/antiviruses/the_killer.png
 Tags: Antivirus
 
 ## Basic information
