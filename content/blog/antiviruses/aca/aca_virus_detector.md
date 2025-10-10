@@ -17,8 +17,11 @@ Tags: Antivirus
 * Program language: English
 * Release date: 1987-1988
 * Detects only ACA Virus
+
 ## Main section
+
 ACA Virus Detector And Vaccin (1987-1988) is an antivirus program written by Anti Copyright Association that detects only the ACA virus, which can be written to disk using this same virus detector. Let's take a look at the interface.
+
 ## Interface
 
 ![photo]({attach}aca_photo_3.png)
@@ -41,8 +44,10 @@ ACA Virus Detector And Vaccin (1987-1988) is an antivirus program written by Ant
 4. We can exit to the desktop with the F10 key.
 
 ## Vaccine
+
 This antivirus has its own vaccine.
 
 ## Summary
+
 This antivirus cannot detect viruses other than ACA. It can also install the virus it is fighting against. Limited functionality and the ability to infect the boot sector.
 Rating 2/10 :( .

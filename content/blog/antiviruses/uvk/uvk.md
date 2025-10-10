@@ -11,7 +11,6 @@ summary: This article is about UVK...
 image: {filename}../../../gallery/antiviruses/uvk.png
 Tags: Antivirus
 
-
 # UVK
 
 ## 2.0PRE
@@ -22,6 +21,7 @@ All version 2 releases were public domain, versions 3 through 8.0 were commercia
 This version had limited functionality and could not yet recognize safe boot sectors.
 
 ## Main Part
+
 The most recent version of the UVK antivirus became version 9.0, written by Richard Karsmakers on April 12, 2004. This version became the final one and was no longer updated as virus writers lost interest in the Atari ST and moved to new systems. The final version is capable of recognizing 1936 boot sectors, 109 boot sector viruses, 5 link viruses, 41 antivirus programs, 190 resident applications, and 89 versions of packer/archiver formats. A total of 800 different boot sectors can be restored. So let's take a look inside this antivirus! When we open it, we are asked to set the time and date.
 
 ![photo]({attach}uvk_photo_0.png)
@@ -73,6 +73,6 @@ Here we can return to the main menu, check files or folders, and also set or rem
 
 ![photo]({attach}uvk_photo_12.png)
 
-## In conclusion:
+## In conclusion
 
 UVK is a good antivirus that recognizes more viruses than other antiviruses, but it is weak against new viruses. As was the case with some virus variants, it can make mistakes due to the slightest change in the virus code, and this is its weakness. The virus itself was updated over 17 years and was possibly the most popular on the market. For the large number of viruses it can recognize, I give this antivirus a rating of 8/10. It also contains documents with entries for all viruses, and the author released his own book dedicated to viruses (recommended reading!).

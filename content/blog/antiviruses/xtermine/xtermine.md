@@ -11,8 +11,8 @@ summary: This article is about Xtermine...
 image: {filename}../../../gallery/antiviruses/xtermine.png
 Tags: Antivirus
 
-# Xtermine
 ## Basic Information
+
 * Version 0.2 released 14/05/1993
 * Contains 3 databases from different antiviruses and 1 of its own
 * Author: Christophe Boyanique
@@ -21,19 +21,22 @@ Tags: Antivirus
 * Author's website with the latest version: [click!](https://www.raceme.org/atari/xtermine/)
 
 # Main Text
+
 The antivirus was written by French programmer Christophe Boyanique on 14/05/1993 and can detect 63 boot sectors. When starting the program, we are prompted to select the amount of RAM.
 
 ![photo]({attach}xtermine_photo_0.png)
 
 Then we enter the main program menu where our boot sector is displayed in ASCII on the right, and on the left will be displayed the boot sectors that Xtermine recognizes. Xtermine contains 4 databases from different antiviruses: Sagrotan, The Killer, Exorcist II, and Xtermine itself. It has 4 tabs with different functions. Let's go through them first!
 
-### Tabs:
+### Tabs
+
 1. _Xtermine_
 2. _Boot_
 3. _Biblio_
 4. _Divers_
 
 ## Xtermine
+
 This tab contains:
 
 * **Xtermine**
@@ -41,6 +44,7 @@ This tab contains:
 This tab contains information about the author, creation date, and whether this version is registered.
 
 ## Boot
+
 This tab allows you to:
 
 * **Select disk**
@@ -57,6 +61,7 @@ This tab allows you to:
 4. Exit to the desktop
 
 ## Biblio
+
 This tab contains:
 
 * **Information**
@@ -74,6 +79,7 @@ This tab contains:
 6. Allows saving a file _**?**_
 
 ## Divers
+
 This tab contains:
 
 * **System**
@@ -85,6 +91,7 @@ This tab contains:
 3. _**?**_
 
 ## Boot Sectors on the Left
+
 If you click on the boot sectors on the left, you can choose what to do with them:
 
 1. Open on screen in ASCII
@@ -97,4 +104,5 @@ If you click on the boot sectors on the left, you can choose what to do with the
 ![photo]({attach}xtermine_photo_3.png)
 
 ## Vaccine
+
 It is unknown if this antivirus has a vaccine

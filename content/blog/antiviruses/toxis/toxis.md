@@ -11,8 +11,8 @@ summary: This article is about Toxis...
 image: {filename}../../../gallery/antiviruses/toxis.png
 Tags: Antivirus
 
-# ToXis (5.50)
 ## Basic Information
+
 * ToXis is a successor of Sagrotan
 * Author: Henrik Alt
 * Program language: German
@@ -21,9 +21,11 @@ Tags: Antivirus
 * Can detect 16 viruses, 92 regular boot sectors, 108 total
 
 # Main Text
+
 The antivirus was written by German programmer Henrik Alt after Sagrotan and can recognize 108 boot sectors. When starting the program, we are greeted by a welcome screen with information about the author and the program (photo 0). In the main menu we see tabs. Let's go through them first!
 
-### Tabs:
+### Tabs
+
 1. _Toxis_
 2. _Virus_
 3. _Einstellug_
@@ -32,16 +34,21 @@ The antivirus was written by German programmer Henrik Alt after Sagrotan and can
 6. _Hilfe_
 
 ## Toxis
+
 This tab contains:
 
 * **uber toXis**
+
 1. Splash screen
+
 ![photo]({attach}toxis_photo_0.png)
 
 2. Toxis in Toxis
+
 ![photo]({attach}toxis_photo_7.png)
 
 ## Virus
+
 This tab contains:
 
 * **prüfen**
@@ -59,13 +66,11 @@ This tab contains:
 
 ![photo]({attach}toxis_photo_1.png)
 
-
 2. Allows writing the Toxis vaccine to the boot sector
 3. Allows complete cleaning of the boot sector
 4. Allows restoring the boot sector by writing a boot sector of your choice to it
 
 ![photo]({attach}toxis_photo_7.png)
-
 
 5. Shows disk information
 6. Allows checking a file for Link viruses
@@ -92,7 +97,6 @@ This tab contains:
 
 ![photo]({attach}toxis_photo_2.png)
 
-
 3. Allows configuring online drive
 
 ![photo]({attach}toxis_photo_3.png)
@@ -112,6 +116,7 @@ This tab contains:
 10. Load settings
 
 ## Bibliothek
+
 This tab contains:
 
 * **Boot übernehmen**
@@ -131,6 +136,7 @@ This tab contains:
 7. Show
 
 ## Allerlei
+
 This tab contains:
 
 * **protokoll**

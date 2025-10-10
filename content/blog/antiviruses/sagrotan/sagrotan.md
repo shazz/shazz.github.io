@@ -11,13 +11,15 @@ summary: This article is about Sagrotan...
 image: {filename}../../../gallery/antiviruses/sagrotan.png
 Tags: Antivirus
 
-# Sagrotan 4.17
 ## Basic Information
+
 * Version 4.17 released 1990/05/13
 * Author: Henrik Alt
 * Program language: German
 * Can detect 15 viruses, 91 regular boot sectors, 106 total
+
 # Main Part
+
 The antivirus was written by German programmer Henrik Alt on 1990/05/13 and can recognize 106 boot sectors. When launching the program, you are greeted with a welcome screen containing information about the author and the program.
 
 ![photo]({attach}sagrotan_photo_0.png)
@@ -25,6 +27,7 @@ The antivirus was written by German programmer Henrik Alt on 1990/05/13 and can 
 There are higher versions available, but they are translations and don't offer significant additional benefits. The main menu contains several tabs. Let's go through them first!
 
 ### Tabs:
+
 1. _Desk_
 2. _Virus_
 3. _Laufwerk_
@@ -33,6 +36,7 @@ There are higher versions available, but they are translations and don't offer s
 6. _Hilfe_
 
 ## Desk
+
 This tab contains:
 
 * **SAGROTAN**
@@ -47,8 +51,8 @@ This tab contains:
 
 ![photo]({attach}sagrotan_photo_1.png)
 
-
 ## Virus
+
 This tab contains:
 
 * **Bootsektor prüfen**
@@ -85,9 +89,11 @@ This tab contains:
 11. Allows exiting Sagrotan
 
 ## Laufwerk
+
 This tab allows you to select the drive (Drive A, Drive B... and hard drive) on which all operations will be performed.
 
 ## Bibliothek
+
 This tab contains:
 
 * **Alle Bootsektoren speichern**
@@ -103,6 +109,7 @@ This tab contains:
 5. Shows everything that Sagrotan can recognize
 
 ## Allerlei
+
 This tab contains:
 
 * **Einstellung sichern**
@@ -128,6 +135,7 @@ This tab contains:
 2. Warnings
 
 ## Vaccine
+
 This antivirus has its own vaccine, and when you boot up, you'll see this: 
 
 ![photo]({attach}sagrotan_photo_5.png)
