@@ -5,11 +5,19 @@ Date: 2025-10-06 12:04
 Location: Montreal / Canada
 Category: Atari ST, Antivirus
 Lang: en
-Author: shazz
+Author: shazz & draedon
 status: hidden
 summary: This article is about UVK...
 image: {filename}../../../gallery/antiviruses/uvk.png
 Tags: Antivirus
+
+## Basic Information
+* The antivirus was updated over a period of 17 years
+* Author: Richard Karsmakers
+* Program language: English
+* Version 9.0 creation date: 12.04.2004
+* Version: 9.0
+* Can detect 109 boot sector viruses, 5 link viruses, 1936 boot sectors
 
 ## History
 
@@ -35,15 +43,34 @@ And if there are programs in memory protected from unauthorized reset. So we pro
 ![photo]({attach}uvk_photo_3.png)
 
 Here we see the program version, Richard's website, the date we selected, and functions such as:
-"Seek'n' Destroy Viruses", "Restore Disks", "UVK 2000 9.0 Information", "System Status", "Quit to Desktop (U)". We will examine each function separately. Function 1 is where we can select the drive we want to check.
+
+* **Seek'n' Destroy Viruses**
+
+* **Restore Disks**
+
+* **UVK 2000 9.0 Information**
+
+* **System Status**
+
+* **Quit to Desktop (U)**
+
+We will examine each function separately. 
+ 
+1. Function 1 is where we can select the drive we want to check.
 
 ![photo]({attach}uvk_photo_4.png)
 
-The second function allows us to select a drive and a boot sector that can be written to the disk. 
+2. The second function allows us to select a drive and a boot sector that can be written to the disk. 
 
 ![photo]({attach}uvk_photo_5.png)
 
-The third function shows us information about the antivirus version, how many boot sectors can be detected, and some other information such as credits, etc. The fourth function returns us to the menu with system information. The fifth function shows program operation statistics and returns us to the desktop. Let's go back to the first function and select the drive to check. So we see that we can check the disk for 2 types of viruses: Link and Bootsector – let's examine each! 
+3. The third function shows us information about the antivirus version, how many boot sectors can be detected, and some other information such as credits, etc.
+
+4. The fourth function returns us to the menu with system information. 
+
+5. The fifth function shows program operation statistics and returns us to the desktop. 
+
+Let's go back to the first function and select the drive to check. So we see that we can check the disk for 2 types of viruses: Link and Bootsector – let's examine each! 
 
 ![photo]({attach}uvk_photo_6.png)
 
@@ -73,6 +100,34 @@ Here we can return to the main menu, check files or folders, and also set or rem
 
 ![photo]({attach}uvk_photo_12.png)
 
-## In conclusion
+### Vaccine
 
-UVK is a good antivirus that recognizes more viruses than other antiviruses, but it is weak against new viruses. As was the case with some virus variants, it can make mistakes due to the slightest change in the virus code, and this is its weakness. The virus itself was updated over 17 years and was possibly the most popular on the market. For the large number of viruses it can recognize, I give this antivirus a rating of 8/10. It also contains documents with entries for all viruses, and the author released his own book dedicated to viruses (recommended reading!).
+This antivirus has its own vaccine.
+
+## Virus Test
+
+* **ACA**
+
+* **Macumba 3.3**
+
+* **Merlin's Mad**
+
+* **Non-Executable EICAR Virus**
+
+* **Oli**
+
+### Test results
+
+1. **UVK** correctly identified the ACA virus.
+
+2. **UVK** correctly identified the Macumba 3.3 virus.
+
+3. **UVK** correctly identified the Merlin's Mad virus.
+
+4. **UVK** said it is a boot sector that uses Magic Word.
+
+5. **UVK** correctly identified the OLI virus.
+
+### In conclusion
+
+UVK is a good antivirus that recognizes more viruses than other antiviruses, but it is weak against new viruses. As was the case with some virus variants, it can make mistakes due to the slightest change in the virus code, and this is its weakness. The virus itself was updated over 17 years and was possibly the most popular on the market. For the large number of viruses it can recognize, I give this antivirus a rating of 8,5/10. It also contains documents with entries for all viruses, and the author released his own book dedicated to viruses (recommended reading!).

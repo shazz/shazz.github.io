@@ -12,7 +12,6 @@ image: {filename}../../../gallery/antiviruses/xtermine.png
 Tags: Antivirus
 
 ## Basic Information
-
 * Version 0.2 released 14/05/1993
 * Contains 3 databases from different antiviruses and 1 of its own
 * Author: Christophe Boyanique
@@ -31,11 +30,14 @@ Then we enter the main program menu where our boot sector is displayed in ASCII 
 ### Tabs
 
 1. _Xtermine_
+
 2. _Boot_
+
 3. _Biblio_
+
 4. _Divers_
 
-## Xtermine
+### Xtermine
 
 This tab contains:
 
@@ -43,66 +45,124 @@ This tab contains:
 
 This tab contains information about the author, creation date, and whether this version is registered.
 
-## Boot
+### Boot
 
 This tab allows you to:
 
 * **Select disk**
+
 * **Read**
+
 * **Save to disk**
+
 * **Quit**
 
+### What are they doing?
+
 1. Here you can select drives from A to P.
+
 2. Here you can read information about the boot sector. Example:
 
 ![photo]({attach}xtermine_photo_1.png)
 
 3. Save the boot sector to disk
+
 4. Exit to the desktop
 
-## Biblio
+### Biblio
 
 This tab contains:
 
 * **Information**
+
 * **Insert bootloader**
+
 * **Insert file**
+
 * **Load**
+
 * **Insert**
+
 * **Save**
 
-1. Shows information about boot sectors
-2. Allows saving an inserted boot sector by giving it a name and description
-3. Allows inserting a .DAT file into the program
-4. Allows loading a .DMV file into the program
-5. Allows inserting a .DAT file into the program
-6. Allows saving a file _**?**_
+### What are they doing?
 
-## Divers
+1. Shows information about boot sectors
+
+2. Allows saving an inserted boot sector by giving it a name and description
+
+3. Allows inserting a .DAT file into the program
+
+4. Allows loading a .DMV file into the program
+
+5. Allows inserting a .DAT file into the program
+
+6. Allows saving a file
+
+### Divers
 
 This tab contains:
 
 * **System**
+
 * **Settings**
+
 * **Statistics**
 
-1. _**?**_
-2. Allows selecting display mode and control codes
-3. _**?**_
+### What are they doing?
 
-## Boot Sectors on the Left
+1. System Information
+
+2. Allows selecting display mode and control codes
+
+3. Statistics
+
+### Boot Sectors on the Left
 
 If you click on the boot sectors on the left, you can choose what to do with them:
 
 1. Open on screen in ASCII
+
 2. Save to disk
+
 3. Remove from the list of detectable boot sectors
+
 4. Vaccinate (write to disk)
+
     1. Note: cannot write a virus to disk
+
 5. Re-edit (change boot sector type) Example: change antivirus to virus :)
 
 ![photo]({attach}xtermine_photo_3.png)
 
-## Vaccine
+### Vaccine
 
-It is unknown if this antivirus has a vaccine
+It is unknown if this antivirus has a vaccine.
+
+## Virus Test
+
+* **ACA**
+
+* **Macumba 3.3**
+
+* **Merlin's Mad**
+
+* **Non-Executable EICAR Virus**
+
+* **Oli**
+
+### Test results
+
+1. **Xtermine** said it is an unknown executable boot sector.
+
+2. **Xtermine** said it is an unknown executable boot sector.
+
+3. **Xtermine** said it is an unknown executable boot sector.
+
+4. **Xtermine** said it is an unknown non-executable boot sector.
+
+5. **Xtermine** correctly identified the OLI virus.
+
+## In conclusion
+
+This is basically an average virus killer that can detect some interesting viruses. But... 3,5/10

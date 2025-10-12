@@ -5,14 +5,13 @@ Date: 2025-10-06 12:04
 Location: Montreal / Canada
 Category: Atari ST, Antivirus
 Lang: en
-Author: shazz
+Author: shazz & draedon
 status: hidden
 summary: This article is about VKiller...
 image: {filename}../../../gallery/antiviruses/vkiller.png
 Tags: Antivirus
 
 ## Basic information
-
 * Author: George R. Woodside
 * Program language: English
 * Version 3.84
@@ -32,50 +31,87 @@ After that, we select drive A/B and enter the main menu.
 At the top, we see tabs... Let's quickly run through them!
 
 1. _Desk_
+
 2. _File_
+
 3. _Options_
 
-## Desk
-
-Here you can view information about the author.
+1. Here you can view information about the author.
 
 ![photo]({attach}vkiller_photo_2.png)
 
-## File
+2. Here you can exit the program and select the file selector
 
-Here you can exit the program and select the file selector
+3. Here you can:
 
-## Options
+    1. **Quiet**
 
-* **Quiet**
-* **System Info**
-* **Test Kill**
-* **Extra Zeroing**
+    2. **System Info**
 
-1. Apparently disables sounds in the program?
-2. Displays system information
+    3. **Test Kill**
 
-3. ![photo]({attach}vkiller_photo_3.png)
+    4. **Extra Zeroing**
 
-4. ![photo]({attach}vkiller_photo_4.png)
+        1. Apparently disables sounds in the program?
 
-## Main functionality
+        2. Displays system information
 
-You can check drive A/B. 
-You can view the boot sector in HEX and ASCII simultaneously! Function: Show
-You can print all data or just the boot sector! Function: Print
-You can write the boot sector to a file! Function: File
-You can kill the boot sector! Function: Kill
-You can put a vaccine in the boot sector! Function: Guard
-You can repair the boot sector if the BPB is damaged! Function: Repair
-You can exit the program! Function: Quit
+        ![photo]({attach}vkiller_photo_3.png)
 
-## Information about boot sectors
+        ![photo]({attach}vkiller_photo_4.png)
+
+### Main functionality
+
+1. You can check drive A/B. 
+
+2. You can view the boot sector in HEX and ASCII simultaneously! Function: Show
+
+3. You can print all data or just the boot sector! Function: Print
+
+4. You can write the boot sector to a file! Function: File
+
+5. You can kill the boot sector! Function: Kill
+
+6. You can put a vaccine in the boot sector! Function: Guard
+
+7. You can repair the boot sector if the BPB is damaged! Function: Repair
+
+8. You can exit the program! Function: Quit
+
+### Information about boot sectors
 
 If Vkiller recognizes a boot sector, you can find out information about it by clicking the “Boot sector recognized!” button.
 
-## Vaccine
+### Vaccine
 
 This antivirus has its own vaccine, and when you boot up, you'll see this:
 
 ![photo]({attach}vkiller_photo_5.png)
+
+## Virus Test
+
+* **ACA**
+
+* **Macumba 3.3**
+
+* **Merlin's Mad**
+
+* **Non-Executable EICAR Virus**
+
+* **Oli**
+
+### Test results
+
+1. **Vkiller** correctly identified the ACA virus.
+
+2. **Vkiller** said that extra sectors are not zeroed and the boot sector is executable.
+
+3. **Vkiller** said that extra sectors are not zeroed and the boot sector is executable.
+
+4.  **Vkiller** said that extra sectors are not zeroed and the boot sector is not zeroed, but the disk is safe.
+
+5. **Vkiller** correctly identified the OLI virus.
+
+## In conclusion
+
+This is basically an average virus killer that can detect some interesting viruses. 5/10

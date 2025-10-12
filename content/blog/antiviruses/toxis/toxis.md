@@ -12,7 +12,6 @@ image: {filename}../../../gallery/antiviruses/toxis.png
 Tags: Antivirus
 
 ## Basic Information
-
 * ToXis is a successor of Sagrotan
 * Author: Henrik Alt
 * Program language: German
@@ -33,7 +32,7 @@ The antivirus was written by German programmer Henrik Alt after Sagrotan and can
 5. _Allerlei_
 6. _Hilfe_
 
-## Toxis
+### Toxis
 
 This tab contains:
 
@@ -47,52 +46,82 @@ This tab contains:
 
 ![photo]({attach}toxis_photo_7.png)
 
-## Virus
+### Virus
 
 This tab contains:
 
 * **prüfen**
+
 * **schützen**
+
 * **löschen**
+
 * **reparieren**
+
 * **Disk Info**
+
 * **Dateien prüfen**
+
 * **Speichertest**
+
 * **Optionen**
+
 * **Komplettprüfung**
+
 * **Ende**
+
+### What are they doing?
 
 1. Allows checking the boot sector for viruses and shows if it is executable or not
 
 ![photo]({attach}toxis_photo_1.png)
 
 2. Allows writing the Toxis vaccine to the boot sector
+
 3. Allows complete cleaning of the boot sector
+
 4. Allows restoring the boot sector by writing a boot sector of your choice to it
 
 ![photo]({attach}toxis_photo_7.png)
 
 5. Shows disk information
+
 6. Allows checking a file for Link viruses
+
 7. Allows checking memory for viruses
+
 8. Allows configuring the check for Link viruses
+
 9. Allows checking all programs on the disk for Link viruses
+
 10. Allows exiting Toxis
 
-## Einstellug
+### Einstellug
 
 * **Laufwerksauswahl**
+
 * **Online Speicher**
+
 * **Online Laufwerk**
+
 * **HD-Auswahl**
+
 * **Dateiprüfung**
+
 * **Bootsektortyp**
+
 * **Darstellungsart**
+
 * **Voreinstellung**
+
 * **Einstellung sichern**
+
 * **Einstellung laden**
 
+### What are they doing?
+
 1. Allows selecting drive A, B... Hard disk
+
 2. Allows configuring online memory
 
 ![photo]({attach}toxis_photo_2.png)
@@ -110,49 +139,103 @@ This tab contains:
 ![photo]({attach}toxis_photo_5.png)
 
 6. Allows configuring the boot sector type
+
 7. Allows configuring the display method
+
 8. Reset settings to default
+
 9. Save settings
+
 10. Load settings
 
-## Bibliothek
+### Bibliothek
 
 This tab contains:
 
 * **Boot übernehmen**
+
 * **Virus übernehmen**
+
 * **als Datei speichern**
+
 * **Vektoren übernehmen**
+
 * **laden**
+
 * **speichern**
+
 * **anzeigen**
 
+### What are they doing?
+
 1. Save the boot sector to the library as benign
+
 2. Save the boot sector to the library as a virus
+
 3. Save to the library as a file
+
 4. Add vector data to the library
+
 5. Load
+
 6. Save
+
 7. Show
 
-## Allerlei
+### Allerlei
 
 This tab contains:
 
 * **protokoll**
+
 * **Kaltstart**
 
+### What are they doing?
+
 1. Printer log
+
 2. Allows performing a cold boot
 
-## Hilfe
+### Hilfe
 
 * **Extrahilfe**
+
 * **Warnmeldungen**
 
+### What are they doing?
+
 1. Extra help
+
 2. Warnings
 
 This antivirus has its own vaccine, and when you boot up, you'll see this: 
 
 ![photo]({attach}toxis_photo_8.png)
+
+## Virus Test
+
+* **ACA**
+
+* **Macumba 3.3**
+
+* **Merlin's Mad**
+
+* **Non-Executable EICAR Virus**
+
+* **Oli**
+
+### Test results
+
+1. **Toxis** detected 6 signs of virus infection, found that the checksum is $1234, and requested to clean the disk from viruses.
+
+2. **Toxis** found that the checksum is $1234, said it is an MS-DOS disk, and added that virus infection is unlikely.
+
+3. **Toxis** detected 3 signs of virus infection, found that the checksum is $1234, and requested to clean the disk from viruses.
+
+4. **Toxis** said the disk is not executable but added that the boot sector starts as a resident program during initialization and that the disk contains a virus.
+
+5. **Toxis** detected 7 signs of virus infection, found that the checksum is $1234, and requested to clean the disk from viruses.
+
+## In conclusion
+
+An excellent virus killer capable of detecting new viruses. 6/10
