@@ -8,7 +8,7 @@ Lang: en
 Author: Niagani Dekcus
 status: published
 summary: The article from 1990 discusses the emergence of MIDI viruses, specifically the Fires and Scramble viruses, which target MIDI systems on Atari ST computers. The Fire virus spreads by corrupting MIDI data and can go unnoticed unless users monitor their screens closely. The Scramble virus operates silently, altering MIDI parameters randomly and potentially disrupting live performances. Both viruses are spread through software rather than MIDI equipment, making detection challenging. Joke or Reality?
-image: {filename}../images/max_t.png
+image: {filename}../images/midi_ad.png
 Tags: learning, technical details, midi, joke
 
 > *Note: It's hard to know is this article was a joke or not... Niagani Dekcus looks to be a fictional character and the author of the article. The name appears to be a play on words, as "Niagani Dekcus" can be read as "Sucked in a gain" when reversed. 

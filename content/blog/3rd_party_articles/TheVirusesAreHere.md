@@ -6,8 +6,8 @@ Category: Atari ST
 Lang: en
 Author: Thomas Koziel, Guido Leister
 status: published
-summary: "Boot sector viruses conquer the Atari ST", an article from Computer & Technik in July 1988, teanslated in English.
-image: {filename}../images/max_t.png
+summary: "Boot sector viruses conquer the Atari ST", an article from Computer & Technik in July 1988, translated in English. This article in infamously known because "as an example", the full source code of a working virus was published.
+image: {filename}../images/ct-0788-2pages.png
 Tags: magazine article, translation
 
 ## Boot sector viruses conquer the Atari ST
