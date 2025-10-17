@@ -27,6 +27,7 @@ Tags: learning, tricks, technical details
 <b>Monomorphic viruses</b> are the most basic type of mutating viruses. They use a simple encryption mechanism to slightly alter their appearance, but their core code remains fundamentally unchanged. This makes them relatively easy for antivirus software to detect and neutralize.
 
 Typical mutation technics:
+
 - None
 
 ### Oligomorphic Viruses
@@ -34,6 +35,7 @@ Typical mutation technics:
 <b>Oligomorphic viruses</b> have a more sophisticated approach. They can generate a limited number of variations of themselves, typically using a small set of predefined mutation techniques. While more challenging to detect than monomorphic viruses, they still have a constrained mutation capability.
 
 Typical mutation technics seen on Atari ST:
+
 - Generation counter
 
 ### Polymorphic Viruses
@@ -41,6 +43,7 @@ Typical mutation technics seen on Atari ST:
 <b>Polymorphic viruses</b> represent a significant leap in complexity. They can generate numerous variations of their code, using advanced encryption and mutation techniques. Each time they replicate, they create a different version of themselves, making detection substantially more difficult for traditional antivirus software.
 
 Typical mutation technics (in addition to Oligomorphic technics) seen on Atari ST:
+
 - Simple encryption scheme with hardcoded key
 - Mixed Simple encryption schemes with dynamic key
 
@@ -49,6 +52,7 @@ Typical mutation technics (in addition to Oligomorphic technics) seen on Atari S
 <b>Metamorphic viruses</b> are the most advanced and dangerous type. Unlike other virus types, metamorphic viruses completely rewrite their own code with each infection. This means every iteration of the virus is structurally different, making detection extremely challenging. They essentially recreate themselves from scratch while maintaining their original malicious functionality.
 
 Typical mutation technics (in addition to Polymorphic technics) seen on Atari ST:
+
 - Multiple layers of encryption
 - Code structure variations (bootsector branch, intial virus bootcode)
 - Bootcode Packing
@@ -77,4 +81,4 @@ But in the latest years of the ST and Falcon plaforms some Polymorphic viruses a
 Very few of them are somewhat (definitively not full code rewrite, only parts) early metamorphic, to some extend, using multiple layers of encryption and also some code modification and reorder:
 - Beilstein (2 layers of encryption)
 - Recoder (different bootsector branches, dynamic encryption)
-- Pharaoh (2 keys for the encrytpion mixed scheme, different bootcode starting offsets and different bootcode starting instructions)
+- Pharaoh (2 keys for the mixed encryption scheme, different bootcode starting offsets and different bootcode starting instructions)
