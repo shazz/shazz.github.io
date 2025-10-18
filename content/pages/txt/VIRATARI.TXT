@@ -1,0 +1,160 @@
+ATARI ST-VIREN
+
+
+ACA (auch: Bootsektorvirus #04): Von der schwedischen ACA-
+Crew verfasst. Loescht den gesamten ersten Track einer
+Diskette, also auch die FAT und den Bootsektor, womit die
+Diskette unbrauchbar wird. [3]
+
+ALADIN-Virus: Das Apple-Signet in der Menueleiste
+verwandelt sich in eine Atari-Bombe und es erscheint die
+Meldung "Frankie says: No more Software piracy".
+Anschliessend Ruecksprung ins GEM. Anstelle der Meldung
+gibt's ab und zu schwere Abstuerze. [2]
+
+BOOTSEKTOR-Virus #03: Scharfgemachter Bootvirus aus c't
+7/88. Kopiert sich auf alle neu eingelegten Disketten (A:,
+B:), die keinen ausfuehrbare Bootsektor enthalten. Schreibt
+irgendwann die sinnige Meldung "ARRRGGGHHH Diskvirus hat
+wieder zugeschlagen" auf den Bildschirm. Durch einen Fehler
+kann auch der Konfigurationssektor einer Harddisk zerstoert
+werden (!). Resetfest. [3]
+
+BOOTSEKTOR-Virus #05: von einem Kaeufer des AntiVirenKit
+entdeckt worden. Kopiert sich auf fast alle eingelegten
+Disketten A:/B:, fuehrt einen Generationszaehler, tut sonst
+aber erstaunlicherweise nichts. [3]
+
+BOOTSEKTOR-Virus #06: Wurde uns aus Duesseldorf zugesandt.
+Kopiert sich auf alle Disketten in Laufwerk A:, ist
+aeusserst resetfest (AutoReset und neue Resetroutine).
+Erreicht ein Zaehler den Wert 5, wird der Keyboardprozessor
+manipuliert (Mausbewegung laeuft vertikal genau falsch).
+[3]
+
+BOOTSEKTOR-Virus #07: Wurde uns aus dem Muensterland
+zugesandt. Es scheint sich um eine "Versuchsversion" zu
+handeln, denn im Bootsektor selbst ist "VIRUS" zu lesen.
+Aktiviert sich erst nach einem RESET. Neu an #07 ist, dass
+er noch einen weiteren Sektor, dessen Sektornummer
+verschluesselt im Bootsektor steht, nachlaedt. Da bisher
+nur der erste Teil dieses Virus bekannt ist, laesst sich
+schwer abschaetzen, was er macht. Eine Erleichterung fuer
+Besitzer des Blitter-TOS: Unter dieser Betriebsystemversion
+ist das Virus wirkungslos. [3]
+
+BOOTSEKTOR-Virus #08: Geriet uns Anfang September auf der
+Atari Show 88 in die Finger. #08 verbreitet sich nicht
+selbsttaetig, ist also eigentlich kein Virus, sindern ein
+Trojanisches Pferd. Das Pferdchen scheint von einem Kenner
+des ST geschrieben worden zu sein: Waehrend des Bootens
+wird der Bildschirm komplett mit den vertrauten Boembchen
+gefuellt. Da diese Reaktion beim Einschalten des Rechners
+bestimmt nicht von jedem Anwender als zielfuehrend
+angesehen wird, wurde #08 in diese Liste aufgenommen.
+...uns gehen langsam die Namen aus.. [3]
+
+CAMPUS: Bei gewissen Kopien von CAMPUS CAD 1.3 ist
+aeusserste Vorsicht geboten. Das Teil hat einen LinkVirus,
+der sieben Leuten schon grosse Probleme gebracht hat. Vor
+allem auf die Bootsekoren von Platten & Disks hat er's
+abgesehen. [7]
+
+EMIL 1A: Infiziert den Bootsektor. Nach B. Koehler (VEC) ist
+das Virus am ersten Wort im Bootsektor - $6038 - zu
+erkennen. Andere Bootsektorprogramme mit diesem Wort
+wuerden nicht ueberschrieben, da das Virus sie als schon
+infiziert ansehen wuerde. Allerdings steht $6038 auch in
+nicht infizierten Bootsektoren. Das Virus sucht jedenfals
+nach der Infektion einen passenden Schluessel auf dem
+Bootsektor der eingelegten Diskette (erstes Langwort =
+$60381092). Bei korrektem Schluessel wird der Sektor
+geladen und der Schadensteil, unabhaengig von der
+Pruefsumme, ausgefuehrt. EMIL 1A laesst sich mit Programmen
+bekaempfen, die die Ausfuehrbarkeit des Bootsektors anhand
+der Pruefsumme erkennen, und diesen dann durch Veraendern
+der Summe inaktivieren. Da der Schadensteil nicht als
+ausfuehrbar gekennzeichnet sein muss, wird das Virus aber
+moeglicherweise nicht erkannt. Standardmittel: Den
+Bootsektor deaktivieren und einen frischen Bootsektor
+aufbringen. [1]
+
+EMIL 2A (auch: MAD oder Bootsektorvirus #2): Infiziert den
+Bootsektor. Prueft durch Vergleich auf $60 im ersten Byte
+des Bootsektors, ob sich im Bootsektor bereits ein
+bootfaehiges Programm befindet, kopiert sich in den
+Bootsektor jeder nicht infizierten Diskette A:/B: und
+inkrementiert dabei eine Variable. EMIL 2A ist harmlos [der
+WAR mal harmlos - als er noch MADLIB.ACC hiess und sich
+anklicken liess, um bei Bedarf ein wenig rumzunerven].
+Beginnt nach der fuenften Verseuchung damit (randomized)
+den Bildschirm zu verschieben, auf den Kopf zu stellen, zu
+invertieren und Piepser auszuloesen. - Ein "Demovirus", das
+allerdings ein geschickter [im Originaltext: "guter"; das
+wohl nicht] Programmierer schnell scharfmachen kann.
+Abhilfe: Reset, und mit einer nicht infizierten Diskette
+neu booten. Anschliessend mit einem Vakzin (Antivirus-
+Programm) den Bootsektor desinfizieren resp. nicht
+ausfuehrbar machen. [1][3]
+
+FREEZE: Fuehrt zum Systemabsturz. Formatieren mit 11
+Sektoren. [3]
+
+LARRY: Trojanisches Pferd. Zerstoert bei einem Punktestand
+von 222 die FAT.
+
+LINKVIRUS #03: Wurde uns aus der Schweiz zugesandt. Kann
+sich an alle *.PRG, *.TOS, *.TTP, *.APP haengen, in der
+vorliegenden Version nur im aktiven Laufwerk, dafuer aber
+in alle Ordner. Der Aktionsradius des Virus wurde noch
+nicht ganz analysiert (sieht nicht gut aus). [3]
+
+MILZBRAND: Linkvirus (aus c't 4/87). Kopiert sich in alle
+*.PRG, die groesser als 10000 Bytes sind. Schaltet der ST-
+Kalender auf das Jahr 1987, wird die FAT des aktuellen
+Laufwerks geloescht, und ein kleines Virus auf den
+Bildschirm gemalt. Da das Virus als Source veroeffentlicht
+und ausfuehrlich erlaeutert wurde, kann er leicht
+modifiziert werden. [3]
+
+MOUSER: Bootsektor-Virus. Tauscht, nachdem es sich zehnmal
+erfolgreich verbreitet hat, den Bildschirmursprung, sodass
+die Mausbewegungen falschrum ablaufen. Danach wird bei
+jeder erfolgreichen Verseuchung einmal umgeschaltet, sodass
+der User solange verwirrt wird, bis alle seine Disks
+verseucht sind. Sieht wie ein TEST fuer 'nen BOeSEN Virus
+aus. Das miese Teil ist nicht nur schlau und sehr kompakt
+programmiert, sondern auch resetfest, und zwar auf der
+Basis einer relativ wenig bekannten Methode. Installiert
+sich gleich zweifach und haengt sich in den hdv_bpb-Call
+wie die meisten Bootsektorviren. [6]
+
+SCREEN-Virus: selbstmodifizierend; nur bei deutschem TOS.
+[3]
+
+SIGNUM-Virus (auch: SLEEPER oder Bootsektorvirus #01):
+Eines der ersten entdeckten Viren auf dem ATARI ST. Kopiert
+sich auf alle neu eingelegten Disketten A:/B:. Kann
+bestimmte Bootsektoren starten, ohne dass diese gebootet
+werden; diese Bootsektoren sind jedoch noch nicht
+aufgetreten. [3][5]
+
+VICOSE: Linkvirus, erzeugt mit dem VIrus COnstruction SEt.
+Kann sich in alle *.PRG, *.TOS, *.TTP kopieren,
+moeglicherweise auf allen Drives zwischen A: und P:. Ueber
+sonstige Aktionen koennen keine Aussagen gemacht werden, da
+sie individuell "gestaltet" werden koennen. [3]
+
+
+Quellen:
+
+[1] VEC-Projekt, Uni Hamburg; bearbeitet von Bert Koehler,
+27.11.88
+[2] ZerberusNetz (/Z-NETZ/VIREN) von JOECOOL, 12.1.89.
+[3] aus: SkyLink Mailbox, scouted by: THE FRONTIER, 2/89.
+[4] LABOR E.B., RAINER ZUFALL, POETRONIC.
+[5] ZerberusNetz, BANANACO.@ABC.ZER, STEFAN@UMS.
+[6] ZerberusNetz (/Z-NETZ/VIREN), BANANACO.@ABC.ZER, 9.1.89
+[7] ZerberusNetz (/Z-NETZ/VIREN) von GHOSTWRITER@IUS.ZER,
+19.2.89
+
