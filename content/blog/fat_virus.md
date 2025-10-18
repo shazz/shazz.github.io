@@ -112,7 +112,7 @@ But as far as I know, no antivirus was checking the FAT sectors to find maliciou
 
 ## Historical Context and Possible Lost FAT Virus
 
-The most widespread virus of this era was the <b>Signum/BPL Virus A</b>, estimated to have infected approximately <b>1.5 million disks worldwide</b>. This virus emerged during a period of limited system security and minimal antivirus protection. As this ewas a key virus, it was patiently waiting for his companion bootsector, the Key, to trigger the symptoms which may have been located on FAT sectors but as nobody found the key, it is justr speculaion.
+The most widespread virus of this era was the <b>Signum/BPL Virus A</b>, estimated to have infected approximately <b>1.5 million disks worldwide</b>. This virus emerged during a period of limited system security and minimal antivirus protection. As this is a key virus, it was patiently waiting for his companion bootsector, the Key, to trigger the symptoms which may have been located on FAT sectors but as nobody found the key, it is justr speculaion.
 
 ## Technical Significance
 

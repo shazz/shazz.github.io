@@ -68,17 +68,18 @@ Typical mutation technics (in addition to Polymorphic technics) seen on Atari ST
 
 The vast majority of Atari ST viruses are Monomorphic or Oligomorphic (generation counter).
 
-But in the latest years of the ST and Falcon plaforms some Polymorphic viruses appears moslty using simple XOR, ADD, SUB or mixed of those "encryption" schemes with sometimes a hardcoded key ,sometimes a dynamically generated key:
+But in the latest years of the ST and Falcon computers, some Polymorphic viruses appears mostly using simple XOR, ADD, SUB or mixed of those "encryption" schemes with sometimes a hardcoded key, sometimes a dynamically generated key:
 
- - Macumba 3.3 and Zorro (same codebase,  XOR encyption with dynamic key)
+ - Macumba 3.3 and Zorro (same codebase, XOR encyption with dynamic key)
  - Macumba 5.2 (XOR encyption with dynamic key)
  - Hide (XOR encyption with dynamic key)
- - Darkness
- - Horror
- - Fastload
+ - Darkness (SUB/ADD encryption with dynamic key)
+ - Horror (XOR encyption with dynamic key)
+ - Fastload (XOR encyption with dynamic key)
  - Trojan (XOR encyption with dynamic key of the hidden malware)
 
 Very few of them are somewhat (definitively not full code rewrite, only parts) early metamorphic, to some extend, using multiple layers of encryption and also some code modification and reorder:
+
 - Beilstein (2 layers of encryption)
 - Recoder (different bootsector branches, dynamic encryption)
 - Pharaoh (2 keys for the mixed encryption scheme, different bootcode starting offsets and different bootcode starting instructions)
