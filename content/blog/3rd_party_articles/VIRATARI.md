@@ -1,18 +1,18 @@
-Title: ATARI ST Viruses
+Title: LABOR - ATARI ST Viruses
 Slug: ataristviren
-Name: ATARI ST Viruses
+Name: LABOR - Zeitschrift für World Processing - Issue 2
 Date: 1989-03-01 12:34
 Location: Germany
 Category: Atari ST, Virus
 Lang: en
 Author: Unknown
 status: published
-summary: Translated German article on Atari ST Viruses
-image: {filename}../images/hamburg.png
+summary: Translated German article on Atari ST Viruses from LABOR - Zeitschrift für World Processing, 2nd issue
+image: {filename}../images/chaos.png
 Tags: archives
 
 
-Here’s a full English translation of the German article titled **“ATARI ST-VIREN”**, which catalogs various viruses and trojans affecting the Atari ST system. The original sources include contributions from VEC Project (University of Hamburg), ZerberusNetz, and SkyLink Mailbox.
+Here’s a full English translation of the German article titled **“ATARI ST-VIREN”** from LABOR - LABOR - Zeitschrift für World Processing, 2nd issue, which catalogs various viruses and trojans affecting the Atari ST system. The original sources include contributions from VEC Project (University of Hamburg), ZerberusNetz, and SkyLink Mailbox.
 
 ---
 
@@ -84,6 +84,28 @@ Sources:
 
 Those virus names map to:
 
+| Article Virus name                               | Museum Virus Name | Confidence | Virus Type |
+|--------------------------------------------------|-------------------|------------|------------|
+| ACA / Boot Sector Virus #04                      | ACA               | high       | Bootsector |
+| ALADIN Virus                                     | Aladin            | high       | Mac        |
+| Boot Sector Virus #03                            | CT                | high       | Bootsector |
+| Boot Sector Virus #05                            | Counter           | medium     | Bootsector |
+| Boot Sector Virus #06                            | Master or ACIA ?  | low        | Bootsector |
+| Boot Sector Virus #07                            | Swiss             | medium     | Bootsector |
+| Boot Sector Virus #08                            | Help              | low        | Bootsector |
+| CAMPUS                                           | ?                 |            | Link       |
+| EMIL 1A                                          | Signum BPL        | high       | Bootsector |
+| EMIL 2A / MAD / Boot Sector Virus #02            | Mad               | high       | Bootsector |
+| FREEZE                                           | Freeze            |            | Bootsector |
+| LARRY                                            | ?                 |            | Trojan     |
+| Link Virus #03                                   | ?                 |            | Link       |
+| MILZBRAND                                        | Milzbrand         |            | Link       |
+| MOUSER                                           | Ghost             | high       | Bootsector |
+| SCREEN                                           | Screen            | medum      | Bootsector |
+| SIGNUM Virus / SLEEPER / Boot Sector Virus #01   | Signum BPL        | high       | Bootsector |
+| VICOSE                                           | Vicose            | high       | Link       |
 
-Original article:
+
+Original article: [VIRATARI.TXT]({attach}../../pages/txt/VIRATARI.TXT)
+
 
