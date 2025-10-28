@@ -4,153 +4,271 @@ Name: Sagrotan
 Date: 2025-10-06 12:04
 Location: Montreal / Canada
 Category: Atari ST, Antivirus
-Lang: en
+Language: ru
 Author: shazz & draedon
-status: hidden
-summary: This article is about Sagrotan...
-image: {filename}../../../gallery/antiviruses/sagrotan.png
+Status: hidden
+Short Description: This article is about Sagrotan...
+Image: {filename}../../../gallery/antiviruses/sagrotan.png
 Tags: Antivirus
 
 ## Basic Information
 
-- *Last version*: 4.17 released 1990-05-13
-- *Author*: Henrik Alt
-- *language*: German, some versions translated in English and French
-- *Can detect*: 15 viruses, 91 regular boot sectors, 106 total. X link viruses
-- *Other known versions*: 4.03, 4.10, 4.12, 4.14, 4.17
-- *License*: Freeware
+* **Latest version**: 4.17 released 13.05.1990
+* **Author**: Henrik Alt
+* **Language**: German, some versions translated into English and French
+* **Can detect**: 15 viruses, 91 standard boot sectors, 106 total. X file viruses
+* **Other known versions**: 4.03, 4.06, 4.10, 4.12, 4.14, 4.17
+* **License**: Freeware
 
 ![photo]({attach}sagrotan_photo_0.png)
 
+### Recognized Viruses:
 
-### Recognized viruses:
+* **Boot Viruses**: AIDS, Ghost, C'T, OLI, Maulwurf I, Kobold #2, Fastload, Signum BPL, BHP, Fun, Swiss, Screen, VDU, Bomb, PD 141,
+* **File Viruses**: None
+* **Others**: N/A
 
-- *Boosectors viruses*: AIDS, Ghost, CT, OLI, Maulwurf I, Kobold #2, Fastload, Signum BPL, BHP, Fun, Swiss, Screen, VDU, Bomb, PD141t,...
-- *Link virus*: ...
-- *Others*: N/A
+![photo]({attach}sagrotan_photo_1.png)
 
-![photo]({attach}sagrotan_photo_6.png)
+## Tasks
 
-## Chalenges
+### Task 1: Recognize boot viruses not loaded into memory
 
-### Challenge 1: Recognize bootsector viruses not loaded in memory
+#### Instructions:
 
-#### Directions:
+To test a floppy disk with Sagrotan, follow these steps:
 
-To test a floppy disk using Sagrotan, here are the following actions:
-
-- insert the floppy disk to test in drive A:
-- select the menu `LAUFWERK` to choose the drive
-- select the menu action `Laufwerk A:  <A>` to chose the drive A
-- select the menu `VIRUS`
-- select the menu action `Bootsektor prüfen  <P>` to test the bootsector
-- Click Ok to validate the action
-
-![photo]({attach}sagrotan_photo_2.png)
-
-- Then the bootsector details will appear and the analysis result
-
-#### One of the most spread virus: Ghost
-
-Here is the result with a disk infected by the Ghost virus:
+* Insert the test floppy into drive A:
+* Select the `LAUFWERK` (DRIVE) menu to select the drive
+* Select the menu action `Laufwerk A: <A>` to select drive A:
+* Select the `VIRUS` menu
+* Select the menu action `Bootsektor prüfen <P>` (Check boot sector) to test the boot sector
+* Click Ok to confirm the action
 
 ![photo]({attach}sagrotan_photo_2.png)
 
-We can see that Sagrotan succesfully identified the Ghost virus...
+* Then the boot sector details and the analysis result will appear
 
+#### One of the most common viruses: Ghost
 
-#### A key virus and is keyed disk: Signum BPL
-
-#### A polymorphic virus: Macumba 3.3
-
-#### A trojan virus: Carpe Diem
-
-#### A stealth virus: OLI2
-
-#### A non executable bootsector: EICAR
-
-### Challenge 2: Recognize bootsector viruses loaded in memory
-
-#### Directions
-
-- Boot with the infected floppy disk in drive A:
-- Swap the disk with Sagrotan 
-- Run Sagrotan
-- Check Sagrotan warning appears, saying that the virus is found in memory
-- If the virus was not fully detected, run the same directions as Challenge 1
-
-
-#### One of the most spread virus: Ghost
-
-Here is the result with a disk infected by the Ghost virus:
-
-![photo]({attach}sagrotan_photo_2.png)
-
-#### A key virus and is keyed disk: Signum BPL
-
-#### A polymorphic virus: Macumba 3.3
-
-#### A trojan virus: Carpe Diem
-
-#### A stealth virus: OLI2
-
-#### A non executable bootsector: EICAR
-
-
-### Challenge 3: Recognize a link virus
-
-#### Directions
-
- - ... => Explain direction to detect a link virus knowing that 2 methods exists, one is using known footprint of PRG/TOS/TTP files and check if the footprint has changed, second is really to look like at the link virus code.
-
-![photo]({attach}sagrotan_photo_4.png)
-
-#### The first link virus: Milzbrand
-
-
-### Challenge 3: Restore a broken bootsector
-
-#### Directions
-
- - ... => Explain direction to repair a boot sector, take the Fantasia deo from Dune, add the bootsector to the library, replace the bootsector using the vaccine, repair the bootsector and check the demo is still working after restoration.
-
-### Challenge 4: Vaccine a non executable floppy disk
-
-#### Directions
-
- - ... => Explain directions to vaccine a floppy disk, reboot with an infected disk, warm reboot with the vaccinated disk and check if the vaccin detected the virus and if it was not repalced by the virus
-
-![photo]({attach}sagrotan_photo_5.png)
-
-### Challenge 5: Analyze a suspicious bootsector
-
-#### Directions
-
-- ... => Explain directions to study a suspicious bootsector: vectors, checksum, heuristics, BPB,...
+Here is the result for a floppy disk infected with the Ghost virus:
 
 ![photo]({attach}sagrotan_photo_3.png)
 
-### Challenge 6: Detect a malware when Sagrotan is not running
+We see that Sagrotan successfully identified the Ghost virus.
 
-#### Directions
+#### Key virus and its key disk: Signum BPL
 
- - ... => Explain the directions to run the resident virus checker, usually a memory resident vaccine or a TOS ACC-essory, then try to detect a bootsector virus and a link virus
+Here is the result for a floppy disk infected with the Signum BPL virus:
 
-Sagrotan doesn't have any resident TOS Accessory which can detect viruses while Sagrotan is not running 
+![photo]({attach}sagrotan_photo_4.png)
 
+We see that Sagrotan successfully identified the Signum virus.
 
-### Summary and Conclusion
+#### Polymorphic virus: Macumba 3.3
 
-In the following table, we summarized the challenges results:
+Here is the result for a floppy disk infected with the Macumba 3.3 virus:
 
-| Challenge                                           | Result   |
-|-----------------------------------------------------|:--------:|
-| Recognize bootsector viruses not loaded in memory   |  5/6     |
-| Recognize bootsector viruses loaded in memory       |  1/6     |
-| Restore a broken bootsector                         |  1/1     |
-| Vaccine a non executable floppy disk                |  1/4     |
-| Analyze a suspicious bootsector                     |  3/4     |
-| Detect a malware when Sagrotan is not running       |  0/2     |
-| **Total**                                           |  10/20   |
+![photo]({attach}sagrotan_photo_5.png)
 
-As a conclusion, we can say that...
+Sagrotan reported that it found no signs of a virus in the disk's boot sector.
+
+#### Trojan virus: Carpe Diem
+
+Here is the result for a floppy disk infected with the Carpe Diem virus:
+
+![photo]({attach}sagrotan_photo_6.png)
+
+We see that Sagrotan detected 9 signs of a viral infection. Well, we'll count that...
+
+#### Stealth virus: OLI
+
+Here is the result for a floppy disk infected with the OLI virus:
+
+![photo]({attach}sagrotan_photo_8.png)
+
+We see that Sagrotan successfully identified the OLI virus.
+
+#### Non-executable boot sector: EICAR
+
+Sagrotan said the boot sector is not executable and contains no viruses.
+
+### Task 2: Recognize boot viruses loaded into memory
+
+#### Instructions
+
+* Boot from the infected floppy disk in drive A:
+* Change the disk to the Sagrotan disk
+* Run Sagrotan
+* Check if Sagrotan's warning appears that a virus was found in memory
+* If the virus was not fully detected, follow the same instructions as in Task 1
+
+#### One of the most common viruses: Ghost
+
+Test results:
+
+* Hdv_bpb vector infected
+* Reset vector infected
+
+Sagrotan recognized the Ghost virus in the boot sector.
+
+#### Key virus and its key disk: Signum BPL
+
+Test results:
+
+* Hdv_bpb vector infected
+
+Sagrotan recognized the Signum BPL virus in the boot sector.
+
+#### Polymorphic virus: Macumba 3.3
+
+Test results:
+
+* No exception vectors outside the allowed memory area.
+
+Sagrotan did not recognize the virus in memory. Sagrotan said it found no signs of a viral infection in the boot sector.
+
+#### Trojan virus: Carpe Diem
+
+Test results:
+
+* Hdv-bpb vector is below allowed user memory
+* Reset vector is below allowed user memory
+
+Sagrotan Recognized 9 signs of a viral infection in the boot sector.
+
+#### Stealth virus: OLI
+
+Test results:
+
+* Hdv-init vector is below allowed user memory
+* Hdv-rw vector is below allowed user memory
+* Trap #14 (XBIOS) vector is below allowed user memory
+* Reset vector is below allowed user memory
+
+Sagrotan did not recognize the OLI virus in the boot sector.
+
+#### Non-executable boot sector: EICAR
+
+Test results:
+
+Sagrotan reported that there is nothing in memory. This is correct.
+Sagrotan reported that the boot sector is not executable and is safe. This is not true.
+
+### Task 3: Recognize a file virus
+
+#### Instructions
+
+##### Option 1
+
+* Select the `VIRUS` menu
+* Select the menu action `Datein (Files)` (Check files) to test files for Link Viruses
+* Click Ok to confirm the action
+* Select the drive to test
+* Select the file you want to check
+* Click Ok to confirm the action
+
+##### Option 2
+
+* Select the `VIRUS` menu
+* Select the menu action `Optionen` to configure file testing for Link Viruses
+* Select the file types you want to check
+* Click Start to confirm the action
+* Select the drive to test
+* Select the file you want to check
+* Click Ok to confirm the action
+
+![photo]({attach}sagrotan_photo_7.png)
+
+#### First file virus: Milzbrand
+
+Sagrotan reported that the program has a second program but that it is a virus - unlikely.
+
+### Task 4: Restore a damaged boot sector
+
+#### Instructions
+
+* Insert the test floppy into drive A:
+* Select the `LAUFWERK` (DRIVE) menu to select the drive
+* Select the menu action `Laufwerk A: <A>` to select drive A:
+* Select the `BIBLIOTHEK` (LIBRARY) menu
+* Select the menu action `Bootsektor speichern`
+* Click Ok to confirm the action
+* Press any letter and then press ENTER
+* Save the boot sector to the Sagrotan library and click OK
+
+Let's check! Let's replace the boot sector with the Sagrotan vaccine and try to restore the floppy disk's boot sector. To restore the floppy disk:
+
+* Select the `VIRUS` menu
+* Select the menu action `Bootsektor reparieren`
+* Click Ok to confirm the action
+* Scroll down and select our recently saved boot sector which is now at the very bottom of the list
+* Press `Bootsektor schreiben`
+* Boot sector restored!
+
+### Task 5: Vaccinate a non-executable floppy disk
+
+#### Instructions
+
+* Select the `VIRUS` menu
+* Select the menu action `Bootsektor schutzen` (write vaccine to boot sector)
+* Click Ok to confirm the action
+* Click Ja to confirm the action
+
+Now upon boot we will see the message "Kein Virus im Bootsektor". Let's try to run the Ghost virus and see what happens!
+
+* Load the virus into memory
+* Change the disk to the one vaccinated by Sagrotan
+* Boot from it
+
+We will see the message "Kein Virus im Bootsektor" :( ... Sagrotan could not defeat the virus and the virus will overwrite your boot sector!
+
+### Task 6: Analyze a suspicious boot sector
+
+#### Instructions
+
+* Insert the test floppy into drive A:
+* Select the `LAUFWERK` (DRIVE) menu to select the drive
+* Select the menu action `Laufwerk A: <A>` to select drive A:
+* Select the `VIRUS` menu
+* Select the menu action `Bootsektor prüfen <P>` (Check boot sector) to test the boot sector
+* Click Ok to confirm the action
+
+When scanning the boot sector, Sagrotan performs heuristic analysis and looks at the disk's condition.
+It checks:
+
+* It checks the BPB
+* Checksum
+* Signs of viral infection
+* Infected vectors
+
+After loading, Sagrotan will report if vectors have been changed and if so, will suggest performing a cold reboot. Sagrotan analyzes the boot sector code and outputs information about it:
+
+* Whether the BPB is damaged
+* How many signs of viral infection were detected
+* Whether the checksum equals $1234
+
+If Sagrotan detects a familiar virus in the boot sector, it will report it and display the percentage match with the virus from the Sagrotan database.
+
+### Task 7: Detect malware when Sagrotan is not running
+
+#### Instructions
+
+Sagrotan does not have a resident TOS accessory that could detect viruses when Sagrotan is not running.
+
+## Summary and Conclusion
+
+In the following table we have summarized the task completion results:
+
+| Task | Result |
+| :---------------------------------------------------------------- | :------: |
+| Recognize boot viruses not loaded into memory | 4/6 |
+| Recognize boot viruses loaded into memory | 3.5/6 |
+| Recognize a file virus | 0.5/1 |
+| Restore a damaged boot sector | 1/1 |
+| Vaccinate a non-executable floppy disk | 0/1 |
+| Analyze a suspicious boot sector | 4/4 |
+| Detect malware when Sagrotan is not running | 0/2 |
+| **Total** | 13/21 |
+
+In conclusion, Sagrotan is one of the first antiviruses in history that began using heuristic analysis to recognize viruses. Its analysis methods are still relevant today!
