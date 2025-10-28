@@ -25,7 +25,7 @@ Tags: Antivirus
 
 ### Recognized Viruses:
 
-* **Boot Viruses**: AIDS, Ghost, C'T, OLI, Maulwurf I, Kobold #2, Fastload, Signum BPL, BHP, Fun, Swiss, Screen, VDU, Bomb, PD 141,
+* **Boot Viruses**: AIDS, Ghost, C'T, OLI, Maulwurf I, Kobold #2, Fastload, Signum BPL, BHP, Fun, Swiss, Screen, VDU, Bomb, PD 141
 * **File Viruses**: None
 * **Others**: N/A
 
@@ -50,49 +50,15 @@ To test a floppy disk with Sagrotan, follow these steps:
 
 * Then the boot sector details and the analysis result will appear
 
-#### One of the most common viruses: Ghost
-
-Here is the result for a floppy disk infected with the Ghost virus:
-
-![photo]({attach}sagrotan_photo_3.png)
-
-We see that Sagrotan successfully identified the Ghost virus.
-
-#### Key virus and its key disk: Signum BPL
-
-Here is the result for a floppy disk infected with the Signum BPL virus:
-
-![photo]({attach}sagrotan_photo_4.png)
-
-We see that Sagrotan successfully identified the Signum virus.
-
-#### Polymorphic virus: Macumba 3.3
-
-Here is the result for a floppy disk infected with the Macumba 3.3 virus:
-
-![photo]({attach}sagrotan_photo_5.png)
-
-Sagrotan reported that it found no signs of a virus in the disk's boot sector.
-
-#### Trojan virus: Carpe Diem
-
-Here is the result for a floppy disk infected with the Carpe Diem virus:
-
-![photo]({attach}sagrotan_photo_6.png)
-
-We see that Sagrotan detected 9 signs of a viral infection. Well, we'll count that...
-
-#### Stealth virus: OLI
-
-Here is the result for a floppy disk infected with the OLI virus:
-
-![photo]({attach}sagrotan_photo_8.png)
-
-We see that Sagrotan successfully identified the OLI virus.
-
-#### Non-executable boot sector: EICAR
-
-Sagrotan said the boot sector is not executable and contains no viruses.
+| Virus       | Analysis                                      | Result                                                                       |
+|-------------|-----------------------------------------------|------------------------------------------------------------------------------|
+| Ghost       | ![photo]({attach}sagrotan_photo_3.png)        | We see that Sagrotan successfully identified the Ghost virus                             |
+| Signum BPL  | ![photo]({attach}sagrotan_photo_4.png)        | We see that Sagrotan successfully identified the Signum virus                        |
+| Macumba 3.3 | ![photo]({attach}sagrotan_photo_5.png)        | Sagrotan reported that it found no signs of a virus in the disk's boot sector |
+| Carpe Diem  | ![photo]({attach}sagrotan_photo_6.png)        | We see that Sagrotan detected 9 signs of a viral infection |
+| OLI         | ![photo]({attach}sagrotan_photo_8.png)        | We see that Sagrotan successfully identified the OLI virus                               |
+| OLI2        | ![photo]({attach}sagrotan_photo_9.png)        | We see that Sagrotan detected 7 signs of viral infection in OLI2            |
+| EICAR       | ![photo]({attach}sagrotan_photo_11.png)        | Sagrotan said the boot sector is not executable and contains no viruses |
 
 ### Task 2: Recognize boot viruses loaded into memory
 
@@ -148,6 +114,17 @@ Test results:
 * Reset vector is below allowed user memory
 
 Sagrotan did not recognize the OLI virus in the boot sector.
+
+#### Super Stealth virus: OLI2
+
+Test results:
+
+* Hdv-init vector is below allowed user memory
+* Hdv-rw vector is below allowed user memory
+* Trap #14 (XBIOS) vector is below allowed user memory
+* Reset vector is below allowed user memory
+
+Sagrotan did not recognize the OLI2 virus in the boot sector.
 
 #### Non-executable boot sector: EICAR
 
@@ -242,6 +219,7 @@ It checks:
 * Checksum
 * Signs of viral infection
 * Infected vectors
+* Sagrotan does not check for the Magic long word ($12123456)
 
 After loading, Sagrotan will report if vectors have been changed and if so, will suggest performing a cold reboot. Sagrotan analyzes the boot sector code and outputs information about it:
 
@@ -263,13 +241,13 @@ In the following table we have summarized the task completion results:
 
 | Task | Result |
 | :---------------------------------------------------------------- | :------: |
-| Recognize boot viruses not loaded into memory | 4/6 |
-| Recognize boot viruses loaded into memory | 3.5/6 |
-| Recognize a file virus | 0.5/1 |
-| Restore a damaged boot sector | 1/1 |
-| Vaccinate a non-executable floppy disk | 0/1 |
-| Analyze a suspicious boot sector | 4/4 |
-| Detect malware when Sagrotan is not running | 0/2 |
-| **Total** | 13/21 |
+| Recognize boot viruses not loaded into memory                     |   4/7    |
+| Recognize boot viruses loaded into memory                         |  3.5/7   |
+| Recognize a file virus                                            |  0.5/1   |
+| Restore a damaged boot sector                                     |   1/1    |
+| Vaccinate a non-executable floppy disk                            |   0/1    |
+| Analyze a suspicious boot sector                                  |   4/5    |
+| Detect malware when Sagrotan is not running                       |   0/2    |
+| **Total**                                                         |  13/24   |
 
 In conclusion, Sagrotan is one of the first antiviruses in history that began using heuristic analysis to recognize viruses. Its analysis methods are still relevant today!
