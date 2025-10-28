@@ -4,12 +4,13 @@ Name: Sagrotan
 Date: 2025-10-06 12:04
 Location: Montreal / Canada
 Category: Atari ST, Antivirus
-Language: ru
+Lang: en
 Author: shazz & draedon
-Status: hidden
-Short Description: This article is about Sagrotan...
-Image: {filename}../../../gallery/antiviruses/sagrotan.png
+status: hidden
+summary: This article is about Sagrotan...
+image: {filename}../../../gallery/antiviruses/sagrotan.png
 Tags: Antivirus
+
 
 ## Basic Information
 
