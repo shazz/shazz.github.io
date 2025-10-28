@@ -12,157 +12,131 @@ image: {filename}../../../gallery/antiviruses/xtermine.png
 Tags: Antivirus
 
 ## Basic Information
-* Version 0.2 released 14/05/1993
-* Contains 3 databases from different antiviruses and 1 of its own
-* Author: Christophe Boyanique
-* Program language: French
-* Can detect 12 viruses, 29 antiviruses, 6 utilities, 6 miscellaneous, 10 demos. 63 total
-* Author's website with the latest version: [click!](https://www.raceme.org/atari/xtermine/)
 
-# Main Text
+- *Version*: 0.2 released 14/05/1993
+- *Author*: Christophe Boyanique
+- *Program language*: French
+- *Can detect*: 12 viruses, 29 antiviruses, 6 utilities, 6 miscellaneous, 10 demos. 63 total
+- Author's website with the latest version: [click!](https://www.raceme.org/atari/xtermine/)
 
-The antivirus was written by French programmer Christophe Boyanique on 14/05/1993 and can detect 63 boot sectors. When starting the program, we are prompted to select the amount of RAM.
+### Recognized viruses:
+
+- *Bootsector viruses*: Ghost, C'T, OLI, Kobold #2, Signum BPL, BHP, Fun, Swiss, PD141t, BLOT, Toubab, VDU, Raster & Text
+- *Link virus*: ...
+- *Others*: N/A
 
 ![photo]({attach}xtermine_photo_0.png)
 
-Then we enter the main program menu where our boot sector is displayed in ASCII on the right, and on the left will be displayed the boot sectors that Xtermine recognizes. Xtermine contains 4 databases from different antiviruses: Sagrotan, The Killer, Exorcist II, and Xtermine itself. It has 4 tabs with different functions. Let's go through them first!
+### Challenge 1: Recognize bootsector viruses not loaded in memory
 
-### Tabs
+#### Directions:
 
-1. _Xtermine_
+To test a floppy disk using Xtermine, here are the following actions:
 
-2. _Boot_
+- Insert the floppy disk to test in drive A:
+- Select the menu `Boot`
+- Select the menu action `Lecteur A:` to choose the drive
+- Select the disk and click Ok
+- Select the menu `Boot`
+- Select the menu action `Lire` to test the bootsector
+- Click Ok to validate the action
 
-3. _Biblio_
+| Virus       | Analysis                                      | Result                                                                       |
+|-------------|-----------------------------------------------|------------------------------------------------------------------------------|
+| Ghost       | ![photo]({attach}xtermine_photo_1.png)        | Xtermine successfully identified the Ghost virus                             |
+| Signum BPL  | ![photo]({attach}xtermine_photo_2.png)        | Xtermine successfully identified the Signum BPL virus                        |
+| Macumba 3.3 | ![photo]({attach}xtermine_photo_3.png)        | Xtermine said it is an unknown executable bootsector with 0 signs of viral infection |
+| Carpe Diem  | ![photo]({attach}xtermine_photo_4.png)        | Xtermine said it is an unknown executable bootsector but it has 3 signs of viral infection |
+| OLI         | ![photo]({attach}xtermine_photo_5.png)        | Xtermine successfully identified the OLI virus                               |
+| OLI2        | ![photo]({attach}xtermine_photo_6.png)        | Xtermine reported that it detected only 1 sign of viral infection            |
+| EICAR       | ![photo]({attach}xtermine_photo_7.png)        | Xtermine said it is an unknown non-executable bootsector with 0 signs of viral infection |
 
-4. _Divers_
+### Challenge 2: Recognize bootsector viruses loaded in memory
 
-### Xtermine
+Xtermine cannot scan memory. However, Xtermine successfully recognized the OLI virus in the bootsector when it was in memory! But it did not recognize OLI2...
 
-This tab contains:
+### Challenge 3: Recognize a link virus
 
-* **Xtermine**
+Xtermine is not capable of analyzing files.
 
-This tab contains information about the author, creation date, and whether this version is registered.
+### Challenge 4: Restore a broken bootsector
 
-### Boot
+#### Directions
 
-This tab allows you to:
+- Insert the floppy disk to test in drive A:
+- Select the menu `Boot`
+- Select the menu action `Lecteur A:` to choose the drive
+- Select the disk and click Ok
+- Select the menu `Boot`
+- Select the menu action `Lire` to test the bootsector
+- Click Ok to validate the action
+- Select the menu `Biblio`
+- Select the menu action `Inserer Boot`
+- Add a description, select the bootsector type, select the vaccination type
+- Click `METTRE A JOUR` to save the bootsector to the library
 
-* **Select disk**
+After you have saved the bootsector to the Xtermine library, you can load it into the bootsector. To do this, follow the instructions:
 
-* **Read**
+- Find the saved bootsector in the list
+- Press and hold the button on the bootsector you want to put on the disk
+- Select Vacciner and release the button
+- In the menu that opens, click `Vacciner A:`
 
-* **Save to disk**
+Congratulations! You have written your bootsector to the disk!
 
-* **Quit**
+![photo]({attach}xtermine_photo_9.png)
 
-### What are they doing?
+### Challenge 5: Vaccine a non executable floppy disk
 
-1. Here you can select drives from A to P.
+#### Directions
 
-2. Here you can read information about the boot sector. Example:
+With Xtermine, you can vaccinate a disk with any of the provided bootsectors on the left. To write to the disk, repeat these steps:
 
-![photo]({attach}xtermine_photo_1.png)
+- Press and hold the button on the bootsector you want to put on the disk
+- Select Vacciner and release the button
+- In the menu that opens, click `Vacciner A:`
 
-3. Save the boot sector to disk
+To write the Xtermine vaccine, simply repeat these steps with the Raster & Texte vaccine. Interesting fact: Xtermine has a second vaccine that is labeled as a virus.
 
-4. Exit to the desktop
+Here is what we see upon booting:
 
-### Biblio
+![photo]({attach}xtermine_photo_10.png)
 
-This tab contains:
+![photo]({attach}xtermine_photo_8.png)
 
-* **Information**
+This vaccine has bugs, but having two of them is already good.
 
-* **Insert bootloader**
+### Challenge 6: Analyze a suspicious bootsector
 
-* **Insert file**
+#### Directions
 
-* **Load**
+Xtermine checks the bootsector similarly to how Sagrotan does. But its heuristic analysis is much less advanced than Sagrotan's.
 
-* **Insert**
+- Xtermine does not check vectors
+- Xtermine checks the checksum
+- Xtermine does not check for the Magic long word ($12123456)
+- Xtermine performs heuristic analysis of the bootsector
+- Xtermine checks the BPB
 
-* **Save**
+### Challenge 7: Detect a malware when Xtermine is not running
 
-### What are they doing?
+#### Directions
 
-1. Shows information about boot sectors
+Xtermine doesn't have any resident TOS Accessory which can detect viruses while Xtermine is not running.
 
-2. Allows saving an inserted boot sector by giving it a name and description
+### Summary and Conclusion
 
-3. Allows inserting a .DAT file into the program
+In the following table, we summarized the challenges results:
 
-4. Allows loading a .DMV file into the program
-
-5. Allows inserting a .DAT file into the program
-
-6. Allows saving a file
-
-### Divers
-
-This tab contains:
-
-* **System**
-
-* **Settings**
-
-* **Statistics**
-
-### What are they doing?
-
-1. System Information
-
-2. Allows selecting display mode and control codes
-
-3. Statistics
-
-### Boot Sectors on the Left
-
-If you click on the boot sectors on the left, you can choose what to do with them:
-
-1. Open on screen in ASCII
-
-2. Save to disk
-
-3. Remove from the list of detectable boot sectors
-
-4. Vaccinate (write to disk)
-
-    1. Note: cannot write a virus to disk
-
-5. Re-edit (change boot sector type) Example: change antivirus to virus :)
-
-![photo]({attach}xtermine_photo_3.png)
-
-### Vaccine
-
-It is unknown if this antivirus has a vaccine.
-
-## Virus Test
-
-* **ACA**
-
-* **Macumba 3.3**
-
-* **Merlin's Mad**
-
-* **Non-Executable EICAR Virus**
-
-* **Oli**
-
-### Test results
-
-1. **Xtermine** said it is an unknown executable boot sector.
-
-2. **Xtermine** said it is an unknown executable boot sector.
-
-3. **Xtermine** said it is an unknown executable boot sector.
-
-4. **Xtermine** said it is an unknown non-executable boot sector.
-
-5. **Xtermine** correctly identified the OLI virus.
-
-## In conclusion
-
-This is basically an average virus killer that can detect some interesting viruses. But... 3,5/10
+| Challenge                                           | Result   |
+|-----------------------------------------------------|:--------:|
+| Recognize bootsector viruses not loaded in memory   |  4/7     |
+| Recognize bootsector viruses loaded in memory       |  1/7     |
+| Recognize a link virus                              |  0/1     |
+| Restore a broken bootsector                         |  1/1     |
+| Vaccine a non executable floppy disk                |  1/1     |
+| Analyze a suspicious bootsector                     |  3/5     |
+| Detect a malware when Xtermine is not running       |  0/2     |
+| **Total**                                           |  10/24   |
+
+In conclusion, Xtermine is a good antivirus that can detect the OLI virus while it is in memory. You can even add libraries from other antiviruses!
