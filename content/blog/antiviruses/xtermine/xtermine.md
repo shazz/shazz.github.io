@@ -1,8 +1,8 @@
 Title: Xtermine
 Slug: xtermine
 Name: Xtermine
-Date: 2025-10-06 12:04
-Location: Montreal / Canada
+Date: 2025-10-28 22:32
+Location: Russia
 Category: Atari ST, Antivirus
 Lang: en
 Author: Draedon
