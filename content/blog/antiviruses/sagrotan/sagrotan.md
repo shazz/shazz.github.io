@@ -1,11 +1,11 @@
 Title: Sagrotan
 Slug: sagrotan
 Name: Sagrotan
-Date: 2025-10-06 12:04
-Location: Montreal / Canada
+Date: 2025-10-29 18:08
+Location: Russia
 Category: Atari ST, Antivirus
 Lang: en
-Author: shazz & draedon
+Author: draedon
 status: hidden
 summary: This article is about Sagrotan...
 image: {filename}../../../gallery/antiviruses/sagrotan.png
@@ -52,13 +52,13 @@ To test a floppy disk with Sagrotan, follow these steps:
 
 | Virus       | Analysis                                      | Result                                                                       |
 |-------------|-----------------------------------------------|------------------------------------------------------------------------------|
-| Ghost       | ![photo]({attach}sagrotan_photo_3.png)        | We see that Sagrotan successfully identified the Ghost virus                             |
-| Signum BPL  | ![photo]({attach}sagrotan_photo_4.png)        | We see that Sagrotan successfully identified the Signum virus                        |
-| Macumba 3.3 | ![photo]({attach}sagrotan_photo_5.png)        | Sagrotan reported that it found no signs of a virus in the disk's boot sector |
-| Carpe Diem  | ![photo]({attach}sagrotan_photo_6.png)        | We see that Sagrotan detected 9 signs of a viral infection |
-| OLI         | ![photo]({attach}sagrotan_photo_8.png)        | We see that Sagrotan successfully identified the OLI virus                               |
-| OLI2        | ![photo]({attach}sagrotan_photo_9.png)        | We see that Sagrotan detected 7 signs of viral infection in OLI2            |
-| EICAR       | ![photo]({attach}sagrotan_photo_11.png)        | Sagrotan said the boot sector is not executable and contains no viruses |
+| Ghost  (1/5)     | ![photo]({attach}sagrotan_photo_3.png)        | We see that Sagrotan successfully identified the Ghost virus                             |
+| Signum BPL (1/5) | ![photo]({attach}sagrotan_photo_4.png)        | We see that Sagrotan successfully identified the Signum virus                        |
+| Macumba 3.3 (4/5) | ![photo]({attach}sagrotan_photo_5.png)        | Sagrotan reported that it found no signs of a virus in the disk's boot sector |
+| Carpe Diem (2/5) | ![photo]({attach}sagrotan_photo_6.png)        | We see that Sagrotan detected 9 signs of a viral infection |
+| OLI       (1/5)  | ![photo]({attach}sagrotan_photo_8.png)        | We see that Sagrotan successfully identified the OLI virus                               |
+| OLI2      (1/5)  | ![photo]({attach}sagrotan_photo_9.png)        | We see that Sagrotan detected 7 signs of viral infection in OLI2            |
+| EICAR     (3/5)  | ![photo]({attach}sagrotan_photo_11.png)        | Sagrotan said the boot sector is not executable and contains no viruses |
 
 ### Task 2: Recognize boot viruses loaded into memory
 
@@ -162,6 +162,10 @@ Sagrotan reported that the boot sector is not executable and is safe. This is no
 
 Sagrotan reported that the program has a second program but that it is a virus - unlikely.
 
+But! Sagrotan will still recognize a virus if the program has been modified in some way.
+
+![photo]({attach}sagrotan_photo_12.png)
+
 ### Task 4: Restore a damaged boot sector
 
 #### Instructions
@@ -200,6 +204,8 @@ Now upon boot we will see the message "Kein Virus im Bootsektor". Let's try to r
 * Boot from it
 
 We will see the message "Kein Virus im Bootsektor" :( ... Sagrotan could not defeat the virus and the virus will overwrite your boot sector!
+
+![photo]({attach}sagrotan_photo_10.png)
 
 ### Task 6: Analyze a suspicious boot sector
 
