@@ -30,13 +30,14 @@ AUTHOR_FEED_RSS = None
 # Blogroll
 MY_LINKS = (
     ("1. Gallery", "/"),
-    ("2. Articles", "/posts.html"),
-    ("3. Status", "/pages/Status-en.html"),
-    ("4. Resources", "/pages/resources-en.html"),
-    ("5. Memory map", "/pages/AtariMemoryMap-en.html"),
-    ("6. Vectors", "/pages/AtariVectors-en.html"),
-    ("7. Boot", "/pages/HowAtariBoots-en.html"),
-    ("8. Bootsectors?", "/pages/HowBootsectorsWork-en.html"),
+    ("2. Antiviruses", "/antivirus.html"),
+    ("3. Articles", "/posts.html"),
+    ("4. Status", "/pages/Status-en.html"),
+    ("5. Resources", "/pages/resources-en.html"),
+    ("6. Memory map", "/pages/AtariMemoryMap-en.html"),
+    ("7. Vectors", "/pages/AtariVectors-en.html"),
+    ("8. TOS", "/pages/HowAtariBoots-en.html"),
+    ("9. Bootsectors?", "/pages/HowBootsectorsWork-en.html"),
 )
 links_list = list(MY_LINKS)
 sorted_links = sorted(links_list, key=lambda x: int(x[0].split(".")[0]), reverse=True)
