@@ -5,7 +5,7 @@ Date: 2025-10-06 12:04
 Location: Montreal / Canada
 Category: Atari ST, Antivirus
 Lang: en
-Author: shazz & draedon
+Author: Draedon
 status: hidden
 summary: This article is about Xtermine...
 image: {filename}../../../gallery/antiviruses/xtermine.png
@@ -17,13 +17,13 @@ Tags: Antivirus
 - *Author*: Christophe Boyanique
 - *Program language*: French
 - *Can detect*: 12 viruses, 29 antiviruses, 6 utilities, 6 miscellaneous, 10 demos. 63 total
-- Author's website with the latest version: [click!](https://www.raceme.org/atari/xtermine/)
+- Author's website with the latest version: [link](https://www.raceme.org/atari/xtermine/)
 
 ### Recognized viruses:
 
 - *Bootsector viruses*: Ghost, C'T, OLI, Kobold #2, Signum BPL, BHP, Fun, Swiss, PD141t, BLOT, Toubab, VDU, Raster & Text
-- *Link virus*: ...
-- *Others*: N/A
+- *Link virus*: None
+- Note that it can import The Killer, Exorcist and some Sagrotan bootsectors libraries
 
 ![photo]({attach}xtermine_photo_0.png)
 
@@ -41,23 +41,35 @@ To test a floppy disk using Xtermine, here are the following actions:
 - Select the menu action `Lire` to test the bootsector
 - Click Ok to validate the action
 
-| Virus       | Analysis                                      | Result                                                                       |
-|-------------|-----------------------------------------------|------------------------------------------------------------------------------|
-| Ghost       | ![photo]({attach}xtermine_photo_1.png)        | Xtermine successfully identified the Ghost virus                             |
-| Signum BPL  | ![photo]({attach}xtermine_photo_2.png)        | Xtermine successfully identified the Signum BPL virus                        |
-| Macumba 3.3 | ![photo]({attach}xtermine_photo_3.png)        | Xtermine said it is an unknown executable bootsector with 0 signs of viral infection |
-| Carpe Diem  | ![photo]({attach}xtermine_photo_4.png)        | Xtermine said it is an unknown executable bootsector but it has 3 signs of viral infection |
-| OLI         | ![photo]({attach}xtermine_photo_5.png)        | Xtermine successfully identified the OLI virus                               |
-| OLI2        | ![photo]({attach}xtermine_photo_6.png)        | Xtermine reported that it detected only 1 sign of viral infection            |
-| EICAR       | ![photo]({attach}xtermine_photo_7.png)        | Xtermine said it is an unknown non-executable bootsector with 0 signs of viral infection |
+| Virus       | Analysis                                      | Result                                                                                                      |
+|:-----------:|:---------------------------------------------:|:-----------------------------------------------------------------------------------------------------------:|
+| Ghost       | ![photo]({attach}xtermine_photo_1.png)        | Xtermine successfully identified the Ghost virus (difficulty: *)                                            |
+| Signum BPL  | ![photo]({attach}xtermine_photo_2.png)        | Xtermine successfully identified the Signum BPL virus (difficulty: *)                                       |
+| Macumba 3.3 | ![photo]({attach}xtermine_photo_3.png)        | Xtermine said it is an unknown executable bootsector with 0 signs of viral infection (difficulty: ****)     |
+| Carpe Diem  | ![photo]({attach}xtermine_photo_4.png)        | Xtermine said it is an unknown executable bootsector but it has 3 signs of viral infection (difficulty: **) |
+| OLI         | ![photo]({attach}xtermine_photo_5.png)        | Xtermine successfully identified the OLI virus (difficulty: *)                                              |
+| OLI2        | ![photo]({attach}xtermine_photo_6.png)        | Xtermine reported that it detected only 1 sign of viral infection (difficulty: *)                           |
+| EICAR       | ![photo]({attach}xtermine_photo_7.png)        | Xtermine said it is an unknown non-executable bootsector with 0 signs of viral infection (difficulty: ***)  |
 
 ### Challenge 2: Recognize bootsector viruses loaded in memory
 
-Xtermine cannot scan memory. However, Xtermine successfully recognized the OLI virus in the bootsector when it was in memory! But it did not recognize OLI2...
+Xtermine cannot scan memory, this option is not implemented in version 0.2. <BR>
+However, while stealth viruses are in merory Xtermine:
+ 
+ - Successfully recognized the OLI virus in the bootsector when it was in memory (which catch `floprd` trap calls) ! 
+ - But it did not recognize OLI2 which catch `rwabs` calls
+
+OLI2 failed detection, Xtermine "thinks" this is a safe TOS formatted disk:
+
+![photo]({attach}xtermine_photo_11.png)
+
+
+That indicates that Xtermine probably uses `rwabs` to read the bootsector and not lower level access (talking to the FDC directly) to prevent any misdirection.
+
 
 ### Challenge 3: Recognize a link virus
 
-Xtermine is not capable of analyzing files.
+Xtermine is not capable of analyzing files and detectking link viruses.
 
 ### Challenge 4: Restore a broken bootsector
 
@@ -96,15 +108,13 @@ With Xtermine, you can vaccinate a disk with any of the provided bootsectors on 
 - Select Vacciner and release the button
 - In the menu that opens, click `Vacciner A:`
 
-To write the Xtermine vaccine, simply repeat these steps with the Raster & Texte vaccine. Interesting fact: Xtermine has a second vaccine that is labeled as a virus.
+To write the Xtermine vaccine, simply repeat these steps with the `Raster & Texte` vaccine. Interesting fact: Xtermine has a second vaccine that is labeled as a virus.
 
 Here is what we see upon booting:
 
-![photo]({attach}xtermine_photo_10.png)
+<img src="{attach}xtermine_photo_8.png" width="40%"/>&nbsp;<img src="{attach}xtermine_photo_10.png" width="40%"/>
 
-![photo]({attach}xtermine_photo_8.png)
-
-This vaccine has bugs, but having two of them is already good.
+Those vaccines don't do much rather than showing nice rasters, that's more a pretty beacon than real vaccines preventing viruses.
 
 ### Challenge 6: Analyze a suspicious bootsector
 
@@ -113,9 +123,9 @@ This vaccine has bugs, but having two of them is already good.
 Xtermine checks the bootsector similarly to how Sagrotan does. But its heuristic analysis is much less advanced than Sagrotan's.
 
 - Xtermine does not check vectors
-- Xtermine checks the checksum
-- Xtermine does not check for the Magic long word ($12123456)
-- Xtermine performs heuristic analysis of the bootsector
+- Xtermine checks the checksum (`$1234`)
+- Xtermine does not check for the Magic long word (`$12123456`) for "non-executable" bootsectors (like EICAR)
+- Xtermine performs heuristic analysis of the bootsector, heuristic details are not described.
 - Xtermine checks the BPB
 
 ### Challenge 7: Detect a malware when Xtermine is not running
@@ -125,6 +135,11 @@ Xtermine checks the bootsector similarly to how Sagrotan does. But its heuristic
 Xtermine doesn't have any resident TOS Accessory which can detect viruses while Xtermine is not running.
 
 ### Summary and Conclusion
+
+Before the final results, we would like to thank Christophe, a lot. Christophe took the time to find his old floppy disks, test them in order to provide us a fully registered version of Xtermine. We are extremelly grateful. So again, Christophe, thanks a lot!
+
+![photo]({attach}xtermine_photo_12.png)
+
 
 In the following table, we summarized the challenges results:
 
