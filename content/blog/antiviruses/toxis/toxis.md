@@ -1,241 +1,263 @@
 Title: Toxis
 Slug: toxis
 Name: Toxis
-Date: 2025-10-06 12:04
-Location: Montreal / Canada
+Date: 2025-10-29 18:06
+Location: Russia
 Category: Atari ST, Antivirus
 Lang: en
-Author: shazz & draedon
+Author: draedon
 status: hidden
 summary: This article is about Toxis...
 image: {filename}../../../gallery/antiviruses/toxis.png
 Tags: Antivirus
 
 ## Basic Information
+
 * ToXis is a successor of Sagrotan
-* Author: Henrik Alt
-* Program language: German
-* Version 5.50 creation date: 25/05/1993
-* Version: 5.50
-* Can detect 16 viruses, 92 regular boot sectors, 108 total
+* *Author*: Henrik Alt
+* *Program language*: German
+* *Version 5.50* creation date: 25/05/1993
+* *Version*: 5.50
+* *Can detect*: 16 viruses, 92 regular boot sectors, 108 total
 
-# Main Text
+### Recognized Viruses:
 
-The antivirus was written by German programmer Henrik Alt after Sagrotan and can recognize 108 boot sectors. When starting the program, we are greeted by a welcome screen with information about the author and the program (photo 0). In the main menu we see tabs. Let's go through them first!
-
-### Tabs
-
-1. _Toxis_
-2. _Virus_
-3. _Einstellug_
-4. _Bibliothek_
-5. _Allerlei_
-6. _Hilfe_
-
-### Toxis
-
-This tab contains:
-
-* **uber toXis**
-
-1. Splash screen
+* **Boot Viruses**: AIDS, Ghost, C'T, OLI, Maulwurf I, Kobold #2, Fastload, Signum BPL, BHP, Fun, Swiss, Screen, VDU, Bomb, PD 141, Angle of Death
+* **File Viruses**: None
+* **Others**: N/A
 
 ![photo]({attach}toxis_photo_0.png)
 
-2. Toxis in Toxis
+## Tasks
 
-![photo]({attach}toxis_photo_7.png)
+### Task 1: Recognize boot viruses not loaded into memory
 
-### Virus
+#### Instructions:
 
-This tab contains:
+To test a floppy disk with Toxis, follow these steps:
 
-* **prüfen**
-
-* **schützen**
-
-* **löschen**
-
-* **reparieren**
-
-* **Disk Info**
-
-* **Dateien prüfen**
-
-* **Speichertest**
-
-* **Optionen**
-
-* **Komplettprüfung**
-
-* **Ende**
-
-### What are they doing?
-
-1. Allows checking the boot sector for viruses and shows if it is executable or not
+* Insert the test floppy into drive A:
+* Select the `EINSTELLUNG` menu
+* Select the menu action `Laufwerksauswahl` 
+* Select the menu action `Physikalisches Laufwerk A:` to select drive A:
+* Select the `VIRUS` menu
+* Select the menu action `prüfen` to test the boot sector
+* Click Ok to confirm the action
 
 ![photo]({attach}toxis_photo_1.png)
 
-2. Allows writing the Toxis vaccine to the boot sector
+* Then the boot sector details and the analysis result will appear
 
-3. Allows complete cleaning of the boot sector
+| Virus       | Analysis                                      | Result                                                                       |
+|-------------|-----------------------------------------------|------------------------------------------------------------------------------|
+| Ghost (1/5)      | ![photo]({attach}toxis_photo_3.png)        | We see that Toxis successfully identified the Ghost virus                             |
+| Signum BPL (1/5) | ![photo]({attach}toxis_photo_4.png)        | We see that Toxis successfully identified the Signum virus                        |
+| Macumba 3.3 (4/5) | ![photo]({attach}toxis_photo_5.png)        | Toxis reported that it found no signs of a virus in the disk's boot sector |
+| Carpe Diem (2/5) | ![photo]({attach}toxis_photo_6.png)        | We see that Toxis detected 9 signs of a viral infection |
+| OLI      (1/5)   | ![photo]({attach}toxis_photo_7.png)        | We see that Toxis successfully identified the OLI virus                               |
+| OLI2     (1/5)   | ![photo]({attach}toxis_photo_8.png)        | We see that Toxis detected 7 signs of viral infection in OLI2            |
+| EICAR   (3/5)    | ![photo]({attach}toxis_photo_9.png)        | Toxis reported that during initialization the boot sector starts as a reset-resistant program |
 
-4. Allows restoring the boot sector by writing a boot sector of your choice to it
+### Task 2: Recognize boot viruses loaded into memory
 
-![photo]({attach}toxis_photo_7.png)
+#### Instructions
 
-5. Shows disk information
+* Boot from the infected floppy disk in drive A:
+* Change the disk to the Toxis disk
+* Run Toxis
+* Check if Toxis's warning appears that a virus was found in memory
+* If the virus was not fully detected, follow the same instructions as in Task 1
 
-6. Allows checking a file for Link viruses
+#### One of the most common viruses: Ghost
 
-7. Allows checking memory for viruses
+Test results:
 
-8. Allows configuring the check for Link viruses
+* Hdv_bpb vector infected
+* Reset vector infected
 
-9. Allows checking all programs on the disk for Link viruses
+Toxis recognized the Ghost virus in the boot sector.
 
-10. Allows exiting Toxis
+#### Key virus and its key disk: Signum BPL
 
-### Einstellug
+Test results:
 
-* **Laufwerksauswahl**
+* Hdv_bpb vector infected
 
-* **Online Speicher**
+Toxis recognized the Signum BPL virus in the boot sector.
 
-* **Online Laufwerk**
+#### Polymorphic virus: Macumba 3.3
 
-* **HD-Auswahl**
+Test results:
 
-* **Dateiprüfung**
+* No exception vectors outside the allowed memory area.
 
-* **Bootsektortyp**
+Toxis did not recognize the virus in memory. Toxis said it found no signs of a viral infection in the boot sector.
 
-* **Darstellungsart**
+#### Trojan virus: Carpe Diem
 
-* **Voreinstellung**
+Test results:
 
-* **Einstellung sichern**
+* Hdv-bpb vector is below allowed user memory
+* Reset vector is below allowed user memory
 
-* **Einstellung laden**
+Toxis Recognized 9 signs of a viral infection in the boot sector.
 
-### What are they doing?
+#### Stealth virus: OLI
 
-1. Allows selecting drive A, B... Hard disk
+Test results:
 
-2. Allows configuring online memory
+* Hdv-init vector is below allowed user memory
+* Hdv-rw vector is below allowed user memory
+* Trap #14 (XBIOS) vector is below allowed user memory
+* Reset vector is below allowed user memory
+
+Toxis recognized the OLI virus in the boot sector
+
+#### Super Stealth virus: OLI2
+
+Test results:
+
+* Hdv-init vector is below allowed user memory
+* Hdv-rw vector is below allowed user memory
+* Trap #14 (XBIOS) vector is below allowed user memory
+* Reset vector is below allowed user memory
+
+Toxis recognized OLI2 in the boot sector while it was in memory
+
+#### Non-executable boot sector: EICAR
+
+Test results:
+
+Toxis reported that there is nothing in memory. This is correct.
+Toxis detected that the boot sector will still start. This is correct.
+
+### Task 3: Recognize a file virus
+
+#### Instructions
+
+##### Option 1
+
+* Insert the test floppy into drive A:
+* Select the `EINSTELLUNG` menu
+* Select the menu action `Laufwerksauswahl` 
+* Select the menu action `Physikalisches Laufwerk A:` to select drive A:
+* Select the `VIRUS` menu
+* Select the menu action `Datein prüfen` (Check files) to test files for Link Viruses
+* Click Ok to confirm the action
+
+##### Option 2
+
+* Select the `EINSTELLUNG` menu
+* Select the menu action `Dateinprüfun` to configure file testing for Link Viruses
+* Select the file types you want to check
+* Click Start to confirm the action
+* Select the drive to test
+* Select the file you want to check
+* Click Ok to confirm the action
+
+![photo]({attach}toxis_photo_10.png)
+
+#### First file virus: Milzbrand
+
+Toxis reported that the file was modified by a virus!
+
+![photo]({attach}toxis_photo_11.png)
+
+### Task 4: Restore a damaged boot sector
+
+#### Instructions
+
+* Insert the test floppy into drive A:
+* Select the `EINSTELLUNG` menu
+* Select the menu action `Laufwerksauswahl` 
+* Select the menu action `Physikalisches Laufwerk A:` to select drive A:
+* Select the `BIBLIOTHEK` (LIBRARY) menu
+* Select the menu action `speichern`
+* Click Ok to confirm the action
+* Press any letter and then press ENTER
+* Save the boot sector to the Toxis library and click OK
+
+Let's check! Let's replace the boot sector with the Toxis vaccine and try to restore the floppy disk's boot sector. To restore the floppy disk:
+
+* Select the `VIRUS` menu
+* Select the menu action `reparieren`
+* Click Ok to confirm the action
+* Scroll down and select our recently saved boot sector which is now at the very bottom of the list
+* Press `Bootsektor schreiben`
+* Boot sector restored!
+
+### Task 5: Vaccinate a non-executable floppy disk
+
+#### Instructions
+
+* Select the `VIRUS` menu
+* Select the menu action `schutzen` (write vaccine to boot sector)
+* Click Ok to confirm the action
+
+Now upon boot we will see the message "Kein Virus im Bootsektor". Let's try to run the Ghost virus and see what happens!
+
+* Load the virus into memory
+* Change the disk to the one vaccinated by Toxis
+* Boot from it
+
+We will see the message "Kein Virus im Bootsektor" :( ... Toxis could not defeat the virus and the virus will overwrite your boot sector! Well, basically the same as with Sagrotan.
 
 ![photo]({attach}toxis_photo_2.png)
 
-3. Allows configuring online drive
+### Task 6: Analyze a suspicious boot sector
 
-![photo]({attach}toxis_photo_3.png)
+#### Instructions
 
-4. Allows configuring hard disk
+* Insert the test floppy into drive A:
+* Select the `EINSTELLUNG` menu
+* Select the menu action `Laufwerksauswahl` 
+* Select the menu action `Physikalisches Laufwerk A:` to select drive A:
+* Select the `VIRUS` menu
+* Select the menu action `prüfen` to test the boot sector
+* Click Ok to confirm the action
 
-![photo]({attach}toxis_photo_4.png)
+When scanning the boot sector, Toxis performs heuristic analysis and looks at the disk's condition.
+It checks:
 
-5. Allows configuring the check for Link viruses
+* It checks the BPB
+* Checksum
+* Signs of viral infection
+* Infected vectors
+* Toxis check for the Magic long word ($12123456)
 
-![photo]({attach}toxis_photo_5.png)
+After loading, Toxis will report if vectors have been changed and if so, will suggest performing a cold reboot. Toxis analyzes the boot sector code and outputs information about it:
 
-6. Allows configuring the boot sector type
+* Whether the BPB is damaged
+* How many signs of viral infection were detected
+* Whether the checksum equals $1234
 
-7. Allows configuring the display method
+If Toxis detects a familiar virus in the boot sector, it will report it and display the percentage match with the virus from the Toxis database.
 
-8. Reset settings to default
+### Task 7: Detect malware when Toxis is not running
 
-9. Save settings
+#### Instructions
 
-10. Load settings
+When you boot from the disk, the Toxis disk must be in Drive A. If these conditions are met, the automatic scanner from the Toxis.ACC file will run. This scanner will scan the disk always residently staying in memory. Toxis Acc automatically deletes the bootsector if a virus is found.
 
-### Bibliothek
+After that, you will literally always have an open Toxis that you can open right from the desktop with all functions! For this:
 
-This tab contains:
+- Hover over the Desk menu on the desktop
+- Click on toXis
+- toXis will open for you!
 
-* **Boot übernehmen**
+## Summary and Conclusion
 
-* **Virus übernehmen**
+In the following table we have summarized the task completion results:
 
-* **als Datei speichern**
+| Task | Result |
+| :---------------------------------------------------------------- | :------: |
+| Recognize boot viruses not loaded into memory                     |   6/7    |
+| Recognize boot viruses loaded into memory                         |   6/7    |
+| Recognize a file virus                                            |   1/1    |
+| Restore a damaged boot sector                                     |   1/1    |
+| Vaccinate a non-executable floppy disk                            |   0/1    |
+| Analyze a suspicious boot sector                                  |   5/5    |
+| Detect malware when Toxis is not running                          |   2/2    |
+| **Total**                                                         |  21/24   |
 
-* **Vektoren übernehmen**
-
-* **laden**
-
-* **speichern**
-
-* **anzeigen**
-
-### What are they doing?
-
-1. Save the boot sector to the library as benign
-
-2. Save the boot sector to the library as a virus
-
-3. Save to the library as a file
-
-4. Add vector data to the library
-
-5. Load
-
-6. Save
-
-7. Show
-
-### Allerlei
-
-This tab contains:
-
-* **protokoll**
-
-* **Kaltstart**
-
-### What are they doing?
-
-1. Printer log
-
-2. Allows performing a cold boot
-
-### Hilfe
-
-* **Extrahilfe**
-
-* **Warnmeldungen**
-
-### What are they doing?
-
-1. Extra help
-
-2. Warnings
-
-This antivirus has its own vaccine, and when you boot up, you'll see this: 
-
-![photo]({attach}toxis_photo_8.png)
-
-## Virus Test
-
-* **ACA**
-
-* **Macumba 3.3**
-
-* **Merlin's Mad**
-
-* **Non-Executable EICAR Virus**
-
-* **Oli**
-
-### Test results
-
-1. **Toxis** detected 6 signs of virus infection, found that the checksum is $1234, and requested to clean the disk from viruses.
-
-2. **Toxis** found that the checksum is $1234, said it is an MS-DOS disk, and added that virus infection is unlikely.
-
-3. **Toxis** detected 3 signs of virus infection, found that the checksum is $1234, and requested to clean the disk from viruses.
-
-4. **Toxis** said the disk is not executable but added that the boot sector starts as a resident program during initialization and that the disk contains a virus.
-
-5. **Toxis** detected 7 signs of virus infection, found that the checksum is $1234, and requested to clean the disk from viruses.
-
-## In conclusion
-
-An excellent virus killer capable of detecting new viruses. 6/10
+In conclusion, Toxis has many critical bugs! When running the memory-resident scanner, its library can break and stop detecting known viruses. It doesn't scan memory due to certain bugs... But now new functions have appeared, which also have bugs! The disassembler and vector modification protection are functions that Toxis doesn't scan... We h

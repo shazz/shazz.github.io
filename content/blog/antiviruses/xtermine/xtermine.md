@@ -13,17 +13,18 @@ Tags: Antivirus
 
 ## Basic Information
 
-- *Version*: 0.2 released 14/05/1993
+- *Version*: 0.2 - released 14/05/1993
 - *Author*: Christophe Boyanique aka DMViolator
 - *Program language*: French
 - *License*: Shareware (50 Francs, a bit less than 8 euros)
 - *Can detect*: 12 viruses, 29 antiviruses, 6 utilities, 6 miscellaneous, 10 demos. 63 total
-- Author's website with the latest version: [link](https://www.raceme.org/atari/xtermine/)
 - *Test configuration*: Atari STE TOS 1.62. Xtermine is fully compatible with other Atari computers (TT, Falcon) and latest OS (MultiTOS, Mint...)
+- Author's website with the latest demo version: [link](https://www.raceme.org/atari/xtermine/)
+
 
 ### Recognized viruses:
 
-- *Bootsector viruses*: Ghost, C'T, OLI, Kobold #2, Signum BPL, BHP, Fun, Swiss, PD141t, BLOT, Toubab, VDU, Raster & Text
+- *Bootsector viruses*: Ghost, C'T, OLI, Kobold #2, Signum BPL, BHP, Mad, Swiss, PD141, Toubab, VDU, Raster & Text
 - *Link virus*: None
 - Note1: Xtermine can import The Killer, Exorcist and some Sagrotan (with some restrictions) bootsectors libraries
 - Note2: Xtermine database identifies Raster & Text as a virus (which is not) and Sagrotan 4.18 as a vaccine (which is not at all but a sneaky virus)
