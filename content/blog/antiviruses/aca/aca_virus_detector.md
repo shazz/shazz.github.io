@@ -1,84 +1,107 @@
 Title: ACA Virus Detector And Vaccin 
 Slug: acavirusdetector
 Name: ACA Virus Detector And Vaccin 
-Date: 2025-10-06 12:04
-Location: Montreal / Canada
+Date: 2025-10-30 18:10
+Location: Russia
 Category: Atari ST, Antivirus
 Lang: en
-Author: shazz & draedon
+Author: draedon
 status: hidden
 summary: This article is about ACA Virus Detector and Vaccin...
 image: {filename}../../../gallery/antiviruses/acavirusdetector.png
 Tags: Antivirus
 
 ## Basic information
-* Version 1.0
-* Author: Anti Copyright Association
-* Program language: English
-* Release date: 1988
-* Detects only ACA Virus
-
-## Main section
-
-ACA Virus Detector And Vaccin (1988) is an antivirus program written by Anti Copyright Association that detects only the ACA virus, which can be written to disk using this same virus detector. Let's take a look at the interface.
-
-### Interface
-
-![photo]({attach}aca_photo_3.png)
-
-1. We can check the disk with the F1 key, which will display one of three options:
-
-    A. The disk is infected
+* *Version*: 1.0
+* *Author*: Anti Copyright Association
+* *Language*: English
+* *Release date*: 1988
+* *Can detect*: ACA
 
 ![photo]({attach}aca_photo_0.png)
 
-    B. The disk is clean
+### Recognized Viruses:
 
-![photo]({attach}aca_photo_1.png)
+* **Bootsector Viruses**: ACA
+* **Link Viruses**: None
+* **Others**: ACA Vaccine
 
-    C. The disk is vaccinated with the ACA vaccine
+## Tasks
 
-![photo]({attach}aca_photo_2.png)
+### Task 1: Recognize boot viruses not loaded into memory
 
-    D. There is a possible virus on the disk
+#### Instructions:
 
-![photo]({attach}aca_photo_4.png)
+To test a floppy disk with ACA, follow these steps:
 
-2. We can write the ACA vaccine to the disk with the F2 key.
+* Insert the test floppy into drive A:
+* Press F1 to check the disk
+* Then the boot sector details and the analysis result will appear
 
-3. We can infect the ACA disk with a virus with the F6 key if we enter “EVOT” with CapsLock enabled.
+| Virus<p>Difficulty   | Analysis                                          | Result                                             |
+|:---------------------:|:-------------------------------------------------:|:--------------------------------------------------:|
+| Ghost<br>(1/5)        | <img src="{attach}aca_photo_2.png" width="60%"/>  | ACA VKILL said the disk may contain a virus        |
+| Signum BPL<br>(1/5)   | <img src="{attach}aca_photo_3.png" width="60%"/>  | ACA VKILL said the disk may contain a virus        |
+| Macumba 3.3<br>(4/5)  | <img src="{attach}aca_photo_4.png" width="60%"/>  | ACA VKILL said the disk is clean                   |
+| Carpe Diem<br>(2/5)   | <img src="{attach}aca_photo_5.png" width="60%"/>  | ACA VKILL said the disk is clean                   |
+| OLI<br>(1/5)          | <img src="{attach}aca_photo_6.png" width="60%"/>  | ACA VKILL said the disk may contain a virus        |
+| OLI2<br>(1/5)         | <img src="{attach}aca_photo_7.png" width="60%"/>  | ACA VKILL said the disk may contain a virus        |
+| EICAR<br>(3/5)        | <img src="{attach}aca_photo_8.png" width="60%"/>  | ACA VKILL said the disk is clean                   |
+| ACA<br>(1/5)          | <img src="{attach}aca_photo_1.png" width="60%"/>  | ACA is detected :)                                 |
 
-4. We can exit to the desktop with the F10 key.
+### Task 2: Recognize boot viruses loaded into memory
 
-### Vaccine
+ACA VKIL cannot scan memory
 
-This antivirus has its own vaccine.
+### Task 3: Recognize a file virus
 
-### Viruses for testing
+ACA VKIL cannot scan files for viruses
 
-* **ACA**
+### Task 4: Restore a damaged boot sector
 
-* **Macumba 3.3**
+ACA VKIL cannot restore the boot sector
 
-* **Merlin's Mad**
+### Task 5: Vaccinate a non-executable floppy disk
 
-* **Non-Executable EICAR Virus**
+#### Instructions
 
-* **Oli**
+##### Method 1
 
-### Test results
+- Press F2 in the main menu and you will get a vaccine that only protects against the ACA virus.
 
-1. **ACA VKILL** correctly identified the virus.
+##### Method 2
 
-2. **ACA VKILL** said the disk is clean.
+- With SHIFT or CAPS LOCK held down, type "EVOT"
+- In the main menu press F6 and after that the disk will be infected with the ACA virus
 
-3. **ACA VKILL** said the disk may contain a virus.
+The vaccine from method 1 will not protect against viruses other than ACA
 
-4. **ACA VKILL** said the disk is clean.
+### Task 6: Analyze a suspicious boot sector
 
-5. **ACA VKILL** said the disk may contain a virus.
+#### Instructions
 
-## Summary
+* Insert the test floppy into drive A:
+* Press F1 in the main menu
 
-This antivirus cannot detect viruses other than ACA. It can also install the virus it is fighting against. Limited functionality and the ability to infect the boot sector.
-Rating 1,5/10 :( .
+The maximum that will happen is that ACA VKIL will report that the disk may contain a virus
+
+### Task 7: Detect malware when ACA VKIL is not running
+
+ACA VKIL does not have a scanner when it is not running
+
+## Summary and Conclusion
+
+In the following table we have summarized the task completion results:
+
+| Task | Result |
+| :---------------------------------------------------------------- | :------: |
+| Recognize boot viruses not loaded into memory                     |   0/7    |
+| Recognize boot viruses loaded into memory                         |   0/7    |
+| Recognize a file virus                                            |   0/1    |
+| Restore a damaged boot sector                                     |   0/1    |
+| Vaccinate a non-executable floppy disk                            |   0/1    |
+| Analyze a suspicious boot sector                                  |   0/5    |
+| Detect malware when ACA VKIL is not running                       |   0/2    |
+| **Total**                                                         |   0/24   |
+
+In conclusion, ACA VKIL is a terrible antivirus that can even infect your disk with a virus! Don't use this!!!
