@@ -12,8 +12,9 @@ image: {filename}../../../gallery/antiviruses/acavirusdetector.png
 Tags: Antivirus
 
 ## Basic information
+
 * *Version*: 1.0
-* *Author*: Anti Copyright Association
+* *Author*: Anti Copyright Association (ACA) 
 * *Language*: English
 * *Release date*: 1988
 * *Can detect*: ACA
@@ -53,9 +54,9 @@ To test a floppy disk with ACA, follow these steps:
 
 ACA VKIL cannot scan memory
 
-### Task 3: Recognize a file virus
+### Task 3: Recognize a link virus
 
-ACA VKIL cannot scan files for viruses
+ACA VKIL cannot scan files for link viruses
 
 ### Task 4: Restore a damaged boot sector
 
@@ -71,7 +72,7 @@ ACA VKIL cannot restore the boot sector
 
 ##### Method 2
 
-- With SHIFT or CAPS LOCK held down, type "EVOT"
+- With `SHIFT` or `CAPS LOCK` held down, type `EVOT`
 - In the main menu press F6 and after that the disk will be infected with the ACA virus
 
 The vaccine from method 1 will not protect against viruses other than ACA
@@ -83,6 +84,7 @@ The vaccine from method 1 will not protect against viruses other than ACA
 * Insert the test floppy into drive A:
 * Press F1 in the main menu
 
+ACA VKIL checks the first byte and if it is 60 but it is not an ACA virus, it will say that there is a possible virus on the disk.
 The maximum that will happen is that ACA VKIL will report that the disk may contain a virus
 
 ### Task 7: Detect malware when ACA VKIL is not running
@@ -95,13 +97,13 @@ In the following table we have summarized the task completion results:
 
 | Task | Result |
 | :---------------------------------------------------------------- | :------: |
-| Recognize boot viruses not loaded into memory                     |   0/7    |
-| Recognize boot viruses loaded into memory                         |   0/7    |
-| Recognize a file virus                                            |   0/1    |
+| Recognize boot viruses not loaded into memory                     |   1/8    |
+| Recognize boot viruses loaded into memory                         |   0/8    |
+| Recognize a link virus                                            |   0/1    |
 | Restore a damaged boot sector                                     |   0/1    |
 | Vaccinate a non-executable floppy disk                            |   0/1    |
 | Analyze a suspicious boot sector                                  |   0/5    |
 | Detect malware when ACA VKIL is not running                       |   0/2    |
-| **Total**                                                         |   0/24   |
+| **Total**                                                         |   1/26   |
 
 In conclusion, ACA VKIL is a terrible antivirus that can even infect your disk with a virus! Don't use this!!!
