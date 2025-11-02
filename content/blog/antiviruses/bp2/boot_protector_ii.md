@@ -1,119 +1,180 @@
 Title: Boot Protector
 Slug: bootprotectorii
 Name: Boot Protector
-Date: 2025-10-06 12:04
-Location: Montreal / Canada
+Date: 2025-11-01 18:46
+Location: Russia
 Category: Atari ST, Antivirus
 Lang: en
-Author: shazz & draedon
+Author: draedon
 status: hidden
 summary: This article is about Boot Protector...
 image: {filename}../../../gallery/antiviruses/bootprotectorii.png
 Tags: Antivirus
 
 ## Basic Information
-* Version: 2.82
-* Author: Fantomas (Michel GOUX)
-* Program Language: French
-* Release Date: 11/12/2024
-* Recognizes 515 boot sectors
-## Main Description
+* *Version*: 2.82
+* *Author*: Fantomas (Michel GOUX)
+* *Language*: French
+* *Release Date*: 11/12/2024
+* *Recognizes*: 515 boot sectors
+* Author's website: [click!](https://dompub030.netlify.app/)
 
-Boot Protector 2.82 (1993-2024) is an antivirus program written by Michel GOUX that recognizes 515 boot sectors, 21 of which are viruses. Let's explore the interface! The antivirus warns us that we are infected right when launching the program:
 
-![photo]({attach}bp2_photo_0.png)
 
-### Interface
+### Recognized Viruses:
+
+* **Boot Viruses**: C'T, CARPEDIEM, COOKIE #1, COOKIE #2, DIR. WASTER, EVIL NICK, FAT (SWISS/BLOT), FLYING CHIMP, FREEZE, GREEN GOBLIN, GHOST (A, I), KOBOLD II, MAD (FUN), MERLIN MAD, OLI, PIRATE TRAP, SCREEN, SIGNUM BPL (KEY), VIR'87 VIRUS (BHP), VIRUS MASTER 
+* **link viruses**: None
+* **Others**: 494 others bootsectors
+
+## Tasks
+
+### Task 1: Recognize boot viruses not loaded into memory
+
+#### Instructions:
+
+To test a floppy disk with Boot Protector, follow these steps:
+
+* Insert the test floppy into drive A:
+* Click on the floppy disk image labeled A
 
 ![photo]({attach}bp2_photo_1.png)
 
-We can select disk A/B and scan it.
+* Then the boot sector details and the analysis result will appear
 
-### Preferences
+| Virus       | Analysis                                      | Result                                                                       |
+|-------------|-----------------------------------------------|------------------------------------------------------------------------------|
+| Ghost (1/5)      | ![photo]({attach}bp2_photo_2.png)        | Boot Protector II correctly recognized the Ghost virus                             |
+| Signum BPL (1/5) | ![photo]({attach}bp2_photo_3.png)        | Boot Protector II correctly recognized the Signum BPL virus                        |
+| Macumba 3.3 (4/5) | ![photo]({attach}bp2_photo_4.png)        | Boot Protector II said this is an unknown executable boot sector |
+| Carpe Diem (2/5) | ![photo]({attach}bp2_photo_5.png)        | Boot Protector II said this is an unknown executable boot sector. (See NOTE 1) |
+| OLI      (1/5)   | ![photo]({attach}bp2_photo_6.png)        | Boot Protector II correctly recognized the OLI virus                               |
+| OLI2     (1/5)   | ![photo]({attach}bp2_photo_7.png)        | Boot Protector II said this is an unknown executable boot sector            |
+| EICAR   (3/5)    | ![photo]({attach}bp2_photo_8.png)        | Boot Protector II said this is an unknown non-executable boot sector |
 
-1. Choose text color for numbers in the **Disk Infos** tab and for the "Executable" label in the bootsector tab (2 colors)
+NOTE 1: For tests we use the Fixed version of Carpe Diem to check how antiviruses will react to an unknown virus. If this was the original Carpe Diem then Boot Protector II would detect it.
 
-2. Choose interface color and the color of the floppy disk illustration (2 colors)
+### Task 2: Recognize boot viruses loaded into memory
 
-3. Enable/disable music
+#### Instructions
 
-4. Save settings
+* Boot from the infected floppy disk in drive A:
+* Change the disk to the Boot Protector II disk
+* Enter Boot Protector II
 
-### Disk Infos
+Note that if a virus is already in memory or some vectors are attached, Boot Protector II won't load:
 
-1. View disk information: number of sides, number of tracks, sectors per track
+<img src="{attach}bp2_photo_0.png" width="640"/> 
 
-### Bootsector
+#### One of the most common viruses: Ghost
 
-1. Bottom label indicates whether the boot sector is executable
+Test results:
 
-2. Recognized boot sectors are displayed in the window below
+* Hdv_bpb vector infected
 
-3. View boot sector in ASCII by clicking the SHOW button
+Boot Protector II correctly recognized the Ghost virus in the boot sector
 
-### Music
+#### Key virus and its key disk: Signum BPL
 
-1. Select music from author's included tracks using Load button
+Test results:
 
-2. Play selected music using Play button
+* Hdv_bpb vector infected
 
-3. Stop music using Stop button
+Boot Protector II correctly recognized the Signum BPL virus in the boot sector
 
-### Latest features
+#### Polymorphic virus: Macumba 3.3
 
-* _Info:_ displays information about the author.
+Test results:
 
-![photo]({attach}bp2_photo_2.png)
+* Hdv_bpb infected
+* Hdv_rw infected
 
-* _Quit:_ Exit to the desktop.
+Boot Protector II did not recognize the Macumba 3.3 virus in the boot sector
 
-* _Vaccine:_ Vaccinate the disk against viruses with boot protect v2.82
+#### Trojan virus: Carpe Diem
 
-* _Normal/Automatic mode:_
+Test results:
 
-1. In this mode, everything happens automatically. You just need to insert the floppy disks into drive A. They will be checked automatically, and if a virus is detected, the program will offer to vaccinate the floppy disk (RETURN button — vaccination, ESC — skip).
+Boot Protector II did not recognize Carpe Diem (Fixed) in memory and did not recognize it in the boot sector.
 
-    1. Other functions (Information, Exit, Display, Music, etc.) are not available in AUTOMATIC mode.
-    
-    2. F1 to switch between modes.
-    
-    3. The current mode is displayed on the screen above the syringe.
+#### Stealth virus: OLI
 
-### Vaccine
+Test results:
 
-When booting from the Boot Protect vaccine disk, we see this:
+* Hdv-rw vector infected
 
-![photo]({attach}bp2_photo_3.png)
+?
 
-### Boot Protector 1
-This antivirus has a first version and it looked like this:
+#### Super Stealth virus: OLI2
 
-![photo]({attach}bp1_10.png)
+Test results:
 
-## Virus Test
+* Hdv-rw vector infected
 
-* **ACA**
+?
 
-* **Macumba 3.3**
+#### Non-executable boot sector: EICAR
 
-* **Merlin's Mad**
+Test results:
 
-* **Non-Executable EICAR Virus**
+Boot Protector reported that there is nothing in memory. This is correct.
+Boot Protector reported that the boot sector is not executable. This is not true.
 
-* **Oli**
+### Task 3: Recognize a link virus
 
-### Test results
+Boot Protector II cannot scan files for viruses
 
-1. **Boot Protector** said it is an unidentified executable boot sector.
+### Task 4: Restore a damaged boot sector
 
-2. **Boot Protector** said it is an unidentified executable boot sector.
+Boot Protector II cannot restore the boot sector
 
-3. **Boot Protector** correctly identified Merlin's Mad virus.
+### Task 5: Vaccinate a non-executable floppy disk
 
-4. **Boot Protector** said it is an unidentified non-executable boot sector.
+#### Instructions
 
-5. **Boot Protector** correctly identified the OLI virus.
+* Insert the test floppy into drive A:
+* Click on the floppy disk image labeled A
+* Click on the syringe on the right
+* Click OK to confirm the action
 
-## In conclusion
+Now when booting from this disk you will see this:
 
-A rather interesting virus killer that is still being updated. You can buy version 2.82 from the creator. 5/10
+![photo]({attach}bp2_photo_9.png)
+
+Unfortunately the vaccine didn't help me and the virus overwrote the boot sector!
+
+### Task 6: Analyze a suspicious boot sector
+
+#### Instructions
+
+* Insert the test floppy into drive A:
+* Press F1 in the main menu
+
+Boot Protector II checks:
+
+* Disk BPB
+* Checksum
+* Vectors when starting Boot Protector
+* Boot Protector II does not check Magic Long Word ($12123456)
+* Boot Protector II does not perform heuristic disk analysis
+
+### Task 7: Detect malware when Boot Protector II is not running
+
+Boot Protector II does not have a scanner when it is not running
+
+## Summary and Conclusion
+
+In the following table we have summarized the task completion results:
+
+| Task | Result |
+| :---------------------------------------------------------------- | :------: |
+| Recognize boot viruses not loaded into memory                     |   3/7    |
+| Recognize boot viruses loaded into memory                         |   2/7    |
+| Recognize a link virus                                            |   0/1    |
+| Restore a damaged boot sector                                     |   0/1    |
+| Vaccinate a non-executable floppy disk                            |   0/1    |
+| Analyze a suspicious boot sector                                  |   3/5    |
+| Detect malware when Boot Pro is not running                       |   0/2    |
+| **Total**                                                         |   8/24   |
+
+In conclusion, Boot Protector is not a bad antivirus in principle and it detects many boot sectors... 515!
