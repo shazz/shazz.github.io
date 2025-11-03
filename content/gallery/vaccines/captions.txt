@@ -1,1 +1,2 @@
-viruskicker2.png: Jedi / Sector one virus kicker published in STMAGICIEL in 1991
+viruskicker.png: Jedi / Sector one virus kicker published in STMAGICIEL in 1991
+adrenaline.png: Adrenaline antivirus Preventor 

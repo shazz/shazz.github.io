@@ -1,14 +1,14 @@
-Title: Virus Kicker 2
-Slug: viruskicker2
-Name: Virus Kicker 2
+Title: Virus Kicker
+Slug: viruskicker
+Name: Virus Kicker
 Date: 2025-11-03 16:12
 Location: Montreal / Canada
 Category: Atari ST, Vaccine
 Lang: en
 Author: shazz
 status: hidden
-summary: This article is about the Virus Kicker II vaccine...
-image: {filename}../../../gallery/vaccines/viruskicker2.png
+summary: This article is about the Virus Kicker 2 and 3 vaccine...
+image: {filename}../../../gallery/vaccines/viruskicker.png
 Tags: Vaccine
 
 
@@ -31,13 +31,15 @@ The Virus Kicker 2 was first published in STMAGICIEL, a special edition of ST Ma
 The version 3 is an optimized version done by Shazz / MJJ Prod, adding new detection capabilities.
 
 
-<img src="{attach}vk2_photo_0.png" width="45%"/><img src="{attach}vk2_photo_1.png" width="45%"/> 
+<img src="{attach}vk_photo_0.png" width="45%"/><img src="{attach}vk_photo_1.png" width="45%"/> 
 
 
 ## Detection capabilities
 
 | Threat                          | Result version 2                        | Result version 3                      |
 |---------------------------------|:---------------------------------------:|:-------------------------------------:|
+| Check memory boundary           | <span style="color:red">No</span>       | <span style="color:red">No</span>     |
+| Undocumented resident program   | <span style="color:green">Yes</span>    | <span style="color:green">Yes</span>  |
 | Undocumented resident program   | <span style="color:green">Yes</span>    | <span style="color:green">Yes</span>  |
 | Valid reset vector              | <span style="color:red">No</span>       | <span style="color:green">Yes</span>  |            
 | Non-ROM HDV BPB Vector          | <span style="color:red">No</span>       | <span style="color:green">Yes</span>  |
