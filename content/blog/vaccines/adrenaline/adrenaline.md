@@ -51,12 +51,20 @@ Note that a Trojan called Adrenaline Preventor 1.8b exists which shares the same
 | Non-ROM Trap Bios Vector        | <span style="color:red">No</span>     | 
 | Non-ROM Trap Xbios Vector       | <span style="color:red">No</span>     |
 | Non-ROM Trap Unused Vector      | <span style="color:red">No</span>     |
+| Flopwr Trap calls               | <span style="color:red">No</span>     | 
+| Rwabs Trap calls                | <span style="color:red">No</span>     | 
 | VBL Int / VBL Routine Vector    | <span style="color:red">No</span>     |
 | Non-ROM Trap Unused Vector      | <span style="color:red">No</span>     |
 | Detect virus footprints         | <span style="color:red">No</span>     |
 | Catch key viruses               | <span style="color:red">No</span>     |
 | Other threat detection          | <span style="color:red">No</span>     |
 
-##  Appendix
+## Conclusion
+
+Original as it reuses much of existing viruses basic technics to spread without the user consent (only on non-executable bootsectors fortunately) but its threat detection capabilities are really limited at the end and won't detect/override dormant viruses.
+
+A good 7/10.
+
+###  Appendix
 
 The installer is downloadable here: [demozoo](https://demozoo.org/productions/132449/)

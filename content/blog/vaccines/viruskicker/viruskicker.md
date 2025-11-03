@@ -50,12 +50,21 @@ The version 3 is an optimized version done by Shazz / MJJ Prod, adding new detec
 | Non-ROM Trap Bios Vector        | <span style="color:red">No</span>       | <span style="color:green">Yes</span>  |
 | Non-ROM Trap Xbios Vector       | <span style="color:red">No</span>       | <span style="color:green">Yes</span>  |
 | Non-ROM Trap Unused Vector      | <span style="color:red">No</span>       | <span style="color:red">No</span>     |
+| Flopwr Trap calls               | <span style="color:red">No</span>       | <span style="color:red">No</span>     |
+| Rwabs Trap calls                | <span style="color:red">No</span>       | <span style="color:red">No</span>     |
 | VBL Int / VBL Routine Vector    | <span style="color:red">No</span>       | <span style="color:red">No</span>     |
 | Non-ROM Trap Unused Vector      | <span style="color:red">No</span>       | <span style="color:red">No</span>     |
 | Detect virus footprints         | <span style="color:red">No</span>       | <span style="color:red">No</span>     |
 | Catch key viruses               | <span style="color:red">No</span>       | <span style="color:red">No</span>     |
 | Other threat detection          | <span style="color:red">No</span>       | <span style="color:red">No</span>     |
 
-##  Appendix
+## Conclusion
+
+Even if the version 2 was doing a good job, the extensive check on vectors in the version 3 is providing a pretty good memory check each time the vaccine is loaded. So it won't detact dormant viruses (not yet loaded) as this is not a resident vaccine but will prevent any memory infection to spread.
+
+A pretty solid 8/10.
+
+
+###  Appendix
 
 You can download the scan of the original MAGICIEL page [here](https://archive.org/details/st-magazine-hs1/page/n7/mode/2up) on the Internet Archive.

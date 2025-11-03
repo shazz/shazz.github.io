@@ -7,26 +7,27 @@ Category: Atari ST, Vaccine
 Lang: en
 Author: shazz
 status: hidden
-summary: This article is about the Adrenalin Andrenalin Virus Protector I vaccine...
+summary: This article is about the Andrenalin Virus Protector I vaccine...
 image: {filename}../../../gallery/vaccines/adrenalin.png
 Tags: Vaccine
 
 
 ## Basic Information
 
-- *Author*: Adrenalin UK
+- *Author*: probably Mookie from Adrenalin UK
 - *Type*: bootsector
 - *Size*: 441 bytes
 - *Resident*: no
 - *Self-replicating*: no
-- *Can clean memory*: partial (MEMVALID, RESVALID, RESVECTOR, MEMVAL2) forcing a TOS incomplete memory clean
+- *Can clean memory*: partial (resets `MEMVALID`, `RESVALID`, `RESVECTOR`, `MEMVAL2`) forcing a TOS incomplete memory clean
 - *Special features*: 
-    - Detects specifically Kobold 2, Ghost viruses and Automation V1 vaccine.
+    - Detects specifically Kobold 2, Ghost viruses and a virus it identifies as "Automation V1".
 
 ### Description
 
 The Adrenalin Andrenalin Virus Protector I really looks the famous Medway Boys Virus protector. 
-It detects Kobold 2, Ghost and Automation V1 (virus?) looking at the position of the undocumented resident program magic word based on the virus reset vector start address
+It detects Kobold 2, Ghost and Automation V1 (virus?) looking at the position of the undocumented resident program magic word based on the virus reset vector start address.
+As the automation V1 resident magic word location is the same as the Kobold 2 pattern, it may give an hint on what is this Automation V1 virus...
 
 
 <img src="{attach}adrenalin_photo_0.png" width="45%"/><img src="{attach}adrenalin_photo_1.png" width="45%"/>
@@ -48,12 +49,20 @@ It detects Kobold 2, Ghost and Automation V1 (virus?) looking at the position of
 | Non-ROM Trap Bios Vector        | <span style="color:red">No</span>     | 
 | Non-ROM Trap Xbios Vector       | <span style="color:red">No</span>     |
 | Non-ROM Trap Unused Vector      | <span style="color:red">No</span>     |
+| Flopwr Trap calls               | <span style="color:red">No</span>     | 
+| Rwabs Trap calls                | <span style="color:red">No</span>     | 
 | VBL Int / VBL Routine Vector    | <span style="color:red">No</span>     |
 | Non-ROM Trap Unused Vector      | <span style="color:red">No</span>     |
 | Detect virus footprints         | <span style="color:green">Yes</span> (Kobold 2, Ghost, Automation V1) |
 | Catch key viruses               | <span style="color:red">No</span>     |
 | Other threat detection          | <span style="color:red">No</span>     |
 
-##  Appendix
+## Conclusion
+
+This vaccines targets specific viruses which is not a bad thing but will also miss many others. And Kobold 2 was definitively very rare. So interesting from a technical point of view but overall limited.
+
+An interesting 6/10.
+
+###  Appendix
 
 The installer is downloadable here: [demozoo](https://demozoo.org/productions/132449/)

@@ -1,3 +1,3 @@
 viruskicker.png: Jedi / Sector one virus kicker published in STMAGICIEL in 1991
 adrenaline.png: Adrenaline antivirus Preventor 
-adrenalin.png: Adrenalin UK Virus Protector I
+agraboot.png: Agraboot 2
