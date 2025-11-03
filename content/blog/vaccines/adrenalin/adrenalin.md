@@ -1,38 +1,35 @@
-Title: Anti-Virus Preventor
-Slug: adrenaline
-Name: Anti-Virus Preventor
+Title: Andrenalin Virus Protector I
+Slug: adrenalin
+Name: Andrenalin Virus Protector I
 Date: 2025-11-03 16:12
 Location: Montreal / Canada
 Category: Atari ST, Vaccine
 Lang: en
 Author: shazz
 status: hidden
-summary: This article is about the Adrenaline Anti-Virus Preventor vaccine...
-image: {filename}../../../gallery/vaccines/adrenaline.png
+summary: This article is about the Adrenalin Andrenalin Virus Protector I vaccine...
+image: {filename}../../../gallery/vaccines/adrenalin.png
 Tags: Vaccine
 
 
 ## Basic Information
 
-- *Author*: FirSTE & Dr Computer
+- *Author*: Adrenalin UK
 - *Type*: bootsector
 - *Size*: 441 bytes
-- *Resident*: yes (0x140)
-- *Self-replicating*: yes (on non-executable bootsectors)
-- *Can clean memory*: partial, only found resident program
+- *Resident*: no
+- *Self-replicating*: no
+- *Can clean memory*: partial (MEMVALID, RESVALID, RESVECTOR, MEMVAL2) forcing a TOS incomplete memory clean
 - *Special features*: 
-    - Attaches it self to `HDV_BPB` vector to replicate itself but not for chcking for viruses on disk
+    - Detects specifically Kobold 2, Ghost viruses and Automation V1 vaccine.
 
 ### Description
 
-The Adrenaline Anti-Virus Preventor 1.8a was written by FirSTE and Laurent Provin aka Dr Computer who is well known for coding the Adrenaline Ripper. 
-Despite the fact it can replicate itself as a virus, it was released with an installer program. 
-Its detection capabilities are limited as most of the source code is used for its replication and I guess it could be considered by antivruses as a virus as it uses the exact same technics.
-
-Note that a Trojan called Adrenaline Preventor 1.8b exists which shares the same source code but added some additional viral capabilities. This "mutation" was an easy step considering the little differences between a genuine virus and this vaccine and the remaining free space. 
+The Adrenalin Andrenalin Virus Protector I really looks the famous Medway Boys Virus protector. 
+It detects Kobold 2, Ghost and Automation V1 (virus?) looking at the position of the undocumented resident program magic word based on the virus reset vector start address
 
 
-<img src="{attach}adrenaline_photo_0.png" width="45%"/><img src="{attach}adrenaline_photo_1.png" width="45%"/>
+<img src="{attach}adrenalin_photo_0.png" width="45%"/><img src="{attach}adrenalin_photo_1.png" width="45%"/>
 
 
 ## Detection capabilities
@@ -40,8 +37,8 @@ Note that a Trojan called Adrenaline Preventor 1.8b exists which shares the same
 | Threat                          | Result version 1.8a                   |
 |---------------------------------|:-------------------------------------:|
 | Check PHYSTOP memory            | <span style="color:red">No</span>     |
-| Undocumented resident program   | <span style="color:green">Yes</span>  |
-| Valid reset vector              | <span style="color:red">No</span>     |        
+| Undocumented resident program   | <span style="color:orange">Partial</span>|
+| Valid reset vector              | <span style="color:green">Yes</span>  |        
 | Non-ROM HDV BPB Vector          | <span style="color:red">No</span>     |
 | Non-ROM HDV RW Vector           | <span style="color:red">No</span>     |
 | Non-ROM HDV BOOT Vector         | <span style="color:red">No</span>     |
@@ -53,7 +50,7 @@ Note that a Trojan called Adrenaline Preventor 1.8b exists which shares the same
 | Non-ROM Trap Unused Vector      | <span style="color:red">No</span>     |
 | VBL Int / VBL Routine Vector    | <span style="color:red">No</span>     |
 | Non-ROM Trap Unused Vector      | <span style="color:red">No</span>     |
-| Detect virus footprints         | <span style="color:red">No</span>     |
+| Detect virus footprints         | <span style="color:green">Yes</span> (Kobold 2, Ghost, Automation V1) |
 | Catch key viruses               | <span style="color:red">No</span>     |
 | Other threat detection          | <span style="color:red">No</span>     |
 

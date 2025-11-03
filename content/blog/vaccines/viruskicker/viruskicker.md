@@ -40,7 +40,6 @@ The version 3 is an optimized version done by Shazz / MJJ Prod, adding new detec
 |---------------------------------|:---------------------------------------:|:-------------------------------------:|
 | Check memory boundary           | <span style="color:red">No</span>       | <span style="color:red">No</span>     |
 | Undocumented resident program   | <span style="color:green">Yes</span>    | <span style="color:green">Yes</span>  |
-| Undocumented resident program   | <span style="color:green">Yes</span>    | <span style="color:green">Yes</span>  |
 | Valid reset vector              | <span style="color:red">No</span>       | <span style="color:green">Yes</span>  |            
 | Non-ROM HDV BPB Vector          | <span style="color:red">No</span>       | <span style="color:green">Yes</span>  |
 | Non-ROM HDV RW Vector           | <span style="color:red">No</span>       | <span style="color:green">Yes</span>  |
