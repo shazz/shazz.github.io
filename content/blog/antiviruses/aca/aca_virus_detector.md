@@ -39,7 +39,7 @@ To test a floppy disk with ACA, follow these steps:
 * Press F1 to check the disk
 * Then the boot sector details and the analysis result will appear
 
-| Virus<p>Difficulty   | Analysis                                          | Result                                             |
+| Virus<p>Difficulty    | Analysis                                          | Result                                             |
 |:---------------------:|:-------------------------------------------------:|:--------------------------------------------------:|
 | Ghost<br>(1/5)        | <img src="{attach}aca_photo_2.png" width="60%"/>  | ACA VKILL said the disk may contain a virus        |
 | Signum BPL<br>(1/5)   | <img src="{attach}aca_photo_3.png" width="60%"/>  | ACA VKILL said the disk may contain a virus        |

@@ -7,14 +7,14 @@ Category: Atari ST, Vaccine
 Lang: en
 Author: shazz
 status: hidden
-summary: This article is about yje Virus Kicker II vaccine...
+summary: This article is about the Virus Kicker II vaccine...
 image: {filename}../../../gallery/vaccines/viruskicker2.png
 Tags: Vaccine
 
 
 ## Basic Information
 
-- *Author*: Jedi / Sector One / The Heavy Killers
+- *Author*: Jedi / Sector One / The Heavy Killers (version 2), Shazz / MJJ prod (improvements for version 3)
 - *Type*: bootsector
 - *Size*: 490 bytes
 - *Resident*: no
@@ -22,8 +22,8 @@ Tags: Vaccine
 - *Can clean memory*: yes
 - *Special features*: 
     - Can copy itself on other disks
-    - Can set a persistent name for a disk (stored in the vaccine)
-    - Can switch 50/60 Hz monitor frequency (version 2 only)
+    - Can set a persistent name for a disk (stored in the vaccine itself)
+    - Switch 50/60 Hz monitor frequency (version 2 only)
 
 ### Description
 
@@ -45,11 +45,15 @@ The version 3 is an optimized version done by Shazz / MJJ Prod, adding new detec
 | Non-ROM HDV BOOT Vector         | <span style="color:red">No</span>       | <span style="color:green">Yes</span>  |
 | Non-ROM HDV INIT Vector         | <span style="color:red">No</span>       | <span style="color:green">Yes</span>  |
 | Non-ROM HDV MEDIACH Vector      | <span style="color:red">No</span>       | <span style="color:green">Yes</span>  |
-| Non-ROM Gemdos Vector           | <span style="color:red">No</span>       | <span style="color:green">Yes</span>  |
-| Non-ROM Bios Vector             | <span style="color:red">No</span>       | <span style="color:green">Yes</span>  |
-| Non-ROM Xbios Vector            | <span style="color:red">No</span>       | <span style="color:green">Yes</span>  |
+| Non-ROM Trap Gemdos Vector      | <span style="color:red">No</span>       | <span style="color:green">Yes</span>  |
+| Non-ROM Trap Bios Vector        | <span style="color:red">No</span>       | <span style="color:green">Yes</span>  |
+| Non-ROM Trap Xbios Vector       | <span style="color:red">No</span>       | <span style="color:green">Yes</span>  |
+| Non-ROM Trap Unused Vector      | <span style="color:red">No</span>       | <span style="color:red">No</span>     |
+| VBL Int / VBL Routine Vector    | <span style="color:red">No</span>       | <span style="color:red">No</span>     |
+| Non-ROM Trap Unused Vector      | <span style="color:red">No</span>       | <span style="color:red">No</span>     |
 | Detect virus footprints         | <span style="color:red">No</span>       | <span style="color:red">No</span>     |
 | Catch key viruses               | <span style="color:red">No</span>       | <span style="color:red">No</span>     |
+| Other threat detection          | <span style="color:red">No</span>       | <span style="color:red">No</span>     |
 
 ##  Appendix
 
