@@ -28,15 +28,15 @@ Tags: Vaccine
 
 ## Detection capabilities
 
-| Threat                          | Result version 2 | Result version 3 |
-|:-------------------------------:|:----------------:|:----------------:|
-| Undocumented resident program   | Yes              | Yes              |            
-| Non-ROM HDV BPB Vector          | No               | Yes              |
-| Non-ROM HDV RW Vector           | No               | Yes              |
-| Non-ROM HDV BOOT Vector         | No               | Yes              |
-| Non-ROM HDV INIT Vector         | No               | Yes              |
-| Non-ROM HDV MEDIACH Vector      | No               | No               |
-| Non-ROM Gemdos Vector           | No               | Yes              |
-| Non-ROM Bios Vector             | No               | Yes              |
-| Non-ROM Xbios Vector            | No               | Yes              |
-| NDetect specific viruses        | No               | No               |
+| Threat                          | Result version 2                        | Result version 3                      |
+|---------------------------------|:---------------------------------------:|:-------------------------------------:|
+| Undocumented resident program   | <span style="color:green">Yes</span>    | <span style="color:green">Yes</span>  |            
+| Non-ROM HDV BPB Vector          | <span style="color:red">No</span>       | <span style="color:green">Yes</span>  |
+| Non-ROM HDV RW Vector           | <span style="color:red">No</span>       | <span style="color:green">Yes</span>  |
+| Non-ROM HDV BOOT Vector         | <span style="color:red">No</span>       | <span style="color:green">Yes</span>  |
+| Non-ROM HDV INIT Vector         | <span style="color:red">No</span>       | <span style="color:green">Yes</span>  |
+| Non-ROM HDV MEDIACH Vector      | <span style="color:red">No</span>       | <span style="color:red">No</span>     |
+| Non-ROM Gemdos Vector           | <span style="color:red">No</span>       | <span style="color:green">Yes</span>  |
+| Non-ROM Bios Vector             | <span style="color:red">No</span>       | <span style="color:green">Yes</span>  |
+| Non-ROM Xbios Vector            | <span style="color:red">No</span>       | <span style="color:green">Yes</span>  |
+| NDetect specific viruses        | <span style="color:red">No</span>       | <span style="color:red">No</span>     |
