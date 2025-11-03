@@ -16,27 +16,41 @@ Tags: Vaccine
 
 - *Author*: Jedi / Sector One / The Heavy Killers
 - *Type*: bootsector
+- *Size*: 490 bytes
 - *Resident*: no
 - *Self-replicating*: no
 - *Can clean memory*: yes
 - *Special features*: 
-  - Can copy itself on other disks
-  - Can set a persistent name for a disk (stored in the vaccine)
-  - Can switch 50/60 Hz monitor frequency (version 2 only)
+    - Can copy itself on other disks
+    - Can set a persistent name for a disk (stored in the vaccine)
+    - Can switch 50/60 Hz monitor frequency (version 2 only)
+
+### Description
+
+The Virus Kicker 2 was first published in STMAGICIEL, a special edition of ST Magazine the 23rd of July 1991 as a assembly and GFA basic listings.
+The version 3 is an optimized version done by Shazz / MJJ Prod, adding new detection capabilities.
+
 
 <img src="{attach}vk2_photo_0.png" width="45%"/><img src="{attach}vk2_photo_1.png" width="45%"/> 
+
 
 ## Detection capabilities
 
 | Threat                          | Result version 2                        | Result version 3                      |
 |---------------------------------|:---------------------------------------:|:-------------------------------------:|
-| Undocumented resident program   | <span style="color:green">Yes</span>    | <span style="color:green">Yes</span>  |            
+| Undocumented resident program   | <span style="color:green">Yes</span>    | <span style="color:green">Yes</span>  |
+| Valid reset vector              | <span style="color:red">No</span>       | <span style="color:green">Yes</span>  |            
 | Non-ROM HDV BPB Vector          | <span style="color:red">No</span>       | <span style="color:green">Yes</span>  |
 | Non-ROM HDV RW Vector           | <span style="color:red">No</span>       | <span style="color:green">Yes</span>  |
 | Non-ROM HDV BOOT Vector         | <span style="color:red">No</span>       | <span style="color:green">Yes</span>  |
 | Non-ROM HDV INIT Vector         | <span style="color:red">No</span>       | <span style="color:green">Yes</span>  |
-| Non-ROM HDV MEDIACH Vector      | <span style="color:red">No</span>       | <span style="color:red">No</span>     |
+| Non-ROM HDV MEDIACH Vector      | <span style="color:red">No</span>       | <span style="color:green">Yes</span>  |
 | Non-ROM Gemdos Vector           | <span style="color:red">No</span>       | <span style="color:green">Yes</span>  |
 | Non-ROM Bios Vector             | <span style="color:red">No</span>       | <span style="color:green">Yes</span>  |
 | Non-ROM Xbios Vector            | <span style="color:red">No</span>       | <span style="color:green">Yes</span>  |
-| NDetect specific viruses        | <span style="color:red">No</span>       | <span style="color:red">No</span>     |
+| Detect virus footprints         | <span style="color:red">No</span>       | <span style="color:red">No</span>     |
+| Catch key viruses               | <span style="color:red">No</span>       | <span style="color:red">No</span>     |
+
+##  Appendix
+
+You can download the scan of the original MAGICIEL page [here](https://archive.org/details/st-magazine-hs1/page/n7/mode/2up) on the Internet Archive.
