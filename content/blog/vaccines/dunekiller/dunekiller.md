@@ -24,7 +24,7 @@ Tags: Vaccine
 
 ### Description
 
-It is hard to tell if the Dune Killer is a vaccine or an intented virus.... for sure it tries todetects if a program is attached to `HDV_BPB` vector (which is typically used by viruses, but not always) and reset the ST in case of... But the code is buggy and this condition will never happen (plus the fact the vaccine set itself prior to the test). And at the same time, it attachs itself to this vector then replicates on any disk inserted.
+It is hard to tell if the Dune Killer is a vaccine or an intented virus.... for sure it tries to detect if a program is attached to `HDV_BPB` vector (which is typically used by viruses, but not always) and reset the ST in case of... But the code is buggy and this condition will never happen (plus the fact the vaccine set itself prior to the test). And at the same time, it attachs itself to this vector then replicates on any disk inserted.
 So at then... it doesn't detect anything and replicates on any disk possibly deleting important bootsectors.
 
 

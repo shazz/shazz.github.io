@@ -27,7 +27,7 @@ Tags: Vaccine
 
 ### Description
 
-The Agraboot 2 was written by Michael James aka Agarjag from Adrenalin UK, that's a resident vaccine so, when the GEM is loaded, any disk read (using `getBPB()`) will be checked and the screen will flash if some suspicious patterns are found (tpucally any code attemting to write on the disk). 
+The Agraboot 2 was written by Michael James aka Agarjag from Adrenalin UK, that's a resident vaccine so, when the GEM is loaded, any disk read (using `getBPB()`) will be checked and the screen will flash if some suspicious patterns are found (typically any code attemting to write on the disk). 
 
 
 <img src="{attach}agraboot_photo_0.png" width="30%"/><img src="{attach}agraboot_photo_1.png" width="30%"/><img src="{attach}agraboot_photo_2.png" width="30%"/>

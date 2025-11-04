@@ -21,7 +21,7 @@ Tags: Vaccine
 - *Self-replicating*: yes (on non-executable bootsectors)
 - *Can clean memory*: partial, only found resident program
 - *Special features*: 
-    - Attaches it self to `HDV_BPB` vector to replicate itself but not for chcking for viruses on disk
+    - Attaches it self to `HDV_BPB` vector to replicate itself but not for checking for viruses on disk
 
 ### Description
 
