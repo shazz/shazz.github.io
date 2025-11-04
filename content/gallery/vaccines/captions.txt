@@ -1,5 +1,6 @@
-viruskicker.png: Jedi / Sector one virus kicker published in STMAGICIEL in 1991
 adrenalin.png: Adrenaline UK Virus Protector
 adrenaline.png: Adrenaline antivirus Preventor 
 agraboot.png: Agraboot 2
+dunekiller.png: Dune Killer v0.2
 medway.png: The Medway Boys Protector IV
+viruskicker.png: Jedi / Sector one virus kicker published in STMAGICIEL in 1991
