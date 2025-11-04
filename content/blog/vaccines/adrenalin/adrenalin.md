@@ -1,13 +1,13 @@
-Title: Andrenalin Virus Protector I
+Title: Adrenalin Virus Protector I
 Slug: adrenalin
-Name: Andrenalin Virus Protector I
+Name: Adrenalin Virus Protector I
 Date: 2025-11-03 16:12
 Location: Montreal / Canada
 Category: Atari ST, Vaccine
 Lang: en
 Author: shazz
 status: hidden
-summary: This article is about the Andrenalin Virus Protector I vaccine...
+summary: This article is about the Adrenalin Virus Protector I vaccine...
 image: {filename}../../../gallery/vaccines/adrenalin.png
 Tags: Vaccine
 
@@ -59,7 +59,7 @@ As the automation V1 resident magic word location is the same as the Kobold 2 pa
 
 ## Conclusion
 
-This vaccines targets specific viruses which is not a bad thing but will also miss many others. And Kobold 2 was definitively very rare. So interesting from a technical point of view but overall limited.
+This vaccine targets specific viruses which is not a bad thing but will also miss many others. And Kobold 2 was definitively very rare. So interesting from a technical point of view but overall limited.
 
 An interesting 6/10.
 

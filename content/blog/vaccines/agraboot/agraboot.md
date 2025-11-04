@@ -59,7 +59,7 @@ The Agraboot 2 was written by Michael James aka Agarjag from Adrenalin UK, that'
 
 ## Conclusion
 
-The fact it is checking for reset resistant programs, stays resident in memory and detect suspicious trap calls, even if it won't work with encrypted viruses, make it a pretty powerful vaccine.
+The fact it is checking for reset resistant programs, stays resident in memory and detect suspicious trap calls, even if it won't work with encrypted viruses, makes it a pretty powerful vaccine.
 
 A rock solid 8/10.
 
