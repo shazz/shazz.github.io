@@ -4,6 +4,7 @@ agraboot.png: Agraboot 2
 animalmine.png: Animal Mine barcode
 antighost.png: TDT Anti Ghost V4.0 by Altair
 bust.png: B.U.S.T
+coder.png: Coder
 cram.png: CRAM
 cresson.png: Cresson
 derf.png: KGB derf
@@ -11,8 +12,9 @@ diwa.png: DIWA
 dodgysoft.png: Dodgysoft
 drsatan.png: Dr Satan
 drst.png: Dr S.T.
+dune.png: Dune
 eagles.png: Eagles
-ect.png: ECT
+electricity.png: Electricity
 eternity.png: Eternity
 exorcist3.png: Exorcist 3
 fuzzionviruskiller.png: Fuzion Virus Killer
@@ -20,6 +22,7 @@ hmd.png: HMD Stranglers
 imagina.png: Imagina
 ked.png: KED
 kgb.png: KGB
+killers.png: Killer's Antivirus v3.0
 ktall.png: Kill Them All
 morgan.png: Morgan Explorer
 mph.png: MPH
@@ -38,7 +41,6 @@ santorin.png: Santorin des Cyclades
 striker.png: Pulsion Striker
 syndicate.png: Syndicate WtP
 terminator.png: Megaguru Terminator
-thekgb.png: The KGB
 tmbp.png: TMB_P
 tripleh.png: TripleH
 tronicpdl.png: Tronic PDL

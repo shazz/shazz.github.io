@@ -27,7 +27,7 @@ Tags: Vaccine
 
 The ...
 
-<img src="{attach}kgb_photo_0.png" width="45%"/>&nbsp;<img src="{attach}kgb_photo_1.png" width="45%"/>
+<img src="{attach}kgb_photo_0.png" width="30%"/>&nbsp;<img src="{attach}kgb_photo_1.png" width="30%"/>&nbsp;<img src="{attach}kgb_photo_2.png" width="30%"/>
 
 
 ## Detection capabilities
