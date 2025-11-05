@@ -3,12 +3,14 @@ adrenaline.png: Adrenaline antivirus Preventor
 agraboot.png: Agraboot 2
 animalmine.png: Animal Mine barcode
 antighost.png: TDT Anti Ghost V4.0 by Altair
+bust.png: B.U.S.T
 cram.png: CRAM
 cresson.png: Cresson
 derf.png: KGB derf
 diwa.png: DIWA
 dodgysoft.png: Dodgysoft
-drST.png: Dr S.T.
+drsatan.png: Dr Satan
+drst.png: Dr S.T.
 eagles.png: Eagles
 ect.png: ECT
 eternity.png: Eternity
