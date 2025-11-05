@@ -32,12 +32,12 @@ Its detection capabilities are limited as most of the source code is used for it
 Note that a Trojan called Adrenaline Preventor 1.8b exists which shares the same source code but added some additional viral capabilities. This "mutation" was an easy step considering the little differences between a genuine virus and this vaccine and the remaining free space. 
 
 
-<img src="{attach}adrenaline_photo_0.png" width="45%"/><img src="{attach}adrenaline_photo_1.png" width="45%"/>
+<img src="{attach}adrenaline_photo_0.png" width="45%"/>&nbsp;<img src="{attach}adrenaline_photo_1.png" width="45%"/>
 
 
 ## Detection capabilities
 
-| Threat                          | Result version 1.8a                   |
+| Threat                          | Result                                |
 |---------------------------------|:-------------------------------------:|
 | Check PHYSTOP memory            | <span style="color:red">No</span>     |
 | Undocumented resident program   | <span style="color:green">Yes</span>  |

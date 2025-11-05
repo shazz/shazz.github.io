@@ -31,7 +31,7 @@ The Virus Kicker 2 was first published in STMAGICIEL, a special edition of ST Ma
 The version 3 is an optimized version done by Shazz / MJJ Prod, adding new detection capabilities.
 
 
-<img src="{attach}vk_photo_0.png" width="45%"/><img src="{attach}vk_photo_1.png" width="45%"/> 
+<img src="{attach}vk_photo_0.png" width="45%"/>&nbsp;<img src="{attach}vk_photo_1.png" width="45%"/> 
 
 
 ## Detection capabilities

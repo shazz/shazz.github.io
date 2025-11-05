@@ -30,12 +30,12 @@ It detects Kobold 2, Ghost and Automation V1 (virus?) looking at the position of
 As the automation V1 resident magic word location is the same as the Kobold 2 pattern, it may give an hint on what is this Automation V1 virus...
 
 
-<img src="{attach}adrenalin_photo_0.png" width="45%"/><img src="{attach}adrenalin_photo_1.png" width="45%"/>
+<img src="{attach}adrenalin_photo_0.png" width="45%"/>&nbsp;<img src="{attach}adrenalin_photo_1.png" width="45%"/>
 
 
 ## Detection capabilities
 
-| Threat                          | Result version 1.8a                   |
+| Threat                          | Result                                |
 |---------------------------------|:-------------------------------------:|
 | Check PHYSTOP memory            | <span style="color:red">No</span>     |
 | Undocumented resident program   | <span style="color:orange">Partial</span>|

@@ -30,12 +30,12 @@ Tags: Vaccine
 The Agraboot 2 was written by Michael James aka Agarjag from Adrenalin UK, that's a resident vaccine so, when the GEM is loaded, any disk read (using `getBPB()`) will be checked and the screen will flash if some suspicious patterns are found (typically any code attemting to write on the disk). 
 
 
-<img src="{attach}agraboot_photo_0.png" width="30%"/><img src="{attach}agraboot_photo_1.png" width="30%"/><img src="{attach}agraboot_photo_2.png" width="30%"/>
+<img src="{attach}agraboot_photo_0.png" width="30%"/>&nbsp;<img src="{attach}agraboot_photo_1.png" width="30%"/>&nbsp;<img src="{attach}agraboot_photo_2.png" width="30%"/>
 
 
 ## Detection capabilities
 
-| Threat                          | Result version 1.8a                   |
+| Threat                          | Result                                |
 |---------------------------------|:-------------------------------------:|
 | Check PHYSTOP memory            | <span style="color:red">No</span>     |
 | Undocumented resident program   | <span style="color:green">Yes</span>  |

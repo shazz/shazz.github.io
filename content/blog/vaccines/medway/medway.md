@@ -28,7 +28,7 @@ Tags: Vaccine
 The Medway Boys Protector IV was probably one of the most used vaccine on ST, Trojan and Wurzel relased multiple versions of this vaccine and the last one, version IV, was modified by the BBC.
 
 
-<img src="{attach}medway_photo_3.png" width="45%"/><img src="{attach}medway_photo_4.png" width="45%"/>
+<img src="{attach}medway_photo_3.png" width="45%"/>&nbsp;<img src="{attach}medway_photo_4.png" width="45%"/>
 
 
 ## Detection capabilities
@@ -63,8 +63,7 @@ A disppointing 4/10.
 
 ### Older versions
 
-<img src="{attach}medway_photo_0.png" width="45%"/>
-<img src="{attach}medway_photo_1.png" width="45%"/>
+<img src="{attach}medway_photo_0.png" width="45%"/>&nbsp;<img src="{attach}medway_photo_1.png" width="45%"/>
 
 ###  Appendix
 
