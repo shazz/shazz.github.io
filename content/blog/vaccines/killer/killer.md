@@ -19,7 +19,7 @@ Tags: Vaccine
 - *Size*: 444 bytes
 - *Resident*: no
 - *Self-replicating*: no
-- *Can clean memory*: yes, usea patched bus error vector to clear the memory
+- *Can clean memory*: yes, use a patched bus error vector to clear the memory
 - *Special features*: 
     - Messages are encoded
     - If found, check the resident program address is correctly set
@@ -61,7 +61,7 @@ The Killer Boot is the vaccine provided the The Killer 2.0 antivirus. Other vers
 
 A vaccine which was pretty common thanks to The Killer antivirus which was distributed by Omikron (which also distributed the famous Omikron Basic with the Atari ST), it doesn't do much but good enough to detect most resident resistant viruses
 
-A good 7/10 as, like the antivirus it comes with, it is nice to use and reliable.
+A good 6/10 as, like the antivirus it comes with, it is nice to use and reliable.
 
 ### The antivirus
 

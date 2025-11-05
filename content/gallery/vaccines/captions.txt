@@ -4,6 +4,7 @@ agraboot.png: Agraboot 2
 antighost.png: TDT Anti Ghost V4.0 by Altair
 dunekiller.png: Dune Killer v0.2
 killer.png: Killer Boot 2.08
+madvision.png: Mad Vision Hate Viruses
 medway.png: The Medway Boys Protector IV
 vaccingillus.png: Vaccin-Gillus
 viruskicker.png: Jedi / Sector one virus kicker published in STMAGICIEL in 1991
