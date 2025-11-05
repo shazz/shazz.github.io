@@ -31,13 +31,14 @@ AUTHOR_FEED_RSS = None
 MY_LINKS = (
     ("1. Gallery", "/"),
     ("2. Antiviruses", "/antivirus.html"),
-    ("3. Articles", "/posts.html"),
-    ("4. Status", "/pages/Status-en.html"),
-    ("5. Resources", "/pages/resources-en.html"),
-    ("6. Memory map", "/pages/AtariMemoryMap-en.html"),
-    ("7. Vectors", "/pages/AtariVectors-en.html"),
-    ("8. TOS", "/pages/HowAtariBoots-en.html"),
-    ("9. Bootsectors?", "/pages/HowBootsectorsWork-en.html"),
+    ("3. vaccines", "/vaccines.html"),
+    ("4. Articles", "/posts.html"),
+    ("5. Status", "/pages/Status-en.html"),
+    ("6. Resources", "/pages/resources-en.html"),
+    ("7. Memory map", "/pages/AtariMemoryMap-en.html"),
+    ("8. Vectors", "/pages/AtariVectors-en.html"),
+    ("9. TOS", "/pages/HowAtariBoots-en.html"),
+    ("10. Bootsectors?", "/pages/HowBootsectorsWork-en.html"),
 )
 links_list = list(MY_LINKS)
 sorted_links = sorted(links_list, key=lambda x: int(x[0].split(".")[0]), reverse=True)

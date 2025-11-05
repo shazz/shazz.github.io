@@ -13,17 +13,21 @@ dodgysoft.png: Dodgysoft
 drsatan.png: Dr Satan
 drst.png: Dr S.T.
 dune.png: Dune
+dunekiller.png: Dune Killer v0.2
 eagles.png: Eagles
 electricity.png: Electricity
 eternity.png: Eternity
 exorcist3.png: Exorcist 3
-fuzzionviruskiller.png: Fuzion Virus Killer
+fuzionviruskiller.png: Fuzion Virus Killer
 hmd.png: HMD Stranglers
 imagina.png: Imagina
 ked.png: KED
 kgb.png: KGB
+killer.png: Killer Boot 2.08
 killers.png: Killer's Antivirus v3.0
 ktall.png: Kill Them All
+madvision.png: Mad Vision Hate Viruses
+medway.png: The Medway Boys Protector IV
 morgan.png: Morgan Explorer
 mph.png: MPH
 mystic.png: Mystic
@@ -44,14 +48,11 @@ terminator.png: Megaguru Terminator
 tmbp.png: TMB_P
 tripleh.png: TripleH
 tronicpdl.png: Tronic PDL
-truc.png: TUC
+tuc.png: TUC
 tvk.png: The Virus Killer
 ultimate.png: Ultimate
 wizzcat.png: Wizzcat 
 wtp.png: WTP
-dunekiller.png: Dune Killer v0.2
-killer.png: Killer Boot 2.08
-madvision.png: Mad Vision Hate Viruses
-medway.png: The Medway Boys Protector IV
 vaccingillus.png: Vaccin-Gillus
 viruskicker.png: Jedi / Sector one virus kicker published in STMAGICIEL in 1991
+zullprotector.png: Zuul Virus Protector v1.01

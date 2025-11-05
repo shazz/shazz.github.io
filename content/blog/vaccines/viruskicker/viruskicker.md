@@ -31,7 +31,7 @@ The Virus Kicker 2 was first published in STMAGICIEL, a special edition of ST Ma
 The version 4 is an optimized version done by Shazz / MJJ Prod, adding new detection capabilities.
 
 
-<img src="{attach}vk_photo_0.png" width="30%"/>&nbsp;<img src="{attach}vk_photo_1.png" width="30%"/> &nbsp;<img src="{attach}vk_photo_2.png" width="30%"/> 
+<img src="{attach}vk_photo_2.png" width="45%"/>&nbsp;<img src="{attach}vk_photo_3.png" width="45%"/>
 
 
 ## Detection capabilities
@@ -63,7 +63,23 @@ Even if the versions 2 and 3 were doing a good job, the extensive check on vecto
 
 A pretty solid 8/10.
 
+## Appendixes
 
-###  Appendix
+### Older versions
+
+<img src="{attach}vk_photo_0.png" width="45%"/>&nbsp;<img src="{attach}vk_photo_1.png" width="45%"/>
+
+
+### Variants
+
+Jedi reused the version 3 code to make the Fantasy Killer version
+
+<img src="{attach}fantasykiller_photo_0.png" width="45%"/>&nbsp;<img src="{attach}fantasykiller_photo_1.png" width="45%"/>
+
+And also the Dune Killer v1.2 version
+
+<img src="{attach}dunekiller12_photo_0.png" width="45%"/>&nbsp;<img src="{attach}dunekiller12_photo_1.png" width="45%"/>
+
+###  Listing
 
 You can download the scan of the original MAGICIEL page [here](https://archive.org/details/st-magazine-hs1/page/n7/mode/2up) on the Internet Archive.
