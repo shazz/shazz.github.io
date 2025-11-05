@@ -50,7 +50,6 @@ The Medway Boys Protector IV was probably one of the most used vaccine on ST, Tr
 | Flopwr Trap calls               | <span style="color:red">No</span>     | 
 | Rwabs Trap calls                | <span style="color:red">No</span>     | 
 | VBL Int / VBL Routine Vector    | <span style="color:red">No</span>     |
-| Non-ROM Trap Unused Vector      | <span style="color:red">No</span>     |
 | Detect virus footprints         | <span style="color:red">No</span>     |
 | Catch key viruses               | <span style="color:red">No</span>     |
 | Other threat detection          | <span style="color:green">Yes</span> (disables Ghost loader)  |
@@ -63,7 +62,7 @@ A disppointing 4/10.
 
 ### Older versions
 
-<img src="{attach}medway_photo_0.png" width="45%"/>&nbsp;<img src="{attach}medway_photo_1.png" width="45%"/>
+<img src="{attach}medway_photo_0.png" width="30%"/>&nbsp;<img src="{attach}medway_photo_1.png" width="30%"/>&nbsp;<img src="{attach}medway_photo_5.png" width="30%"/>
 
 ###  Appendix
 

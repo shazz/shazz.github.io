@@ -54,7 +54,6 @@ Note that a Trojan called Adrenaline Preventor 1.8b exists which shares the same
 | Flopwr Trap calls               | <span style="color:red">No</span>     | 
 | Rwabs Trap calls                | <span style="color:red">No</span>     | 
 | VBL Int / VBL Routine Vector    | <span style="color:red">No</span>     |
-| Non-ROM Trap Unused Vector      | <span style="color:red">No</span>     |
 | Detect virus footprints         | <span style="color:red">No</span>     |
 | Catch key viruses               | <span style="color:red">No</span>     |
 | Other threat detection          | <span style="color:red">No</span>     |

@@ -50,7 +50,6 @@ So at then... it doesn't detect anything and replicates on any disk possibly del
 | Flopwr Trap calls               | <span style="color:red">No</span>     | 
 | Rwabs Trap calls                | <span style="color:red">No</span>     | 
 | VBL Int / VBL Routine Vector    | <span style="color:red">No</span>     |
-| Non-ROM Trap Unused Vector      | <span style="color:red">No</span>     |
 | Detect virus footprints         | <span style="color:red">No</span>     |
 | Catch key viruses               | <span style="color:red">No</span>     |
 | Other threat detection          | <span style="color:red">No</span>     |

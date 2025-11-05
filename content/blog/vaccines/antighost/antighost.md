@@ -49,7 +49,6 @@ The Anti Ghost vaccine, made by Altair famous for his Atomik Cruncher, is target
 | Flopwr Trap calls               | <span style="color:red">No</span>     | 
 | Rwabs Trap calls                | <span style="color:red">No</span>     | 
 | VBL Int / VBL Routine Vector    | <span style="color:red">No</span>     |
-| Non-ROM Trap Unused Vector      | <span style="color:red">No</span>     |
 | Detect virus footprints         | <span style="color:green">Yes</span> (Ghost) |
 | Catch key viruses               | <span style="color:red">No</span>     |
 | Other threat detection          | <span style="color:red">No</span>     |

@@ -52,7 +52,6 @@ The Agraboot 2 was written by Michael James aka Agarjag from Adrenalin UK, that'
 | Flopwr Trap calls               | <span style="color:green">Yes</span>  | 
 | Rwabs Trap calls                | <span style="color:green">Yes</span>  | 
 | VBL Int / VBL Routine Vector    | <span style="color:red">No</span>     |
-| Non-ROM Trap Unused Vector      | <span style="color:red">No</span>     |
 | Detect virus footprints         | <span style="color:red">No</span>     |
 | Catch key viruses               | <span style="color:red">No</span>     |
 | Other threat detection          | <span style="color:red">No</span>     |

@@ -1,7 +1,46 @@
 adrenalin.png: Adrenaline UK Virus Protector
 adrenaline.png: Adrenaline antivirus Preventor 
 agraboot.png: Agraboot 2
+animalmine.png: Animal Mine barcode
 antighost.png: TDT Anti Ghost V4.0 by Altair
+cram.png: CRAM
+cresson.png: Cresson
+derf.png: KGB derf
+diwa.png: DIWA
+dodgysoft.png: Dodgysoft
+drST.png: Dr S.T.
+ect.png: ECT
+eternity.png: Eternity
+exorcist3.png: Exorcist 3
+fuzzionviruskiller.png: Fuzion Virus Killer
+imagina.png: Imagina
+ked.png: KED
+kgb.png: KGB
+ktall.png: Kill Them All
+morgan.png: Morgan Explorer
+mph.png: MPH
+mystic.png: Mystic
+newmode.png: New Mode
+nexus.png: Nexus
+overkill.png: Overkill
+peylow.png: Peylow
+pompey.png: Pompey Pirates
+prophecy.png: Prophecy
+pulsion.png: Pulsion
+ragx.png: RAGX
+revolution.png: Revolution
+rippedoff.png: Ripped Off
+saddam.png: Saddam
+santorin.png: Santorin des Cyclades
+terminator.png: Megaguru Terminator
+thekgb.png: The KGB
+tmbp.png: TMB_P
+tripleh.png: TripleH
+tronicpdl.png: Tronic PDL
+truc.png: TUC
+ultimate.png: Ultimate
+wizzcat.png: Wizzcat 
+wtp.png: WTP
 dunekiller.png: Dune Killer v0.2
 killer.png: Killer Boot 2.08
 madvision.png: Mad Vision Hate Viruses
