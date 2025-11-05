@@ -26,6 +26,7 @@ Tags: Vaccine
 ### Description
 
 The ...
+When a virus is detected it is crashing
 
 <img src="{attach}cram_photo_0.png" width="45%"/>&nbsp;<img src="{attach}cram_photo_1.png" width="45%"/>
 

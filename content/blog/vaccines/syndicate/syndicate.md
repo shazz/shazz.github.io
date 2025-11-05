@@ -1,5 +1,5 @@
 Title: 
-Slug: newmode
+Slug: syndicate
 Name: 
 Date: 2025-11-05 09:05
 Location: Montreal / Canada
@@ -8,7 +8,7 @@ Lang: en
 Author: shazz
 status: hidden
 summary: This article is about the 
-image: {filename}../../../gallery/vaccines/newmode.png
+image: {filename}../../../gallery/vaccines/syndicate.png
 Tags: Vaccine
 
 
@@ -27,7 +27,7 @@ Tags: Vaccine
 
 The ...
 
-<img src="{attach}newmode_photo_0.png" width="45%"/>&nbsp;<img src="{attach}newmode_photo_1.png" width="45%"/>&nbsp;<img src="{attach}newmode_photo_2.png" width="45%"/>
+<img src="{attach}syndicate_photo_0.png" width="45%"/>&nbsp;<img src="{attach}syndicate_photo_1.png" width="45%"/>
 
 
 ## Detection capabilities

@@ -9,10 +9,12 @@ derf.png: KGB derf
 diwa.png: DIWA
 dodgysoft.png: Dodgysoft
 drST.png: Dr S.T.
+eagles.png: Eagles
 ect.png: ECT
 eternity.png: Eternity
 exorcist3.png: Exorcist 3
 fuzzionviruskiller.png: Fuzion Virus Killer
+hmd.png: HMD Stranglers
 imagina.png: Imagina
 ked.png: KED
 kgb.png: KGB
@@ -26,18 +28,20 @@ overkill.png: Overkill
 peylow.png: Peylow
 pompey.png: Pompey Pirates
 prophecy.png: Prophecy
-pulsion.png: Pulsion
 ragx.png: RAGX
 revolution.png: Revolution
 rippedoff.png: Ripped Off
 saddam.png: Saddam
 santorin.png: Santorin des Cyclades
+striker.png: Pulsion Striker
+syndicate.png: Syndicate WtP
 terminator.png: Megaguru Terminator
 thekgb.png: The KGB
 tmbp.png: TMB_P
 tripleh.png: TripleH
 tronicpdl.png: Tronic PDL
 truc.png: TUC
+tvk.png: The Virus Killer
 ultimate.png: Ultimate
 wizzcat.png: Wizzcat 
 wtp.png: WTP
