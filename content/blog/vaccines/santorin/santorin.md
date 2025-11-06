@@ -1,31 +1,31 @@
-Title: 
+Title: Cyclades vaccine
 Slug: santorin
-Name: 
+Name: Cyclades vaccine
 Date: 2025-11-05 09:05
 Location: Montreal / Canada
 Category: Atari ST, Vaccine
 Lang: en
 Author: shazz
 status: hidden
-summary: This article is about the 
+summary: This article is about the Cyclades vaccine
 image: {filename}../../../gallery/vaccines/santorin.png
 Tags: Vaccine
 
 
 ## Basic Information
 
-- *Author*: 
+- *Author*: Santorin from Cyclades
 - *Type*: bootsector
-- *Size*: ? bytes
-- *Resident*: 
-- *Self-replicating*: 
-- *Can clean memory*: 
+- *Size*: 461 bytes
+- *Resident*: no 
+- *Self-replicating*: no
+- *Can clean memory*: yes, clear `RESVALID` and call Reset vector
 - *Special features*: 
-    - ?
+    - Code is obfuscated (shifted memory registers, message is XOR encoded, logo is encoded), maybe to avoid being detected or to avoid being ripped?
 
 ### Description
 
-The ...
+The Cyclades vaccine is pretty unique with its huge logo and at then end by checking the Reset Vector, undocumented resident programs and suspicious `HDV_BPB` vectors, it does a good job!
 
 <img src="{attach}santorin_photo_0.png" width="45%"/>&nbsp;<img src="{attach}santorin_photo_1.png" width="45%"/>
 
@@ -35,9 +35,9 @@ The ...
 | Threat                          | Result                                |
 |---------------------------------|:-------------------------------------:|
 | Check PHYSTOP memory            | <span style="color:red">No</span>     |
-| Undocumented resident program   | <span style="color:red">No</span>     |
-| Valid reset vector              | <span style="color:red">No</span>     |        
-| Non-ROM HDV BPB Vector          | <span style="color:red">No</span>     |
+| Undocumented resident program   | <span style="color:green">Yes</span>  |
+| Valid reset vector              | <span style="color:green">Yes</span>  |        
+| Non-ROM HDV BPB Vector          | <span style="color:green">Yes</span>  |
 | Non-ROM HDV RW Vector           | <span style="color:red">No</span>     |
 | Non-ROM HDV BOOT Vector         | <span style="color:red">No</span>     |
 | Non-ROM HDV INIT Vector         | <span style="color:red">No</span>     |
@@ -55,7 +55,7 @@ The ...
 
 ## Conclusion
 
-...
+One of the most original vaccine from a French ST demo group.
 
-A ...
+A great 8/10 thanks to oits unique presentation while being efficient!
 
