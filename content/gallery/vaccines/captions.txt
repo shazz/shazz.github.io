@@ -18,6 +18,7 @@ eagles.png: Eagles
 electricity.png: Electricity
 eternity.png: Eternity
 exorcist3.png: Exorcist 3
+fuzion: Fuzion fullscreen
 fuzionviruskiller.png: Fuzion Virus Killer
 hmd.png: HMD Stranglers
 imagina.png: Imagina
