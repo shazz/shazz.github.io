@@ -28,6 +28,14 @@ Tags: Vaccine
 
 The Fuzion Fullscreen vaccine is a pretty buggy vaccine, looks unfinished / debugged. In terms of "vaccination" it only looks for valid Reset Vector and if found will force a reset (in a very similar way to the Jedi / Sector One Viruskicker).
 
+Here are the screenshots of the vaccine at boot, after a hard reboot and when the Ghost virus is already in memory (and so undetected):
+
+
+<img src="{attach}fuzion_photo_2.png" width="45%"/>&nbsp;<img src="{attach}fuzion_photo_3.png" width="45%"/>
+
+
+When fixing the bug in the bootsector (when detecting the screen resolution), here is what people should see:
+
 <img src="{attach}fuzion_photo_0.png" width="45%"/>&nbsp;<img src="{attach}fuzion_photo_1.png" width="45%"/>
 
 
