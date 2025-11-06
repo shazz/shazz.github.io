@@ -1,31 +1,31 @@
-Title: 
+Title: Terminator vaccine
 Slug: terminator
-Name: 
+Name: Terminator
 Date: 2025-11-05 09:05
 Location: Montreal / Canada
 Category: Atari ST, Vaccine
 Lang: en
 Author: shazz
 status: hidden
-summary: This article is about the 
+summary: This article is about the Terminator vaccine.
 image: {filename}../../../gallery/vaccines/terminator.png
 Tags: Vaccine
 
 
 ## Basic Information
 
-- *Author*: 
+- *Author*: Megaguru
 - *Type*: bootsector
-- *Size*: ? bytes
-- *Resident*: 
-- *Self-replicating*: 
-- *Can clean memory*: 
+- *Size*: 480 bytes
+- *Resident*: no 
+- *Self-replicating*: no
+- *Can clean memory*: Partially: clear `RESVALID`, `REVECTOR`, magic word in resident program if found and call $4.w reset vector
 - *Special features*: 
-    - ?
+    - Immunize memory if Ghost is loaded at $140
 
 ### Description
 
-The ...
+The Megaguru is a vaccine which, like many others, checks for set reset vectors and undcoumented resident programs. It really looks like a ripped version of the Medway Boys IV vaccine as the code is mostly identical and even unused code was kept. Not very surprising as Megaguru is also know for his virus.
 
 <img src="{attach}terminator_photo_0.png" width="45%"/>&nbsp;<img src="{attach}terminator_photo_1.png" width="45%"/>
 
@@ -34,9 +34,9 @@ The ...
 
 | Threat                          | Result                                |
 |---------------------------------|:-------------------------------------:|
-| Check PHYSTOP memory            | <span style="color:red">No</span>     |
-| Undocumented resident program   | <span style="color:red">No</span>     |
-| Valid reset vector              | <span style="color:red">No</span>     |        
+| Check PHYSTOP memory            | <span style="color:orange">Partial</span>     |
+| Undocumented resident program   | <span style="color:green">Yes</span>  |
+| Valid reset vector              | <span style="color:green">Yes</span>  |        
 | Non-ROM HDV BPB Vector          | <span style="color:red">No</span>     |
 | Non-ROM HDV RW Vector           | <span style="color:red">No</span>     |
 | Non-ROM HDV BOOT Vector         | <span style="color:red">No</span>     |
@@ -55,7 +55,7 @@ The ...
 
 ## Conclusion
 
-...
+As a lame ripped version of the Medway Boys Protector IV, nothing to say except...
 
-A ...
+It deserved a good 0/10!
 
