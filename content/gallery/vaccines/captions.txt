@@ -41,7 +41,7 @@ ragx.png: RAGX
 revolution.png: Revolution
 rippedoff.png: Ripped Off
 saddam.png: Saddam
-santorin.png: Santorin des Cyclades
+santorin.png: Cyclades Vaccine
 striker.png: Pulsion Striker
 syndicate.png: Syndicate WtP
 terminator.png: Megaguru Terminator

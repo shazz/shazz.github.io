@@ -19,7 +19,7 @@ Tags: Vaccine
 - *Size*: 461 bytes
 - *Resident*: no 
 - *Self-replicating*: no
-- *Can clean memory*: yes, clear `RESVALID` and call Reset vector
+- *Can clean memory*: partially, clear `RESVALID` and call Reset vector
 - *Special features*: 
     - Code is obfuscated (shifted memory registers, message is XOR encoded, logo is encoded), maybe to avoid being detected or to avoid being ripped?
 
@@ -57,5 +57,5 @@ The Cyclades vaccine is pretty unique with its huge logo and at then end by chec
 
 One of the most original vaccine from a French ST demo group.
 
-A great 8/10 thanks to oits unique presentation while being efficient!
+A great 8/10 thanks to its unique design while being efficient!
 
