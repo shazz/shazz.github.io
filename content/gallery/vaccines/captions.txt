@@ -33,7 +33,7 @@ morgan.png: Morgan Explorer
 mph.png: MPH
 mystic.png: Mystic
 newmode.png: New Mode
-nexus.png: Nexus
+nexus.png: Nexus Test antivirus
 overkill.png: Overkill
 peylow.png: Peylow
 pompey.png: Pompey Pirates
@@ -52,7 +52,7 @@ tronicpdl.png: Tronic PDL
 tuc.png: TUC
 tvk.png: The Virus Killer
 ultimate.png: Ultimate
-wizzcat.png: Wizzcat 
+wizzcat.png: WizzCat VProtector
 wtp.png: WTP
 vaccingillus.png: Vaccin-Gillus
 viruskicker.png: Jedi / Sector one virus kicker published in STMAGICIEL in 1991

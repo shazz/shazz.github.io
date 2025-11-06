@@ -22,12 +22,14 @@ Tags: Vaccine
 - *Can clean memory*: limited, only Reset Vector and `RESVALID`
 - *Special features*: 
     - Only works with TOS 1.0, 1.02, 1.04
-    - (Fails to) Check if `HDV_BPB` vector is in ROM  else resets it to default value (based on TOS version)
+    - (Fails to) Check if `HDV_BPB` vector is in ROM else resets it to default value (based on TOS version)
     - It deletes a zone of the memory (100 bytes at diskbuffer + $600) without a clear intent
 
 ### Description
 
 The Ripped Off vaccine is a simple and buggy vaccine which won't catch most of the viruses. It was a good idea to look carefully at the `HDV_BPB` vector and try to reset it but it was not coded in a safe manner. And the next check on the reset vector is usually avoided by most viruses.
+
+Here are the screenshots of the vaccine at boot, after a hard reboot and when a Reset Vector is set and valid:
 
 <img src="{attach}rippedoff_photo_0.png" width="45%"/>&nbsp;<img src="{attach}rippedoff_photo_1.png" width="45%"/>
 

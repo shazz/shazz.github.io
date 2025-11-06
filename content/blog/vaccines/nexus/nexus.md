@@ -1,33 +1,32 @@
-Title: 
+Title: NEXUS Test Antivirus
 Slug: nexus
-Name: 
+Name: NEXUS Test Antivirus
 Date: 2025-11-05 09:05
 Location: Montreal / Canada
 Category: Atari ST, Vaccine
 Lang: en
 Author: shazz
 status: hidden
-summary: This article is about the 
+summary: This article is about the NEXUS Test Antivirus
 image: {filename}../../../gallery/vaccines/nexus.png
 Tags: Vaccine
 
 
 ## Basic Information
 
-- *Author*: 
+- *Author*: ?
 - *Type*: bootsector
-- *Size*: ? bytes
-- *Resident*: 
-- *Self-replicating*: 
-- *Can clean memory*: 
-- *Special features*: 
-    - ?
+- *Size*: 100 bytes
+- *Resident*: no 
+- *Self-replicating*: no
+- *Can clean memory*: no
+- *Special features*: None
 
 ### Description
 
-The ...
+The Nexus Test Antivirus is only a patch on top on an existing bootsector which replace the top part by a message and some sound. It does not detect anything and worse it doesn't clean the remaining part of the bootsector, like, in the version we found, the Ghost virus.
 
-<img src="{attach}nexus_photo_0.png" width="45%"/>&nbsp;<img src="{attach}nexus_photo_1.png" width="45%"/>
+<img src="{attach}nexus_photo_0.png" width="45%"/>
 
 
 ## Detection capabilities
@@ -55,7 +54,7 @@ The ...
 
 ## Conclusion
 
-...
+A totally useless vaccine.
 
-A ...
+A deserved 0/10
 
