@@ -11,6 +11,7 @@ bust.png: B.U.S.T
 coder.png: Coder
 cram.png: CRAM
 cresson.png: Cresson
+cst.png: Constellations
 derf.png: KGB derf
 detonators.png: Detonators
 diwa.png: DIWA
@@ -24,7 +25,7 @@ electricity.png: Electricity
 eternity.png: Eternity
 euroswap.png: Euroswap
 exorcist3.png: Exorcist 3
-fuzion: Fuzion fullscreen
+fuzion.png: Fuzion fullscreen
 fuzionviruskiller.png: Fuzion Virus Killer
 hmd.png: HMD Stranglers
 imagina.png: Imagina
@@ -49,11 +50,13 @@ orion.png: Orion
 overkill.png: Overkill
 ovr.png: Overlanders
 oxbow.png: Oxbow
-pdl151: PDL 151
+pdl151.png: PDL 151
 peylow.png: Peylow
 pompey.png: Pompey Pirates
 prophecy.png: Prophecy
+pyrothechnics.png: Pyrothechnics
 ragx.png: RAGX
+rebel.png: Rebel
 revolution.png: Revolution
 rippedoff.png: Ripped Off
 saddam.png: Saddam
@@ -66,8 +69,8 @@ speedkill.png: Speedkill
 striker.png: Pulsion Striker
 syndicate.png: Syndicate WtP
 terminator.png: Megaguru Terminator
-termnator1.png: Terminator 1
-tfcramprotector2.png: TFC RAM Protector 2
+terminator1.png: Terminator 1
+tfcramprotector.png: TFC RAM Protector 2
 tmbp.png: TMB_P
 tripleh.png: TripleH
 tronicpdl.png: Tronic PDL
@@ -76,9 +79,10 @@ tsccscy.png: tSCc by Scy
 tuc.png: TUC
 tvk.png: The Virus Killer
 ultimate.png: Ultimate
+ulm.png: ULM vaccine
 unreal.png: Unreal
 virusfree.png: VirusFree
-vkiller311.png: VKiller
+vkiller.png: VKiller
 wild.png: Wild
 wizzcat.png: WizzCat VProtector
 wtp.png: WTP
