@@ -220,3 +220,4 @@ output/
 
 # uv
 .python-version
+scripts

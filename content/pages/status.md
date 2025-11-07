@@ -8,11 +8,15 @@ Author: shazz
 status: hidden
 Summary: Museum status
 
+Quick links: [Jump to Viruses](#viruses) | [Jump to Vaccines](#vaccines) | [Jump to Antiviruses](#antiviruses)
+
 Here is the list of known viruses on the Atari ST/TT/Falcon family. If the column "Evidence" is:
 
-- No, it means I did not find a floppy with this virus, if you have it somewhere, please share!
-- Partial, it means I have a corrupted/incomplete image of the virus, so please share too!
+- **No**, it means I did not find a floppy with this item, if you have it somewhere, please share!
+- **Partial**, it means I have a corrupted/incomplete image of the item, so please share too!
+- **Yes**, it means I have a working copy of this item
 
+<h2 id="viruses">Viruses</h2>
 
 | **Nb** | **Virus** | **UVK or other antivirus Name** | **Evidence** | **UVK ref** | 
 |:------:|-----------|---------------------------------|:-------------:|:-----------:|
@@ -107,8 +111,9 @@ Here is the list of known viruses on the Atari ST/TT/Falcon family. If the colum
 |89|[Zelda](/zelda-en.html)||no||
 |90|[Screen](/xcreen-en.html)|Screen Virus|yes|6|
 
-Here is the list of known vaccines on the Atari ST/TT/Falcon family.
+<h2 id="vaccines">Vaccines</h2>
 
+Here is the list of known vaccines on the Atari ST/TT/Falcon family.
 
 | **Nb** | **Vaccine** | **Evidence** | 
 |:------:|-------------|:------------:|
@@ -200,8 +205,9 @@ Here is the list of known vaccines on the Atari ST/TT/Falcon family.
 |86|[Wtp](/wtp-en.html)|yes|
 |87|[Zuulprotector](/zuulprotector-en.html)|yes|
 
-Here is the list of known antivirus on the Atari ST/TT/Falcon family.
+<h2 id="antiviruses">Antiviruses</h2>
 
+Here is the list of known antivirus on the Atari ST/TT/Falcon family.
 
 | **Nb** | **Antivirus** | **Evidence** | 
 |:------:|---------------|:------------:|
