@@ -70,7 +70,7 @@ striker.png: Pulsion Striker
 syndicate.png: Syndicate WtP
 terminator.png: Megaguru Terminator
 terminator1.png: Terminator 1
-tfcramprotector.png: TFC RAM Protector 2
+tfcramprotector2.png: TFC RAM Protector 2
 tmbp.png: TMB_P
 tripleh.png: TripleH
 tronicpdl.png: Tronic PDL

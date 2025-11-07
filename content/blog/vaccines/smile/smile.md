@@ -1,5 +1,5 @@
 Title: 
-Slug: speedboot
+Slug: smile
 Name: 
 Date: 2025-11-05 09:05
 Location: Montreal / Canada
@@ -7,8 +7,8 @@ Category: Atari ST, Vaccine
 Lang: en
 Author: shazz
 status: hidden
-summary: This article is about the speedboot vaccine
-image: {filename}../../../gallery/vaccines/speedboot.png
+summary: This article is about the smile vaccine
+image: {filename}../../../gallery/vaccines/smile.png
 Tags: Vaccine
 
 
@@ -27,7 +27,7 @@ Tags: Vaccine
 
 The ...
 
-<img src="{attach}speedboot_photo_0.png" width="45%"/>&nbsp;<img src="{attach}speedboot_photo_1.png" width="45%"/>
+<img src="{attach}smile_photo_0.png" width="45%"/>&nbsp;<img src="{attach}smile_photo_1.png" width="45%"/>
 
 
 ## Detection capabilities
