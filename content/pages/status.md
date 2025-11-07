@@ -20,96 +20,96 @@ Here is the list of known viruses on the Atari ST/TT/Falcon family. If the colum
 
 | **Nb** | **Virus** | **UVK or other antivirus Name** | **Evidence** | **UVK ref** | 
 |:------:|-----------|---------------------------------|:-------------:|:-----------:|
-|1|[Bad taste code 1](/badtastecode1-en.html)|N/A|yes||
-|2|[Bomb](/bomb-en.html)|Bombenvirus, Bomb Virus|yes||
-|3|[Beilsten](/beilstein-en.html)|Beilstein Virus|yes|71|
-|4|[Barbichette](/barbichette-en.html)|No Virus virus|yes||
-|5|[Bad taste code 3](/badtastecode3-en.html)|N/A|yes||
-|6|[Batman](/batman-en.html)|Bat Virus|partial|41|
-|7|[Bad taste code 4](/badtastecode4-en.html)|N/A|yes||
-|8|[Bad taste code 2](/badtastecode2-en.html)|N/A|yes||
-|9|[Bad Taste Key](/badtastekey-en.html)|N/A|yes||
-|10|[Chaos Megacunt](/chaosmegacunt-en.html)|Megacunt V2.0 virus|yes|43|
-|11|[Cookie 2](/cookie2-en.html)|Cookie Monster 2 Virus|yes|33|
-|12|[CT](/ctvirus-en.html)|C’T Virus|yes|7|
-|13|[Cookie](/cookie-en.html)|Cookie Monster Virus|yes|32|
-|14|[Chopin](/chopin-en.html)|Chopin Virus|yes|31|
-|15|[Carpe Diem](/carpediem-en.html)|Carpe Diem Virus|yes|95|
-|16|[Tiny](/notsotinyvirus-en.html)|Tiny Virus|yes|85|
-|17|[Night Force](/nightforcevirus-en.html)|Zoch Virus|yes|68|
-|18|[Darkness](/darkness-en.html)|Darkness Virus (Nightmare of Brooklyn #2 Darkness)|yes|73|
-|19|[Dent](/dent-en.html)|Reset Virus|yes|48|
-|20|[Dir Waster](/dirwaster-en.html)|Directory Waster Virus|yes|59|
-|21|[Dja](/dja-en.html)|DJA Virus|yes|45|
-|22|[Oli](/oli-en.html)|OLI Virus|yes|14|
-|23|[Oli 2](/oli2-en.html)|N/A|yes||
-|24|[Lietuva](/lietuva-en.html)|Lietuva Virus|yes|65|
-|25|[Lucky Lady 1.02](/luckylady102-en.html)|Lucky Lady 1.02 Virus|yes|77|
-|26|[Lamer](/lamer-en.html)|N/A|yes||
-|27|[Lucky Lady 1.03](/luckylady103-en.html)|Lucky Lady Virus 1.03|yes|80|
-|28|[Lucky Lady 4.12](/luckylady412-en.html)|Lucky Lady 4.12 Virus|yes|78|
-|29|[Lab](/lab-en.html)|Lab-Virus|yes|10|
-|30|[Evil Nick](/evilnick-en.html)|Evil Virus|yes|25|
-|31|[Elbereth](/elbereth-en.html)|DNA Menace, Menace virus|yes|63|
-|32|[Puke B](/pukeb-en.html)|Puke B Virus|yes|35|
-|33|[Puke A](/pukea-en.html)|Puke A Virus|yes|34|
-|34|[Pharaoh](/pharaoh-en.html)|Pharaoh|yes|94|
-|35|[Pirate](/pirate-en.html)|P.M.S. Virus|yes|26|
-|36|[Vdu](/vdu-en.html)|N/A|yes||
-|37|[Valkyrie](/valkyrie-en.html)|Valkyrie|partial|90|
-|38|[Hide Seek](/hideseek-en.html)|Angle of Death|yes||
-|39|[Hide](/hide-en.html)|Flash and Sound|yes||
-|40|[Sectorone Trasher](/sectoronetrasher-en.html)|5th Generation virus|yes|13|
-|41|[Shit Bug](/shitbug-en.html)|N/A|yes||
-|42|[Small](/small-en.html)|Small Virus|yes|74|
-|43|[Signum](/signum-en.html)|Signum/BPL Virus A|yes|1|
-|44|[St2ab](/st2ab-en.html)||yes||
-|45|[Swiss](/swiss-en.html)|Fat Virus, Sziss Virus, Blot Virus|yes|11|
-|46|[Gillus](/gillus-en.html)|Vaccin-Gillus Virus|yes|89|
-|47|[Ghost](/ghost-en.html)|Ghost Virus|yes|12|
-|48|[Gotcha](/gotcha-en.html)|Gotcha Xeno Virus|yes|83|
-|49|[Grim Reaper](/grimreaper-en.html)|Grim Reaper Virus|yes|42|
-|50|[G data Fake](/g-data-en.html)|G-DATA Virus|yes|38|
-|51|[Gauweil](/gauweil-en.html)|Gauweiler Virus|yes|24|
-|52|[Goblins](/goblins-en.html)|Goblin Virus|yes|19|
-|53|[RAM](/ram-en.html)|Exception virus|yes|23|
-|54|[Rambo](/rambo-en.html)|Arnold/Rambo Virus|yes|28|
-|55|[Fake pashley](/fakepashley-en.html)|Pashley Virus|yes|82|
-|56|[Fastload](/fastload-en.html)|Fastload-Virus|yes||
-|57|[Freeze](/freeze-en.html)|Freeze Virus|yes|5|
-|58|[Fake Atari](/fakeatari-en.html)|Joe Virus|yes|58|
-|59|[Flying Chimp](/flyingchimp-en.html)|Flying Chimp Virus|yes|47|
-|60|[ACA](/aca-en.html)|ACA Virus|yes|4|
-|61|[ACA Fan](/acafan-en.html)|Anti-ACA Virus|yes|30|
-|62|[AutoVir](/autovir-en.html)|N/A|yes||
-|63|[Avenger](/avenger-en.html)|N/A|yes||
-|64|[Ashton](/ashton-en.html)|Ashton Nirvana Virus|yes|64|
-|65|[ACIA](/aciavirus-en.html)|Temporary Madness Virus|yes|72|
-|66|[Avenger 2](/avenger2-en.html)|N/A|yes||
-|67|[UVD](/uvd-en.html)|UVD Virus|yes|84|
-|68|[Upside Down](/upsidedown-en.html)|Upside Down Virus|yes|36|
-|69|[Mad](/mad-en.html)|Mad Virus A|yes|2|
-|70|[Megaguru](/megaguru-en.html)|Megaguru & Argo 2 Virus.|yes|53|
-|71|[Monitor](/monitor-en.html)|Monitor|no|29|
-|72|[Merlin](/merlin-en.html)|Merlin’s Mad Virus|yes|60|
-|73|[Maui's Virus](/maui-en.html)|Anaconda Virus A|yes|79|
-|74|[Meaning Less](/meaningless1-en.html)|N/A|yes||
-|75|[Maulwurf 1 US version](/maulwurf1-en.html)|Maulwurf I Virus B|yes|8|
-|76|[Master](/master-en.html)||yes||
-|77|[Macumba v3.3](/macumba3-en.html)|Macumba 3.3 Virus|yes|69|
-|78|[Media Change](/mediachg-en.html)|Media Change Virus|yes|39|
-|79|[Munchner BHP](/munchner-en.html)|Bayrische Hacker Post (BHP) Virus|yes|9|
-|80|[Meaning2](/meaningless2-en.html)|N/A|yes||
-|81|[Macumba v5](/macumba5-en.html)|Macumba 5.2 Virus|yes|88|
+|1|[ACA Fan](/acafan-en.html)|Anti-ACA Virus|yes|30|
+|2|[ACA](/aca-en.html)|ACA Virus|yes|4|
+|3|[ACIA](/aciavirus-en.html)|Temporary Madness Virus|yes|72|
+|4|[Ashton](/ashton-en.html)|Ashton Nirvana Virus|yes|64|
+|5|[AutoVir](/autovir-en.html)|N/A|yes||
+|6|[Avenger 2](/avenger2-en.html)|N/A|yes||
+|7|[Avenger](/avenger-en.html)|N/A|yes||
+|8|[Bad Taste Key](/badtastekey-en.html)|N/A|yes||
+|9|[Bad taste code 1](/badtastecode1-en.html)|N/A|yes||
+|10|[Bad taste code 2](/badtastecode2-en.html)|N/A|yes||
+|11|[Bad taste code 3](/badtastecode3-en.html)|N/A|yes||
+|12|[Bad taste code 4](/badtastecode4-en.html)|N/A|yes||
+|13|[Barbichette](/barbichette-en.html)|No Virus virus|yes||
+|14|[Batman](/batman-en.html)|Bat Virus|partial|41|
+|15|[Beilsten](/beilstein-en.html)|Beilstein Virus|yes|71|
+|16|[Bomb](/bomb-en.html)|Bombenvirus, Bomb Virus|yes||
+|17|[CT](/ctvirus-en.html)|C’T Virus|yes|7|
+|18|[Carpe Diem](/carpediem-en.html)|Carpe Diem Virus|yes|95|
+|19|[Chaos Megacunt](/chaosmegacunt-en.html)|Megacunt V2.0 virus|yes|43|
+|20|[Chopin](/chopin-en.html)|Chopin Virus|yes|31|
+|21|[Cookie 2](/cookie2-en.html)|Cookie Monster 2 Virus|yes|33|
+|22|[Cookie](/cookie-en.html)|Cookie Monster Virus|yes|32|
+|23|[Darkness](/darkness-en.html)|Darkness Virus (Nightmare of Brooklyn #2 Darkness)|yes|73|
+|24|[Dent](/dent-en.html)|Reset Virus|yes|48|
+|25|[Dir Waster](/dirwaster-en.html)|Directory Waster Virus|yes|59|
+|26|[Dja](/dja-en.html)|DJA Virus|yes|45|
+|27|[Elbereth](/elbereth-en.html)|DNA Menace, Menace virus|yes|63|
+|28|[Evil Nick](/evilnick-en.html)|Evil Virus|yes|25|
+|29|[Fake Atari](/fakeatari-en.html)|Joe Virus|yes|58|
+|30|[Fake pashley](/fakepashley-en.html)|Pashley Virus|yes|82|
+|31|[Fastload](/fastload-en.html)|Fastload-Virus|yes||
+|32|[Flying Chimp](/flyingchimp-en.html)|Flying Chimp Virus|yes|47|
+|33|[Freeze](/freeze-en.html)|Freeze Virus|yes|5|
+|34|[G data Fake](/g-data-en.html)|G-DATA Virus|yes|38|
+|35|[Gauweil](/gauweil-en.html)|Gauweiler Virus|yes|24|
+|36|[Ghost](/ghost-en.html)|Ghost Virus|yes|12|
+|37|[Gillus](/gillus-en.html)|Vaccin-Gillus Virus|yes|89|
+|38|[Goblins](/goblins-en.html)|Goblin Virus|yes|19|
+|39|[Gotcha](/gotcha-en.html)|Gotcha Xeno Virus|yes|83|
+|40|[Grim Reaper](/grimreaper-en.html)|Grim Reaper Virus|yes|42|
+|41|[Hide Seek](/hideseek-en.html)|Angle of Death|yes||
+|42|[Hide](/hide-en.html)|Flash and Sound|yes||
+|43|[Kobold2](/kobold2-en.html)|Kobold #2 Virus|yes|16|
+|44|[Lab](/lab-en.html)|Lab-Virus|yes|10|
+|45|[Lamer](/lamer-en.html)|N/A|yes||
+|46|[Lietuva](/lietuva-en.html)|Lietuva Virus|yes|65|
+|47|[Lucky Lady 1.02](/luckylady102-en.html)|Lucky Lady 1.02 Virus|yes|77|
+|48|[Lucky Lady 1.03](/luckylady103-en.html)|Lucky Lady Virus 1.03|yes|80|
+|49|[Lucky Lady 4.12](/luckylady412-en.html)|Lucky Lady 4.12 Virus|yes|78|
+|50|[Macumba v3.3](/macumba3-en.html)|Macumba 3.3 Virus|yes|69|
+|51|[Macumba v5](/macumba5-en.html)|Macumba 5.2 Virus|yes|88|
+|52|[Mad](/mad-en.html)|Mad Virus A|yes|2|
+|53|[Master](/master-en.html)||yes||
+|54|[Maui's Virus](/maui-en.html)|Anaconda Virus A|yes|79|
+|55|[Maulwurf 1 US version](/maulwurf1-en.html)|Maulwurf I Virus B|yes|8|
+|56|[Meaning Less](/meaningless1-en.html)|N/A|yes||
+|57|[Meaning2](/meaningless2-en.html)|N/A|yes||
+|58|[Media Change](/mediachg-en.html)|Media Change Virus|yes|39|
+|59|[Megaguru](/megaguru-en.html)|Megaguru & Argo 2 Virus.|yes|53|
+|60|[Merlin](/merlin-en.html)|Merlin’s Mad Virus|yes|60|
+|61|[Monitor](/monitor-en.html)|Monitor|no|29|
+|62|[Munchner BHP](/munchner-en.html)|Bayrische Hacker Post (BHP) Virus|yes|9|
+|63|[Night Force](/nightforcevirus-en.html)|Zoch Virus|yes|68|
+|64|[Oli 2](/oli2-en.html)|N/A|yes||
+|65|[Oli](/oli-en.html)|OLI Virus|yes|14|
+|66|[Pharaoh](/pharaoh-en.html)|Pharaoh|yes|94|
+|67|[Pirate](/pirate-en.html)|P.M.S. Virus|yes|26|
+|68|[Puke A](/pukea-en.html)|Puke A Virus|yes|34|
+|69|[Puke B](/pukeb-en.html)|Puke B Virus|yes|35|
+|70|[RAM](/ram-en.html)|Exception virus|yes|23|
+|71|[Rambo](/rambo-en.html)|Arnold/Rambo Virus|yes|28|
+|72|[Screen](/xcreen-en.html)|Screen Virus|yes|6|
+|73|[Sectorone Trasher](/sectoronetrasher-en.html)|5th Generation virus|yes|13|
+|74|[Shit Bug](/shitbug-en.html)|N/A|yes||
+|75|[Signum](/signum-en.html)|Signum/BPL Virus A|yes|1|
+|76|[Small](/small-en.html)|Small Virus|yes|74|
+|77|[St2ab](/st2ab-en.html)||yes||
+|78|[Swiss](/swiss-en.html)|Fat Virus, Sziss Virus, Blot Virus|yes|11|
+|79|[Tiny](/notsotinyvirus-en.html)|Tiny Virus|yes|85|
+|80|[Toi](/toi-en.html)|TOI Virus|yes|46|
+|81|[Toubab](/toubab-en.html)|Finland Virus|yes|55|
 |82|[Trojan Horse 1](/trojanhorse1-en.html)|N/A|yes||
-|83|[Toubab](/toubab-en.html)|Finland Virus|yes|55|
-|84|[Trojan Horse 2](/trojanhorse2-en.html)|N/A|yes||
-|85|[Trojan](/trojan-en.html)|N/A|yes||
-|86|[Toi](/toi-en.html)|TOI Virus|yes|46|
-|87|[Kobold2](/kobold2-en.html)|Kobold #2 Virus|yes|16|
-|88|[Zorro](/zorro-en.html)|Zorro Virus|yes|67|
+|83|[Trojan Horse 2](/trojanhorse2-en.html)|N/A|yes||
+|84|[Trojan](/trojan-en.html)|N/A|yes||
+|85|[UVD](/uvd-en.html)|UVD Virus|yes|84|
+|86|[Upside Down](/upsidedown-en.html)|Upside Down Virus|yes|36|
+|87|[Valkyrie](/valkyrie-en.html)|Valkyrie|partial|90|
+|88|[Vdu](/vdu-en.html)|N/A|yes||
 |89|[Zelda](/zelda-en.html)||no||
-|90|[Screen](/xcreen-en.html)|Screen Virus|yes|6|
+|90|[Zorro](/zorro-en.html)|Zorro Virus|yes|67|
 
 <h2 id="vaccines">Vaccines</h2>
 
