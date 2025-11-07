@@ -16,7 +16,7 @@ PATH = "content"
 ARTICLE_PATHS = ["blog"]
 ARTICLE_SAVE_AS = "posts/{date:%Y}/{slug}.html"
 ARTICLE_URL = "posts/{date:%Y}/{slug}.html"
-STATIC_PATHS = ["pages", "images", "html"]
+STATIC_PATHS = ["pages", "images", "html", "extra/robots.txt"]
 TIMEZONE = "America/New_York"
 DEFAULT_LANG = "en-us"
 
@@ -69,6 +69,7 @@ EXTRA_PATH_METADATA = {
     "html/hatari/hatari.wasm": {"path": "museum/hatari.wasm"},
     "html/hatari/hatari.js": {"path": "museum/hatari.js"},
     "html/hatari/hatari.data": {"path": "museum/hatari.data"},    
+    "extra/robots.txt": {"path": "robots.txt"},
 }
 
 # PHOTOS plugin
