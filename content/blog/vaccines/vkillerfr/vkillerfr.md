@@ -1,5 +1,5 @@
 Title: 
-Slug: vkiller
+Slug: vkillerfr
 Name: 
 Date: 2025-11-05 09:05
 Location: Montreal / Canada
@@ -7,8 +7,8 @@ Category: Atari ST, Vaccine
 Lang: en
 Author: shazz
 status: hidden
-summary: This article is about the vkiller vaccine
-image: {filename}../../../gallery/vaccines/vkiller.png
+summary: This article is about the vkillerfr vaccine
+image: {filename}../../../gallery/vaccines/vkillerfr.png
 Tags: Vaccine
 
 
@@ -27,7 +27,7 @@ Tags: Vaccine
 
 The ...
 
-<img src="{attach}vkiller_photo_0.png" width="45%"/>&nbsp;<img src="{attach}vkiller_photo_1.png" width="45%"/>
+<img src="{attach}vkillerfr_photo_0.png" width="45%"/>&nbsp;<img src="{attach}vkillerfr_photo_1.png" width="45%"/>
 
 
 ## Detection capabilities

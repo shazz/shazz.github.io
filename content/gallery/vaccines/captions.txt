@@ -54,7 +54,7 @@ pdl151.png: PDL 151
 peylow.png: Peylow
 pompey.png: Pompey Pirates
 prophecy.png: Prophecy
-pyrothechnics.png: Pyrothechnics
+pyrotechnics.png: Pyrotechnics
 ragx.png: RAGX
 rebel.png: Rebel
 revolution.png: Revolution
@@ -82,7 +82,7 @@ ultimate.png: Ultimate
 ulm.png: ULM vaccine
 unreal.png: Unreal
 virusfree.png: VirusFree
-vkiller.png: VKiller
+vkillerfr.png: VKiller French ad 
 wild.png: Wild
 wizzcat.png: WizzCat VProtector
 wtp.png: WTP
