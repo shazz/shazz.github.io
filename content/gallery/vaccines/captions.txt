@@ -1,13 +1,18 @@
+42crew.png: 23-Crew
 adrenalin.png: Adrenaline UK Virus Protector
 adrenaline.png: Adrenaline antivirus Preventor 
 agraboot.png: Agraboot 2
 animalmine.png: Animal Mine barcode
 antighost.png: TDT Anti Ghost V4.0 by Altair
+beep.png: antivirus
+boulboot.png: Boulboot
+bsw.png: BSW
 bust.png: B.U.S.T
 coder.png: Coder
 cram.png: CRAM
 cresson.png: Cresson
 derf.png: KGB derf
+detonators.png: Detonators
 diwa.png: DIWA
 dodgysoft.png: Dodgysoft
 drsatan.png: Dr Satan
@@ -17,6 +22,7 @@ dunekiller.png: Dune Killer v0.2
 eagles.png: Eagles
 electricity.png: Electricity
 eternity.png: Eternity
+euroswap.png: Euroswap
 exorcist3.png: Exorcist 3
 fuzion: Fuzion fullscreen
 fuzionviruskiller.png: Fuzion Virus Killer
@@ -27,14 +33,23 @@ kgb.png: KGB
 killer.png: Killer Boot 2.08
 killers.png: Killer's Antivirus v3.0
 ktall.png: Kill Them All
+lapd.png: LAPD
+leonard.png: Leonard vaccine
 madvision.png: Mad Vision Hate Viruses
 medway.png: The Medway Boys Protector IV
+mikou.png: Mikou
 morgan.png: Morgan Explorer
 mph.png: MPH
 mystic.png: Mystic
 newmode.png: New Mode
 nexus.png: Nexus Test antivirus
+npg.png: NPG
+odie.png: Odie
+orion.png: Orion
 overkill.png: Overkill
+ovr.png: Overlanders
+oxbow.png: Oxbow
+pdl151: PDL 151
 peylow.png: Peylow
 pompey.png: Pompey Pirates
 prophecy.png: Prophecy
@@ -43,17 +58,30 @@ revolution.png: Revolution
 rippedoff.png: Ripped Off
 saddam.png: Saddam
 santorin.png: Cyclades Vaccine
+sentry2.png: Sentry 2
+silverbullet.png: Silver Bullet
+smile.png: Smile
+speedboot.png: Speedboot
+speedkill.png: Speedkill
 striker.png: Pulsion Striker
 syndicate.png: Syndicate WtP
 terminator.png: Megaguru Terminator
+termnator1.png: Terminator 1
+tfcramprotector2.png: TFC RAM Protector 2
 tmbp.png: TMB_P
 tripleh.png: TripleH
 tronicpdl.png: Tronic PDL
+tsb.png: TSB
+tsccscy.png: tSCc by Scy
 tuc.png: TUC
 tvk.png: The Virus Killer
 ultimate.png: Ultimate
+unreal.png: Unreal
+virusfree.png: VirusFree
+vkiller311.png: VKiller
+wild.png: Wild
 wizzcat.png: WizzCat VProtector
 wtp.png: WTP
 vaccingillus.png: Vaccin-Gillus
 viruskicker.png: Jedi / Sector one virus kicker published in STMAGICIEL in 1991
-zullprotector.png: Zuul Virus Protector v1.01
+zuulprotector.png: Zuul Virus Protector v1.01
