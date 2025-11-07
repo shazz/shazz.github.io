@@ -18,7 +18,7 @@ ARTICLE_SAVE_AS = "posts/{date:%Y}/{slug}.html"
 ARTICLE_URL = "posts/{date:%Y}/{slug}.html"
 STATIC_PATHS = ["pages", "images", "html"]
 TIMEZONE = "America/New_York"
-DEFAULT_LANG = "English"
+DEFAULT_LANG = "en-us"
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
