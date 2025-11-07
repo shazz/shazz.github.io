@@ -2,4 +2,3 @@ Markdown
 nose
 nose-exclude
 nose-summary-report
-pelican-sitemap

@@ -4,4 +4,5 @@ nose
 nose-exclude
 nose-summary-report
 piexif 
+pelican-sitemap
 pelican-plugins/photos
