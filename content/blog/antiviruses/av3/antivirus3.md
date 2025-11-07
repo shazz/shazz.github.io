@@ -6,6 +6,7 @@ Location: Montreal / Canada
 Category: Atari ST, Antivirus
 Lang: en
 Author: shazz & draedon
+Owned: No
 status: hidden
 summary: This article is about Boot Protector...
 image: {filename}../../../gallery/antiviruses/av3.png
