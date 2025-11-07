@@ -10,6 +10,7 @@ dependencies = [
     "nose-exclude>=0.5.0",
     "nose-summary-report>=1.0.3",
     "pelican-photos",
+    "pelican-sitemap>=1.2.2",
     "pelican[markdown]>=4.11.0",
     "piexif>=1.1.3",
 ]

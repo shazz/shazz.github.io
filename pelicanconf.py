@@ -4,7 +4,7 @@ SITENAME = "Retrovirology"
 THEME = "themes/pelican-chunk"
 
 PLUGIN_PATHS = ["pelican-plugins"]
-PLUGINS = ["readtime", "jinja2content", "photos"]
+PLUGINS = ["readtime", "jinja2content", "photos", "sitemap"]
 # PLUGINS = ["readtime", "jinja2content", "read_more_link", "summary"]
 
 INDEX_SAVE_AS = "posts.html"
@@ -29,9 +29,9 @@ AUTHOR_FEED_RSS = None
 
 # Blogroll
 MY_LINKS = (
-    ("1. Gallery", "/"),
+    ("1. Viruses", "/"),
     ("2. Antiviruses", "/antivirus.html"),
-    ("3. vaccines", "/vaccines.html"),
+    ("3. Vaccines", "/vaccines.html"),
     ("4. Articles", "/posts.html"),
     ("5. Status", "/pages/Status-en.html"),
     ("6. Resources", "/pages/resources-en.html"),
