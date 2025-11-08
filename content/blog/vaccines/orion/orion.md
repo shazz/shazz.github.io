@@ -1,31 +1,32 @@
-Title: 
+Title: Orion vaccine
 Slug: orion
-Name: 
-Date: 2025-11-05 09:05
+Name: Orion vaccine
+Date: 2025-11-07 09:05
 Location: Montreal / Canada
 Category: Atari ST, Vaccine
 Lang: en
 Author: shazz
 status: hidden
-summary: This article is about the orion vaccine
+summary: This article is about the Orion vaccine
 image: {filename}../../../gallery/vaccines/orion.png
 Tags: Vaccine
 
 
 ## Basic Information
 
-- *Author*: 
+- *Author*: Teddy from Orion (Swiss)
 - *Type*: bootsector
-- *Size*: ? bytes
-- *Resident*: 
-- *Self-replicating*: 
-- *Can clean memory*: 
+- *Size*: 480 bytes
+- *Resident*: yes (if a virus is found)
+- *Self-replicating*: no
+- *Can clean memory*: no
 - *Special features*: 
-    - ?
+    - Starts to scroll the screen if a virus is found and attaches to the reset vector to force a hard reset
+    - The code is encoded (not.b) and when decoded exposes some nasty messages to reverse engineers like me :)
 
 ### Description
 
-The ...
+The Orion vaccine looks for undocumented resident programs and valid reset vectors. If found it won't clear the memory but replace the reset vector and show the warning message forever.
 
 <img src="{attach}orion_photo_0.png" width="45%"/>&nbsp;<img src="{attach}orion_photo_1.png" width="45%"/>
 
@@ -34,9 +35,9 @@ The ...
 
 | Threat                          | Result                                |
 |---------------------------------|:-------------------------------------:|
-| Check PHYSTOP memory            | <span style="color:red">No</span>     |
-| Undocumented resident program   | <span style="color:red">No</span>     |
-| Valid reset vector              | <span style="color:red">No</span>     |        
+| Check PHYSTOP memory            | <span style="color:green">Yes</span> (4MB fix) |
+| Undocumented resident program   | <span style="color:green">Yes</span>  |
+| Valid reset vector              | <span style="color:green">Yes</span>  |        
 | Non-ROM HDV BPB Vector          | <span style="color:red">No</span>     |
 | Non-ROM HDV RW Vector           | <span style="color:red">No</span>     |
 | Non-ROM HDV BOOT Vector         | <span style="color:red">No</span>     |
@@ -51,11 +52,11 @@ The ...
 | VBL Int / VBL Routine Vector    | <span style="color:red">No</span>     |
 | Detect virus footprints         | <span style="color:red">No</span>     |
 | Catch key viruses               | <span style="color:red">No</span>     |
-| Other threat detection          | <span style="color:red">No</span>     |
+| Other threat detection          | <span style="color:green">Yes</span> (Ghost patch)    |
 
 ## Conclusion
 
-...
+Most (good) vaccines will clean the memory, this one has an orginal strategy, look the screen and warm reset to force the user to switch off the ST. Funny
 
-A ...
+A 6/10 for its originality
 
