@@ -1,33 +1,33 @@
-Title: 
+Title: Speedboot
 Slug: speedboot
-Name: 
-Date: 2025-11-05 09:05
+Name: Speedboot
+Date: 2025-11-07 09:05
 Location: Montreal / Canada
 Category: Atari ST, Vaccine
 Lang: en
 Author: shazz
 status: hidden
-summary: This article is about the speedboot vaccine
+summary: This article is about Speedboot
 image: {filename}../../../gallery/vaccines/speedboot.png
 Tags: Vaccine
 
 
 ## Basic Information
 
-- *Author*: 
+- *Author*: Unknown
 - *Type*: bootsector
-- *Size*: ? bytes
-- *Resident*: 
-- *Self-replicating*: 
-- *Can clean memory*: 
+- *Size*: 65 bytes
+- *Resident*: no 
+- *Self-replicating*: no
+- *Can clean memory*: no
 - *Special features*: 
-    - ?
+    - Patch the TOS startup to skip dmaboot and clear MEMVALID to skip memrory checks
 
 ### Description
 
-The ...
+Speedboot is not a vaccine but an utility to have your Atari booting faster.
 
-<img src="{attach}speedboot_photo_0.png" width="45%"/>&nbsp;<img src="{attach}speedboot_photo_1.png" width="45%"/>
+<img src="{attach}speedboot_photo_0.png" width="45%"/>
 
 
 ## Detection capabilities
@@ -55,7 +55,6 @@ The ...
 
 ## Conclusion
 
-...
+Not a vaccine but a useful bootsector!
 
-A ...
 

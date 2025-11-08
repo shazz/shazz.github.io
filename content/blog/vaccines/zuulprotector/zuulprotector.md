@@ -1,34 +1,32 @@
-Title: 
+Title: Zuul Protector 1.01
 Slug: zuulprotector
-Name: 
+Name: Zuul Protector 1.01
 Date: 2025-11-05 09:05
 Location: Montreal / Canada
 Category: Atari ST, Vaccine
 Lang: en
 Author: shazz
 status: hidden
-summary: This article is about the 
+summary: This article is about the Zuul Protector 1.01 vaccine
 image: {filename}../../../gallery/vaccines/zuulprotector.png
 Tags: Vaccine
 
 
 ## Basic Information
 
-- *Author*: 
+- *Author*: Tristar from Zuul (not confirmed, doubtful)
 - *Type*: bootsector
-- *Size*: ? bytes
-- *Resident*: 
-- *Self-replicating*: 
-- *Can clean memory*: 
-- *Special features*: 
-    - ?
+- *Size*: 342 bytes
+- *Resident*: no 
+- *Self-replicating*: no
+- *Can clean memory*: no
+- *Special features*: None
 
 ### Description
 
-The ...
+The Zuul Protector 1.01... doesn't protect of anything, this is just a simple message shown at boot. Pretty useless.
 
-<img src="{attach}zuulprotector_photo_0.png" width="45%"/>&nbsp;<img src="{attach}zuulprotector_photo_1.png" width="45%"/>
-
+<img src="{attach}zuulprotector_photo_0.png" width="45%"/>
 
 ## Detection capabilities
 
@@ -55,7 +53,10 @@ The ...
 
 ## Conclusion
 
-...
+Hard to call this bootsector a vaccine or worse a protector.
 
-A ...
+A well deserved 0/10
+
+
+You can find the unreadable installer on [demozoo](https://demozoo.org/productions/81663/). Note that it doesn't full erase the previous bootsector and create some junk.
 

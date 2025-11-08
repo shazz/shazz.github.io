@@ -1,7 +1,7 @@
-Title: 
+Title: Speed Kill 3.0
 Slug: speedkill
-Name: 
-Date: 2025-11-05 09:05
+Name: Speed Kill 3.0
+Date: 2025-11-07 09:05
 Location: Montreal / Canada
 Category: Atari ST, Vaccine
 Lang: en
@@ -14,18 +14,17 @@ Tags: Vaccine
 
 ## Basic Information
 
-- *Author*: 
+- *Author*: Morlock from Deus
 - *Type*: bootsector
-- *Size*: ? bytes
-- *Resident*: 
-- *Self-replicating*: 
-- *Can clean memory*: 
-- *Special features*: 
-    - ?
+- *Size*: 396 bytes
+- *Resident*: no
+- *Self-replicating*: no
+- *Can clean memory*: no
+- *Special features*: None
 
 ### Description
 
-The ...
+The Speed Kill vaccine checks for a valid reset vector and provides a quick warning but doesn't clean anything. And that won't catch most of the viruses.
 
 <img src="{attach}speedkill_photo_0.png" width="45%"/>&nbsp;<img src="{attach}speedkill_photo_1.png" width="45%"/>
 
@@ -35,7 +34,7 @@ The ...
 | Threat                          | Result                                |
 |---------------------------------|:-------------------------------------:|
 | Check PHYSTOP memory            | <span style="color:red">No</span>     |
-| Undocumented resident program   | <span style="color:red">No</span>     |
+| Undocumented resident program   | <span style="color:green">Yes</span>  |
 | Valid reset vector              | <span style="color:red">No</span>     |        
 | Non-ROM HDV BPB Vector          | <span style="color:red">No</span>     |
 | Non-ROM HDV RW Vector           | <span style="color:red">No</span>     |
@@ -55,7 +54,7 @@ The ...
 
 ## Conclusion
 
-...
+Despite a somewhat nice raster effect, the Speed Kill vaccine doesn't do much.
 
-A ...
+A little 2/10
 

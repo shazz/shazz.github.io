@@ -236,7 +236,6 @@ $0004AE|long |Pointer to save area for exception processing        |sav_context
 $0004B2|long |Pointer to buffer control block for GEMDOS data      |_bufl
 $0004B6|long |Pointer to buffer control block for GEMDOS fat/dir   |_bufl
 $0004BA|long |Counter for 200hz system clock                       |_hz_200
-$0004BC|long |Pointer to default environment string                |the_env
 $0004C2|long |Bit allocation for physical drives (bit 0=A, 1=B..)  |_drvbits
 $0004C6|long |Pointer to 1024-byte disk buffer                     |_dskbufp
 $0004CA|long |Pointer to autoexecute path                          |_autopath

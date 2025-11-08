@@ -41,8 +41,3 @@ Author: shazz
  - [Computer Viruses - Gresham College Lecture](https://open.spotify.com/episode/5uuoAYA4SGzAWfZgwFvGCx?si=77238c97f90c4e9a)
  - [Brain: the first personal computer virus](https://open.spotify.com/episode/10xy2kguICJinK1qDTWn5P?si=ce8b30b67f9e43dc)
 
-
-## Atari ST Antivirus
-
-- VIRtuell :  [VIRTuell]({attach}disks/VIRTUELL.MSA)
-- Xtermine :  [Xtermine]({attach}disks/XTERMINE.zip)
