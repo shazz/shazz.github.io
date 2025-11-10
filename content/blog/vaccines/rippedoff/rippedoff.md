@@ -17,7 +17,8 @@ Tags: Vaccine
 - *Author*: Ripped Off team
 - *Type*: bootsector
 - *Size*: 330 bytes
-- *Resident*: no 
+- *Resident*: no
+ - *Memory resistant*: no 
 - *Self-replicating*: no
 - *Can clean memory*: limited, only Reset Vector and `RESVALID`
 - *Special features*: 
@@ -51,6 +52,7 @@ Here are the screenshots of the vaccine at boot, after a hard reboot and when a 
 | Non-ROM Trap Xbios Vector       | <span style="color:red">No</span>     |
 | Non-ROM Trap Unused Vector      | <span style="color:red">No</span>     |
 | Flopwr Trap calls               | <span style="color:red">No</span>     | 
+| Check if boot is executable     | <span style="color:red">No</span>     | 
 | Rwabs Trap calls                | <span style="color:red">No</span>     | 
 | VBL Int / VBL Routine Vector    | <span style="color:red">No</span>     |
 | Detect virus footprints         | <span style="color:red">No</span>     |

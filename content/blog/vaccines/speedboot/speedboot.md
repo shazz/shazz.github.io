@@ -17,7 +17,8 @@ Tags: Vaccine
 - *Author*: Unknown
 - *Type*: bootsector
 - *Size*: 65 bytes
-- *Resident*: no 
+- *Resident*: no
+ - *Memory resistant*: no 
 - *Self-replicating*: no
 - *Can clean memory*: no
 - *Special features*: 
@@ -47,6 +48,7 @@ Speedboot is not a vaccine but an utility to have your Atari booting faster.
 | Non-ROM Trap Xbios Vector       | <span style="color:red">No</span>     |
 | Non-ROM Trap Unused Vector      | <span style="color:red">No</span>     |
 | Flopwr Trap calls               | <span style="color:red">No</span>     | 
+| Check if boot is executable     | <span style="color:red">No</span>     | 
 | Rwabs Trap calls                | <span style="color:red">No</span>     | 
 | VBL Int / VBL Routine Vector    | <span style="color:red">No</span>     |
 | Detect virus footprints         | <span style="color:red">No</span>     |

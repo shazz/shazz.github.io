@@ -17,7 +17,8 @@ Tags: Vaccine
 - *Author*: Morgan Roussel aka Morgan / Explorers (then Dune and Fantasy) in 1992
 - *Type*: bootsector
 - *Size*: 480 bytes
-- *Resident*: no 
+- *Resident*: no
+ - *Memory resistant*: no 
 - *Self-replicating*: yes
 - *Can clean memory*: Partially, resets `MEMVALID` and `RESVALID` then call the TOS reset vector
 - *Special features*: 
@@ -53,6 +54,7 @@ The No Virus v1.08 is somewhat very similar to the Viruskicker (And its variant 
 | Non-ROM Trap Xbios Vector       | <span style="color:red">No</span>     |
 | Non-ROM Trap Unused Vector      | <span style="color:red">No</span>     |
 | Flopwr Trap calls               | <span style="color:red">No</span>     | 
+| Check if boot is executable     | <span style="color:red">No</span>     | 
 | Rwabs Trap calls                | <span style="color:red">No</span>     | 
 | VBL Int / VBL Routine Vector    | <span style="color:red">No</span>     |
 | Detect virus footprints         | <span style="color:red">No</span>     |

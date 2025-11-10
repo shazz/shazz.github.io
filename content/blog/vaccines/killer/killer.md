@@ -18,6 +18,7 @@ Tags: Vaccine
 - *Type*: bootsector
 - *Size*: 444 bytes
 - *Resident*: no
+ - *Memory resistant*: no
 - *Self-replicating*: no
 - *Can clean memory*: yes, use a patched bus error vector to clear the memory
 - *Special features*: 
@@ -50,6 +51,7 @@ The Killer Boot is the vaccine provided the The Killer 2.0 antivirus. Other vers
 | Non-ROM Trap Xbios Vector       | <span style="color:red">No</span>     |
 | Non-ROM Trap Unused Vector      | <span style="color:red">No</span>     |
 | Flopwr Trap calls               | <span style="color:red">No</span>     | 
+| Check if boot is executable     | <span style="color:red">No</span>     | 
 | Rwabs Trap calls                | <span style="color:red">No</span>     | 
 | VBL Int / VBL Routine Vector    | <span style="color:red">No</span>     |
 | Detect virus footprints         | <span style="color:red">No</span>     |

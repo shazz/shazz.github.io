@@ -17,7 +17,8 @@ Tags: Vaccine
 - *Author*: Megaguru
 - *Type*: bootsector
 - *Size*: 480 bytes
-- *Resident*: no 
+- *Resident*: no
+ - *Memory resistant*: no 
 - *Self-replicating*: no
 - *Can clean memory*: Partially: clear `RESVALID`, `REVECTOR`, magic word in resident program if found and call $4.w reset vector
 - *Special features*: 
@@ -47,6 +48,7 @@ The Megaguru is a vaccine which, like many others, checks for set reset vectors 
 | Non-ROM Trap Xbios Vector       | <span style="color:red">No</span>     |
 | Non-ROM Trap Unused Vector      | <span style="color:red">No</span>     |
 | Flopwr Trap calls               | <span style="color:red">No</span>     | 
+| Check if boot is executable     | <span style="color:red">No</span>     | 
 | Rwabs Trap calls                | <span style="color:red">No</span>     | 
 | VBL Int / VBL Routine Vector    | <span style="color:red">No</span>     |
 | Detect virus footprints         | <span style="color:red">No</span>     |

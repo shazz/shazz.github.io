@@ -18,6 +18,7 @@ Tags: Vaccine
 - *Type*: bootsector
 - *Size*: 490 bytes
 - *Resident*: no
+ - *Memory resistant*: no
 - *Self-replicating*: no
 - *Can clean memory*: yes
 - *Special features*: 

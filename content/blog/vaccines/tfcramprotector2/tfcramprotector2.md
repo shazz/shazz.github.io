@@ -1,20 +1,20 @@
-Title: 
+Title: TFC RAM Protector 2
 Slug: tfcramprotector2
-Name: 
-Date: 2025-11-05 09:05
+Name: TFC RAM Protector 2
+Date: 2025-11-08 09:05
 Location: Montreal / Canada
 Category: Atari ST, Vaccine
 Lang: en
 Author: shazz
 status: hidden
-summary: This article is about the tfcramprotector2 vaccine
+summary: This article is about the TFC RAM Protector 2 vaccine
 image: {filename}../../../gallery/vaccines/tfcramprotector2.png
 Tags: Vaccine
 
 
 ## Basic Information
 
-- *Author*: 
+- *Author*: Augustin and Zvo Vidovic from Tramiel Fan Club (TFC)
 - *Type*: bootsector
 - *Size*: ? bytes
 - *Resident*: 
@@ -47,6 +47,7 @@ The ...
 | Non-ROM Trap Xbios Vector       | <span style="color:red">No</span>     |
 | Non-ROM Trap Unused Vector      | <span style="color:red">No</span>     |
 | Flopwr Trap calls               | <span style="color:red">No</span>     | 
+| Check if boot is executable     | <span style="color:red">No</span>     | 
 | Rwabs Trap calls                | <span style="color:red">No</span>     | 
 | VBL Int / VBL Routine Vector    | <span style="color:red">No</span>     |
 | Detect virus footprints         | <span style="color:red">No</span>     |

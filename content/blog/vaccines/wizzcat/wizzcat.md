@@ -17,7 +17,8 @@ Tags: Vaccine
 - *Author*: Wizzcat from Delta Force, 1990-10-31
 - *Type*: bootsector
 - *Size*: 370 bytes
-- *Resident*: no 
+- *Resident*: no
+ - *Memory resistant*: no 
 - *Self-replicating*: no
 - *Can clean memory*: Partial, clear `MEMVALID` and `RESVALID` and call the TOS reset vector to force a nearly full reset
 - *Special features*: 
@@ -59,6 +60,7 @@ The 4MB fix code:
 | Non-ROM Trap Xbios Vector       | <span style="color:red">No</span>     |
 | Non-ROM Trap Unused Vector      | <span style="color:red">No</span>     |
 | Flopwr Trap calls               | <span style="color:red">No</span>     | 
+| Check if boot is executable     | <span style="color:red">No</span>     | 
 | Rwabs Trap calls                | <span style="color:red">No</span>     | 
 | VBL Int / VBL Routine Vector    | <span style="color:red">No</span>     |
 | Detect virus footprints         | <span style="color:red">No</span>     |
