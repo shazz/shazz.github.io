@@ -1,5 +1,5 @@
 Title: 
-Slug: tsb
+Slug: tsg
 Name: 
 Date: 2025-11-05 09:05
 Location: Montreal / Canada
@@ -7,8 +7,8 @@ Category: Atari ST, Vaccine
 Lang: en
 Author: shazz
 status: hidden
-summary: This article is about the tsb vaccine
-image: {filename}../../../gallery/vaccines/tsb.png
+summary: This article is about the 
+image: {filename}../../../gallery/vaccines/tsg.png
 Tags: Vaccine
 
 
@@ -27,7 +27,7 @@ Tags: Vaccine
 
 The ...
 
-<img src="{attach}tsb25_photo_0.png" width="45%"/>&nbsp;<img src="{attach}tsb25_photo_1.png" width="45%"/>
+<img src="{attach}tsg_photo_0.png" width="45%"/>&nbsp;<img src="{attach}tsg_photo_1.png" width="45%"/>
 
 
 ## Detection capabilities
@@ -53,13 +53,6 @@ The ...
 | Detect virus footprints         | <span style="color:red">No</span>     |
 | Catch key viruses               | <span style="color:red">No</span>     |
 | Other threat detection          | <span style="color:red">No</span>     |
-
-## Other versions
-
-Version 1.0
-
-<img src="{attach}tsb1_photo_0.png" width="45%"/>&nbsp;<img src="{attach}tsb1_photo_1.png" width="45%"/>
-
 
 ## Conclusion
 
