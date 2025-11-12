@@ -16,6 +16,7 @@ Tags: Vaccine
 
 - *Author*: Santorin from Cyclades
 - *Type*: bootsector
+- *Subtype*: ?
 - *Size*: 461 bytes
 - *Resident*: no
  - *Memory resistant*: no 

@@ -16,6 +16,7 @@ Tags: Vaccine
 
 - *Author*: FirSTE & Dr Computer
 - *Type*: bootsector
+- *Subtype*: ?
 - *Size*: 441 bytes
 - *Resident*: yes (0x140)
 - *Self-replicating*: yes (on non-executable bootsectors)

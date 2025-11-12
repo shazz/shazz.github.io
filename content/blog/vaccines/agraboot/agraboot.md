@@ -16,6 +16,7 @@ Tags: Vaccine
 
 - *Author*: Agrajag
 - *Type*: bootsector
+- *Subtype*: ?
 - *Size*: 441 bytes
 - *Resident*: yes
 - *Self-replicating*: no

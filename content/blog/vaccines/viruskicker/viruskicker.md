@@ -16,6 +16,7 @@ Tags: Vaccine
 
 - *Author*: Jedi / Sector One / The Heavy Killers (version 2 and 3), Shazz / MJJ prod (improvements for version 3)
 - *Type*: bootsector
+- *Subtype*: ?
 - *Size*: 490 bytes
 - *Resident*: no
  - *Memory resistant*: no

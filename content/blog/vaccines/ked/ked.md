@@ -16,6 +16,7 @@ Tags: Vaccine
 
 - *Author*: Unknown
 - *Type*: bootsector
+- *Subtype*: ?
 - *Size*: 424 bytes
 - *Resident*: yes
 - *Self-replicating*: yes

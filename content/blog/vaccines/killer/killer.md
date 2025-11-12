@@ -16,6 +16,7 @@ Tags: Vaccine
 
 - *Author*: E. Collignon
 - *Type*: bootsector
+- *Subtype*: ?
 - *Size*: 444 bytes
 - *Resident*: no
  - *Memory resistant*: no

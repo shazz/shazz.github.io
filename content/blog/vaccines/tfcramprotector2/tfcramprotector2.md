@@ -16,6 +16,7 @@ Tags: Vaccine
 
 - *Author*: Augustin and Zvo Vidovic from Tramiel Fan Club (TFC)
 - *Type*: bootsector
+- *Subtype*: ?
 - *Size*: ? bytes
 - *Resident*: 
 - *Self-replicating*: 

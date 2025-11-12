@@ -16,6 +16,7 @@ Tags: Vaccine
 
 - *Author*: Tristar from Zuul (not confirmed, doubtful)
 - *Type*: bootsector
+- *Subtype*: ?
 - *Size*: 342 bytes
 - *Resident*: no
  - *Memory resistant*: no 

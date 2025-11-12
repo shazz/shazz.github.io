@@ -16,6 +16,7 @@ Tags: Vaccine
 
 - *Author*: Megaguru
 - *Type*: bootsector
+- *Subtype*: ?
 - *Size*: 480 bytes
 - *Resident*: no
  - *Memory resistant*: no 

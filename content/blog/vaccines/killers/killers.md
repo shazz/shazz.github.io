@@ -16,6 +16,7 @@ Tags: Vaccine
 
 - *Author*: Killer's from Euroswap (guessed)
 - *Type*: bootsector
+- *Subtype*: ?
 - *Size*: 464 bytes
 - *Resident*: no
 - *Memory resistant*: no 

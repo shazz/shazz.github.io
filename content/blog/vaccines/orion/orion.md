@@ -16,6 +16,7 @@ Tags: Vaccine
 
 - *Author*: Teddy from Orion (Swiss)
 - *Type*: bootsector
+- *Subtype*: ?
 - *Size*: 480 bytes
 - *Resident*: yes (reset vector set if a virus is found)
 - *Self-replicating*: no

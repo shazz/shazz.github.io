@@ -16,6 +16,7 @@ Tags: Vaccine
 
 - *Author*: Mad Vision in September 1990
 - *Type*: bootsector
+- *Subtype*: ?
 - *Size*: ? bytes
 - *Resident*: no
  - *Memory resistant*: no

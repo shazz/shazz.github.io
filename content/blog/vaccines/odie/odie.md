@@ -16,6 +16,7 @@ Tags: Vaccine
 
 - *Author*: Unknown (SSR?) 
 - *Type*: bootsector
+- *Subtype*: ?
 - *Size*: 480 bytes
 - *Resident*: yes
 - *Memory resistant*: no 

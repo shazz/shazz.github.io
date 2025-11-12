@@ -16,6 +16,7 @@ Tags: Vaccine
 
 - *Author*: Morlock from Deus
 - *Type*: bootsector
+- *Subtype*: ?
 - *Size*: 396 bytes
 - *Resident*: no
  - *Memory resistant*: no

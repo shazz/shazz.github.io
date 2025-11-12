@@ -16,6 +16,7 @@ Tags: Vaccine
 
 - *Author*: Fuzion? ST Connexion? Doubtful....
 - *Type*: bootsector
+- *Subtype*: ?
 - *Size*: ? bytes
 - *Resident*: no
  - *Memory resistant*: no

@@ -16,6 +16,7 @@ Tags: Vaccine
 
 - *Author*: Altair
 - *Type*: bootsector
+- *Subtype*: ?
 - *Size*: 452 bytes
 - *Resident*: yes (0x140)
 - *Self-replicating*: yes (on ghost virus and not exectuable bootsectors only)

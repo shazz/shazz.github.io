@@ -16,6 +16,7 @@ Tags: Vaccine
 
 - *Author*: Pompey Pirates
 - *Type*: bootsector
+- *Subtype*: ?
 - *Size*: 232 bytes
 - *Resident*: no
  - *Memory resistant*: no

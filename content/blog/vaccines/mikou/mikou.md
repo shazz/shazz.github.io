@@ -14,20 +14,21 @@ Tags: Vaccine
 
 ## Basic Information
 
-- *Author*: 
+- *Author*: Mikou from VMAX
 - *Type*: bootsector
-- *Size*: ? bytes
-- *Resident*: 
-- *Self-replicating*: 
-- *Can clean memory*: 
+- *Subtype*: Virus-free boot message
+- *Size*: 458 bytes
+- *Resident*: no 
+- *Self-replicating*: no
+- *Can clean memory*: no
 - *Special features*: 
-    - ?
+    - a lot of rasters!
 
 ### Description
 
-The ...
+The Virus-free boot from Mikou is up there only to tell the user that this disk is not infected as the message and rasters show up. It doesn't try to detect anything abnormal in memory or any other typical vaccine features.
 
-<img src="{attach}mikou_photo_0.png" width="45%"/>&nbsp;<img src="{attach}mikou_photo_1.png" width="45%"/>
+<img src="{attach}mikou_photo_0.png" width="45%"/>
 
 
 ## Detection capabilities
@@ -56,7 +57,7 @@ The ...
 
 ## Conclusion
 
-...
+More than a nice "ad" for VMAX than a useful vaccine, the rasters effect is still pretty colorful.
 
-A ...
+A meeeh 2/10.
 
