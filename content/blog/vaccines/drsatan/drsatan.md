@@ -1,13 +1,13 @@
-Title: Dr Satan Memory Protector
+Title: Dr Satan Memory Virus Protector
 Slug: drsatan
-Name: Dr Satan Memory Protector
+Name: Dr Satan Memory Virus Protector
 Date: 2025-11-05 09:05
 Location: Montreal / Canada
 Category: Atari ST, Vaccine
 Lang: en
 Author: shazz
 status: hidden
-summary: This article is about the Dr Satan Memory Protector
+summary: This article is about the Dr Satan Memory Virus Protector
 image: {filename}../../../gallery/vaccines/drsatan.png
 Tags: Vaccine
 
@@ -65,3 +65,6 @@ As an early bootsector vaccine, it deserves some respect, so good for the museum
 
 An historical 3/10.
 
+You can download the installer on [demozoo](https://demozoo.org/productions/95892/)
+
+<img src="{attach}drsatan_photo_2.png" width="45%"/>
