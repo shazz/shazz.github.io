@@ -20,7 +20,7 @@ detonators.png: Detonators
 diwa.png: DIWA
 dntanti.png: DNT
 dodgysoft.png: Dodgysoft
-dreamveavers.png: Dream Weavers
+dreamweavers.png: Dream Weavers
 drsatan.png: Dr Satan Memory Virus Protector
 drst.png: Dr S.T.
 dune.png: Dune
@@ -107,3 +107,5 @@ wild.png: Wild
 wizzcat.png: WizzCat VProtector
 wtp.png: WTP
 zuulprotector.png: Zuul Virus Protector v1.01
+zarko.png: Zarko
+preservatif.png: Preservatif
