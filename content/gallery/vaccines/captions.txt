@@ -20,15 +20,20 @@ detonators.png: Detonators
 diwa.png: DIWA
 dntanti.png: DNT
 dodgysoft.png: Dodgysoft
+dreamveavers.png: Dream Weavers
 drsatan.png: Dr Satan Memory Virus Protector
 drst.png: Dr S.T.
 dune.png: Dune
 dunekiller.png: Dune Killer v0.2
+duplicator.png: Offbeat Duplicator
 eagles.png: Eagles
 electricity.png: Electricity
+equinox.png: Equinox
 eternity.png: Eternity
 euroswap.png: Euroswap
 exorcist3.png: Exorcist 3
+floppyshop.png: Floppyshop
+fury.png: Fury
 fuzion.png: Fuzion fullscreen
 fuzionviruskiller.png: Fuzion Virus Killer
 hmd.png: HMD Stranglers
@@ -68,6 +73,7 @@ rippedoff.png: Ripped Off
 saddam.png: Saddam
 santorin.png: Cyclades Vaccine
 sentry2.png: Sentry 2
+shadow.png: Shadow
 silverbullet.png: Silver Bullet
 sirboot.png: Sirboot
 smile.png: Smile

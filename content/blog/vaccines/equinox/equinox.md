@@ -1,36 +1,34 @@
-Title: Medway Boys Protector IV
-Slug: medway
-Name: Medway Boys Protector IV
-Date: 2025-11-03 16:12
+Title: Equinox Antivirus
+Slug: equinox
+Name: Equinox Antivirus
+Date: 2025-11-05 09:05
 Location: Montreal / Canada
 Category: Atari ST, Vaccine
 Lang: en
 Author: shazz
 status: hidden
-summary: This article is about the Medway Boys Protector IV vaccine...
-image: {filename}../../../gallery/vaccines/medway.png
+summary: This article is about the Equinox Antivirus
+image: {filename}../../../gallery/vaccines/equinox.png
 Tags: Vaccine
 
 
 ## Basic Information
 
-- *Author*: Trojan and Wurzel from the Medway Boys
+- *Author*: Computer Jones from Equinox (doubtful that was a genuine member of Equinox)
 - *Type*: bootsector
-- *Subtype*: ?
-- *Size*: 480 bytes
-- *Resident*: no
- - *Memory resistant*: no
+- *Subtype*: Virus-free boot message
+- *Size*: 103 bytes
+- *Resident*: no 
 - *Self-replicating*: no
-- *Can clean memory*: partial (resets `RESVALID`, `RESVECTOR`) then calls TOS reset vector
+- *Can clean memory*: no
 - *Special features*: 
-    - Deactivate Ghost loader
+    - Message is encoded
 
 ### Description
 
-The Medway Boys Protector IV was probably one of the most used vaccine on ST, Trojan and Wurzel relased multiple versions of this vaccine and the last one, version IV, was modified by the BBC.
+The virus-free boot is a short and simple as it could, doesn't do much.
 
-
-<img src="{attach}medway_photo_3.png" width="45%"/>&nbsp;<img src="{attach}medway_photo_4.png" width="45%"/>
+<img src="{attach}equinox_photo_0.png" width="45%"/>
 
 
 ## Detection capabilities
@@ -38,8 +36,8 @@ The Medway Boys Protector IV was probably one of the most used vaccine on ST, Tr
 | Threat                          | Result                                |
 |---------------------------------|:-------------------------------------:|
 | Check PHYSTOP memory            | <span style="color:red">No</span>     |
-| Undocumented resident program   | <span style="color:green">Yes</span>|
-| Valid reset vector              | <span style="color:green">Yes</span>  |        
+| Undocumented resident program   | <span style="color:red">No</span>     |
+| Valid reset vector              | <span style="color:red">No</span>     |        
 | Non-ROM HDV BPB Vector          | <span style="color:red">No</span>     |
 | Non-ROM HDV RW Vector           | <span style="color:red">No</span>     |
 | Non-ROM HDV BOOT Vector         | <span style="color:red">No</span>     |
@@ -55,19 +53,13 @@ The Medway Boys Protector IV was probably one of the most used vaccine on ST, Tr
 | VBL Int / VBL Routine Vector    | <span style="color:red">No</span>     |
 | Detect virus footprints         | <span style="color:red">No</span>     |
 | Catch key viruses               | <span style="color:red">No</span>     |
-| Other threat detection          | <span style="color:green">Yes</span> (disables Ghost loader)  |
+| Other threat detection          | <span style="color:red">No</span>     |
 
 ## Conclusion
 
-This vaccine doesn't do much after all, focusing on resident programs and the reset vector.
+The lack of effort is stunning...
 
-A disppointing 4/10.
+A simple 1/10
 
-### Older versions
+You can donwload the installer at [demozoo](https://demozoo.org/productions/92023/)
 
-<img src="{attach}medway_photo_0.png" width="19%"/>&nbsp;<img src="{attach}medway_photo_1.png" width="19%"/>&nbsp;<img src="{attach}medway_photo_5.png" width="19%"/>&nbsp;<img src="{attach}medway_photo_7.png" width="19%"/>&nbsp;<img src="{attach}medway_photo_8.png" width="19%"/>
-
-
-###  Appendix
-
-The installer is downloadable here: [demozoo](https://demozoo.org/productions/81668/)

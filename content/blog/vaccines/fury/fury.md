@@ -1,36 +1,34 @@
-Title: Medway Boys Protector IV
-Slug: medway
-Name: Medway Boys Protector IV
-Date: 2025-11-03 16:12
+Title: 
+Slug: fury
+Name: 
+Date: 2025-11-05 09:05
 Location: Montreal / Canada
 Category: Atari ST, Vaccine
 Lang: en
 Author: shazz
 status: hidden
-summary: This article is about the Medway Boys Protector IV vaccine...
-image: {filename}../../../gallery/vaccines/medway.png
+summary: This article is about the 
+image: {filename}../../../gallery/vaccines/fury.png
 Tags: Vaccine
 
 
 ## Basic Information
 
-- *Author*: Trojan and Wurzel from the Medway Boys
+- *Author*: 
 - *Type*: bootsector
 - *Subtype*: ?
-- *Size*: 480 bytes
-- *Resident*: no
- - *Memory resistant*: no
-- *Self-replicating*: no
-- *Can clean memory*: partial (resets `RESVALID`, `RESVECTOR`) then calls TOS reset vector
+- *Size*: ? bytes
+- *Resident*: 
+- *Self-replicating*: 
+- *Can clean memory*: 
 - *Special features*: 
-    - Deactivate Ghost loader
+    - ?
 
 ### Description
 
-The Medway Boys Protector IV was probably one of the most used vaccine on ST, Trojan and Wurzel relased multiple versions of this vaccine and the last one, version IV, was modified by the BBC.
+The ...
 
-
-<img src="{attach}medway_photo_3.png" width="45%"/>&nbsp;<img src="{attach}medway_photo_4.png" width="45%"/>
+<img src="{attach}fury_photo_0.png" width="45%"/>&nbsp;<img src="{attach}fury_photo_1.png" width="45%"/>
 
 
 ## Detection capabilities
@@ -38,8 +36,8 @@ The Medway Boys Protector IV was probably one of the most used vaccine on ST, Tr
 | Threat                          | Result                                |
 |---------------------------------|:-------------------------------------:|
 | Check PHYSTOP memory            | <span style="color:red">No</span>     |
-| Undocumented resident program   | <span style="color:green">Yes</span>|
-| Valid reset vector              | <span style="color:green">Yes</span>  |        
+| Undocumented resident program   | <span style="color:red">No</span>     |
+| Valid reset vector              | <span style="color:red">No</span>     |        
 | Non-ROM HDV BPB Vector          | <span style="color:red">No</span>     |
 | Non-ROM HDV RW Vector           | <span style="color:red">No</span>     |
 | Non-ROM HDV BOOT Vector         | <span style="color:red">No</span>     |
@@ -55,19 +53,11 @@ The Medway Boys Protector IV was probably one of the most used vaccine on ST, Tr
 | VBL Int / VBL Routine Vector    | <span style="color:red">No</span>     |
 | Detect virus footprints         | <span style="color:red">No</span>     |
 | Catch key viruses               | <span style="color:red">No</span>     |
-| Other threat detection          | <span style="color:green">Yes</span> (disables Ghost loader)  |
+| Other threat detection          | <span style="color:red">No</span>     |
 
 ## Conclusion
 
-This vaccine doesn't do much after all, focusing on resident programs and the reset vector.
+...
 
-A disppointing 4/10.
+A ...
 
-### Older versions
-
-<img src="{attach}medway_photo_0.png" width="19%"/>&nbsp;<img src="{attach}medway_photo_1.png" width="19%"/>&nbsp;<img src="{attach}medway_photo_5.png" width="19%"/>&nbsp;<img src="{attach}medway_photo_7.png" width="19%"/>&nbsp;<img src="{attach}medway_photo_8.png" width="19%"/>
-
-
-###  Appendix
-
-The installer is downloadable here: [demozoo](https://demozoo.org/productions/81668/)
