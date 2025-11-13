@@ -181,9 +181,10 @@ possible responses are 'O' for 'Oui' (Yes) and 'N' for 'Non' (No).
 This Anti Virus is not harmful, and does not spread itself to other disks.
 It is created only by the program 'KILLER', by Emmanuel Collignon.
 
-#### The 'Floppy Shop' Anti-Virus
+#### The 'Floppy Shop' Anti-Virus:
 
 #### The 'Simeon Pashley' Anti - Virus:
+
 This virus refers to itself as an 'anti-virus', but it spreads just as
 fast as any other virus. It does not, however, destroy anything.
 This anti virus is designed to provide a confirmation that the disk
@@ -193,7 +194,8 @@ present, rather than a destructive virus. It has no other effect, and
 represents no real threat to your system or disks. It does, however,
 spread as rapidly as any real virus.
 
-#### The 'Mark Powell' Anti Virus
+#### The 'Mark Powell' Anti Virus:
+
 This is not a virus, but simply an executable boot sector. The program
 in the boot sector is designed to provide a confirmation that the disk
 contains no virus.
@@ -272,6 +274,7 @@ complete, leaving it almost impossible to recover anything from the
 disk once the virus has struck.
 
 #### The 'ACA' Virus:
+
 After ten copies are made, it starts attacking. It attacks by
 completely destroying the boot sector, File Access Tables, and
 directories of every disk inserted into the ST. The destruction is
@@ -298,6 +301,7 @@ updates an identifying counter (this one reads 12345678).
 #### The 'batvir2' Virus:
 
 ####  The 'BHP' or 'Bayerische Hacker Post' Virus:
+
 Not much is known about this virus. No complete copy of it is
 available. It appears to do a thorough job of destroying disks when it
 attacks. If you have detected the presence of this virus, please
@@ -487,6 +491,7 @@ Pirates, the grim reaper draws near
 ```
 
 #### The 'Screen' Virus:
+
 This virus executes only on ST's with ROMs dated 02/06/1986. This system
 has ROMs dated mm/dd/yyyy. The virus works by installing a timer routine.
 After 30 minutes, it starts attacking. Each time after that when the
