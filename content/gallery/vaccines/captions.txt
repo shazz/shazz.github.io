@@ -20,7 +20,7 @@ detonators.png: Detonators
 diwa.png: DIWA
 dntanti.png: DNT
 dodgysoft.png: Dodgysoft
-drsatan.png: Dr Satan
+drsatan.png: Dr Satan Memory Virus Protector
 drst.png: Dr S.T.
 dune.png: Dune
 dunekiller.png: Dune Killer v0.2
