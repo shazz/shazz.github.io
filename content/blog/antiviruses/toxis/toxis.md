@@ -48,15 +48,15 @@ To test a floppy disk with Toxis, follow these steps:
 
 * Then the boot sector details and the analysis result will appear
 
-| Virus       | Analysis                                      | Result                                                                       |
-|-------------|-----------------------------------------------|------------------------------------------------------------------------------|
-| Ghost (1/5)      | ![photo]({attach}toxis_photo_3.png)        | We see that Toxis successfully identified the Ghost virus                             |
-| Signum BPL (1/5) | ![photo]({attach}toxis_photo_4.png)        | We see that Toxis successfully identified the Signum virus                        |
-| Macumba 3.3 (4/5) | ![photo]({attach}toxis_photo_5.png)        | Toxis reported that it found no signs of a virus in the disk's boot sector |
-| Carpe Diem (2/5) | ![photo]({attach}toxis_photo_6.png)        | We see that Toxis detected 9 signs of a viral infection |
-| OLI      (1/5)   | ![photo]({attach}toxis_photo_7.png)        | We see that Toxis successfully identified the OLI virus                               |
-| OLI2     (1/5)   | ![photo]({attach}toxis_photo_8.png)        | We see that Toxis detected 7 signs of viral infection in OLI2            |
-| EICAR   (3/5)    | ![photo]({attach}toxis_photo_9.png)        | Toxis reported that during initialization the boot sector starts as a reset-resistant program |
+| Virus<p>Difficulty                                                            | Analysis                                          | Result                                                                                        |
+|:-----------------------------------------------------------------------------:|:-------------------------------------------------:|:---------------------------------------------------------------------------------------------:|
+| [Ghost](https://retrovirology.metaverse.fr/ghost-en.html)<br>(1/5)            | ![photo]({attach}toxis_photo_3.png)               | We see that Toxis successfully identified the Ghost virus                                     |
+| [Signum BPL](https://retrovirology.metaverse.fr/signum-en.html)<br>(1/5)      | ![photo]({attach}toxis_photo_4.png)               | We see that Toxis successfully identified the Signum virus                                    |
+| [Macumba 3.3](https://retrovirology.metaverse.fr/macumba3-en.html)<br>(4/5)   | ![photo]({attach}toxis_photo_5.png)               | Toxis reported that it found no signs of a virus in the disk's boot sector                    |
+| [Carpe Diem](https://retrovirology.metaverse.fr/carpediem-en.html)<br>(2/5)   | ![photo]({attach}toxis_photo_6.png)               | We see that Toxis detected 9 signs of a viral infection                                       |
+| [OLI](https://retrovirology.metaverse.fr/oli-en.html)<br>(1/5)                | ![photo]({attach}toxis_photo_7.png)               | We see that Toxis successfully identified the OLI virus                                       |
+| [OLI2](https://retrovirology.metaverse.fr/oli2-en.html)<br>(1/5)              | ![photo]({attach}toxis_photo_8.png)               | We see that Toxis detected 7 signs of viral infection in OLI2                                 |
+| [EICAR](https://retrovirology.metaverse.fr/eicar-en.html)<br>(3/5)            | ![photo]({attach}toxis_photo_9.png)               | Toxis reported that during initialization the boot sector starts as a reset-resistant program |
 
 ### Task 2: Recognize boot viruses loaded into memory
 

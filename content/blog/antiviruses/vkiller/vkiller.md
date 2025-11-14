@@ -32,7 +32,7 @@ Tags: Antivirus
 
 #### Instructions:
 
-To test a floppy disk with Boot Protector, follow these steps:
+To test a floppy disk with Vkiller, follow these steps:
 
 * Insert the test floppy into drive A:
 * Click on the floppy disk image labeled Drive A below
@@ -41,15 +41,15 @@ To test a floppy disk with Boot Protector, follow these steps:
 
 * Then the boot sector details and the analysis result will appear
 
-| Virus       | Analysis                                      | Result                                                                       |
-|-------------|-----------------------------------------------|------------------------------------------------------------------------------|
-| [Ghost](https://retrovirology.metaverse.fr/ghost-en.html) (1/5)      | ![photo]({attach}vkiller_photo_2.png)        | Vkiller correctly recognized the Ghost virus                             |
-| [Signum BPL](https://retrovirology.metaverse.fr/signum-en.html) (1/5) | ![photo]({attach}vkiller_photo_3.png)        | Vkiller correctly recognized the Signum BPL virus                        |
-| [Macumba 3.3](https://retrovirology.metaverse.fr/macumba3-en.html) (4/5) | ![photo]({attach}vkiller_photo_4.png)        | Vkiller said this is a very suspicious boot sector |
-| [Carpe Diem](https://retrovirology.metaverse.fr/carpediem-en.html) (2/5) | ![photo]({attach}vkiller_photo_5.png)        | Vkiller said this is a very suspicious boot sector. (See NOTE 1) |
-| [OLI](https://retrovirology.metaverse.fr/oli-en.html)      (1/5)   | ![photo]({attach}vkiller_photo_6.png)        | Vkiller correctly recognized the OLI virus                               |
-| [OLI2](https://retrovirology.metaverse.fr/oli2-en.html)     (1/5)   | ![photo]({attach}vkiller_photo_7.png)        | Vkiller said this is a very suspicious boot sector            |
-| [EICAR](https://retrovirology.metaverse.fr/eicar-en.html)   (3/5)    | ![photo]({attach}vkiller_photo_8.png)        | Vkiller said this is a safe disk but also said that the disk has a magic longword |
+| Virus<p>Difficulty                                                        | Analysis                                               | Result                                                                         |
+|:-------------------------------------------------------------------------:|:------------------------------------------------------:|:------------------------------------------------------------------------------:|
+| [Ghost](https://retrovirology.metaverse.fr/ghost-en.html)<p>(1/5)         | <img src="{attach}vkiller_photo_2.png" width="60%"/>   | Vkiller correctly recognized the Ghost virus                                   |
+| [Signum BPL](https://retrovirology.metaverse.fr/signum-en.html)<p>(1/5)   | <img src="{attach}vkiller_photo_3.png" width="60%"/>   | Vkiller correctly recognized the Signum BPL virus                              |
+| [Macumba 3.3](https://retrovirology.metaverse.fr/macumba3-en.html)<p>(4/5)| <img src="{attach}vkiller_photo_4.png" width="60%"/>   | Vkiller said this is a very suspicious boot sector                             |
+| [Carpe Diem](https://retrovirology.metaverse.fr/carpediem-en.html)<p>(2/5)| <img src="{attach}vkiller_photo_5.png" width="60%"/>   | Vkiller said this is a very suspicious boot sector.                            |
+| [OLI](https://retrovirology.metaverse.fr/oli-en.html)<p>(1/5)             | <img src="{attach}vkiller_photo_6.png" width="60%"/>   | Vkiller correctly recognized the OLI virus                                     |
+| [OLI2](https://retrovirology.metaverse.fr/oli2-en.html)<p>(1/5)           | <img src="{attach}vkiller_photo_7.png" width="60%"/>   | Vkiller said this is a very suspicious boot sector                             |
+| [EICAR](https://retrovirology.metaverse.fr/eicar-en.html)<p>(3/5)         | <img src="{attach}vkiller_photo_8.png" width="60%"/>   | Vkiller said this is a safe disk                                               |
 
 ### Task 2: Recognize boot viruses loaded into memory
 
@@ -101,11 +101,11 @@ Vkiller did not recognize but detected the OLI2 virus when it was loaded into me
 
 Test results:
 
-Vkiller said this is a safe disk but also said that the disk has a magic longword
+Vkiller said this is a safe disk.
 
 ### Task 3: Recognize a file virus
 
-Boot Protector II cannot scan files for viruses
+Vkiller cannot scan files for viruses
 
 ### Task 4: Restore a damaged boot sector
 
@@ -133,12 +133,12 @@ The vaccine helped me and when the virus tried to get onto the disk, the vaccine
 * Insert the test floppy into drive A:
 * Click on the floppy disk image labeled Drive A below
 
-Boot Protector II checks:
+Vkiller checks:
 
 * Disk BPB
 * Checksum
 * Vkiller does not check vectors
-* Vkiller checks Magic Long Word ($12123456)
+* Vkiller Vkiller does not check Magic Long Word ($12123456)
 * Vkiller performs (small) heuristic disk analysis
 * Vkiller shows us FAT sectors! A very cool antivirus!
 
@@ -150,18 +150,18 @@ Vkiller has a resident virus scanner and if a virus gets into your boot sector, 
 
 In the following table we have summarized the task completion results:
 
-| Task | Result |
-| :---------------------------------------------------------------- | :------: |
-| Recognize boot viruses not loaded into memory                     |   4/7    |
-| Recognize boot viruses loaded into memory                         |   4/7    |
-| Recognize a file virus                                            |   0/1    |
-| Restore a damaged boot sector                                     |   0/1    |
-| Vaccinate a non-executable floppy disk                            |   1/1    |
-| Analyze a suspicious boot sector                                  |   5/6    |
-| Detect malware when Vkiller is not running                        |   2/2    |
-| **Total**                                                         |  16/25   |
+| Task                                                            | Result  |
+|:---------------------------------------------------------------:|:-------:|
+| Recognize boot viruses not loaded into memory                   |   3/7   |
+| Recognize boot viruses loaded into memory                       |   3/7   |
+| Recognize a file virus                                          |   0/1   |
+| Restore a damaged boot sector                                   |   0/1   |
+| Vaccinate a non-executable floppy disk                          |   1/1   |
+| Analyze a suspicious boot sector                                |   4/6   |
+| Detect malware when Vkiller is not running                      |   2/2   |
+| **Total**                                                       |  13/25  |
 
-In conclusion, Vkiller is a good antivirus that detects many common viruses and also shows us FAT sectors.
+In conclusion, Vkiller is a good antivirus that detects many common viruses and also shows us FAT sectors. Vekiller detects a Bat virus that uses Magic LongWord, but it doesn't check for the presence of Magic LongWord. Strange!
 
 ## Appendix
 

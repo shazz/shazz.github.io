@@ -39,16 +39,16 @@ To test a floppy disk with ACA, follow these steps:
 * Press F1 to check the disk
 * Then the boot sector details and the analysis result will appear
 
-| Virus<p>Difficulty    | Analysis                                          | Result                                             |
-|:---------------------:|:-------------------------------------------------:|:--------------------------------------------------:|
-| Ghost<br>(1/5)        | <img src="{attach}aca_photo_2.png" width="60%"/>  | ACA VKILL said the disk may contain a virus        |
-| Signum BPL<br>(1/5)   | <img src="{attach}aca_photo_3.png" width="60%"/>  | ACA VKILL said the disk may contain a virus        |
-| Macumba 3.3<br>(4/5)  | <img src="{attach}aca_photo_4.png" width="60%"/>  | ACA VKILL said the disk is clean                   |
-| Carpe Diem<br>(2/5)   | <img src="{attach}aca_photo_5.png" width="60%"/>  | ACA VKILL said the disk is clean                   |
-| OLI<br>(1/5)          | <img src="{attach}aca_photo_6.png" width="60%"/>  | ACA VKILL said the disk may contain a virus        |
-| OLI2<br>(1/5)         | <img src="{attach}aca_photo_7.png" width="60%"/>  | ACA VKILL said the disk may contain a virus        |
-| EICAR<br>(3/5)        | <img src="{attach}aca_photo_8.png" width="60%"/>  | ACA VKILL said the disk is clean                   |
-| ACA<br>(1/5)          | <img src="{attach}aca_photo_1.png" width="60%"/>  | ACA is detected :)                                 |
+| Virus<p>Difficulty                                                            | Analysis                                          | Result                                             |
+|:-----------------------------------------------------------------------------:|:-------------------------------------------------:|:--------------------------------------------------:|
+| [Ghost](https://retrovirology.metaverse.fr/ghost-en.html)<br>(1/5)            | <img src="{attach}aca_photo_2.png" width="60%"/>  | ACA VKILL said the disk may contain a virus        |
+| [Signum BPL](https://retrovirology.metaverse.fr/signum-en.html)<br>(1/5)      | <img src="{attach}aca_photo_3.png" width="60%"/>  | ACA VKILL said the disk may contain a virus        |
+| [Macumba 3.3](https://retrovirology.metaverse.fr/macumba3-en.html)<br>(4/5)   | <img src="{attach}aca_photo_4.png" width="60%"/>  | ACA VKILL said the disk is clean                   |
+| [Carpe Diem](https://retrovirology.metaverse.fr/carpediem-en.html)<br>(2/5)   | <img src="{attach}aca_photo_5.png" width="60%"/>  | ACA VKILL said the disk is clean                   |
+| [OLI](https://retrovirology.metaverse.fr/oli-en.html)<br>(1/5)                | <img src="{attach}aca_photo_6.png" width="60%"/>  | ACA VKILL said the disk may contain a virus        |
+| [OLI2](https://retrovirology.metaverse.fr/oli2-en.html)<br>(1/5)              | <img src="{attach}aca_photo_7.png" width="60%"/>  | ACA VKILL said the disk may contain a virus        |
+| [EICAR](https://retrovirology.metaverse.fr/eicar-en.html)<br>(3/5)            | <img src="{attach}aca_photo_8.png" width="60%"/>  | ACA VKILL said the disk is clean                   |
+| [ACA](https://retrovirology.metaverse.fr/aca-en.html)<br>(1/5)                | <img src="{attach}aca_photo_1.png" width="60%"/>  | ACA is detected :)                                 |
 
 ### Task 2: Recognize boot viruses loaded into memory
 
@@ -95,15 +95,15 @@ ACA VKIL does not have a scanner when it is not running
 
 In the following table we have summarized the task completion results:
 
-| Task | Result |
-| :---------------------------------------------------------------- | :------: |
-| Recognize boot viruses not loaded into memory                     |   1/8    |
-| Recognize boot viruses loaded into memory                         |   0/8    |
-| Recognize a link virus                                            |   0/1    |
-| Restore a damaged boot sector                                     |   0/1    |
-| Vaccinate a non-executable floppy disk                            |   0/1    |
-| Analyze a suspicious boot sector                                  |   0/5    |
-| Detect malware when ACA VKIL is not running                       |   0/2    |
-| **Total**                                                         |   1/26   |
+| Task                                                              | Result    |
+|:-----------------------------------------------------------------:|:---------:|
+| Recognize boot viruses not loaded into memory                     |   1/8     |
+| Recognize boot viruses loaded into memory                         |   0/8     |
+| Recognize a link virus                                            |   0/1     |
+| Restore a damaged boot sector                                     |   0/1     |
+| Vaccinate a non-executable floppy disk                            |   0/1     |
+| Analyze a suspicious boot sector                                  |   0/5     |
+| Detect malware when ACA VKIL is not running                       |   0/2     |
+| **Total**                                                         |   1/26    |
 
 In conclusion, ACA VKIL is a terrible antivirus that can even infect your disk with a virus! Don't use this!!!

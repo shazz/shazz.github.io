@@ -42,15 +42,15 @@ To test a floppy disk with Boot Protector, follow these steps:
 
 * Then the boot sector details and the analysis result will appear
 
-| Virus       | Analysis                                      | Result                                                                       |
-|-------------|-----------------------------------------------|------------------------------------------------------------------------------|
-| Ghost (1/5)      | ![photo]({attach}bp2_photo_2.png)        | Boot Protector II correctly recognized the Ghost virus                             |
-| Signum BPL (1/5) | ![photo]({attach}bp2_photo_3.png)        | Boot Protector II correctly recognized the Signum BPL virus                        |
-| Macumba 3.3 (4/5) | ![photo]({attach}bp2_photo_4.png)        | Boot Protector II said this is an unknown executable boot sector |
-| Carpe Diem (2/5) | ![photo]({attach}bp2_photo_5.png)        | Boot Protector II said this is an unknown executable boot sector. (See NOTE 1) |
-| OLI      (1/5)   | ![photo]({attach}bp2_photo_6.png)        | Boot Protector II correctly recognized the OLI virus                               |
-| OLI2     (1/5)   | ![photo]({attach}bp2_photo_7.png)        | Boot Protector II said this is an unknown executable boot sector            |
-| EICAR   (3/5)    | ![photo]({attach}bp2_photo_8.png)        | Boot Protector II said this is an unknown non-executable boot sector |
+| Virus<p>Difficulty                                                        | Analysis                                 | Result                                                                         |
+|:-------------------------------------------------------------------------:|:----------------------------------------:|:------------------------------------------------------------------------------:|
+| [Ghost](https://retrovirology.metaverse.fr/ghost-en.html) (1/5)           | ![photo]({attach}bp2_photo_2.png)        | Boot Protector II correctly recognized the Ghost virus                         |
+| [Signum BPL](https://retrovirology.metaverse.fr/signum-en.html) (1/5)     | ![photo]({attach}bp2_photo_3.png)        | Boot Protector II correctly recognized the Signum BPL virus                    |
+| [Macumba 3.3](https://retrovirology.metaverse.fr/macumba3-en.html) (4/5)  | ![photo]({attach}bp2_photo_4.png)        | Boot Protector II said this is an unknown executable boot sector               |
+| [Carpe Diem](https://retrovirology.metaverse.fr/carpediem-en.html) (2/5)  | ![photo]({attach}bp2_photo_5.png)        | Boot Protector II said this is an unknown executable boot sector. (See NOTE 1) |
+| [OLI](https://retrovirology.metaverse.fr/oli-en.html)      (1/5)          | ![photo]({attach}bp2_photo_6.png)        | Boot Protector II correctly recognized the OLI virus                           |
+| [OLI2](https://retrovirology.metaverse.fr/oli2-en.html)     (1/5)         | ![photo]({attach}bp2_photo_7.png)        | Boot Protector II said this is an unknown executable boot sector               |
+| [EICAR](https://retrovirology.metaverse.fr/eicar-en.html)   (3/5)         | ![photo]({attach}bp2_photo_8.png)        | Boot Protector II said this is an unknown non-executable boot sector           |
 
 NOTE 1: For tests we use the Fixed version of Carpe Diem to check how antiviruses will react to an unknown virus. If this was the original Carpe Diem then Boot Protector II would detect it.
 
@@ -166,15 +166,15 @@ Boot Protector II does not have a scanner when it is not running
 
 In the following table we have summarized the task completion results:
 
-| Task | Result |
-| :---------------------------------------------------------------- | :------: |
-| Recognize boot viruses not loaded into memory                     |   3/7    |
-| Recognize boot viruses loaded into memory                         |   2/7    |
-| Recognize a link virus                                            |   0/1    |
-| Restore a damaged boot sector                                     |   0/1    |
-| Vaccinate a non-executable floppy disk                            |   0/1    |
-| Analyze a suspicious boot sector                                  |   3/5    |
-| Detect malware when Boot Pro is not running                       |   0/2    |
-| **Total**                                                         |   8/24   |
+| Task                                                              | Result    |
+|:-----------------------------------------------------------------:|:---------:|
+| Recognize boot viruses not loaded into memory                     |   3/7     |
+| Recognize boot viruses loaded into memory                         |   2/7     |
+| Recognize a link virus                                            |   0/1     |
+| Restore a damaged boot sector                                     |   0/1     |
+| Vaccinate a non-executable floppy disk                            |   0/1     |
+| Analyze a suspicious boot sector                                  |   3/5     |
+| Detect malware when Boot Pro is not running                       |   0/2     |
+| **Total**                                                         |   8/24    |
 
 In conclusion, Boot Protector is not a bad antivirus in principle and it detects many boot sectors... 515!
