@@ -68,57 +68,35 @@ Note that if a virus is already in memory or some vectors are attached, Boot Pro
 
 #### One of the most common viruses: Ghost
 
-Test results:
-
-* Hdv_bpb vector infected
-
-Boot Protector II correctly recognized the Ghost virus in the boot sector
+Test results: Hdv_bpb vector infected, Boot Protector II correctly recognized the Ghost virus in the boot sector
 
 #### Key virus and its key disk: Signum BPL
 
-Test results:
-
-* Hdv_bpb vector infected
-
-Boot Protector II correctly recognized the Signum BPL virus in the boot sector
+Test results: Hdv_bpb vector infected, Boot Protector II correctly recognized the Signum BPL virus in the boot sector
 
 #### Polymorphic virus: Macumba 3.3
 
-Test results:
-
-* Hdv_bpb infected
-* Hdv_rw infected
-
-Boot Protector II did not recognize the Macumba 3.3 virus in the boot sector
+Test results: Hdv_bpb infected, Hdv_rw infected. Boot Protector II did not recognize the Macumba 3.3 virus in the boot sector
 
 #### Trojan virus: Carpe Diem
 
-Test results:
-
-Boot Protector II did not recognize Carpe Diem (Fixed) in memory and did not recognize it in the boot sector.
+Test results: Boot Protector II did not recognize Carpe Diem (Fixed) in memory and did not recognize it in the boot sector.
 
 #### Stealth virus: OLI
 
-Test results:
-
-* Hdv-rw vector infected
-
-?
+Test results: Hdv-rw vector infected
 
 #### Super Stealth virus: OLI2
 
-Test results:
+Test results: Hdv-rw vector infected
 
-* Hdv-rw vector infected
-
-?
 
 #### Non-executable boot sector: EICAR
 
 Test results:
 
-Boot Protector reported that there is nothing in memory. This is correct.
-Boot Protector reported that the boot sector is not executable. This is not true.
+- Boot Protector reported that there is nothing in memory. This is correct.
+- Boot Protector reported that the boot sector is not executable. This is not true.
 
 ### Task 3: Recognize a link virus
 
@@ -167,7 +145,7 @@ Boot Protector II does not have a scanner when it is not running
 In the following table we have summarized the task completion results:
 
 | Task                                                              | Result    |
-|:-----------------------------------------------------------------:|:---------:|
+|-------------------------------------------------------------------|:---------:|
 | Recognize boot viruses not loaded into memory                     |   3/7     |
 | Recognize boot viruses loaded into memory                         |   2/7     |
 | Recognize a link virus                                            |   0/1     |

@@ -63,9 +63,7 @@ It will not check if vectors are infected and doesn't check memory very well, on
 
 #### One of the most common viruses: Ghost
 
-Test results:
-
-Vkiller correctly recognized the Ghost virus in the boot sector
+Test results: Vkiller correctly recognized the Ghost virus in the boot sector
 
 #### Key virus and its key disk: Signum BPL
 
@@ -75,33 +73,23 @@ Vkiller correctly recognized the Signum BPL virus in the boot sector
 
 #### Polymorphic virus: Macumba 3.3
 
-Test results:
-
-Vkiller did not recognize the Macumba 3.3 virus in the boot sector
+Test results: Vkiller did not recognize the Macumba 3.3 virus in the boot sector
 
 #### Trojan virus: Carpe Diem
 
-Test results:
-
-Vkiller did not recognize Carpe Diem in the boot sector.
+Test results: Vkiller did not recognize Carpe Diem in the boot sector.
 
 #### Stealth virus: OLI
 
-Test results:
-
-Vkiller recognized the OLI virus when it was loaded into memory!
+Test results: Vkiller recognized the OLI virus when it was loaded into memory!
 
 #### Super Stealth virus: OLI2
 
-Test results:
-
-Vkiller did not recognize but detected the OLI2 virus when it was loaded into memory!
+Test results: Vkiller did not recognize but detected the OLI2 virus when it was loaded into memory!
 
 #### Non-executable boot sector: EICAR
 
-Test results:
-
-Vkiller said this is a safe disk.
+Test results: Vkiller said this is a safe disk.
 
 ### Task 3: Recognize a file virus
 
@@ -151,7 +139,7 @@ Vkiller has a resident virus scanner and if a virus gets into your boot sector, 
 In the following table we have summarized the task completion results:
 
 | Task                                                            | Result  |
-|:---------------------------------------------------------------:|:-------:|
+|-----------------------------------------------------------------|:-------:|
 | Recognize boot viruses not loaded into memory                   |   3/7   |
 | Recognize boot viruses loaded into memory                       |   3/7   |
 | Recognize a file virus                                          |   0/1   |

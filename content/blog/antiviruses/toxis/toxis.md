@@ -79,19 +79,11 @@ Toxis recognized the Ghost virus in the boot sector.
 
 #### Key virus and its key disk: Signum BPL
 
-Test results:
-
-* Hdv_bpb vector infected
-
-Toxis recognized the Signum BPL virus in the boot sector.
+Test results: Hdv_bpb vector infected. Toxis recognized the Signum BPL virus in the boot sector.
 
 #### Polymorphic virus: Macumba 3.3
 
-Test results:
-
-* No exception vectors outside the allowed memory area.
-
-Toxis did not recognize the virus in memory. Toxis said it found no signs of a viral infection in the boot sector.
+Test results: No exception vectors outside the allowed memory area. Toxis did not recognize the virus in memory. Toxis said it found no signs of a viral infection in the boot sector.
 
 #### Trojan virus: Carpe Diem
 
@@ -128,8 +120,8 @@ Toxis recognized OLI2 in the boot sector while it was in memory
 
 Test results:
 
-Toxis reported that there is nothing in memory. This is correct.
-Toxis detected that the boot sector will still start. This is correct.
+- Toxis reported that there is nothing in memory. This is correct.
+- Toxis detected that the boot sector will still start. This is correct.
 
 ### Task 3: Recognize a file virus
 
@@ -249,8 +241,8 @@ After that, you will literally always have an open Toxis that you can open right
 
 In the following table we have summarized the task completion results:
 
-| Task | Result |
-| :---------------------------------------------------------------- | :------: |
+| Task                                                              | Result   |
+|-------------------------------------------------------------------|:--------:|
 | Recognize boot viruses not loaded into memory                     |   6/7    |
 | Recognize boot viruses loaded into memory                         |   6/7    |
 | Recognize a file virus                                            |   1/1    |

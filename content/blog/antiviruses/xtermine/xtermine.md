@@ -69,7 +69,6 @@ OLI2 failed detection, Xtermine "thinks" this is a safe TOS formatted disk:
 
 That indicates that Xtermine probably uses `rwabs` to read the bootsector and not lower level access (talking to the FDC directly) to prevent any misdirection.
 
-
 ### Challenge 3: Recognize a link virus
 
 Xtermine is not capable of analyzing files and detectking link viruses.

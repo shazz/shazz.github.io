@@ -96,7 +96,7 @@ ACA VKIL does not have a scanner when it is not running
 In the following table we have summarized the task completion results:
 
 | Task                                                              | Result    |
-|:-----------------------------------------------------------------:|:---------:|
+|-------------------------------------------------------------------|:---------:|
 | Recognize boot viruses not loaded into memory                     |   1/8     |
 | Recognize boot viruses loaded into memory                         |   0/8     |
 | Recognize a link virus                                            |   0/1     |
