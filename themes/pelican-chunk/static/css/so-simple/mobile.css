@@ -9,6 +9,10 @@
         --_menu-h: 4.4rem;
     }
 
+    #site-title {
+        font-size: 15px;
+    }
+
     #menu {
         height: var(--_menu-h);
     }
