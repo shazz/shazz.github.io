@@ -88,7 +88,7 @@ terminator1.png: Terminator 1
 tfcramprotector2.png: TFC RAM Protector 2
 thelame.png: The Lame vaccine
 tmbp.png: TMB_P
-tripleh.png: TripleH
+trippleh.png: Tripple H Virus Killer
 tronicpdl.png: Tronic PDL
 tsb.png: TSB
 tsccscy.png: tSCc by Scy
