@@ -60,7 +60,7 @@ The Tripple H Killer v1.10 vaccine is shipped with the Ultimate Virus Checker, a
 
 Version 1.0 which checks less vectors but overall pretty similar.
 
-<img src="{attach}trippleh_photo_2.png" width="45%"/>&nbsp;<img src="{attach}trippleh_photo_3.png" width="45%"/>
+<img src="{attach}trippleh_photo_3.png" width="45%"/>&nbsp;<img src="{attach}trippleh_photo_2.png" width="45%"/>
 
 ## Conclusion
 
