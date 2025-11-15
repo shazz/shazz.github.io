@@ -1,5 +1,5 @@
 Title: The Tripple H Killer
-Slug: tripleh
+Slug: trippleh
 Name: The Tripple H Killer
 Date: 2025-11-15 15:05
 Location: Montreal / Canada

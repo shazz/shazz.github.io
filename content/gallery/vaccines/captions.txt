@@ -3,7 +3,7 @@ adrenalin.png: Adrenaline UK Virus Protector
 adrenaline.png: Adrenaline antivirus Preventor 
 agraboot.png: Agraboot 2
 animalmine.png: Animal Mine barcode
-antiboot: Antiboot
+antiboot.png: Antiboot
 antighost.png: TDT Anti Ghost V4.0 by Altair
 beep.png: antivirus
 boulboot.png: Boulboot
