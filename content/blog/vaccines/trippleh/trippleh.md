@@ -29,7 +29,7 @@ Tags: Vaccine
 The Tripple H Killer v1.10 vaccine is shipped with the Ultimate Virus Checker, also by The Master. It is a very decent vaccine which combines a memory checker (reset vector, undocument resident program, non-TOS `HDV_BPB`, `HDV_RW`, `HDV_BOOT`, Gemdos, Xbos and Bios vectors) at boot and a resident guardian to check for executable disks and new valid reset vector (and remove it).
 
 
-<img src="{attach}tripleh_photo_0.png" width="45%"/>&nbsp;<img src="{attach}tripleh_photo_1.png" width="45%"/>
+<img src="{attach}trippleh_photo_0.png" width="45%"/>&nbsp;<img src="{attach}trippleh_photo_1.png" width="45%"/>
 
 
 ## Detection capabilities
@@ -60,7 +60,7 @@ The Tripple H Killer v1.10 vaccine is shipped with the Ultimate Virus Checker, a
 
 Version 1.0 which checks less vectors but overall pretty similar.
 
-<img src="{attach}tripleh_photo_2.png" width="45%"/>&nbsp;<img src="{attach}tripleh_photo_3.png" width="45%"/>
+<img src="{attach}trippleh_photo_2.png" width="45%"/>&nbsp;<img src="{attach}trippleh_photo_3.png" width="45%"/>
 
 ## Conclusion
 
