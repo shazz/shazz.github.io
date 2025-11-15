@@ -42,15 +42,15 @@ To test a floppy disk with Boot Protector, follow these steps:
 
 * Then the boot sector details and the analysis result will appear
 
-| Virus<p>Difficulty                                                        | Analysis                                 | Result                                                                         |
-|:-------------------------------------------------------------------------:|:----------------------------------------:|:------------------------------------------------------------------------------:|
-| [Ghost](https://retrovirology.metaverse.fr/ghost-en.html) (1/5)           | ![photo]({attach}bp2_photo_2.png)        | Boot Protector II correctly recognized the Ghost virus                         |
-| [Signum BPL](https://retrovirology.metaverse.fr/signum-en.html) (1/5)     | ![photo]({attach}bp2_photo_3.png)        | Boot Protector II correctly recognized the Signum BPL virus                    |
-| [Macumba 3.3](https://retrovirology.metaverse.fr/macumba3-en.html) (4/5)  | ![photo]({attach}bp2_photo_4.png)        | Boot Protector II said this is an unknown executable boot sector               |
-| [Carpe Diem](https://retrovirology.metaverse.fr/carpediem-en.html) (2/5)  | ![photo]({attach}bp2_photo_5.png)        | Boot Protector II said this is an unknown executable boot sector. (See NOTE 1) |
-| [OLI](https://retrovirology.metaverse.fr/oli-en.html)      (1/5)          | ![photo]({attach}bp2_photo_6.png)        | Boot Protector II correctly recognized the OLI virus                           |
-| [OLI2](https://retrovirology.metaverse.fr/oli2-en.html)     (1/5)         | ![photo]({attach}bp2_photo_7.png)        | Boot Protector II said this is an unknown executable boot sector               |
-| [EICAR](https://retrovirology.metaverse.fr/eicar-en.html)   (3/5)         | ![photo]({attach}bp2_photo_8.png)        | Boot Protector II said this is an unknown non-executable boot sector           |
+| Virus<p>Difficulty                      | Analysis                                            | Result                                                                         |
+|:---------------------------------------:|:---------------------------------------------------:|:------------------------------------------------------------------------------:|
+| [Ghost](/ghost-en.html) (1/5)           | <img src="{attach}bp2_photo_2.png" width="60%"/>    | Boot Protector II correctly recognized the Ghost virus                         |
+| [Signum BPL](/signum-en.html) (1/5)     | <img src="{attach}bp2_photo_3.png" width="60%"/>    | Boot Protector II correctly recognized the Signum BPL virus                    |
+| [Macumba 3.3](/macumba3-en.html) (4/5)  | <img src="{attach}bp2_photo_4.png" width="60%"/>    | Boot Protector II said this is an unknown executable boot sector               |
+| [Carpe Diem](/carpediem-en.html) (2/5)  | <img src="{attach}bp2_photo_5.png" width="60%"/>    | Boot Protector II said this is an unknown executable boot sector. (See NOTE 1) |
+| [OLI](/oli-en.html)      (1/5)          | <img src="{attach}bp2_photo_6.png" width="60%"/>    | Boot Protector II correctly recognized the OLI virus                           |
+| [OLI2](/oli2-en.html)     (1/5)         | <img src="{attach}bp2_photo_7.png" width="60%"/>    | Boot Protector II said this is an unknown executable boot sector               |
+| [EICAR](/eicar-en.html)   (3/5)         | <img src="{attach}bp2_photo_8.png" width="60%"/>    | Boot Protector II said this is an unknown non-executable boot sector           |
 
 NOTE 1: For tests we use the Fixed version of Carpe Diem to check how antiviruses will react to an unknown virus. If this was the original Carpe Diem then Boot Protector II would detect it.
 
@@ -89,7 +89,6 @@ Test results: Hdv-rw vector infected
 #### Super Stealth virus: OLI2
 
 Test results: Hdv-rw vector infected
-
 
 #### Non-executable boot sector: EICAR
 

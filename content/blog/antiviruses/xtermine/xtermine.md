@@ -45,15 +45,15 @@ To test a floppy disk using Xtermine, here are the following actions:
 - Select the menu action `Lire` to test the bootsector
 - Click Ok to validate the action
 
-| Virus<p>(difficulty) | Analysis                                      | Result                                                                                        |
-|:--------------------:|:---------------------------------------------:|:---------------------------------------------------------------------------------------------:|
-| [Ghost](https://retrovirology.metaverse.fr/ghost-en.html)<br>(1/5)       | ![photo]({attach}xtermine_photo_1.png)        | Xtermine successfully identified the Ghost virus                                              |
-| [Signum BPL](https://retrovirology.metaverse.fr/signum-en.html)<br>(1/5)  | ![photo]({attach}xtermine_photo_2.png)        | Xtermine successfully identified the Signum BPL virus                                         |
-| [Macumba 3.3](https://retrovirology.metaverse.fr/macumba3-en.html)<br>(4/5)| ![photo]({attach}xtermine_photo_3.png)        | Xtermine said it is an unknown executable bootsector with 0 signs of viral infection          |
-| [Carpe Diem](https://retrovirology.metaverse.fr/carpediem-en.html)<br>(2/5)  | ![photo]({attach}xtermine_photo_4.png)        | Xtermine said it is an unknown executable bootsector but it has 3 signs of viral infection    |
-| [OLI](https://retrovirology.metaverse.fr/oli-en.html)<br>(1/5)         | ![photo]({attach}xtermine_photo_5.png)        | Xtermine successfully identified the OLI virus                                                |
-| [OLI2](https://retrovirology.metaverse.fr/oli2-en.html)<br>(1/5)        | ![photo]({attach}xtermine_photo_6.png)        | Xtermine reported that it detected only 1 sign of viral infection                             |
-| [EICAR](https://retrovirology.metaverse.fr/eicar-en.html)<br>(3/5)       | ![photo]({attach}xtermine_photo_7.png)        | Xtermine said it is an unknown non-executable bootsector with 0 signs of viral infection      |
+| Virus<p>(difficulty)                     | Analysis                                                  | Result                                                                                        |
+|:----------------------------------------:|:---------------------------------------------------------:|:---------------------------------------------------------------------------------------------:|
+| [Ghost](/ghost-en.html)<br>(1/5)         | <img src="{attach}xtermine_photo_1.png" width="60%"/>      | Xtermine successfully identified the Ghost virus                                              |
+| [Signum BPL](/signum-en.html)<br>(1/5)   | <img src="{attach}xtermine_photo_2.png" width="60%"/>      | Xtermine successfully identified the Signum BPL virus                                         |
+| [Macumba 3.3](/macumba3-en.html)<br>(4/5)| <img src="{attach}xtermine_photo_3.png" width="60%"/>      | Xtermine said it is an unknown executable bootsector with 0 signs of viral infection          |
+| [Carpe Diem](/carpediem-en.html)<br>(2/5)| <img src="{attach}xtermine_photo_4.png" width="60%"/>      | Xtermine said it is an unknown executable bootsector but it has 3 signs of viral infection    |
+| [OLI](/oli-en.html)<br>(1/5)             | <img src="{attach}xtermine_photo_5.png" width="60%"/>      | Xtermine successfully identified the OLI virus                                                |
+| [OLI2](/oli2-en.html)<br>(1/5)           | <img src="{attach}xtermine_photo_6.png" width="60%"/>      | Xtermine reported that it detected only 1 sign of viral infection                             |
+| [EICAR](/eicar-en.html)<br>(3/5)         | <img src="{attach}xtermine_photo_7.png" width="60%"/>      | Xtermine said it is an unknown non-executable bootsector with 0 signs of viral infection      |
 
 ### Challenge 2: Recognize bootsector viruses loaded in memory
 

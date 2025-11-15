@@ -50,15 +50,15 @@ To test a floppy disk with Sagrotan, follow these steps:
 
 * Then the boot sector details and the analysis result will appear
 
-| Virus<p>Difficulty                                                          | Analysis                                      | Result                                                                        |
-|:---------------------------------------------------------------------------:|:---------------------------------------------:|:-----------------------------------------------------------------------------:|
-| [Ghost](https://retrovirology.metaverse.fr/ghost-en.html)<br>(1/5)          | ![photo]({attach}sagrotan_photo_3.png)        | We see that Sagrotan successfully identified the Ghost virus                  |
-| [Signum BPL](https://retrovirology.metaverse.fr/signum-en.html)<br>(1/5)    | ![photo]({attach}sagrotan_photo_4.png)        | We see that Sagrotan successfully identified the Signum virus                 |
-| [Macumba 3.3](https://retrovirology.metaverse.fr/macumba3-en.html)<br>(4/5) | ![photo]({attach}sagrotan_photo_5.png)        | Sagrotan reported that it found no signs of a virus in the disk's boot sector |
-| [Carpe Diem](https://retrovirology.metaverse.fr/carpediem-en.html)<br>(2/5) | ![photo]({attach}sagrotan_photo_6.png)        | We see that Sagrotan detected 9 signs of a viral infection                    |
-| [OLI](https://retrovirology.metaverse.fr/oli-en.html)<br>(1/5)              | ![photo]({attach}sagrotan_photo_8.png)        | We see that Sagrotan successfully identified the OLI virus                    |
-| [OLI2](https://retrovirology.metaverse.fr/oli2-en.html)<br>(1/5)            | ![photo]({attach}sagrotan_photo_9.png)        | We see that Sagrotan detected 7 signs of viral infection in OLI2              |
-| [EICAR](https://retrovirology.metaverse.fr/eicar-en.html)<br>(3/5)          | ![photo]({attach}sagrotan_photo_11.png)       | Sagrotan said the boot sector is not executable and contains no viruses       |
+| Virus<p>Difficulty                        | Analysis                                                     | Result                                                                        |
+|:-----------------------------------------:|:------------------------------------------------------------:|:-----------------------------------------------------------------------------:|
+| [Ghost](/ghost-en.html)<br>(1/5)          | <img src="{attach}sagrotan_photo_3.png" width="60%"/>        | We see that Sagrotan successfully identified the Ghost virus                  |
+| [Signum BPL](/signum-en.html)<br>(1/5)    | <img src="{attach}sagrotan_photo_4.png" width="60%"/>        | We see that Sagrotan successfully identified the Signum virus                 |
+| [Macumba 3.3](/macumba3-en.html)<br>(4/5) | <img src="{attach}sagrotan_photo_5.png" width="60%"/>        | Sagrotan reported that it found no signs of a virus in the disk's boot sector |
+| [Carpe Diem](/carpediem-en.html)<br>(2/5) | <img src="{attach}sagrotan_photo_6.png" width="60%"/>        | We see that Sagrotan detected 9 signs of a viral infection                    |
+| [OLI](/oli-en.html)<br>(1/5)              | <img src="{attach}sagrotan_photo_8.png" width="60%"/>        | We see that Sagrotan successfully identified the OLI virus                    |
+| [OLI2](/oli2-en.html)<br>(1/5)            | <img src="{attach}sagrotan_photo_9.png" width="60%"/>        | We see that Sagrotan detected 7 signs of viral infection in OLI2              |
+| [EICAR](/eicar-en.html)<br>(3/5)          | <img src="{attach}sagrotan_photo_11.png" width="60%"/>       | Sagrotan said the boot sector is not executable and contains no viruses       |
 
 ### Task 2: Recognize boot viruses loaded into memory
 
@@ -245,8 +245,8 @@ Sagrotan does not have a resident TOS accessory that could detect viruses when S
 
 In the following table we have summarized the task completion results:
 
-| Task | Result |
-| :---------------------------------------------------------------- | :------: |
+| Task                                                              | Result   |
+|-------------------------------------------------------------------|:--------:|
 | Recognize boot viruses not loaded into memory                     |   4/7    |
 | Recognize boot viruses loaded into memory                         |  3.5/7   |
 | Recognize a file virus                                            |  0.5/1   |
