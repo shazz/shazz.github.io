@@ -38,19 +38,19 @@ To test a floppy disk with Boot Protector, follow these steps:
 * Insert the test floppy into drive A:
 * Click on the floppy disk image labeled A
 
-![photo]({attach}bp2_photo_1.png)
+<img src="{attach}bp2_photo_1.png" width="100%"/> 
 
 * Then the boot sector details and the analysis result will appear
 
 | Virus<p>Difficulty                      | Analysis                                            | Result                                                                         |
 |:---------------------------------------:|:---------------------------------------------------:|:------------------------------------------------------------------------------:|
-| [Ghost](/ghost-en.html) (1/5)           | <img src="{attach}bp2_photo_2.png" width="60%"/>    | Boot Protector II correctly recognized the Ghost virus                         |
-| [Signum BPL](/signum-en.html) (1/5)     | <img src="{attach}bp2_photo_3.png" width="60%"/>    | Boot Protector II correctly recognized the Signum BPL virus                    |
-| [Macumba 3.3](/macumba3-en.html) (4/5)  | <img src="{attach}bp2_photo_4.png" width="60%"/>    | Boot Protector II said this is an unknown executable boot sector               |
-| [Carpe Diem](/carpediem-en.html) (2/5)  | <img src="{attach}bp2_photo_5.png" width="60%"/>    | Boot Protector II said this is an unknown executable boot sector. (See NOTE 1) |
-| [OLI](/oli-en.html)      (1/5)          | <img src="{attach}bp2_photo_6.png" width="60%"/>    | Boot Protector II correctly recognized the OLI virus                           |
-| [OLI2](/oli2-en.html)     (1/5)         | <img src="{attach}bp2_photo_7.png" width="60%"/>    | Boot Protector II said this is an unknown executable boot sector               |
-| [EICAR](/eicar-en.html)   (3/5)         | <img src="{attach}bp2_photo_8.png" width="60%"/>    | Boot Protector II said this is an unknown non-executable boot sector           |
+| [Ghost](/ghost-en.html) (1/5)           | <img src="{attach}bp2_photo_2.png" width="100%"/>   | Boot Protector II correctly recognized the Ghost virus                         |
+| [Signum BPL](/signum-en.html) (1/5)     | <img src="{attach}bp2_photo_3.png" width="100%"/>   | Boot Protector II correctly recognized the Signum BPL virus                    |
+| [Macumba 3.3](/macumba3-en.html) (4/5)  | <img src="{attach}bp2_photo_4.png" width="100%"/>   | Boot Protector II said this is an unknown executable boot sector               |
+| [Carpe Diem](/carpediem-en.html) (2/5)  | <img src="{attach}bp2_photo_5.png" width="100%"/>   | Boot Protector II said this is an unknown executable boot sector. (See NOTE 1) |
+| [OLI](/oli-en.html)      (1/5)          | <img src="{attach}bp2_photo_6.png" width="100%"/>   | Boot Protector II correctly recognized the OLI virus                           |
+| [OLI2](/oli2-en.html)     (1/5)         | <img src="{attach}bp2_photo_7.png" width="100%"/>   | Boot Protector II said this is an unknown executable boot sector               |
+| [EICAR](/eicar-en.html)   (3/5)         | <img src="{attach}bp2_photo_8.png" width="100%"/>   | Boot Protector II said this is an unknown non-executable boot sector           |
 
 NOTE 1: For tests we use the Fixed version of Carpe Diem to check how antiviruses will react to an unknown virus. If this was the original Carpe Diem then Boot Protector II would detect it.
 
@@ -64,7 +64,7 @@ NOTE 1: For tests we use the Fixed version of Carpe Diem to check how antiviruse
 
 Note that if a virus is already in memory or some vectors are attached, Boot Protector II won't load:
 
-<img src="{attach}bp2_photo_0.png" width="640"/> 
+<img src="{attach}bp2_photo_0.png" width="100%"/> 
 
 #### One of the most common viruses: Ghost
 
@@ -116,7 +116,7 @@ Boot Protector II cannot restore the boot sector
 
 Now when booting from this disk you will see this:
 
-![photo]({attach}bp2_photo_9.png)
+<img src="{attach}bp2_photo_9.png" width="100%"/> 
 
 Unfortunately the vaccine didn't help me and the virus overwrote the boot sector!
 

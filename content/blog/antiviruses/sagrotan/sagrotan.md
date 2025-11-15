@@ -21,7 +21,7 @@ Tags: Antivirus
 * *Other known versions*: 4.03, 4.06, 4.10, 4.12, 4.14, 4.17
 * *License*: Freeware
 
-![photo]({attach}sagrotan_photo_0.png)
+<img src="{attach}sagrotan_photo_0.png" width="100%"/> 
 
 ### Recognized Viruses:
 
@@ -29,7 +29,7 @@ Tags: Antivirus
 * **File Viruses**: None
 * **Others**: N/A
 
-![photo]({attach}sagrotan_photo_1.png)
+<img src="{attach}sagrotan_photo_1.png" width="100%"/> 
 
 ## Tasks
 
@@ -46,19 +46,19 @@ To test a floppy disk with Sagrotan, follow these steps:
 * Select the menu action `Bootsektor prüfen <P>` (Check boot sector) to test the boot sector
 * Click Ok to confirm the action
 
-![photo]({attach}sagrotan_photo_2.png)
+<img src="{attach}sagrotan_photo_2.png" width="100%"/> 
 
 * Then the boot sector details and the analysis result will appear
 
 | Virus<p>Difficulty                        | Analysis                                                     | Result                                                                        |
 |:-----------------------------------------:|:------------------------------------------------------------:|:-----------------------------------------------------------------------------:|
-| [Ghost](/ghost-en.html)<br>(1/5)          | <img src="{attach}sagrotan_photo_3.png" width="60%"/>        | We see that Sagrotan successfully identified the Ghost virus                  |
-| [Signum BPL](/signum-en.html)<br>(1/5)    | <img src="{attach}sagrotan_photo_4.png" width="60%"/>        | We see that Sagrotan successfully identified the Signum virus                 |
-| [Macumba 3.3](/macumba3-en.html)<br>(4/5) | <img src="{attach}sagrotan_photo_5.png" width="60%"/>        | Sagrotan reported that it found no signs of a virus in the disk's boot sector |
-| [Carpe Diem](/carpediem-en.html)<br>(2/5) | <img src="{attach}sagrotan_photo_6.png" width="60%"/>        | We see that Sagrotan detected 9 signs of a viral infection                    |
-| [OLI](/oli-en.html)<br>(1/5)              | <img src="{attach}sagrotan_photo_8.png" width="60%"/>        | We see that Sagrotan successfully identified the OLI virus                    |
-| [OLI2](/oli2-en.html)<br>(1/5)            | <img src="{attach}sagrotan_photo_9.png" width="60%"/>        | We see that Sagrotan detected 7 signs of viral infection in OLI2              |
-| [EICAR](/eicar-en.html)<br>(3/5)          | <img src="{attach}sagrotan_photo_11.png" width="60%"/>       | Sagrotan said the boot sector is not executable and contains no viruses       |
+| [Ghost](/ghost-en.html)<br>(1/5)          | <img src="{attach}sagrotan_photo_3.png" width="100%"/>       | We see that Sagrotan successfully identified the Ghost virus                  |
+| [Signum BPL](/signum-en.html)<br>(1/5)    | <img src="{attach}sagrotan_photo_4.png" width="100%"/>       | We see that Sagrotan successfully identified the Signum virus                 |
+| [Macumba 3.3](/macumba3-en.html)<br>(4/5) | <img src="{attach}sagrotan_photo_5.png" width="100%"/>       | Sagrotan reported that it found no signs of a virus in the disk's boot sector |
+| [Carpe Diem](/carpediem-en.html)<br>(2/5) | <img src="{attach}sagrotan_photo_6.png" width="100%"/>       | We see that Sagrotan detected 9 signs of a viral infection                    |
+| [OLI](/oli-en.html)<br>(1/5)              | <img src="{attach}sagrotan_photo_8.png" width="100%"/>       | We see that Sagrotan successfully identified the OLI virus                    |
+| [OLI2](/oli2-en.html)<br>(1/5)            | <img src="{attach}sagrotan_photo_9.png" width="100%"/>       | We see that Sagrotan detected 7 signs of viral infection in OLI2              |
+| [EICAR](/eicar-en.html)<br>(3/5)          | <img src="{attach}sagrotan_photo_11.png" width="100%"/>      | Sagrotan said the boot sector is not executable and contains no viruses       |
 
 ### Task 2: Recognize boot viruses loaded into memory
 
@@ -156,7 +156,7 @@ Sagrotan reported that the boot sector is not executable and is safe. This is no
 * Select the file you want to check
 * Click Ok to confirm the action
 
-![photo]({attach}sagrotan_photo_7.png)
+<img src="{attach}sagrotan_photo_7.png" width="100%"/> 
 
 #### First file virus: Milzbrand
 
@@ -164,7 +164,7 @@ Sagrotan reported that the program has a second program but that it is a virus -
 
 But! Sagrotan will still recognize a virus if the program has been modified in some way.
 
-![photo]({attach}sagrotan_photo_12.png)
+<img src="{attach}sagrotan_photo_12.png" width="100%"/> 
 
 ### Task 4: Restore a damaged boot sector
 
@@ -205,7 +205,7 @@ Now upon boot we will see the message "Kein Virus im Bootsektor". Let's try to r
 
 We will see the message "Kein Virus im Bootsektor" :( ... Sagrotan could not defeat the virus and the virus will overwrite your boot sector!
 
-![photo]({attach}sagrotan_photo_10.png)
+<img src="{attach}sagrotan_photo_10.png" width="100%"/> 
 
 ### Task 6: Analyze a suspicious boot sector
 

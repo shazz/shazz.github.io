@@ -26,7 +26,7 @@ Tags: Antivirus
 * **File Viruses**: None
 * **Others**: N/A
 
-![photo]({attach}toxis_photo_0.png)
+<img src="{attach}toxis_photo_0.png" width="100%"/> 
 
 ## Tasks
 
@@ -44,19 +44,19 @@ To test a floppy disk with Toxis, follow these steps:
 * Select the menu action `prüfen` to test the boot sector
 * Click Ok to confirm the action
 
-![photo]({attach}toxis_photo_1.png)
+ <img src="{attach}toxis_photo_1.png" width="100%"/>
 
 * Then the boot sector details and the analysis result will appear
 
 | Virus<p>Difficulty                          | Analysis                                                         | Result                                                                                        |
 |:-------------------------------------------:|:----------------------------------------------------------------:|:---------------------------------------------------------------------------------------------:|
-| [Ghost](/ghost-en.html)<br>(1/5)            | <img src="{attach}toxis_photo_3.png" width="80%"/>               | We see that Toxis successfully identified the Ghost virus                                     |
-| [Signum BPL](/signum-en.html)<br>(1/5)      | <img src="{attach}toxis_photo_4.png" width="80%"/>               | We see that Toxis successfully identified the Signum virus                                    |
-| [Macumba 3.3](/macumba3-en.html)<br>(4/5)   | <img src="{attach}toxis_photo_5.png" width="80%"/>               | Toxis reported that it found no signs of a virus in the disk's boot sector                    |
-| [Carpe Diem](/carpediem-en.html)<br>(2/5)   | <img src="{attach}toxis_photo_6.png" width="80%"/>               | We see that Toxis detected 9 signs of a viral infection                                       |
-| [OLI](/oli-en.html)<br>(1/5)                | <img src="{attach}toxis_photo_7.png" width="80%"/>               | We see that Toxis successfully identified the OLI virus                                       |
-| [OLI2](/oli2-en.html)<br>(1/5)              | <img src="{attach}toxis_photo_8.png" width="80%"/>               | We see that Toxis detected 7 signs of viral infection in OLI2                                 |
-| [EICAR](/eicar-en.html)<br>(3/5)            | <img src="{attach}toxis_photo_9.png" width="80%"/>               | Toxis reported that during initialization the boot sector starts as a reset-resistant program |
+| [Ghost](/ghost-en.html)<br>(1/5)            | <img src="{attach}toxis_photo_3.png" width="100%"/>               | We see that Toxis successfully identified the Ghost virus                                     |
+| [Signum BPL](/signum-en.html)<br>(1/5)      | <img src="{attach}toxis_photo_4.png" width="100%"/>               | We see that Toxis successfully identified the Signum virus                                    |
+| [Macumba 3.3](/macumba3-en.html)<br>(4/5)   | <img src="{attach}toxis_photo_5.png" width="100%"/>               | Toxis reported that it found no signs of a virus in the disk's boot sector                    |
+| [Carpe Diem](/carpediem-en.html)<br>(2/5)   | <img src="{attach}toxis_photo_6.png" width="100%"/>               | We see that Toxis detected 9 signs of a viral infection                                       |
+| [OLI](/oli-en.html)<br>(1/5)                | <img src="{attach}toxis_photo_7.png" width="100%"/>               | We see that Toxis successfully identified the OLI virus                                       |
+| [OLI2](/oli2-en.html)<br>(1/5)              | <img src="{attach}toxis_photo_8.png" width="100%"/>               | We see that Toxis detected 7 signs of viral infection in OLI2                                 |
+| [EICAR](/eicar-en.html)<br>(3/5)            | <img src="{attach}toxis_photo_9.png" width="100%"/>               | Toxis reported that during initialization the boot sector starts as a reset-resistant program |
 
 ### Task 2: Recognize boot viruses loaded into memory
 
@@ -147,13 +147,13 @@ Test results:
 * Select the file you want to check
 * Click Ok to confirm the action
 
-![photo]({attach}toxis_photo_10.png)
+<img src="{attach}toxis_photo_10.png" width="100%"/> 
 
 #### First file virus: Milzbrand
 
 Toxis reported that the file was modified by a virus!
 
-![photo]({attach}toxis_photo_11.png)
+<img src="{attach}toxis_photo_11.png" width="100%"/> 
 
 ### Task 4: Restore a damaged boot sector
 
@@ -194,7 +194,7 @@ Now upon boot we will see the message "Kein Virus im Bootsektor". Let's try to r
 
 We will see the message "Kein Virus im Bootsektor" :( ... Toxis could not defeat the virus and the virus will overwrite your boot sector! Well, basically the same as with Sagrotan.
 
-![photo]({attach}toxis_photo_2.png)
+<img src="{attach}toxis_photo_2.png" width="100%"/> 
 
 ### Task 6: Analyze a suspicious boot sector
 

@@ -18,7 +18,7 @@ Tags: Antivirus
 * *Release Date*: April 1991
 * *Recognizes*: 35 bootsectors
 
-![photo]({attach}vkiller_photo_0.png)
+<img src="{attach}vkiller_photo_0.png" width="100%"/> 
 
 ### Recognized Viruses:
 
@@ -37,19 +37,19 @@ To test a floppy disk with Vkiller, follow these steps:
 * Insert the test floppy into drive A:
 * Click on the floppy disk image labeled Drive A below
 
-![photo]({attach}vkiller_photo_1.png)
+<img src="{attach}vkiller_photo_1.png" width="100%"/> 
 
 * Then the boot sector details and the analysis result will appear
 
 | Virus<p>Difficulty                      | Analysis                                               | Result                                                                         |
 |:---------------------------------------:|:------------------------------------------------------:|:------------------------------------------------------------------------------:|
-| [Ghost](/ghost-en.html)<p>(1/5)         | <img src="{attach}vkiller_photo_2.png" width="60%"/>   | Vkiller correctly recognized the Ghost virus                                   |
-| [Signum BPL](/signum-en.html)<p>(1/5)   | <img src="{attach}vkiller_photo_3.png" width="60%"/>   | Vkiller correctly recognized the Signum BPL virus                              |
-| [Macumba 3.3](/macumba3-en.html)<p>(4/5)| <img src="{attach}vkiller_photo_4.png" width="60%"/>   | Vkiller said this is a very suspicious boot sector                             |
-| [Carpe Diem](/carpediem-en.html)<p>(2/5)| <img src="{attach}vkiller_photo_5.png" width="60%"/>   | Vkiller said this is a very suspicious boot sector.                            |
-| [OLI](/oli-en.html)<p>(1/5)             | <img src="{attach}vkiller_photo_6.png" width="60%"/>   | Vkiller correctly recognized the OLI virus                                     |
-| [OLI2](/oli2-en.html)<p>(1/5)           | <img src="{attach}vkiller_photo_7.png" width="60%"/>   | Vkiller said this is a very suspicious boot sector                             |
-| [EICAR](/eicar-en.html)<p>(3/5)         | <img src="{attach}vkiller_photo_8.png" width="60%"/>   | Vkiller said this is a safe disk                                               |
+| [Ghost](/ghost-en.html)<p>(1/5)         | <img src="{attach}vkiller_photo_2.png" width="100%"/>  | Vkiller correctly recognized the Ghost virus                                   |
+| [Signum BPL](/signum-en.html)<p>(1/5)   | <img src="{attach}vkiller_photo_3.png" width="100%"/>  | Vkiller correctly recognized the Signum BPL virus                              |
+| [Macumba 3.3](/macumba3-en.html)<p>(4/5)| <img src="{attach}vkiller_photo_4.png" width="100%"/>  | Vkiller said this is a very suspicious boot sector                             |
+| [Carpe Diem](/carpediem-en.html)<p>(2/5)| <img src="{attach}vkiller_photo_5.png" width="100%"/>  | Vkiller said this is a very suspicious boot sector.                            |
+| [OLI](/oli-en.html)<p>(1/5)             | <img src="{attach}vkiller_photo_6.png" width="100%"/>  | Vkiller correctly recognized the OLI virus                                     |
+| [OLI2](/oli2-en.html)<p>(1/5)           | <img src="{attach}vkiller_photo_7.png" width="100%"/>  | Vkiller said this is a very suspicious boot sector                             |
+| [EICAR](/eicar-en.html)<p>(3/5)         | <img src="{attach}vkiller_photo_8.png" width="100%"/>  | Vkiller said this is a safe disk                                               |
 
 ### Task 2: Recognize boot viruses loaded into memory
 
@@ -110,7 +110,7 @@ Vkiller cannot restore a saved boot sector but can restore the BPB... I won't gi
 
 Now when booting from this disk you will see this:
 
-![photo]({attach}vkiller_photo_9.png)
+<img src="{attach}vkiller_photo_9.png" width="100%"/> 
 
 The vaccine helped me and when the virus tried to get onto the disk, the vaccine beeped and the screen blinked! The virus still won and overwrote the boot sector... But it miscalculated and I already know that there's a virus on the disk because the vaccine warned me about it.
 

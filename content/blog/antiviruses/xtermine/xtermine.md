@@ -29,7 +29,7 @@ Tags: Antivirus
 - Note1: Xtermine can import The Killer, Exorcist and some Sagrotan (with some restrictions) bootsectors libraries
 - Note2: Xtermine database identifies Raster & Text as a virus (which is not) and Sagrotan 4.18 as a vaccine (which is not at all but a sneaky virus)
 
-![photo]({attach}xtermine_photo_0.png)
+<img src="{attach}xtermine_photo_0.png" width="100%"/> 
 
 ### Challenge 1: Recognize bootsector viruses not loaded in memory
 
@@ -47,13 +47,13 @@ To test a floppy disk using Xtermine, here are the following actions:
 
 | Virus<p>(difficulty)                     | Analysis                                                  | Result                                                                                        |
 |:----------------------------------------:|:---------------------------------------------------------:|:---------------------------------------------------------------------------------------------:|
-| [Ghost](/ghost-en.html)<br>(1/5)         | <img src="{attach}xtermine_photo_1.png" width="60%"/>      | Xtermine successfully identified the Ghost virus                                              |
-| [Signum BPL](/signum-en.html)<br>(1/5)   | <img src="{attach}xtermine_photo_2.png" width="60%"/>      | Xtermine successfully identified the Signum BPL virus                                         |
-| [Macumba 3.3](/macumba3-en.html)<br>(4/5)| <img src="{attach}xtermine_photo_3.png" width="60%"/>      | Xtermine said it is an unknown executable bootsector with 0 signs of viral infection          |
-| [Carpe Diem](/carpediem-en.html)<br>(2/5)| <img src="{attach}xtermine_photo_4.png" width="60%"/>      | Xtermine said it is an unknown executable bootsector but it has 3 signs of viral infection    |
-| [OLI](/oli-en.html)<br>(1/5)             | <img src="{attach}xtermine_photo_5.png" width="60%"/>      | Xtermine successfully identified the OLI virus                                                |
-| [OLI2](/oli2-en.html)<br>(1/5)           | <img src="{attach}xtermine_photo_6.png" width="60%"/>      | Xtermine reported that it detected only 1 sign of viral infection                             |
-| [EICAR](/eicar-en.html)<br>(3/5)         | <img src="{attach}xtermine_photo_7.png" width="60%"/>      | Xtermine said it is an unknown non-executable bootsector with 0 signs of viral infection      |
+| [Ghost](/ghost-en.html)<br>(1/5)         | <img src="{attach}xtermine_photo_1.png" width="10%"/>     | Xtermine successfully identified the Ghost virus                                              |
+| [Signum BPL](/signum-en.html)<br>(1/5)   | <img src="{attach}xtermine_photo_2.png" width="100%"/>    | Xtermine successfully identified the Signum BPL virus                                         |
+| [Macumba 3.3](/macumba3-en.html)<br>(4/5)| <img src="{attach}xtermine_photo_3.png" width="100%"/>    | Xtermine said it is an unknown executable bootsector with 0 signs of viral infection          |
+| [Carpe Diem](/carpediem-en.html)<br>(2/5)| <img src="{attach}xtermine_photo_4.png" width="100%"/>    | Xtermine said it is an unknown executable bootsector but it has 3 signs of viral infection    |
+| [OLI](/oli-en.html)<br>(1/5)             | <img src="{attach}xtermine_photo_5.png" width="100%"/>    | Xtermine successfully identified the OLI virus                                                |
+| [OLI2](/oli2-en.html)<br>(1/5)           | <img src="{attach}xtermine_photo_6.png" width="100%"/>    | Xtermine reported that it detected only 1 sign of viral infection                             |
+| [EICAR](/eicar-en.html)<br>(3/5)         | <img src="{attach}xtermine_photo_7.png" width="100%"/>    | Xtermine said it is an unknown non-executable bootsector with 0 signs of viral infection      |
 
 ### Challenge 2: Recognize bootsector viruses loaded in memory
 
@@ -65,7 +65,7 @@ However, while stealth viruses are in merory Xtermine:
 
 OLI2 failed detection, Xtermine "thinks" this is a safe TOS formatted disk:
 
-![photo]({attach}xtermine_photo_11.png)
+<img src="{attach}xtermine_photo_11.png" width="100%"/> 
 
 That indicates that Xtermine probably uses `rwabs` to read the bootsector and not lower level access (talking to the FDC directly) to prevent any misdirection.
 
@@ -98,7 +98,7 @@ After you have saved the bootsector to the Xtermine library, you can load it int
 
 Congratulations! You have written your bootsector to the disk!
 
-![photo]({attach}xtermine_photo_9.png)
+<img src="{attach}xtermine_photo_9.png" width="100%"/> 
 
 ### Challenge 5: Vaccine a non executable floppy disk
 
@@ -140,7 +140,7 @@ Xtermine doesn't have any resident TOS Accessory which can detect viruses while 
 
 Before the final results, we would like to thank Christophe, a lot. Christophe took the time to find his old floppy disks, test them in order to provide us a fully registered version of Xtermine. We are extremelly grateful. So again, Christophe, thanks a lot!
 
-![photo]({attach}xtermine_photo_12.png)
+<img src="{attach}xtermine_photo_12.png" width="100%"/> 
 
 
 In the following table, we summarized the challenges results:
