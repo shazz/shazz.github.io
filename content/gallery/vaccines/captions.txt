@@ -64,6 +64,7 @@ oxbow.png: Oxbow
 pdl151.png: PDL 151
 peylow.png: Peylow
 pompey.png: Pompey Pirates
+preservatif.png: Preservatif
 prophecy.png: Prophecy
 pyrotechnics.png: Pyrotechnics
 ragx.png: RAGX
@@ -106,6 +107,5 @@ vkillerfr.png: VKiller French ad
 wild.png: Wild
 wizzcat.png: WizzCat VProtector
 wtp.png: WTP
-zuulprotector.png: Zuul Virus Protector v1.01
 zarko.png: Zarko
-preservatif.png: Preservatif
+zuulprotector.png: Zuul Virus Protector v1.01
