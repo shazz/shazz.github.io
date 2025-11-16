@@ -1,111 +1,111 @@
-42crew.png: 42-Crew
+42crew.png: 42-Crew (*)
 adrenalin.png: Adrenaline UK Virus Protector
 adrenaline.png: Adrenaline antivirus Preventor 
 agraboot.png: Agraboot 2
-animalmine.png: Animal Mine barcode
-antiboot.png: Antiboot
+animalmine.png: Animal Mine barcode (*)
+antiboot.png: Antiboot (*)
 antighost.png: TDT Anti Ghost V4.0 by Altair
-beep.png: antivirus
-boulboot.png: Boulboot
-bsw.png: BSW
-btlemmings.png: British Alliance Lemmings
-bust.png: B.U.S.T
-cid.png: CID
-coder.png: Coder
-cram.png: CRAM
-cresson.png: Cresson
-cst.png: Constellations
-derf.png: KGB derf
-detonators.png: Detonators
-diwa.png: DIWA
-dntanti.png: DNT
-dodgysoft.png: Dodgysoft
-dreamweavers.png: Dream Weavers
+beep.png: Bepp and Flash Antivirus (*)
+boulboot.png: Boulboot (*)
+bsw.png: BSW (*)
+btlemmings.png: British Alliance Lemmings (*)
+bust.png: B.U.S.T (*)
+cid.png: CID (*)
+coder.png: Coder (*)
+cram.png: CRAM (*)
+cresson.png: Cresson (*)
+cst.png: Constellations (*)
+derf.png: KGB derf (*)
+detonators.png: Detonators (*)
+diwa.png: DIWA (*)
+dntanti.png: DNT (*)
+dodgysoft.png: Dodgysoft (*)
+dreamweavers.png: Dream Weavers (*)
 drsatan.png: Dr Satan Memory Virus Protector
-drst.png: Dr S.T.
-dune.png: Dune
+drst.png: Dr S.T. (*)
+dune.png: Dune (*)
 dunekiller.png: Dune Killer v0.2
-duplicator.png: Offbeat Duplicator
-eagles.png: Eagles
-electricity.png: Electricity
+duplicator.png: Offbeat Duplicator (*)
+eagles.png: Eagles (*)
+electricity.png: Electricity (*)
 equinox.png: Equinox
-eternity.png: Eternity
-euroswap.png: Euroswap
+eternity.png: Eternity (*)
+euroswap.png: Euroswap (*)
 exorcist3.png: Exorcist 3
-floppyshop.png: Floppyshop
+floppyshop.png: Floppyshop (*)
 fury.png: Fury
 fuzion.png: Fuzion fullscreen
-fuzionviruskiller.png: Fuzion Virus Killer
-hmd.png: HMD Stranglers
-imagina.png: Imagina
-karl.png: Karl
+fuzionviruskiller.png: Fuzion Virus Killer (*)
+hmd.png: HMD Stranglers (*)
+imagina.png: Imagina (*)
+karl.png: Karl (*)
 ked.png: KED
-kgb.png: KGB
+kgb.png: KGB (*)
 killer.png: Killer Boot 2.08
 killers.png: Killer's Antivirus v3.0
-ktall.png: Kill Them All
-lapd.png: LAPD
-lemmings.png: Lemmings
-leonard.png: Leonard vaccine
+ktall.png: Kill Them All (*)
+lapd.png: LAPD (*)
+lemmings.png: Lemmings (*)
+leonard.png: Leonard vaccine (*)
 madvision.png: Mad Vision Hate Viruses
 medway.png: The Medway Boys Protector IV
 mikou.png: Mikou
 morgan.png: Morgan Explorer
-mph.png: MPH
-mystic.png: Mystic
-newmode.png: New Mode
+mph.png: MPH (*)
+mystic.png: Mystic (*)
+newmode.png: New Mode (*)
 nexus.png: Nexus Test antivirus
-npg.png: NPG
+npg.png: NPG (*)
 odie.png: Odie
 orion.png: Orion
 overkill.png: Overkill
-ovr.png: Overlanders
-oxbow.png: Oxbow
-pdl151.png: PDL 151
-peylow.png: Peylow
+ovr.png: Overlanders (*)
+oxbow.png: Oxbow (*)
+pdl151.png: PDL 151 (*)
+peylow.png: Peylow (*)
 pompey.png: Pompey Pirates
-preservatif.png: Preservatif
-prophecy.png: Prophecy
-pyrotechnics.png: Pyrotechnics
-ragx.png: RAGX
-rebel.png: Rebel
-revolution.png: Revolution
+preservatif.png: Preservatif (*)
+prophecy.png: Prophecy (*)
+pyrotechnics.png: Pyrotechnics (*)
+ragx.png: RAGX (*)
+rebel.png: Rebel (*)
+revolution.png: Revolution (*)
 rippedoff.png: Ripped Off
-saddam.png: Saddam
+saddam.png: Saddam (*)
 santorin.png: Cyclades Vaccine
-sentry2.png: Sentry 2
-shadow.png: Shadow
-silverbullet.png: Silver Bullet
-sirboot.png: Sirboot
-smile.png: Smile
+sentry2.png: Sentry 2 (*)
+shadow.png: Shadow (*)
+silverbullet.png: Silver Bullet (*)
+sirboot.png: Sirboot (*)
+smile.png: Smile (*)
 speedboot.png: Speedboot
 speedkill.png: Speedkill
-stax.png: STAX
-striker.png: Pulsion Striker
-syndicate.png: Syndicate WtP
-tcc.png: TCC
+stax.png: STAX (*)
+striker.png: Pulsion Striker (*)
+syndicate.png: Syndicate WtP (*)
+tcc.png: TCC (*)
 terminator.png: Megaguru Terminator
-terminator1.png: Terminator 1
-tfcramprotector2.png: TFC RAM Protector 2
-thelame.png: The Lame vaccine
-tmbp.png: TMB_P
+terminator1.png: Terminator 1 (*)
+tfcramprotector2.png: TFC RAM Protector 2 (*)
+thelame.png: The Lame vaccine (*)
+tmbp.png: TMB_P (*)
 trippleh.png: Tripple H Virus Killer
-tronicpdl.png: Tronic PDL
-tsb.png: TSB
-tsccscy.png: tSCc by Scy
-tsg.png: TSG
-tuc.png: TUC
-turbobooster.png: Turbo Booster
-tvk.png: The Virus Killer
-ulm.png: ULM vaccine
-ultimate.png: Ultimate
-unreal.png: Unreal
+tronicpdl.png: Tronic PDL (*)
+tsb.png: TSB (*)
+tsccscy.png: tSCc by Scy (*)
+tsg.png: TSG (*)
+tuc.png: TUC (*)
+turbobooster.png: Turbo Booster (*)
+tvk.png: The Virus Killer (*)
+ulm.png: ULM vaccine (*)
+ultimate.png: Ultimate (*)
+unreal.png: Unreal (*)
 vaccingillus.png: Vaccin-Gillus
-virusfree.png: VirusFree
+virusfree.png: VirusFree (*)
 viruskicker.png: Jedi / Sector one virus kicker published in STMAGICIEL in 1991
-vkillerfr.png: VKiller French ad 
-wild.png: Wild
+vkillerfr.png: VKiller French ad (*)
+wild.png: Wild (*)
 wizzcat.png: WizzCat VProtector
-wtp.png: WTP
-zarko.png: Zarko
+wtp.png: WTP (*)
+zarko.png: Zarko (*)
 zuulprotector.png: Zuul Virus Protector v1.01

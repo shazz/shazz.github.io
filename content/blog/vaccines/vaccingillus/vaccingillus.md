@@ -25,7 +25,7 @@ Tags: Vaccine
 
 ### Description
 
-If Vaccin-gillus wqas advertised as a vaccine, even if famous French ST magazine, that's in fact nothing less than a virus.... It has absolutely no detection capabilities and reused many parts of the famous Ghost virus only changing the symptoms and adding a buggy raster effect at load. As a good old nasty virus, it replicates on any bootsector and stay resident.
+If Vaccin-gillus was advertised as a vaccine, even if famous French ST magazine, that's in fact nothing less than a virus.... It has absolutely no detection capabilities and reused many parts of the famous Ghost virus only changing the symptoms and adding a buggy raster effect at load. As a good old nasty virus, it replicates on any bootsector and stay resident.
 It is to noticed that the author added a checksum in the code to avoid "ripping" and simple message modification that would crash the bootsector.
 
 <img src="{attach}vaccingillus_photo_0.png" width="45%"/>
