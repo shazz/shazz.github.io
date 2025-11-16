@@ -16,7 +16,7 @@ Tags: Vaccine
 
 - *Author*: Trojan and Wurzel from the Medway Boys
 - *Type*: bootsector
-- *Subtype*: ?
+- *Subtype*: Memory checker
 - *Size*: 480 bytes
 - *Resident*: no
  - *Memory resistant*: no

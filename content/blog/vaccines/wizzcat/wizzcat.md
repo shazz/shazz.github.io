@@ -16,7 +16,7 @@ Tags: Vaccine
 
 - *Author*: Wizzcat from Delta Force, 1990-10-31
 - *Type*: bootsector
-- *Subtype*: ?
+- *Subtype*: Memory checker
 - *Size*: 370 bytes
 - *Resident*: no
  - *Memory resistant*: no 

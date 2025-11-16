@@ -16,7 +16,7 @@ Tags: Vaccine
 
 - *Author*: IKI of ESC
 - *Type*: bootsector
-- *Subtype*: ?
+- *Subtype*: Resident guardian
 - *Size*: 478 bytes
 - *Resident*: yes 
 - *Memory resistant*: yes

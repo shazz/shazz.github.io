@@ -16,7 +16,7 @@ Tags: Vaccine
 
 - *Author*: Agrajag
 - *Type*: bootsector
-- *Subtype*: ?
+- *Subtype*: Memory checker and resident guardian
 - *Size*: 441 bytes
 - *Resident*: yes
 - *Self-replicating*: no

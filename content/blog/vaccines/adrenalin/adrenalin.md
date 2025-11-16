@@ -16,7 +16,7 @@ Tags: Vaccine
 
 - *Author*: probably Mookie from Adrenalin UK
 - *Type*: bootsector
-- *Subtype*: ?
+- *Subtype*: Memory checker
 - *Size*: 441 bytes
 - *Resident*: no
  - *Memory resistant*: no

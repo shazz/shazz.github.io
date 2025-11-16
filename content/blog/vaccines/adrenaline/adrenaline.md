@@ -16,7 +16,7 @@ Tags: Vaccine
 
 - *Author*: FirSTE & Dr Computer
 - *Type*: bootsector
-- *Subtype*: ?
+- *Subtype*: Memory checker and resident guardian
 - *Size*: 441 bytes
 - *Resident*: yes (0x140)
 - *Self-replicating*: yes (on non-executable bootsectors)

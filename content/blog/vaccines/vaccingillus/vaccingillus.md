@@ -16,7 +16,7 @@ Tags: Vaccine
 
 - *Author*: Gillus Sauvaire
 - *Type*: bootsector
-- *Subtype*: ?
+- *Subtype*: Resident guardian
 - *Size*: 462 bytes
 - *Resident*: yes
 - *Self-replicating*: yes

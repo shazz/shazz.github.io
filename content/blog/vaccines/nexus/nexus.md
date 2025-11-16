@@ -16,7 +16,7 @@ Tags: Vaccine
 
 - *Author*: ?
 - *Type*: bootsector
-- *Subtype*: ?
+- *Subtype*: Virus-free boot message
 - *Size*: 100 bytes
 - *Resident*: no
  - *Memory resistant*: no 

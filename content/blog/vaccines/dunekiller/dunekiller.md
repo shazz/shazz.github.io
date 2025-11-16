@@ -16,7 +16,7 @@ Tags: Vaccine
 
 - *Author*: Alrik from Dune
 - *Type*: bootsector
-- *Subtype*: ?
+- *Subtype*: Memory checker
 - *Size*: 336 bytes
 - *Resident*: yes
 - *Self-replicating*: yes

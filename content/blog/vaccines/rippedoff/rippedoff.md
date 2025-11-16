@@ -16,7 +16,7 @@ Tags: Vaccine
 
 - *Author*: Ripped Off team
 - *Type*: bootsector
-- *Subtype*: ?
+- *Subtype*: Memory checker
 - *Size*: 330 bytes
 - *Resident*: no
  - *Memory resistant*: no 

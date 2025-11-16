@@ -16,7 +16,7 @@ Tags: Vaccine
 
 - *Author*: Morgan Roussel aka Morgan / Explorers (then Dune and Fantasy) in 1992
 - *Type*: bootsector
-- *Subtype*: ?
+- *Subtype*: Memory checker
 - *Size*: 480 bytes
 - *Resident*: no
  - *Memory resistant*: no 
