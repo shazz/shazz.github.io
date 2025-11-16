@@ -58,7 +58,7 @@ nexus.png: Nexus Test antivirus
 npg.png: NPG (*)
 odie.png: Odie
 orion.png: Orion
-overkill.png: Overkill
+overkillvirenschutz.png: Overkill Virenschutz
 ovr.png: Overlanders (*)
 oxbow.png: Oxbow (*)
 pdl151.png: PDL 151 (*)
@@ -80,7 +80,7 @@ sirboot.png: Sirboot (*)
 smile.png: Smile (*)
 speedboot.png: Speedboot
 speedkill.png: Speedkill
-stax.png: STAX (*)
+stax.png: STAX Boot Saver
 striker.png: Pulsion Striker (*)
 syndicate.png: Syndicate WtP (*)
 tcc.png: TCC (*)
@@ -95,8 +95,10 @@ tsb.png: TSB (*)
 tsccscy.png: tSCc by Scy (*)
 tsg.png: TSG (*)
 tuc.png: TUC (*)
+incoders.png: Incoders (*)
 turbobooster.png: Turbo Booster (*)
 tvk.png: The Virus Killer (*)
+tvi.png: TVI (*)
 ulm.png: ULM vaccine (*)
 ultimate.png: Ultimate (*)
 unreal.png: Unreal (*)

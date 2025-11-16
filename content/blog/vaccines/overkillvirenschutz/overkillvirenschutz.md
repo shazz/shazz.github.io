@@ -1,5 +1,5 @@
 Title: Overkill Virenschutz
-Slug: overkill
+Slug: overkillvirenschutz
 Name: Overkill Virenschutz
 Date: 2025-11-05 09:05
 Location: Montreal / Canada
@@ -8,7 +8,7 @@ Lang: en
 Author: shazz
 status: hidden
 summary: This article is about the Overkill Virenschutz
-image: {filename}../../../gallery/vaccines/overkill.png
+image: {filename}../../../gallery/vaccines/overkillvirenschutz.png
 Tags: Vaccine
 
 
@@ -28,7 +28,7 @@ Tags: Vaccine
 
 The Overkill Virenschutz vaccine is shipped with the Overkill antivirus. That's a memory checker at boot looking at valid undocument resident programs (magic word, address and checksum) and valid reset vectors. Despite the fact it is rare for a vaccine to check only for valid resident vectors and programs, it won't detect more than resident programs.
 
-<img src="{attach}overkill_photo_0.png" width="45%"/>&nbsp;<img src="{attach}overkill_photo_1.png" width="45%"/>
+<img src="{attach}overkillvirenschutz_photo_0.png" width="45%"/>&nbsp;<img src="{attach}overkillvirenschutz_photo_1.png" width="45%"/>
 
 
 ## Detection capabilities
@@ -59,7 +59,7 @@ The Overkill Virenschutz vaccine is shipped with the Overkill antivirus. That's 
 
 The Overkill 1.96B antivirus is shipped with this version of the vaccine:
 
-<img src="{attach}overkill_photo_2.png" width="45%"/>&nbsp;<img src="{attach}overkill_photo_3.png" width="45%"/>
+<img src="{attach}overkillvirenschutz_photo_2.png" width="45%"/>&nbsp;<img src="{attach}overkillvirenschutz_photo_3.png" width="45%"/>
 
 ## Conclusion
 
