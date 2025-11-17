@@ -35,7 +35,7 @@ exorcist3.png: Exorcist 3
 floppyshop.png: Floppyshop (*)
 fury.png: Fury
 fuzion.png: Fuzion fullscreen
-fuzionviruskiller.png: Fuzion Virus Killer (*)
+fuzionviruskiller.png: Fuzion Virus Killer 
 hmd.png: HMD Stranglers (*)
 imagina.png: Imagina (*)
 karl.png: Karl (*)
