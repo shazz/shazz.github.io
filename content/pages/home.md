@@ -7,11 +7,11 @@ Lang: en
 Author: shazz
 save_as: index.html
 
-#### First, welcome!
+### First, welcome!
 
-You’ve arrived at the virtual doors of a one-of-a-kind museum: Retrovirology: The Atari ST Malware Museum. 
+You’ve arrived at the virtual doors of a one-of-a-kind museum: Retro-Virology: The Atari ST Malware Museum. 
 
-Modeled after the Internet Archive’s MS‑DOS [Malware Museum](https://archive.org/details/malwaremuseum) built by Mikko Hypponen, Retrovirology brings together the full spectrum of malicious software that once targeted the Atari ST — bootsector viruses, link viruses, trojans, and their counterforces: antiviruses and vaccines — organized into three freely accessible galleries.
+Modeled after the Internet Archive’s MS‑DOS [Malware Museum](https://archive.org/details/malwaremuseum) built by Mikko Hypponen, Retro-Virology brings together the full spectrum of malicious software that once targeted the Atari ST — bootsector viruses, link viruses, trojans, and their counterforces: antiviruses and vaccines — organized into three freely accessible galleries.
 
 In each gallery you’ll find a dedicated room for every specific malware or anti‑malware entry. Each room includes a clear description, curated screenshots, reproducible test notes, and — planned for a later stage — a local sandbox emulation so you can run the software safely and observe its behavior without risk.
 
