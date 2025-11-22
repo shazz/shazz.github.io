@@ -9,4 +9,4 @@ status: hidden
 type: most used antiviruses
 summary: Antivirus Gallery
 gallery: {filename}../gallery/antiviruses{Atari ST Malware Museum}
-save_as: antivirus.html
+save_as: antiviruses_gallery.html

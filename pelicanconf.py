@@ -29,9 +29,9 @@ AUTHOR_FEED_RSS = None
 
 # Blogroll
 MY_LINKS = (
-    ("1. Viruses", "/"),
-    ("2. Antiviruses", "/antivirus.html"),
-    ("3. Vaccines", "/vaccines.html"),
+    ("1. Viruses", "/viruses_gallery.html"),
+    ("2. Antiviruses", "/antiviruses_gallery.html"),
+    ("3. Vaccines", "/vaccines_gallery.html"),
     ("4. Articles", "/posts.html"),
     ("5. Status", "/pages/Status-en.html"),
     ("6. Resources", "/pages/resources-en.html"),

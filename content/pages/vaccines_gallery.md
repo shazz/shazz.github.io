@@ -9,4 +9,4 @@ status: hidden
 type: most used vaccines
 summary: Vaccines Gallery
 gallery: {filename}../gallery/vaccines{Atari ST Malware Museum}
-save_as: vaccines.html
+save_as: vaccines_gallery.html
