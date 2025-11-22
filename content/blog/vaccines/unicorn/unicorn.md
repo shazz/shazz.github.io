@@ -1,34 +1,34 @@
-Title: The InCoders Safe Boot
-Slug: incoders
-Name: The InCoders Safe Boot
-Date: 2025-11-17 19:05
+Title: 
+Slug: unicorn
+Name: 
+Date: 2025-11-05 09:05
 Location: Montreal / Canada
 Category: Atari ST, Vaccine
 Lang: en
 Author: shazz
 status: hidden
-summary: This article is about the InCoders Safe Boot
-image: {filename}../../../gallery/vaccines/incoders.png
+summary: This article is about the unicorn vaccine
+image: {filename}../../../gallery/vaccines/unicorn.png
 Tags: Vaccine
 
 
 ## Basic Information
 
-- *Author*: The InCoders
+- *Author*: 
 - *Type*: bootsector
-- *Subtype*: Memory checker
-- *Size*: 480 bytes
-- *Resident*: no
-- *Self-replicating*: no
-- *Can clean memory*: no
+- *Subtype*: ?
+- *Size*: ? bytes
+- *Resident*: 
+- *Self-replicating*: 
+- *Can clean memory*: 
 - *Special features*: 
-    - Nice rasters effect
+    - ?
 
 ### Description
 
-The InCoders Safe Boot is a simple memory checker vaccine focusing on the visual effects and as a result pretty light concerning virus detection, it only checks if the `RESVECTOR` is empty and if `HDV_BPB` vector is located in the TOS 1.0 or 1.06 address spaces.
+The ...
 
-<img src="{attach}incoders_photo_0.png" width="45%"/>&nbsp;<img src="{attach}incoders_photo_1.png" width="45%"/>
+<img src="{attach}unicorn_photo_0.png" width="45%"/>&nbsp;<img src="{attach}unicorn_photo_1.png" width="45%"/>
 
 
 ## Detection capabilities
@@ -37,8 +37,8 @@ The InCoders Safe Boot is a simple memory checker vaccine focusing on the visual
 |---------------------------------|:-------------------------------------:|
 | Check PHYSTOP memory            | <span style="color:red">No</span>     |
 | Undocumented resident program   | <span style="color:red">No</span>     |
-| Valid reset vector              | <span style="color:green">Yes</span>  |        
-| Non-ROM HDV BPB Vector          | <span style="color:green">Yes</span>  |
+| Valid reset vector              | <span style="color:red">No</span>     |        
+| Non-ROM HDV BPB Vector          | <span style="color:red">No</span>     |
 | Non-ROM HDV RW Vector           | <span style="color:red">No</span>     |
 | Non-ROM HDV BOOT Vector         | <span style="color:red">No</span>     |
 | Non-ROM HDV INIT Vector         | <span style="color:red">No</span>     |
@@ -55,13 +55,9 @@ The InCoders Safe Boot is a simple memory checker vaccine focusing on the visual
 | Catch key viruses               | <span style="color:red">No</span>     |
 | Other threat detection          | <span style="color:red">No</span>     |
 
-### Other versions
-
-<img src="{attach}incoders_photo_2.png" width="45%"/>&nbsp;<img src="{attach}incoders_photo_3.png" width="45%"/>
-
 ## Conclusion
 
-The InCoders Safe Boot is a simple Memory checker, with some nice visual effects but very limited detection capabilities.
+...
 
-A visually stunning 4/10.
+A ...
 

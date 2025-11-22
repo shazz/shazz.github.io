@@ -1,7 +1,7 @@
 Title: Fuzion Virus Killer III
 Slug: fuzionviruskiller
 Name: Fuzion Virus Killer III
-Date: 2025-11-05 09:05
+Date: 2025-11-17 09:05
 Location: Montreal / Canada
 Category: Atari ST, Vaccine
 Lang: en
@@ -23,11 +23,13 @@ Tags: Vaccine
 - *Can clean memory*: Partial (clear `RESVALID` and call TOS Reset vector)
 - *Special features*: 
     - Replicate automatically if the bootsector contains the undocumented resident program magic word
-    - Register access is obfuscated
+    - Registers access is obfuscated
 
 ### Description
 
-The Fuzion Virus Killer III is an interesting hybrid memory checker and resident guardian vaccine, it doesn't do an in-depth memory check but at least check for any reset resistant programs and vectors and can partially clean the memory (but won't trigger a full memory clean). And at the same time, it attaches to `HDV_BPB` to detect any bootsector which contains (in plain text) the undocument resident program magic word and if found, will replicate itself instead while playing a sound.
+The Fuzion Virus Killer III is an interesting hybrid memory checker and resident guardian vaccine, it doesn't do an in-depth memory check but at least check for any reset resistant programs and vectors and can partially clean the memory (but won't trigger a full memory clean). 
+And at the same time, it attaches to `HDV_BPB` to detect any bootsector which contains (in plain text) the undocument resident program magic word and if found, will replicate itself instead while playing a sound. That won't work with latest viruses which are encoded but would work well on early viruses.
+
 
 <img src="{attach}fuzionviruskiller_photo_0.png" width="45%"/>&nbsp;<img src="{attach}fuzionviruskiller_photo_1.png" width="45%"/>
 
@@ -54,7 +56,7 @@ The Fuzion Virus Killer III is an interesting hybrid memory checker and resident
 | VBL Int / VBL Routine Vector    | <span style="color:red">No</span>     |
 | Detect virus footprints         | <span style="color:red">No</span>     |
 | Catch key viruses               | <span style="color:red">No</span>     |
-| Other threat detection          | <span style="color:green">Yes</span> (Replicates on bootsectors which contain 0x12123456) |
+| Other threat detection          | <span style="color:green">Yes</span> (Replicates on bootsectors which contain `0x12123456`) |
 
 ### Other versions
 
@@ -70,7 +72,7 @@ This version, probably the version 2, is similar to version 3 but less sophistic
 
 ## Conclusion
 
-The Fuzion Virus Killer III is a good hybrid vaccine, not going in depth on both sides but good enough to protect against some early generation viruses (not encoded)
+The Fuzion Virus Killer III is a good hybrid vaccine, not going in depth on both sides but good enough to protect against most early generation viruses (not encoded).
 
-A well deserved 8/10.
+A good 7/10.
 
