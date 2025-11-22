@@ -191,4 +191,3 @@ Actually, the antivirus is made for enthusiasts since only it recognizes the Ken
 
 ![photo]({attach}uvc_photo_11.png)
 
-![photo]({attach}uvc_photo_12.png)
