@@ -1,6 +1,6 @@
 42crew.png: 42-Crew (*)
-adrenalin.png: Adrenaline UK Virus Protector
-adrenaline.png: Adrenaline antivirus Preventor 
+adrenalin.png: Adrenalin UK Virus Protector
+adrenaline.png: Adrenaline Antivirus Preventor 
 agraboot.png: Agraboot 2
 animalmine.png: Animal Mine barcode (*)
 antiboot.png: Antiboot (*)
