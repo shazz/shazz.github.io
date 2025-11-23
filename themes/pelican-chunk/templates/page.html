@@ -40,6 +40,20 @@
 			{% endif %}
 
 		</div> <!-- /#entry-content -->
+
+		{% if page.article_of_the_day  %}
+		<section class="article-of-the-day">
+			<h2>Virus of the Day</h2>
+			<h3><a href="{{ page.article_of_the_day.url }}">{{ page.article_of_the_day.title }}</a></h3>
+			{% if page.article_of_the_day.summary %}
+			<p>{{ page.article_of_the_day.summary }}</p>
+			{% else %}
+			<p>{{ page.article_of_the_day.content|striptags|truncate(300) }}</p>
+			{% endif %}
+		</section>
+		{% endif %}
+
+
 	</div> <!-- /#main -->
 </div> <!-- /#post -->
 {% endblock %}

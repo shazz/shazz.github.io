@@ -6,6 +6,7 @@ Category: Atari ST, Virus
 Lang: en
 Author: shazz
 status: hidden
+Exclude_From_Aotd: true
 Summary: Atari ST/STe/MSTe/TT/F030 Hardware Register Listing
 
 

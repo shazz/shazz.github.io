@@ -4,6 +4,7 @@ Date: 1994-10-06 12:34
 Location: Slovenia
 Category: Atari ST
 Lang: en
+Exclude_From_Aotd: true
 Author: Lucky Lady
 
 ### Important system vectors and memory locations

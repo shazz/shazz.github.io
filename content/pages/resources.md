@@ -6,6 +6,8 @@ Location: Stockholm / Sweden
 Category: Atari ST
 Lang: en
 Author: shazz
+Exclude_From_Aotd: true
+
 
 ## Articles: 
 

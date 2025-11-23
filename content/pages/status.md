@@ -6,6 +6,7 @@ Category: Atari ST, Virus
 Lang: en
 Author: shazz
 status: hidden
+Exclude_From_Aotd: true
 Summary: Museum status
 
 Quick links: [Jump to Viruses](#viruses) | [Jump to Vaccines](#vaccines) | [Jump to Antiviruses](#antiviruses)
