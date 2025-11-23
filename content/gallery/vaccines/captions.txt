@@ -1,117 +1,117 @@
-42crew.png: 42-Crew (*)
-adrenalin.png: Adrenalin UK Virus Protector
-adrenaline.png: Adrenaline Antivirus Preventor 
-agraboot.png: Agraboot 2
-animalmine.png: Animal Mine barcode (*)
-antiboot.png: Antiboot (*)
-antighost.png: TDT Anti Ghost V4.0 by Altair
-beep.png: Bepp and Flash Antivirus (*)
-boulboot.png: Boulboot (*)
-bsw.png: BSW (*)
-btlemmings.png: British Alliance Lemmings (*)
-bust.png: B.U.S.T (*)
-cid.png: CID (*)
-coder.png: Coder (*)
-cram.png: CRAM (*)
-cresson.png: Cresson (*)
-cst.png: Constellations (*)
-derf.png: KGB derf (*)
-detonators.png: Detonators (*)
-diwa.png: DIWA (*)
-dntanti.png: DNT (*)
-dodgysoft.png: Dodgysoft (*)
-dreamweavers.png: Dream Weavers (*)
-drsatan.png: Dr Satan Memory Virus Protector
-drst.png: Dr S.T. (*)
-dune.png: Dune (*)
-dunekiller.png: Dune Killer v0.2
-duplicator.png: Offbeat Duplicator (*)
-eagles.png: Eagles (*)
-electricity.png: Electricity (*)
-equinox.png: Equinox
-eternity.png: Eternity (*)
-euroswap.png: Euroswap (*)
-exorcist3.png: Exorcist 3
-fcc.png: FCC (*)
-floppyshop.png: Floppyshop (*)
-fury.png: Fury
-fuzion.png: Fuzion fullscreen
-fuzionviruskiller.png: Fuzion Virus Killer 
-hmd.png: HMD Stranglers (*)
-imagina.png: Imagina (*)
-incoders.png: InCoders Safe Boot
-karl.png: Karl (*)
-ked.png: KED
-kgb.png: KGB (*)
-killer.png: Killer Boot 2.08
-killers.png: Killer's Antivirus v3.0
-ktall.png: Kill Them All (*)
-lapd.png: LAPD (*)
-lefele.png: Le Félé (*)
-lemmings.png: Lemmings (*)
-leonard.png: Leonard vaccine (*)
-madvision.png: Mad Vision Hate Viruses
-medway.png: The Medway Boys Protector IV
-mikou.png: Mikou
-morgan.png: Morgan Explorer
-mph.png: MPH (*)
-mystic.png: Mystic (*)
-newmode.png: New Mode (*)
-nexus.png: Nexus Test antivirus
-npg.png: NPG (*)
-odie.png: Odie
-orion.png: Orion
-overkillvirenschutz.png: Overkill Virenschutz
-ovr.png: Overlanders (*)
-oxbow.png: Oxbow (*)
-pdl151.png: PDL 151 (*)
-peylow.png: Peylow (*)
-pompey.png: Pompey Pirates
-preservatif.png: Preservatif (*)
-prophecy.png: Prophecy (*)
-pureenergy.png: Pure Energy (*)
-pyrotechnics.png: Pyrotechnics (*)
-ragx.png: RAGX (*)
-rebel.png: Rebel (*)
-revolution.png: Revolution (*)
-rippedoff.png: Ripped Off
-saddam.png: Saddam (*)
-santorin.png: Cyclades Vaccine
-sentry2.png: Sentry 2 (*)
-shadow.png: Shadow (*)
-silverbullet.png: Silver Bullet (*)
-sirboot.png: Sirboot (*)
-smile.png: Smile (*)
-speedboot.png: Speedboot
-speedkill.png: Speedkill
-stax.png: STAX Boot Saver
-striker.png: Pulsion Striker (*)
-syndicate.png: Syndicate WtP (*)
-tcc.png: TCC (*)
-terminator.png: Megaguru Terminator
-terminator1.png: Terminator 1 (*)
-tfcramprotector2.png: TFC RAM Protector 2 (*)
-thelame.png: The Lame vaccine (*)
-tmbp.png: TMB_P (*)
-trippleh.png: Tripple H Virus Killer
-tronicpdl.png: Tronic PDL (*)
-tsb.png: TSB (*)
-tsccscy.png: tSCc by Scy (*)
-tsg.png: TSG (*)
-tuc.png: TUC (*)
-turbobooster.png: Turbo Booster (*)
-tvi.png: TVI (*)
-tvk.png: The Virus Killer (*)
-ulm.png: ULM vaccine (*)
-ultimate.png: Ultimate (*)
-unicorn.png: Unicor (*)
-unreal.png: Unreal (*)
-vaccingillus.png: Vaccin-Gillus
-virusfree.png: VirusFree (*)
-viruskicker.png: Jedi / Sector one virus kicker published in STMAGICIEL in 1991
-vkillerfr.png: VKiller French ad (*)
-wild.png: Wild (*)
-wizzcat.png: WizzCat VProtector
-wtp.png: WTP (*)
-zarko.png: Zarko (*)
+42crew.png: 42-Crew (*);This article is about the vaccine
+adrenalin.png: Adrenalin UK Virus Protector;This article is about the vaccine
+adrenaline.png: Adrenaline Antivirus Preventor ;This article is about the vaccine
+agraboot.png: Agraboot 2;This article is about the vaccine
+animalmine.png: Animal Mine barcode (*);This article is about the vaccine
+antiboot.png: Antiboot (*);This article is about the vaccine
+antighost.png: TDT Anti Ghost V4.0 by Altair;This article is about the vaccine
+beep.png: Bepp and Flash Antivirus (*);This article is about the vaccine
+boulboot.png: Boulboot (*);This article is about the vaccine
+bsw.png: BSW (*);This article is about the vaccine
+btlemmings.png: British Alliance Lemmings (*);This article is about the vaccine
+bust.png: B.U.S.T (*);This article is about the vaccine
+cid.png: CID (*);This article is about the vaccine
+coder.png: Coder (*);This article is about the vaccine
+cram.png: CRAM (*);This article is about the vaccine
+cresson.png: Cresson (*);This article is about the vaccine
+cst.png: Constellations (*);This article is about the vaccine
+derf.png: KGB derf (*);This article is about the vaccine
+detonators.png: Detonators (*);This article is about the vaccine
+diwa.png: DIWA (*);This article is about the vaccine
+dntanti.png: DNT (*);This article is about the vaccine
+dodgysoft.png: Dodgysoft (*);This article is about the vaccine
+dreamweavers.png: Dream Weavers (*);This article is about the vaccine
+drsatan.png: Dr Satan Memory Virus Protector;This article is about the vaccine
+drst.png: Dr S.T. (*);This article is about the vaccine
+dune.png: Dune (*);This article is about the vaccine
+dunekiller.png: Dune Killer v0.2;This article is about the vaccine
+duplicator.png: Offbeat Duplicator (*);This article is about the vaccine
+eagles.png: Eagles (*);This article is about the vaccine
+electricity.png: Electricity (*);This article is about the vaccine
+equinox.png: Equinox;This article is about the vaccine
+eternity.png: Eternity (*);This article is about the vaccine
+euroswap.png: Euroswap (*);This article is about the vaccine
+exorcist3.png: Exorcist 3;This article is about the vaccine
+fcc.png: FCC (*);This article is about the vaccine
+floppyshop.png: Floppyshop (*);This article is about the vaccine
+fury.png: Fury;This article is about the vaccine
+fuzion.png: Fuzion fullscreen;This article is about the vaccine
+fuzionviruskiller.png: Fuzion Virus Killer ;This article is about the vaccine
+hmd.png: HMD Stranglers (*);This article is about the vaccine
+imagina.png: Imagina (*);This article is about the vaccine
+incoders.png: InCoders Safe Boot;This article is about the vaccine
+karl.png: Karl (*);This article is about the vaccine
+ked.png: KED;This article is about the vaccine
+kgb.png: KGB (*);This article is about the vaccine
+killer.png: Killer Boot 2.08;This article is about the vaccine
+killers.png: Killer's Antivirus v3.0;This article is about the vaccine
+ktall.png: Kill Them All (*);This article is about the vaccine
+lapd.png: LAPD (*);This article is about the vaccine
+lefele.png: Le Félé (*);This article is about the vaccine
+lemmings.png: Lemmings (*);This article is about the vaccine
+leonard.png: Leonard vaccine (*);This article is about the vaccine
+madvision.png: Mad Vision Hate Viruses;This article is about the vaccine
+medway.png: The Medway Boys Protector IV;This article is about the vaccine
+mikou.png: Mikou;This article is about the vaccine
+morgan.png: Morgan Explorer;This article is about the vaccine
+mph.png: MPH (*);This article is about the vaccine
+mystic.png: Mystic (*);This article is about the vaccine
+newmode.png: New Mode (*);This article is about the vaccine
+nexus.png: Nexus Test antivirus;This article is about the vaccine
+npg.png: NPG (*);This article is about the vaccine
+odie.png: Odie;This article is about the vaccine
+orion.png: Orion;This article is about the vaccine
+overkillvirenschutz.png: Overkill Virenschutz;This article is about the vaccine
+ovr.png: Overlanders (*);This article is about the vaccine
+oxbow.png: Oxbow (*);This article is about the vaccine
+pdl151.png: PDL 151 (*);This article is about the vaccine
+peylow.png: Peylow (*);This article is about the vaccine
+pompey.png: Pompey Pirates;This article is about the vaccine
+preservatif.png: Preservatif (*);This article is about the vaccine
+prophecy.png: Prophecy (*);This article is about the vaccine
+pureenergy.png: Pure Energy (*);This article is about the vaccine
+pyrotechnics.png: Pyrotechnics (*);This article is about the vaccine
+ragx.png: RAGX (*);This article is about the vaccine
+rebel.png: Rebel (*);This article is about the vaccine
+revolution.png: Revolution (*);This article is about the vaccine
+rippedoff.png: Ripped Off;This article is about the vaccine
+saddam.png: Saddam (*);This article is about the vaccine
+santorin.png: Cyclades Vaccine;This article is about the vaccine
+sentry2.png: Sentry 2 (*);This article is about the vaccine
+shadow.png: Shadow (*);This article is about the vaccine
+silverbullet.png: Silver Bullet (*);This article is about the vaccine
+sirboot.png: Sirboot (*);This article is about the vaccine
+smile.png: Smile (*);This article is about the vaccine
+speedboot.png: Speedboot;This article is about the vaccine
+speedkill.png: Speedkill;This article is about the vaccine
+stax.png: STAX Boot Saver;This article is about the vaccine
+striker.png: Pulsion Striker (*);This article is about the vaccine
+syndicate.png: Syndicate WtP (*);This article is about the vaccine
+tcc.png: TCC (*);This article is about the vaccine
+terminator.png: Megaguru Terminator;This article is about the vaccine
+terminator1.png: Terminator 1 (*);This article is about the vaccine
+tfcramprotector2.png: TFC RAM Protector 2 (*);This article is about the vaccine
+thelame.png: The Lame vaccine (*);This article is about the vaccine
+tmbp.png: TMB_P (*);This article is about the vaccine
+trippleh.png: Tripple H Virus Killer;This article is about the vaccine
+tronicpdl.png: Tronic PDL (*);This article is about the vaccine
+tsb.png: TSB (*);This article is about the vaccine
+tsccscy.png: tSCc by Scy (*);This article is about the vaccine
+tsg.png: TSG (*);This article is about the vaccine
+tuc.png: TUC (*);This article is about the vaccine
+turbobooster.png: Turbo Booster (*);This article is about the vaccine
+tvi.png: TVI (*);This article is about the vaccine
+tvk.png: The Virus Killer (*);This article is about the vaccine
+ulm.png: ULM vaccine (*);This article is about the vaccine
+ultimate.png: Ultimate (*);This article is about the vaccine
+unicorn.png: Unicor (*);This article is about the vaccine
+unreal.png: Unreal (*);This article is about the vaccine
+vaccingillus.png: Vaccin-Gillus;This article is about the vaccine
+virusfree.png: VirusFree (*);This article is about the vaccine
+viruskicker.png: Jedi / Sector one virus kicker published in STMAGICIEL in 1991;This article is about the vaccine
+vkillerfr.png: VKiller French ad (*);This article is about the vaccine
+wild.png: Wild (*);This article is about the vaccine
+wizzcat.png: WizzCat VProtector;This article is about the vaccine
+wtp.png: WTP (*);This article is about the vaccine
+zarko.png: Zarko (*);This article is about the vaccine
 zuulprotector.png: Zuul Virus Protector v1.01
