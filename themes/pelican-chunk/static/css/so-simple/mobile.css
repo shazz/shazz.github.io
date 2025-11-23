@@ -32,6 +32,36 @@
         display: block;
     }
 
+    /* Mobile: Stack article-of-the-day below content */
+    .page.hentry.has-aotd {
+        flex-direction: column;
+    }
+
+    .page.hentry.has-aotd > .main {
+        flex: 1 1 100%;
+        min-width: auto;
+    }
+
+    .article-of-the-day {
+        flex: 1 1 100%;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .aotd-image {
+        min-height: 200px;
+        width: 100%;
+    }
+
+    .aotd-content {
+        width: 100%;
+    }
+
     .hentry .entry-meta {
         display: flex;
         flex-wrap: wrap;
@@ -280,6 +310,39 @@
         padding: 3px 6px;
     }
 
+    /* Mobile: Ensure article-of-the-day is full width on small screens */
+    .page.hentry.has-aotd {
+        flex-direction: column;
+    }
+
+    .page.hentry.has-aotd > .main {
+        flex: 1 1 100%;
+        min-width: auto;
+    }
+
+    .article-of-the-day {
+        flex: 1 1 100%;
+        width: 100%;
+        max-width: 100%;
+        margin-top: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .aotd-image {
+        min-height: 180px;
+        width: 60%;
+    }
+
+    .aotd-content {
+        width: 100%;
+        align-items: center;
+    }
+
     div.photo-search {
         padding: 10px 14px 0px 12px;
         border: 1px solid #ddd;
@@ -347,7 +410,8 @@
 
     div.photo-link {
         padding: 5px 0px 0px 0px;
-        margin-bottom: 0px;
+        margin-bottom: -40px;
+        margin-top: 0px;
         text-align: center;
     }
 
@@ -360,9 +424,9 @@
 
     div.photo-desc {
         padding: 5px 5px 15px 15px;
-        margin-top: 0;
+        margin-top: -20px;
         text-align: justify;
-        font-size: 0.8em;
+        font-size: 0.9em;
         line-height: 1.5em;
     }
 
@@ -521,9 +585,8 @@
         position: relative;
         box-sizing: border-box;
         overflow: hidden;
-        margin-left: 0;
-        width: 100%;
-        text-align: center;
+        margin-left: calc(var(--_content-space-x)* -1);
+        width: calc(100% + calc(var(--_content-space-x)* 2));
         overflow: hidden;
     }
 
@@ -533,15 +596,14 @@
         height: 200px;
         padding-bottom: 0;
         align-items: center;
-        width: 100%;
     }
 
     .retro-computer__holder img {
-        width: 50%;
+        width: 45%;
         align-items: center;
         text-align: center;
         padding: 0px 0px 0px 0px;
-        margin-left: 90px;
+        align-items: center;
     }
 
     .retro-computer__holder {
@@ -549,26 +611,22 @@
         inset: 0;
         display: flex;
         align-items: center;
-        width: 100%;
     }
 
     .retro-computer__holder::before {
         content: "";
-        position: absolute;
         background-image: url(../../../images/retro-computer3.png);
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
         z-index: 1;
         pointer-events: none;
-        inset: 0;
-        width: 100%;
+        align-items: center;
     }
 
     .retro-computer__holder::after {
         content: "";
         position: absolute;
-        inset: 6rem 6rem 10rem;
         z-index: -1;
     }
 
