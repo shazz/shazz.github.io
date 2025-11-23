@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block title %}{{ SITENAME }} &mdash; {{ page.title|striptags }}{% endblock %}
 {% block content %}
-<div class="page type-page status-publish hentry" id="post">
+<div class="page type-page status-publish hentry{% if page.article_of_the_day %} has-aotd{% endif %}" id="post">
 
 	<div class="main">
 		<h2 class="entry-title"><a href="{{ SITEURL }}/{{ page.url }}" title="Permalink to {{ page.title|striptags }}" rel="bookmark">{{ page.title }}</a></h2>
@@ -23,12 +23,12 @@
 				{% for name, photo, thumb, exif, caption in gallery %}
 				<div class="responsive">
 					<div class="photo-gallery">
+						<div class="photo-link"><a href="{{ SITEURL }}/{{ name.split('.')[0] + '-en.html' }}">{{ caption.split(";")[0] }}</a></div>
 						<div class="photo-gallery-image">
 							<a href="{{ SITEURL }}/{{ name.split('.')[0] + '-en.html' }}" title="{{ name }}" exif="{{ exif }}" caption="{{ caption }}">
 								<img src="{{ SITEURL }}/{{ thumb }}" title="{{ caption.split(';')[0] }}" alt="{{ name }}">
 							</a>
 						</div>
-						<div class="photo-link"><a href="{{ SITEURL }}/{{ name.split('.')[0] + '-en.html' }}">{{ caption.split(";")[0] }}</a></div>
 						<div class="photo-desc">{{ caption.split(";")[1] }}</div>
 					</div>
 				</div>
@@ -41,19 +41,22 @@
 
 		</div> <!-- /#entry-content -->
 
-		{% if page.article_of_the_day  %}
-		<section class="article-of-the-day">
-			<h2>Virus of the Day</h2>
-			<h3><a href="{{ page.article_of_the_day.url }}">{{ page.article_of_the_day.title }}</a></h3>
-			{% if page.article_of_the_day.summary %}
-			<p>{{ page.article_of_the_day.summary }}</p>
-			{% else %}
-			<p>{{ page.article_of_the_day.content|striptags|truncate(300) }}</p>
-			{% endif %}
-		</section>
-		{% endif %}
-
-
 	</div> <!-- /#main -->
+
+	{% if page.article_of_the_day  %}
+	<section class="article-of-the-day">
+		<h2 class="aotd-title">Virus of the Day: {{ page.article_of_the_day.title }}</h2>
+
+		<div class="aotd-content">
+			<div class="aotd-image">
+				<a href="{{ page.article_of_the_day.url }}">
+					<img src="{{ page.article_of_the_day.image }}" alt="{{ page.article_of_the_day.title }}">
+				</a>
+			</div>
+			<div class="aotd-description">{{  page.article_of_the_day.summary }}</div>
+		</div>
+	</section>
+	{% endif %}
+
 </div> <!-- /#post -->
 {% endblock %}

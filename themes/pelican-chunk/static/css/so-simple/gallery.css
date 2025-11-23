@@ -37,62 +37,94 @@ div.photo-gallery:hover {
 div.photo-gallery-image a img {
     margin-top: 0.5em;
     border: 0px;
-    margin-top: 15px;
-    margin-left: 15px;
-    width: 85%;
+    margin: auto;
+    width: 85.5%;
+    max-height: 200px;
+    object-fit: contain;
+    position: relative;
+    z-index: 0;
+    top: -15px;
 }
 
 div.photo-gallery-image a:hover img {
     margin-top: 0.5em;
     border: 0px;
-    margin-top: 15px;
-    margin-left: 15px;
-    width: 85%;
+    margin: auto;
+    width: 82.5%;
+    max-height: 200px;
+    object-fit: contain;
+    position: relative;
+    z-index: 0;
+    top: -15px;
 }
 
 div.photo-gallery-image {
     position: relative;
-    display: inline-block;
+    display: flex;
     align-items: center;
+    justify-content: center;
     left: 10px;
     top: 10px;
     padding-bottom: 60px;
     padding: 0.5em;
     width: 230px;
     height: auto;
+    min-height: 280px;
 }
 
 div.photo-gallery-image::after {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+    top: -5%;
+    left: -5%;
+    width: 110%;
     height: 110%;
     background-image: url('/images/retro-computer4-tb.png');
-    background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
     opacity: 1.0;
     pointer-events: none;
+    z-index: 1;
+}
+
+div.photo-gallery-image a {
+    position: relative;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
 }
 
 div.photo-link {
     padding: 0;
-    margin-top: 30px;
+    margin-top: 10px;
+    margin-bottom: -30px;
     text-align: center;
+    position: relative;
+    z-index: 2;
+    order: -1;
 }
 
 div.photo-link a {
     padding: 0;
-    margin-top: 0;
+    margin-top: 0px;
     text-decoration: none;
 }
 
 div.photo-desc {
-    padding: 1em;
-    margin-top: 0;
+    padding: 0.0em;
+    margin-left: 1.6em;
+    margin-right: 1.6em;
+    margin-top: -20px;
     text-align: justify;
     font-size: 0.8em;
     line-height: 1.5em;
+    position: relative;
+    z-index: 2;
+    order: 1;
 }
 
 .gallery-caption {

@@ -4,7 +4,7 @@ SITENAME = "Retrovirology"
 THEME = "themes/pelican-chunk"
 
 PLUGIN_PATHS = ["pelican-plugins"]
-PLUGINS = ["readtime", "jinja2content", "photos", "sitemap"]
+PLUGINS = ["readtime", "jinja2content", "photos", "sitemap", "article_of_the_day"]
 # PLUGINS = ["readtime", "jinja2content", "read_more_link", "summary"]
 
 INDEX_SAVE_AS = "posts.html"

@@ -22,6 +22,12 @@
         left: calc(var(--_content-space-x));
     }
 
+    /* Mobile: Smaller fork ribbon */
+    .github-fork-ribbon {
+        font-size: 12px !important;
+        padding: 4px 8px !important;
+    }
+
     .post {
         display: block;
     }
@@ -79,6 +85,12 @@
         bottom: 0px;
         width: 28%;
         margin-top: 5%
+    }
+
+    /* Small mobile: Even smaller fork ribbon */
+    .github-fork-ribbon {
+        font-size: 10px !important;
+        padding: 3px 6px !important;
     }
 
     .header-banner {

@@ -1,5 +1,124 @@
 /* =Content
 ----------------------------------------------- */
+
+/* When article-of-the-day is present, make the post a flex container */
+.page.hentry.has-aotd {
+  display: flex;
+  gap: var(--_content-space-x, 2rem);
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+/* Main content takes majority of space */
+.page.hentry.has-aotd > .main {
+  flex: 1 1 60%;
+  min-width: 300px;
+}
+
+/* Article of the day as secondary column */
+.article-of-the-day {
+  flex: 0 1 30%;
+  position: relative;           /* normal flow */
+  width: auto;                  /* auto width */
+  max-width: 100%;              /* fill available space */
+  padding: 16px;
+  background: #ffffff;          /* box background */
+  border: 1px solid #ddd;       /* subtle border */
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  border-radius: 8px;
+  z-index: 10;                  /* normal stacking */
+  overflow: auto;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  height: fit-content;          /* stick to content height */
+  min-width: 250px;
+}
+
+/* Article of the day title */
+.aotd-title {
+  color: #666;
+  font-family: 'Oswald', Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 0 12px 0;
+  text-transform: uppercase;
+  line-height: 1.4;
+}
+
+/* Article of the day content container */
+.aotd-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Article of the day image - no border */
+.aotd-image {
+  width: 100%;
+  overflow: visible;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 280px;
+  padding-top: 0px;
+}
+
+.aotd-image a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+  margin-top: -20px;
+}
+
+.aotd-image img {
+  width: 85%;
+  height: auto;
+  display: block;
+  border: none;
+  border-radius: 4px;
+  max-width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.aotd-image a:hover img {
+  border: none;
+  opacity: 0.9;
+}
+
+/* Retro computer overlay on top of AOTD image */
+.aotd-image::after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/images/retro-computer4-tb.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 1.0;
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* Article of the day description - no border */
+.aotd-description {
+  color: #666;
+  font-size: 13px;
+  line-height: 1.5;
+  text-align: left;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
 .hentry {
     height: auto;
     clear: both;
