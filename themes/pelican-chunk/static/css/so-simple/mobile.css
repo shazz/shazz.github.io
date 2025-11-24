@@ -18,8 +18,8 @@
     }
 
     :root #floppy {
-        transform: translate(0, -30%);
         left: calc(var(--_content-space-x));
+        max-height: 19.2rem;
     }
 
     /* Mobile: Smaller fork ribbon */
@@ -45,6 +45,8 @@
     .article-of-the-day {
         flex: 1 1 100%;
         width: 100%;
+        max-width: 100%;
+        margin-top: 1rem;
         margin-left: auto;
         margin-right: auto;
         box-sizing: border-box;
@@ -54,12 +56,41 @@
     }
 
     .aotd-image {
-        min-height: 200px;
-        width: 100%;
+        min-height: 400px;
+        width: 70%;
+        align-items: center;
     }
 
     .aotd-content {
         width: 100%;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .aotd-description {
+        color: #666;
+        font-size: 17px;
+        line-height: 1.5;
+        text-align: left;
+        border: none;
+        padding: 0;
+        margin: 0;
+    }    
+
+    .aotd-image::after {
+        content: '';
+        position: absolute;
+        top: 10px;
+        left: 20px;
+        width: 90%;
+        height: 100%;
+        background-image: url(/images/retro-computer4-tb.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        opacity: 1.0;
+        pointer-events: none;
+        z-index: 2;
     }
 
     .hentry .entry-meta {
@@ -111,15 +142,14 @@
     }
 
     :root #floppy {
-        /* transform: translate(0%, -90%); */
-        bottom: 0px;
-        width: 28%;
-        margin-top: 5%
+        transform: translate(-18%, -15%);
+        /* bottom: 0px; */
+        width: 23%;
     }
 
     /* Small mobile: Even smaller fork ribbon */
     .github-fork-ribbon {
-        font-size: 10px !important;
+        font-size: 7px !important;
         padding: 3px 6px !important;
     }
 
