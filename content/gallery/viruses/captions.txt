@@ -94,3 +94,4 @@ vdu.png: Vdu virus;This article is about the Vdu virus...;;bootsector
 xcreen.png: Screen virus;This article is about the Screen virus...;;bootsector
 zelda.png: Zelda virus;This article is about the Zelda virus...;;bootsector
 zorro.png: Zorro virus;This article is about the Zorro virus...;;bootsector
+horror.png: Horror virus;This article is about the Horror virus...;;bootsector
