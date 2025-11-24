@@ -68,7 +68,7 @@ span.photo-tag-label {
     display: inline-block;
     background: #f0f0f0;
     color: #555;
-    padding: 0.25rem 0.6rem;
+    padding: 0.05rem 0.6rem;
     border-radius: 3px;
     font-size: 11px;
     font-family: 'Oswald', sans-serif;
@@ -111,12 +111,12 @@ div.photo-desc {
 }
 
 div.photo-tags {
-    padding: 0.4rem 0;
+    padding: 0.4rem 1.0rem;
     margin-top: auto;
     display: flex;
     flex-wrap: wrap;
-    gap: 0.4rem;
-    justify-content: center;
+    gap: 0.2rem;
+    justify-content: left;
     order: 4;
 }
 

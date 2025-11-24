@@ -5,4 +5,5 @@ nose-exclude
 nose-summary-report
 piexif 
 pelican-sitemap
+pelican-minify
 pelican-plugins/photos

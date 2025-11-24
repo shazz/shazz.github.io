@@ -4,7 +4,7 @@ SITENAME = "Retrovirology"
 THEME = "themes/pelican-chunk"
 
 PLUGIN_PATHS = ["pelican-plugins"]
-PLUGINS = ["readtime", "jinja2content", "photos", "sitemap", "article_of_the_day"]
+PLUGINS = ["readtime", "jinja2content", "photos", "sitemap", "article_of_the_day", "minify"]
 # PLUGINS = ["readtime", "jinja2content", "read_more_link", "summary"]
 
 INDEX_SAVE_AS = "posts.html"
@@ -97,3 +97,10 @@ PHOTO_FILE_EXTENSIONS = {"jpeg": "jpg", "webp": "webp", "png": "png"}
 # custom variables
 SHOW_EMULATOR = True
 FOOTER_TEXT = "The Atari ST Malware Museum is powered by "
+
+# minifiy
+CSS_MIN = True
+JS_MIN = True
+HTML_MIN = True
+INLINE_CSS_MIN = True
+INLINE_JS_MIN = True
