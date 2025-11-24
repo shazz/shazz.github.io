@@ -21,3 +21,4 @@ Use the top menu to jump instantly between galleries and to access key technical
 
 Finally, you’ll find additional technical resources, articles on how Atari ST viruses, vaccines and antiviruses work, defeated each other and curated links for further reading. Enjoy your visit!
 
+-- Shazz and Draedon, Atari ST Malware Museum archivists.
