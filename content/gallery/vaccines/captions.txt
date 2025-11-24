@@ -1,18 +1,18 @@
-42crew.png: 42-Crew (*);This article is about the vaccine
-adrenalin.png: Adrenalin UK Virus Protector;This article is about the vaccine
-adrenaline.png: Adrenaline Antivirus Preventor ;This article is about the vaccine
-agraboot.png: Agraboot 2;This article is about the vaccine
-animalmine.png: Animal Mine barcode (*);This article is about the vaccine
-antiboot.png: Antiboot (*);This article is about the vaccine
-antighost.png: TDT Anti Ghost V4.0 by Altair;This article is about the vaccine
-beep.png: Bepp and Flash Antivirus (*);This article is about the vaccine
-boulboot.png: Boulboot (*);This article is about the vaccine
-bsw.png: BSW (*);This article is about the vaccine
-btlemmings.png: British Alliance Lemmings (*);This article is about the vaccine
-bust.png: B.U.S.T (*);This article is about the vaccine
-cid.png: CID (*);This article is about the vaccine
-coder.png: Coder (*);This article is about the vaccine
-cram.png: CRAM (*);This article is about the vaccine
+42crew.png: 42-Crew (*);This article is about the vaccine;;generic
+adrenalin.png: Adrenalin UK Virus Protector;This article is about the vaccine;;bootblock
+adrenaline.png: Adrenaline Antivirus Preventor ;This article is about the vaccine;;generic
+agraboot.png: Agraboot 2;This article is about the vaccine;;bootblock
+animalmine.png: Animal Mine barcode (*);This article is about the vaccine;;generic
+antiboot.png: Antiboot (*);This article is about the vaccine;;bootblock
+antighost.png: TDT Anti Ghost V4.0 by Altair;This article is about the vaccine;;generic
+beep.png: Bepp and Flash Antivirus (*);This article is about the vaccine;;generic
+boulboot.png: Boulboot (*);This article is about the vaccine;;bootblock
+bsw.png: BSW (*);This article is about the vaccine;;generic
+btlemmings.png: British Alliance Lemmings (*);This article is about the vaccine;;bootblock
+bust.png: B.U.S.T (*);This article is about the vaccine;;generic
+cid.png: CID (*);This article is about the vaccine;;generic
+coder.png: Coder (*);This article is about the vaccine;;bootblock
+cram.png: CRAM (*);This article is about the vaccine;;generic
 cresson.png: Cresson (*);This article is about the vaccine
 cst.png: Constellations (*);This article is about the vaccine
 derf.png: KGB derf (*);This article is about the vaccine

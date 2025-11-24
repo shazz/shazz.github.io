@@ -103,6 +103,31 @@
 		}
 	</script>
 
+	<script>
+		function filterByTag(tag) {
+			// Update active button
+			document.querySelectorAll('.tag-filter-btn').forEach(btn => {
+				btn.classList.remove('active');
+			});
+			event.target.classList.add('active');
+
+			// Filter gallery items
+			const items = document.querySelectorAll('.responsive');
+			items.forEach(item => {
+				if (tag === 'all') {
+					item.style.display = '';
+				} else {
+					const itemTags = item.getAttribute('data-tags');
+					if (itemTags && itemTags.toLowerCase().includes(tag)) {
+						item.style.display = '';
+					} else {
+						item.style.display = 'none';
+					}
+				}
+			});
+		}
+	</script>
+
 	{% endblock head %}
 </head>
 

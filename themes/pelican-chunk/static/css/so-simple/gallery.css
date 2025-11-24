@@ -18,12 +18,106 @@ div.photo-search input {
     margin-bottom: 12px;
 }
 
+/* Tag Filter Styling */
+div.photo-tags-filter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin: 0.5rem 0;
+    padding: 0.5rem 0;
+    width: 90%;
+}
+
+button.tag-filter-btn {
+    padding: 0.35rem 0.75rem;
+    border: 1px solid #ddd;
+    background: #ffffff;
+    color: #333;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 12px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+button.tag-filter-btn:hover {
+    background: #f5f5f5;
+    border-color: #999;
+}
+
+button.tag-filter-btn.active {
+    background: #36bcab;
+    color: #ffffff;
+    border-color: #36bcab;
+}
+
+/* Photo Entry Tags */
+div.photo-tags {
+    padding: 0.4rem 0;
+    margin-top: 0.4rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    justify-content: center;
+}
+
+span.photo-tag-label {
+    display: inline-block;
+    background: #f0f0f0;
+    color: #555;
+    padding: 0.25rem 0.6rem;
+    border-radius: 3px;
+    font-size: 11px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    border: 1px solid #ddd;
+}
 
 div.photo-gallery {
     border: 1px solid #ccc;
-    height: 350px;
+    min-height: 350px;
     border-radius: 15px;
     margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+div.photo-link {
+    margin-top: 0;
+    margin-bottom: 0;
+    order: 1;
+    z-index: 2;
+}
+
+div.photo-gallery-image {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 280px;
+    order: 2;
+}
+
+div.photo-desc {
+    padding: 0.5em;
+    margin-top: 0;
+    order: 3;
+    z-index: 2;
+}
+
+div.photo-tags {
+    padding: 0.4rem 0;
+    margin-top: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    justify-content: center;
+    order: 4;
 }
 
 
@@ -35,11 +129,10 @@ div.photo-gallery:hover {
 }
 
 div.photo-gallery-image a img {
-    margin-top: 0.5em;
-    border: 0px;
     margin: auto;
-    width: 85.5%;
-    max-height: 200px;
+    border: 0px;
+    width: 90%;
+    max-height: 150px;
     object-fit: contain;
     position: relative;
     z-index: 0;
@@ -47,11 +140,10 @@ div.photo-gallery-image a img {
 }
 
 div.photo-gallery-image a:hover img {
-    margin-top: 0.5em;
-    border: 0px;
     margin: auto;
-    width: 82.5%;
-    max-height: 200px;
+    border: 0px;
+    width: 90%;
+    max-height: 150px;
     object-fit: contain;
     position: relative;
     z-index: 0;
@@ -63,24 +155,21 @@ div.photo-gallery-image {
     display: flex;
     align-items: center;
     justify-content: center;
-    left: 10px;
-    top: 10px;
-    padding-bottom: 60px;
-    padding: 0.5em;
-    width: 230px;
-    height: auto;
-    min-height: 280px;
+    min-height: 200px;
+    flex-shrink: 0;
+    order: 2;
+    overflow: hidden;
 }
 
 div.photo-gallery-image::after {
     content: '';
     position: absolute;
-    top: -5%;
-    left: -5%;
-    width: 110%;
-    height: 110%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-image: url('/images/retro-computer4-tb.png');
-    background-size: 100%;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     opacity: 1.0;
@@ -100,12 +189,17 @@ div.photo-gallery-image a {
 
 div.photo-link {
     padding: 0;
-    margin-top: 10px;
-    margin-bottom: -30px;
+    margin-top: 0;
+    margin-bottom: 0;
     text-align: center;
     position: relative;
     z-index: 2;
-    order: -1;
+    order: 1;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 0.9em;
 }
 
 div.photo-link a {
@@ -115,16 +209,14 @@ div.photo-link a {
 }
 
 div.photo-desc {
-    padding: 0.0em;
-    margin-left: 1.6em;
-    margin-right: 1.6em;
-    margin-top: -20px;
+    padding: 0.5em;
+    margin-top: 0;
     text-align: justify;
     font-size: 0.8em;
     line-height: 1.5em;
     position: relative;
     z-index: 2;
-    order: 1;
+    order: 3;
 }
 
 .gallery-caption {

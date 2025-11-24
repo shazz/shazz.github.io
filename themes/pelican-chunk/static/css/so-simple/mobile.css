@@ -362,6 +362,19 @@
         margin-bottom: 12px;
     }
 
+    /* Tag Filter Mobile: Adjust for tablet */
+    div.photo-tags-filter {
+        width: 100%;
+        padding: 0.5rem 0;
+        margin: 0.5rem 0;
+        gap: 0.5rem;
+    }
+
+    button.tag-filter-btn {
+        padding: 0.4rem 0.8rem;
+        font-size: 12px;
+    }
+
     div.photo-gallery:hover {
         border: 1px solid #7a1616;
         height: auto;
@@ -641,5 +654,11 @@
         top: -18px;
         width: 90px;
         height: auto;
+    }
+
+    /* Small mobile: Tag filter button sizing */
+    button.tag-filter-btn {
+        padding: 0.35rem 0.6rem;
+        font-size: 11px;
     }
 }

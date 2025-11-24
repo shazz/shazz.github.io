@@ -20,8 +20,35 @@
 				<div class="photo-search">
 					<input type="text" id="searchInput" onkeyup="localSearch()" placeholder="Search within the {{ gallery|length }} {{ page.type }}...">
 				</div>
+				
+				<!-- Tag filter section: Extracts tags from gallery captions in format: Title;Description;Extra;Tags (comma-separated) -->
+				{% set namespace = namespace(tags=[]) %}
 				{% for name, photo, thumb, exif, caption in gallery %}
-				<div class="responsive">
+					{% set parts = caption.split(';') %}
+					{% if parts|length > 3 %}
+						{% set tag_string = parts[3].strip() %}
+						{% if tag_string %}
+							{% for single_tag in tag_string.split(',') %}
+								{% set cleaned_tag = single_tag.strip() %}
+								{% if cleaned_tag and cleaned_tag not in namespace.tags %}
+									{% set namespace.tags = namespace.tags + [cleaned_tag] %}
+								{% endif %}
+							{% endfor %}
+						{% endif %}
+					{% endif %}
+				{% endfor %}
+				
+				{% if namespace.tags|length > 0 %}
+				<div class="photo-tags-filter">
+					<button class="tag-filter-btn active" onclick="filterByTag('all')">All</button>
+					{% for tag in namespace.tags|sort %}
+					<button class="tag-filter-btn" onclick="filterByTag('{{ tag|lower }}')">{{ tag }}</button>
+					{% endfor %}
+				</div>
+				{% endif %}
+				
+				{% for name, photo, thumb, exif, caption in gallery %}
+				<div class="responsive" data-tags="{{ (caption.split(';')[3].strip() if caption.split(';')|length > 3 else '')|lower }}">
 					<div class="photo-gallery">
 						<div class="photo-link"><a href="{{ SITEURL }}/{{ name.split('.')[0] + '-en.html' }}">{{ caption.split(";")[0] }}</a></div>
 						<div class="photo-gallery-image">
@@ -30,6 +57,14 @@
 							</a>
 						</div>
 						<div class="photo-desc">{{ caption.split(";")[1] }}</div>
+						{% set item_tag = caption.split(';')[3].strip() if caption.split(';')|length > 3 else '' %}
+						{% if item_tag %}
+						<div class="photo-tags">
+							{% for tag in item_tag.split(',') %}
+							<span class="photo-tag-label">{{ tag.strip() }}</span>
+							{% endfor %}
+						</div>
+						{% endif %}
 					</div>
 				</div>
 				{% endfor %}

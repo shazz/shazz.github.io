@@ -1,4 +1,4 @@
-Title: Atari ST Malware Museum
+Title: Atari ST Malware Museum: The Bootsector Viruses
 Slug: viruses_gallery
 Date: 2025-03-03 10:24
 Location: Montreal / Canada
