@@ -416,15 +416,16 @@
         border: 1px solid #ccc;
         height: auto;
         border-radius: 15px;
-        margin-top: 5px;
+        margin-top: 15px;
         text-align: center;
         line-height: 300%;
+        align-items: center;
     }
 
     div.photo-gallery-image a img {
         border: 0px;
-        width: 85%;
-        margin-left: 0px;
+        margin-left: 10px;
+        margin-top: 30px;
     }
 
     div.photo-gallery-image a:hover img {
@@ -449,7 +450,24 @@
         height: auto;
         justify-content: center;
         align-items: center;
+        overflow:visible
     }
+
+    div.photo-gallery-image::after {
+        content: '';
+        position: absolute;
+        top: 20px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(/images/retro-computer4-tb.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        opacity: 1.0;
+        pointer-events: none;
+        z-index: 1;
+    }    
 
     div.photo-link {
         padding: 5px 0px 0px 0px;
@@ -467,7 +485,7 @@
 
     div.photo-desc {
         padding: 5px 5px 15px 15px;
-        margin-top: -20px;
+        margin-top: 20px;
         text-align: justify;
         font-size: 0.9em;
         line-height: 1.5em;
