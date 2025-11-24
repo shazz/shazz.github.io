@@ -1,4 +1,4 @@
-Title: Welcome to the Atari ST Malware Museum!
+Title: Retro-Virology: The Atari ST Malware Museum
 Slug: home
 Date: 2025-11-22 07:13
 Location: Montreal / Canada
