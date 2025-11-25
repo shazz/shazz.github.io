@@ -10,7 +10,7 @@ status: hidden
 summary: This article is about the BHP2 virus...
 image: {filename}../../../gallery/viruses/bhp2.png
 Source: yes
-UVK: N/A
+UVK:
 OtherName: N/A 
 Tags: bootsector virus
 

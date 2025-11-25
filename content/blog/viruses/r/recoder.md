@@ -10,7 +10,7 @@ status: hidden
 summary: This article is about the Recoder virus...
 image: {filename}../../../gallery/viruses/recoder.png
 Source: yes
-UVK: N/A
+UVK:
 OtherName: N/A 
 Tags: bootsector virus
 

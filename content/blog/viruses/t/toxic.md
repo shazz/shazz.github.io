@@ -10,7 +10,7 @@ status: hidden
 summary: This article is about the Toxic virus...
 image: {filename}../../../gallery/viruses/toxic.png
 Source: yes
-UVK: N/A
+UVK:
 OtherName: N/A 
 Tags: bootsector virus
 

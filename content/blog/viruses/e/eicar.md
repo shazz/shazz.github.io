@@ -10,7 +10,7 @@ status: hidden
 summary: This article is about the EICAR virus...
 image: {filename}../../../gallery/viruses/eicar.png
 Source: yes
-UVK: N/A
+UVK:
 OtherName: N/A 
 Tags: bootsector virus
 

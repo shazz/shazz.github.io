@@ -12,7 +12,7 @@ image: {filename}../../../gallery/viruses/trojan.png
 Source: no
 UVK: 
 OtherName: |81|[Trojan](/trojan-en.html)|N/A|yes|||TROJAN.S|
-Tags: bootsector virus
+Tags: bootsector virus, 199?
 
 ## In a few words...
 
