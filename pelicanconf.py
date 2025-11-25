@@ -70,6 +70,8 @@ EXTRA_PATH_METADATA = {
     "html/hatari/hatari.js": {"path": "museum/hatari.js"},
     "html/hatari/hatari.data": {"path": "museum/hatari.data"},
     "extra/robots.txt": {"path": "robots.txt"},
+    "extra/google875fd96c00484b92.html": {"path": "google875fd96c00484b92.html"},
+    "extra/llms.txt": {"path": "llms.txt"},
 }
 
 # PHOTOS plugin
