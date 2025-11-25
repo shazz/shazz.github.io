@@ -9,7 +9,7 @@ Author: draedon
 status: hidden
 summary: This article is about ACA Virus Detector and Vaccin...
 image: {filename}../../../gallery/antiviruses/acavirusdetector.png
-Tags: Antivirus
+Tags: Scanner, Bootsector viruses
 
 ## Basic information
 
@@ -19,7 +19,7 @@ Tags: Antivirus
 * *Release date*: 1988
 * *Can detect*: ACA
 
-![photo]({attach}aca_photo_0.png)
+<img src="{attach}aca_photo_0.png" width="100%"/>
 
 ### Recognized Viruses:
 
@@ -41,14 +41,14 @@ To test a floppy disk with ACA, follow these steps:
 
 | Virus<p>Difficulty                                                            | Analysis                                          | Result                                             |
 |:-----------------------------------------------------------------------------:|:-------------------------------------------------:|:--------------------------------------------------:|
-| [Ghost](https://retrovirology.metaverse.fr/ghost-en.html)<br>(1/5)            | <img src="{attach}aca_photo_2.png" width="60%"/>  | ACA VKILL said the disk may contain a virus        |
-| [Signum BPL](https://retrovirology.metaverse.fr/signum-en.html)<br>(1/5)      | <img src="{attach}aca_photo_3.png" width="60%"/>  | ACA VKILL said the disk may contain a virus        |
-| [Macumba 3.3](https://retrovirology.metaverse.fr/macumba3-en.html)<br>(4/5)   | <img src="{attach}aca_photo_4.png" width="60%"/>  | ACA VKILL said the disk is clean                   |
-| [Carpe Diem](https://retrovirology.metaverse.fr/carpediem-en.html)<br>(2/5)   | <img src="{attach}aca_photo_5.png" width="60%"/>  | ACA VKILL said the disk is clean                   |
-| [OLI](https://retrovirology.metaverse.fr/oli-en.html)<br>(1/5)                | <img src="{attach}aca_photo_6.png" width="60%"/>  | ACA VKILL said the disk may contain a virus        |
-| [OLI2](https://retrovirology.metaverse.fr/oli2-en.html)<br>(1/5)              | <img src="{attach}aca_photo_7.png" width="60%"/>  | ACA VKILL said the disk may contain a virus        |
-| [EICAR](https://retrovirology.metaverse.fr/eicar-en.html)<br>(3/5)            | <img src="{attach}aca_photo_8.png" width="60%"/>  | ACA VKILL said the disk is clean                   |
-| [ACA](https://retrovirology.metaverse.fr/aca-en.html)<br>(1/5)                | <img src="{attach}aca_photo_1.png" width="60%"/>  | ACA is detected :)                                 |
+| [Ghost](https://retrovirology.metaverse.fr/ghost-en.html)<br>(1/5)            | <img src="{attach}aca_photo_2.png" width="100%"/>  | ACA VKILL said the disk may contain a virus        |
+| [Signum BPL](https://retrovirology.metaverse.fr/signum-en.html)<br>(1/5)      | <img src="{attach}aca_photo_3.png" width="100%"/>  | ACA VKILL said the disk may contain a virus        |
+| [Macumba 3.3](https://retrovirology.metaverse.fr/macumba3-en.html)<br>(4/5)   | <img src="{attach}aca_photo_4.png" width="100%"/>  | ACA VKILL said the disk is clean                   |
+| [Carpe Diem](https://retrovirology.metaverse.fr/carpediem-en.html)<br>(2/5)   | <img src="{attach}aca_photo_5.png" width="100%"/>  | ACA VKILL said the disk is clean                   |
+| [OLI](https://retrovirology.metaverse.fr/oli-en.html)<br>(1/5)                | <img src="{attach}aca_photo_6.png" width="100%"/>  | ACA VKILL said the disk may contain a virus        |
+| [OLI2](https://retrovirology.metaverse.fr/oli2-en.html)<br>(1/5)              | <img src="{attach}aca_photo_7.png" width="100%"/>  | ACA VKILL said the disk may contain a virus        |
+| [EICAR](https://retrovirology.metaverse.fr/eicar-en.html)<br>(3/5)            | <img src="{attach}aca_photo_8.png" width="100%"/>  | ACA VKILL said the disk is clean                   |
+| [ACA](https://retrovirology.metaverse.fr/aca-en.html)<br>(1/5)                | <img src="{attach}aca_photo_1.png" width="100%"/>  | ACA is detected :)                                 |
 
 ### Task 2: Recognize boot viruses loaded into memory
 
@@ -63,6 +63,10 @@ ACA VKIL cannot scan files for link viruses
 ACA VKIL cannot restore the boot sector
 
 ### Task 5: Vaccinate a non-executable floppy disk
+
+You can vaccinate the disk, and this vaccine will only help against the ACA virus. If the disk is vaccinated, ACA VKIL will inform us about it:
+
+<img src="{attach}aca_photo_9.png" width="100%"/>
 
 #### Instructions
 

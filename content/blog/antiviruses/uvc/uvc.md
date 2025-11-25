@@ -9,15 +9,15 @@ Author: draedon
 status: hidden
 summary: This article is about Ultimate Virus Checker...
 image: {filename}../../../gallery/antiviruses/uvc.png
-Tags: Antivirus
+Tags: Resident, Scanner, Bootsector viruses
 
 ## Basic Information
 * *Version*: 1.10+
-* *Author*: The Master (Kent)
+* *Author*: The Master
 * *Language*: English
 * *Recognizes*: 23 bootsectors
 
-![photo]({attach}uvc_photo_0.png)
+<img src="{attach}uvc_photo_0.png" width="100%"/>
 
 ### Recognized Viruses:
 
@@ -36,7 +36,7 @@ To test a floppy disk with UVC, follow these steps:
 * Insert the test floppy into drive A:
 * Press F1
 
-![photo]({attach}uvc_photo_1.png)
+<img src="{attach}uvc_photo_1.png" width="100%"/>
 
 * Then the boot sector details and the analysis result will appear
 
@@ -80,7 +80,7 @@ UVC correctly recognized the Ghost virus
 
 Test results:
 
-* No exception vectors outside the allowed memory area.
+* No exception vectors infected
 
 UVC said this is an unknown boot sector.
 
@@ -88,8 +88,8 @@ UVC said this is an unknown boot sector.
 
 Test results:
 
-* Hdv-bpb vector is below allowed user memory
-* Reset vector is below allowed user memory
+* Hdv-bpb vector infectedy
+* Reset vector infected
 
 UVC said this is an unknown boot sector.
 
@@ -97,10 +97,10 @@ UVC said this is an unknown boot sector.
 
 Test results:
 
-* Hdv-init vector is below allowed user memory
-* Hdv-rw vector is below allowed user memory
-* Trap #14 (XBIOS) vector is below allowed user memory
-* Reset vector is below allowed user memory
+* Hdv-init vector infected
+* Hdv-rw vector infected
+* Trap #14 (XBIOS) vector infected
+* Reset vector infected
 
 UVC said this is an unknown boot sector.
 
@@ -108,10 +108,10 @@ UVC said this is an unknown boot sector.
 
 Test results:
 
-* Hdv-init vector is below allowed user memory
-* Hdv-rw vector is below allowed user memory
-* Trap #14 (XBIOS) vector is below allowed user memory
-* Reset vector is below allowed user memory
+* Hdv-init vector infected
+* Hdv-rw vector infected
+* Trap #14 (XBIOS) vector infected
+* Reset vector infected
 
 UVC said this is an unknown boot sector.
 
@@ -139,9 +139,9 @@ UVC can save the boot sector to a file but cannot restore it.
 
 Now when booting from this disk you will see this:
 
-![photo]({attach}uvc_photo_9.png)
+<img src="{attach}uvc_photo_9.png" width="100%"/>
 
-![photo]({attach}uvc_photo_10.png)
+<img src="{attach}uvc_photo_10.png" width="100%"/>
 
 It seems like the vaccine helped and warned about a virus in memory.
 
@@ -189,5 +189,5 @@ It's also interesting that it has a resident scanner that simply... Will blow th
 
 Actually, the antivirus is made for enthusiasts since only it recognizes the Kent Virus which unfortunately we don't have yet. I also encountered a strange bug where I couldn't open the disk when the virus was in memory. Interesting fact: you can save the boot sector to the library as soon as you enter UVC. Apparently, it checks the boot sector as soon as you enter it.
 
-![photo]({attach}uvc_photo_11.png)
+<img src="{attach}uvc_photo_11.png" width="100%"/>
 

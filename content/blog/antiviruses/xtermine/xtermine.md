@@ -9,7 +9,7 @@ Author: Draedon
 status: hidden
 summary: This article is about Xtermine...
 image: {filename}../../../gallery/antiviruses/xtermine.png
-Tags: Antivirus
+Tags: Bootsector viruses
 
 ## Basic Information
 
@@ -47,7 +47,7 @@ To test a floppy disk using Xtermine, here are the following actions:
 
 | Virus<p>(difficulty)                     | Analysis                                                  | Result                                                                                        |
 |:----------------------------------------:|:---------------------------------------------------------:|:---------------------------------------------------------------------------------------------:|
-| [Ghost](/ghost-en.html)<br>(1/5)         | <img src="{attach}xtermine_photo_1.png" width="10%"/>     | Xtermine successfully identified the Ghost virus                                              |
+| [Ghost](/ghost-en.html)<br>(1/5)         | <img src="{attach}xtermine_photo_1.png" width="100%"/>    | Xtermine successfully identified the Ghost virus                                              |
 | [Signum BPL](/signum-en.html)<br>(1/5)   | <img src="{attach}xtermine_photo_2.png" width="100%"/>    | Xtermine successfully identified the Signum BPL virus                                         |
 | [Macumba 3.3](/macumba3-en.html)<br>(4/5)| <img src="{attach}xtermine_photo_3.png" width="100%"/>    | Xtermine said it is an unknown executable bootsector with 0 signs of viral infection          |
 | [Carpe Diem](/carpediem-en.html)<br>(2/5)| <img src="{attach}xtermine_photo_4.png" width="100%"/>    | Xtermine said it is an unknown executable bootsector but it has 3 signs of viral infection    |
