@@ -1,6 +1,6 @@
 AUTHOR = "shazz"
 SITENAME = "Retrovirology"
-# SITEURL = "https://retrovirology.metaverse.fr"
+# SITEURL = "https://www.retrovirology.ca"
 THEME = "themes/pelican-chunk"
 
 PLUGIN_PATHS = ["pelican-plugins"]
@@ -81,7 +81,7 @@ PHOTO_THUMB = (400, 250, 92, "png")
 PHOTO_SQUARE_THUMB = False
 PHOTO_RESIZE_JOBS = 5
 PHOTO_WATERMARK = False
-PHOTO_WATERMARK_TEXT = "retrovirology.metaverse.fr"
+PHOTO_WATERMARK_TEXT = "www.retrovirology.ca"
 PHOTO_WATERMARK_IMG = ""
 PHOTO_EXIF_KEEP = False
 PHOTO_EXIF_REMOVE_GPS = True

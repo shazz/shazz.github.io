@@ -5,7 +5,7 @@
 
 ## Museum content
 
-- [Viruses gallery](https://retrovirology.metaverse.fr/viruses_gallery.html): each room details a given Atari ST virus
-- [Antiviruses gallery](https://retrovirology.metaverse.fr/antiviruses_gallery.html): each room details a given Atari ST antivirus
-- [Vaccines gallery](https://retrovirology.metaverse.fr/vaccines_gallery.html): each room details a given Atari ST vaccine
+- [Viruses gallery](https://www.retrovirology.ca/viruses_gallery.html): each room details a given Atari ST virus
+- [Antiviruses gallery](https://www.retrovirology.ca/antiviruses_gallery.html): each room details a given Atari ST antivirus
+- [Vaccines gallery](https://www.retrovirology.ca/vaccines_gallery.html): each room details a given Atari ST vaccine
 
