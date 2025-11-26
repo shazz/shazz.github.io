@@ -1,15 +1,16 @@
 #header {
     padding-top: 40px !important;
     background: var(--_body-bg);
-    max-height: 20rem;
+    max-height: none;
 }
 
 .header-banner {
     position: relative;
     display: block;
-    min-height: 18rem;
+    height: 250px;
     width: 100%;
     align-items: right;
+    overflow: hidden;
 }
 
 .header-banner img {
@@ -36,17 +37,10 @@
 :root #floppy {
     display: block;
     position: absolute;
-    max-width: 100%;
+    width: clamp(150px, 15%, 400px);
+    aspect-ratio: 1 / 1;
     top: 20px;
     left: 10%;
-    max-height: 20rem;
-    /* left: calc(var(--_side-nav-w) + var(--_content-space-x)); */
-    /* top: 220px; */
-    /* transform: translate(-50%, -50%); */
-    /* max-height: none; */
-    /* max-width: none; */
-    /* width: min(var(--_disc-w), 20rem); */
-    /* bottom: auto; */
-    /* box-shadow: 0 -20px 30px -10px #0000009c; */
+    object-fit: contain;
     z-index: 11;
 }
