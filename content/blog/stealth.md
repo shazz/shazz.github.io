@@ -61,12 +61,22 @@ nextdev:
 
 As you can see the TOS does a simple `JSR (a0)` on the disk buffer so my understanding is that the the "not a branch" bytes should at least being legal instructions (like $0000 0000 which translates to ORI.B #$0, D0) that won't crash. So not random bytes but useless bytes.
 
-#### The word checksum
+#### The word checksum and non exectuable bootsectors
 
-As specified and implemented, normally to be executable, bootsectors word checksum should be equal to `0x1234` but with some tricks, it is possible to bypass this rule
+As specified and implemented, normally to be executable, bootsectors word checksum should be equal to `0x1234` but with some tricks, it is possible to bypass this rule.
+Two methods were used to bypass this "Is it an excutable bootsector?" check.
+
+The first one, used by [virus](), was to mutilate itself at boot, after loading itself in memory so that in this case Antivirus will see the bootsector as non-executable while the virus was already in memory and ready to replicate.
+
+The second one, is to use another way to execute code in the bootsector, reusing the undocumented resident program magic header in particular location in the bootsector, bootsectors seen as non-executable could be run. That's the case of the Bat, Horror and BHP2 viruses. Sagrotan-2025 EICAR also uses this method to check detection capabilties.
 
 
-### Static Code analysis
+### Static Code analysis: encrypting bootcode
+
+And in the latest generation of Atari ST viruses, it started to be common to see virus fully "encrypted" (usually using a key located in the bootsector and the `EOR` operation, or sometimes a simple shift using `SUB` or `ADD`) [Macumba 3.3 Virus]()
+
+### Static Code analysis: identifying attached vectors
+
 
 First generation of antivirus relied on statistical bootsector comparison. Meaning antiviruses had libraries of bootsectors (virus but also games, demos, virus killers) and they were comparing actual bootsectors with their library to find the best match.
 
@@ -74,21 +84,25 @@ I works well IF the virus is already in the library else, the only feedback an a
 
 So Antivirus creators added basic static code analysis which his basically looking for typical instructions and set of instructions messing with some key registers and especially vectors (`hdv_bpb` and `hdv_rw` are probably the most frequent ones used by viruses) and TRAP calls. And based on the number of "virus" patterns found, the antivirus were able to give a risk indicator.
 
-As an answer to this new method of detection, viruses creators started to obfuscate the code to get the pattern recognition useless. Multiple "tricks" can be found to obfuscate the code:
+As an answer to this new method of detection, viruses creators started to obfuscate the code to get the pattern recognition useless. Multiple "tricks" can be found to obfuscate the code from the simpliest to the trickiest:
  
- - avoid immediate values when read/writing typical registers and use CPU data registers.
- - used auto-modified code to change the fake immediate values into the real values. [Toubab Virus]
- - replace TRAP calls by calls to existing vectors (`rwabs` for example) [BHP Virus]
- - use indirect and relative addressing types to hide the register address [Toubab Virus]
+ - avoid immediate values when read/writing typical registers and use CPU data registers. [virus]()
+ - replace TRAP calls by calls to existing vectors (`rwabs` for example). [BHP]()
+ - redirect TRAP to unused TRAP. [virus]()
+ - use TOS specific syscall implementation addresses. [virus]()
+ - used auto-modified code to change the fake immediate values into the real values. [Toubab]()
+ - use indirect and relative addressing types to hide the register address. [Toubab]()
+ - differ vector attachment time. [Lucky Lady 1.03]()
+ - detect and hook 3rd party syscalls. [Leituva]()
+
  - ...
 
-And in the latest generation of Atari ST viruses, it started to be common to see virus fully "encrypted" (usually using a key located in the bootsector and the `EOR` operation, or sometimes a simple shift using `SUB` or `ADD`) [Macumba 3.3 Virus]
 
 #### Bypassing the virus killers boot check
 
 Most ST users were relying on Virus Killers: special bootsectors written by antiviruses usually to "protect and immunize" floppies. Those bootsectors were most of the time, at boot only, checking the memory and warning the user in case of some virus presence or in most case of abnormal memory configuration (vectors, resident programs,...). But as said this check was only performed at boot.
 
-So some virus are using some delay capabilities, typically the will wait some time after every boot to set the `hdv_bpb` vector for example, to avoid being detected. [Tiny Virus]
+So some virus are using some delay capabilities, typically the will wait some time after every boot to set the `hdv_bpb` vector for example, to avoid being detected. [Tiny Virus]()
 
 Some other viruses were targeting Virus Killers bootsectors directly and replace themselves by the virus. [Toubab Virus]
 
@@ -100,6 +114,8 @@ It was common to see virus reusing parts of virus killers (Especially the messag
 
 And when it was not to fool the antivirus, it could be to fool the user and avoid suspicion (and virus testing), so some viruses were mimicking the classic virus killers functionalities: colorful boot message claiming there is no virus in memory typically.
 
-
+Pushing this idea ahead, some viruses were pretty innovating and uses the "antivirus and vaccines are safe idea" to another level
+- [Hide and Seek]() is targetting the well knwon Sagrotan vaccine, then is replacing it but was still showing the same message
+- [Trojan]() is doing the same virus detection job as Adrenaline VAccine while waiting for a key disk to be detected to trigger the hidden virus
 
 

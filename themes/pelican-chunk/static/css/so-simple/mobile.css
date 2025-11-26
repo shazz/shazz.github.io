@@ -1,4 +1,60 @@
 /* ********************** ONLY MOBILE ********************** */
+/* Mobile-only: apply under 768px (adjust breakpoint as needed) */
+@media (max-width: 767px) {
+  /* Make inline article images clearly tappable */
+  .article-content img {
+    cursor: zoom-in;
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  /* Overlay that holds the zoomed image */
+  .img-zoom-overlay {
+    position: fixed;
+    inset: 0;                     /* top/right/bottom/left: 0 */
+    background: rgba(0,0,0,0.85);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    padding: 1rem;
+  }
+
+  /* Show overlay when active */
+  .img-zoom-overlay.active {
+    display: flex;
+    animation: fadeIn .12s ease-out;
+  }
+
+  .img-zoom-overlay img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    cursor: zoom-out;
+    border-radius: 4px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    /* Slight transform for mobile feel */
+    transition: transform .12s ease-out;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: scale(.98); }
+    to   { opacity: 1; transform: scale(1); }
+  }
+
+  /* Optional: caption under image */
+  .img-zoom-caption {
+    color: #eee;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+}
 
 @media (max-width: 61.1875rem)
 /* up to 979px */

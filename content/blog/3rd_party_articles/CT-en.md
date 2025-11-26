@@ -64,7 +64,7 @@ I have called the virus presented here for the Atari ST spleen brand. Once start
 
 The subroutine uses the TOS property to store the directory and FAT (File Allocation Table) in the first sectors on the floppy disk. These are simply overwritten. That should be enough. After all, the work of correctly restoring a floppy disk without FAT and directory is roughly equivalent to putting together a 1,5000-piece grass-and-meadow puzzle covering the living room floor.
 
-If the year criterion is not met, Milzbrand searches the current floppy disk directory for files that contain the extension '. PRG'. If he finds anything of the kind, the file is checked for its length. This is because with small program files, a virus is much more likely to be detected by the length of the program than with large Milzbrand has struck. Files. If the length of the found program is less than 10000 bytes, it is simply ignored and the next file is searched.
+If the year criterion is not met, Milzbrand searches the current floppy disk directory for files that contain the extension '.PRG'. If he finds anything of the kind, the file is checked for its length. This is because with small program files, a virus is much more likely to be detected by the length of the program than with large Milzbrand has struck. Files. If the length of the found program is less than 10000 bytes, it is simply ignored and the next file is searched.
 
 If the program is long enough, a few check bytes are used to check whether the file is already 'infected'. Because it makes no sense to 'treat' a program more than once, even if it is theoretically possible. In attempts, I have contaminated a file 16 times. The infection rate then increases exponentially. The program file it finds is now opened, and the virus replaces the first program bytes with a jump command to its later copy, which it then attaches to the program.
 
@@ -72,7 +72,24 @@ In order for the virus to function and go unnoticed when it is invoked from any 
 
 ## Get to the loader table
 
-However, such an infected program would only work under certain circumstances. It becomes problematic for the virus as soon as an absolute address appears in the first bytes of the program to be infected. Then, after loading, the jump command into the virus is destroyed by adding the start address. At the latest after a restoration of the original program header, the absolute address differs by the missing addition of the start address. In both cases, the program crashes. So the loader table must also be manipulated. It is at the end of the program after the BSS segment.
+However, such an infected program would only work under certain circumstances. It becomes problematic for the virus as soon as an absolute address appears in the first bytes of the program to be infected. 
+Then, after loading, the jump command into the virus is destroyed by adding the start address. At the latest after a restoration of the original program header, the absolute address differs by the missing addition of the start address. In both cases, the program crashes. So the loader table must also be manipulated. It is at the end of the program after the BSS segment.
+
+The loader table starts with the distance of the first absolute address to the program start. For the following absolute addresses, the distance to the previous one is indicated. 
+Suppose there are absolute addresses in the machine program at positions 2, 10 and 18. 
+Then the corresponding loader table looks like this: 2, 8, 8. 
+Only the length of the 'attached' jump command is added up.
+
+Now add the length of the virus program to the 'Data-len' pointer in the header, which is written after the data segment and before the comment and loader table. In this case, both tables are shifted back in their position by the length of the virus. Therefore, the commentlen pointer must also be corrected. The commentary table itself remains 'untouched'. With the closing of the file, the evil work is over.
+
+The work of Milzbrand is completed by restoring the program file that calls it. To do this, the corresponding start bytes are copied back and any absolute addresses are corrected again. At the end there is the jump to the beginning of the program - and no one has noticed.
+
+The operating system reads only the bytes of a file from floppy disks that are within the file length specified in the directory. The loader table must be at the end of this area so that the loading process can be completed properly. A virus that does not want to change the program length entry must therefore hide those program parts anywhere on the floppy disk that are of no significance for the relocation. Actually, only the data segment comes into question for this. The virus then settles in the freed area. After loading the program, it works just like Milzbrand, except that it naturally reloads the data segment during restoration.
+
+The next improvement is to make a RAM-resident virus. This kind of virus is hidden in the 'Auto folder' or as an 'ACC' file on floppy disk and copies itself to RAM. Therefore, the virus latches onto the cyclical processes of the operating system via bent exception pointers (see c't ll/ 86, page 144 and c't 1/87, page 136 - 'The operating system of the Atari ST'). 
+Every time a floppy disk is changed or any floppy disk access is made, Milzbrand II spreads further. In view of these possibilities, the computer must therefore be switched off after a virus is discovered. A normal reset is not enough.
+
+<hr>
 
 <center>
 <img src="{attach}../images/ct_virus3.png" width="60%"/><br/>
@@ -80,21 +97,37 @@ However, such an infected program would only work under certain circumstances. I
 </center>
 <center><b>The length of a program affected by Milzbrand changes</b></center>
 
-The loader table starts with the distance of the first absolute address to the program start. For the following absolute addresses, the distance to the previous one is indicated. Suppose there are absolute addresses in the machine program at positions 2, 10 and 18. Then the corresponding loader table looks like this: 2, 8, 8. Only the length of the 'attached' jump command is added up.
+(1) Uncontaminated program:
+(2) The infected program is started. The jump command at the beginning branches into the virus.
+(3) This will be processed and then the old program header will be reinstated...
+(4) ...in order to then trigger it. After that, the program runs normally.
 
-Now add the length of the virus program to the 'Data-len' pointer in the header, which is written after the data segment and before the comment and loader table. In this case, both tables are shifted back in their position by the length of the virus. Therefore, the commentlen pointer must also be corrected. The commentary table itself remains 'untouched'. With the closing of the file, the evil work is over.
+Legend / Explanation:
+Header 
+Text    
+Data
+Comments
+Loader table
+Virus
+Jump command into the virus
+Here, the virus has changed something.
 
-The work of Milzbrand is completed by restoring the program file that calls it. To do this, the corresponding start bytes are copied back and any absolute addresses are corrected again. At the end there is the jump to the beginning of the program - and no one has noticed.
-
+The length of a program affected by Milzbrand changes.
 But real computer viruses, unlike Milzbrand, do not reveal themselves by changing the length of the program. The mode of operation of such a virus is shown in the figure.
 
 <center><img src="{attach}../images/ct_virus5.png" width="60%"/></center>
 <center><b>This virus does not change the program length, but copies the data section to another location</b></center>
 
-The operating system reads only the bytes of a file from floppy disks that are within the file length specified in the directory. The loader table must be at the end of this area so that the loading process can be completed properly. A virus that does not want to change the program length entry must therefore hide those program parts anywhere on the floppy disk that are of no significance for the relocation. Actually, only the data segment comes into question for this. The virus then settles in the freed area. After loading the program, it works just like Milzbrand, except that it naturally reloads the data segment during restoration.
+(5) The infected program is started and branches into the virus.
+(6) This will be processed, restoring the old head of the program and...
+(7) ...branches into a routine that reloads the data area from the floppy disk and...
+(8) ...then jumps to the head of the program.
 
-The next increase is RAM-resident viruses. This virus species is hidden in the 'Auto folder' or as an 'ACC' file on floppy disk and copies itself to RAM. There, the virus latches onto the cyclical processes of the operating system via bent exception pointers (see c't ll/ 86, page 144 and c't 1/87, page 136 - 'The operating system of the Atari ST'). Every time a floppy disk is changed or any floppy disk access is made, Milzbrand II spreads further. In view of these possibilities, the computer must therefore be switched off after a virus is discovered. A normal reset is not enough.
+<= This is written on the floppy disk.
 
+[    ] This routine is downloaded by the virus to any free memory area and then executed. It overwrites the virus' data area on the floppy disk and starts the program.
+
+<hr>
 
 ## Retaliatory action
 
@@ -109,7 +142,7 @@ Another checksum protection method is a program that writes the entire checksums
 
 ## Penicillin versus Milzbrand
 
-The antivirus, appropriately called penicillin, works in part according to a similar scheme to Milzbrand. Penicillin is designed as a TTP' application (TOS Takes Parameter). When the antivirus is invoked, the file name of the program to be protected must be specified. As a matter of principle, penicillin should only be used for backup copies, as according to Murphy it is not compatible with the most important program.
+The antivirus, appropriately called penicillin, works in part according to a similar scheme to Milzbrand. Penicillin is designed as a TTP application (TOS Takes Parameter). When the antivirus is invoked, the file name of the program to be protected must be specified. As a matter of principle, penicillin should only be used for backup copies, as according to Murphy it is not compatible with the most important program.
 
 After the obligatory test to determine whether this file exists at all, check bytes are used to check whether this file is already protected. According to the motto 'Many antiviruses spoil the program', the user only receives a lapidary error message on the screen in this case. On the other hand, it does not check whether the file mentioned is a program. So everyone is free to protect their GEM Draw graphics as well, but this will destroy the images.
 
