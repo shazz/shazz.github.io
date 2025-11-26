@@ -9,14 +9,9 @@
     var isSmall = window.matchMedia ? window.matchMedia('(max-width: 767px)').matches : false;
     var hasTouch = ('ontouchstart' in window) || (navigator.maxTouchPoints && navigator.maxTouchPoints > 0) || (navigator.msMaxTouchPoints && navigator.msMaxTouchPoints > 0);
     
-    console.log('image-zoom: DEBUG init - isSmall=' + isSmall + ', hasTouch=' + hasTouch + ', innerWidth=' + window.innerWidth + ', maxTouchPoints=' + navigator.maxTouchPoints);
-    
     if (!isSmall && !hasTouch) {
-        console.log('image-zoom: not initializing - neither small viewport nor touch device');
         return;
     }
-    
-    console.log('image-zoom: initializing...');
 
     // Create overlay
     var overlay = document.createElement('div');
@@ -73,10 +68,6 @@
     // to avoid sizing/timing issues that can prevent handlers from attaching.
     var selector = '.entry-content img, .article-content img, .post-content img, #contents img';
 
-    if (window && window.console && window.console.debug) {
-        console.debug('image-zoom: delegation enabled for:', selector);
-    }
-
     // minimal size to skip true tiny icons (in px)
     var MIN_DIM = 16;
 
@@ -91,19 +82,16 @@
     function handleOpenEvent(el, ev) {
         // find if the click/tap was on an img that matches our selector context
         if (!el || el.tagName !== 'IMG') {
-            console.log('image-zoom: click/tap not on IMG - tagName=' + (el ? el.tagName : 'null'));
             return false;
         }
 
         var containerMatch = el.closest('.entry-content') || el.closest('.article-content') || el.closest('.post-content') || el.closest('#contents');
         if (!containerMatch) {
-            console.log('image-zoom: IMG not in matching container');
             return false;
         }
 
         var src = getImageSrc(el);
         if (!src) {
-            console.log('image-zoom: no image src found');
             return false;
         }
 
@@ -111,12 +99,9 @@
         try {
             var rect = el.getBoundingClientRect();
             if (rect.width < MIN_DIM || rect.height < MIN_DIM) {
-                console.log('image-zoom: image too small - ' + rect.width + 'x' + rect.height);
                 return false;
             }
         } catch (e) {}
-
-        console.log('image-zoom: opening image - src=' + src + ', alt=' + (el.alt || 'none'));
 
         // stop link navigation if image is nested inside anchor
         if (ev && ev.preventDefault) ev.preventDefault();
@@ -133,7 +118,6 @@
         // ignore clicks that immediately follow a touch-based open
         if (Date.now() - lastTouchOpen < 450) return;
         var el = ev.target;
-        console.log('image-zoom: click received - target=' + (el.tagName || 'unknown'));
         handleOpenEvent(el, ev);
     }, false);
 
@@ -141,7 +125,6 @@
     if (window.PointerEvent) {
         document.addEventListener('pointerup', function (ev) {
             if (ev.pointerType !== 'touch') return;
-            console.log('image-zoom: pointerup touch event received');
             // element under pointer
             var el = ev.target || document.elementFromPoint(ev.clientX, ev.clientY);
             if (!el) return;
@@ -151,7 +134,6 @@
 
     // fallback: touchend for older browsers
     document.addEventListener('touchend', function (ev) {
-        console.log('image-zoom: touchend event received');
         // find the changed touch and its target
         if (!ev.changedTouches || ev.changedTouches.length === 0) return;
         var t = ev.changedTouches[0];
