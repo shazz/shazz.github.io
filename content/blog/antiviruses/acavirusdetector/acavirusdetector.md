@@ -41,14 +41,14 @@ To test a floppy disk with ACA, follow these steps:
 
 | Virus<p>Difficulty                                                            | Analysis                                          | Result                                             |
 |:-----------------------------------------------------------------------------:|:-------------------------------------------------:|:--------------------------------------------------:|
-| [Ghost](https://retrovirology.metaverse.fr/ghost-en.html)<br>(1/5)            | <img src="{attach}aca_photo_2.png" width="100%"/>  | ACA VKILL said the disk may contain a virus        |
-| [Signum BPL](https://retrovirology.metaverse.fr/signum-en.html)<br>(1/5)      | <img src="{attach}aca_photo_3.png" width="100%"/>  | ACA VKILL said the disk may contain a virus        |
-| [Macumba 3.3](https://retrovirology.metaverse.fr/macumba3-en.html)<br>(4/5)   | <img src="{attach}aca_photo_4.png" width="100%"/>  | ACA VKILL said the disk is clean                   |
-| [Carpe Diem](https://retrovirology.metaverse.fr/carpediem-en.html)<br>(2/5)   | <img src="{attach}aca_photo_5.png" width="100%"/>  | ACA VKILL said the disk is clean                   |
-| [OLI](https://retrovirology.metaverse.fr/oli-en.html)<br>(1/5)                | <img src="{attach}aca_photo_6.png" width="100%"/>  | ACA VKILL said the disk may contain a virus        |
-| [OLI2](https://retrovirology.metaverse.fr/oli2-en.html)<br>(1/5)              | <img src="{attach}aca_photo_7.png" width="100%"/>  | ACA VKILL said the disk may contain a virus        |
-| [EICAR](https://retrovirology.metaverse.fr/eicar-en.html)<br>(3/5)            | <img src="{attach}aca_photo_8.png" width="100%"/>  | ACA VKILL said the disk is clean                   |
-| [ACA](https://retrovirology.metaverse.fr/aca-en.html)<br>(1/5)                | <img src="{attach}aca_photo_1.png" width="100%"/>  | ACA is detected :)                                 |
+| [Ghost](https://www.retrovirology.ca/ghost-en.html)<br>(1/5)            | <img src="{attach}aca_photo_2.png" width="100%"/>  | ACA VKILL said the disk may contain a virus        |
+| [Signum BPL](https://www.retrovirology.ca/signum-en.html)<br>(1/5)      | <img src="{attach}aca_photo_3.png" width="100%"/>  | ACA VKILL said the disk may contain a virus        |
+| [Macumba 3.3](https://www.retrovirology.ca/macumba3-en.html)<br>(4/5)   | <img src="{attach}aca_photo_4.png" width="100%"/>  | ACA VKILL said the disk is clean                   |
+| [Carpe Diem](https://www.retrovirology.ca/carpediem-en.html)<br>(2/5)   | <img src="{attach}aca_photo_5.png" width="100%"/>  | ACA VKILL said the disk is clean                   |
+| [OLI](https://www.retrovirology.ca/oli-en.html)<br>(1/5)                | <img src="{attach}aca_photo_6.png" width="100%"/>  | ACA VKILL said the disk may contain a virus        |
+| [OLI2](https://www.retrovirology.ca/oli2-en.html)<br>(1/5)              | <img src="{attach}aca_photo_7.png" width="100%"/>  | ACA VKILL said the disk may contain a virus        |
+| [EICAR](https://www.retrovirology.ca/eicar-en.html)<br>(3/5)            | <img src="{attach}aca_photo_8.png" width="100%"/>  | ACA VKILL said the disk is clean                   |
+| [ACA](https://www.retrovirology.ca/aca-en.html)<br>(1/5)                | <img src="{attach}aca_photo_1.png" width="100%"/>  | ACA is detected :)                                 |
 
 ### Task 2: Recognize boot viruses loaded into memory
 

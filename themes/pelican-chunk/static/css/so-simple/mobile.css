@@ -1,15 +1,17 @@
 /* ********************** ONLY MOBILE ********************** */
 /* Mobile-only: apply under 768px (adjust breakpoint as needed) */
 @media (max-width: 767px) {
-  /* Make inline article images clearly tappable */
-  .article-content img {
+    /* Make inline article images clearly tappable */
+    /* match the theme's container, .entry-content is used in templates */
+    .entry-content img,
+    .article-content img {
     cursor: zoom-in;
     max-width: 100%;
     height: auto;
     display: inline-block;
   }
 
-  /* Overlay that holds the zoomed image */
+    /* Overlay that holds the zoomed image */
   .img-zoom-overlay {
     position: fixed;
     inset: 0;                     /* top/right/bottom/left: 0 */
