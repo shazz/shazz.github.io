@@ -1,9 +1,13 @@
 .tag-links {
-    display: inline-block;
+    display: block;
     text-align: left;
-    margin-left: -150px;
-    padding-left: 0px;
     font-size: 12px;
+    width: 100%;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+    overflow: hidden;
 }
 
 .tag-links a {

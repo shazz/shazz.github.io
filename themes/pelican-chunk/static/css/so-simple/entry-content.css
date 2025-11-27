@@ -4,6 +4,9 @@
     border-style: solid;
     border-width: 1pt;
     border-color: #cccccc;
+    overflow-x: auto;
+    width: fit-content;
+    max-width: 100%;
 }
 
 

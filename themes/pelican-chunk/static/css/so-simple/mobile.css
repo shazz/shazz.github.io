@@ -372,11 +372,11 @@
     }
 
     .tag-links {
-        display: inline-block;
+        display: block;
         text-align: left;
         margin-top: 5px;
-        padding-left: 0px;
         font-size: 12px;
+        width: 100%;
     }
 
     .tag-links a {
@@ -674,19 +674,19 @@
         max-width: 100%;
         margin: 5px 5px;
         white-space: pre;
-        font-size: 11px;
+        font-size: 9px;
         line-height: 1.5;
         border: 1px solid #ddd;
-        overflow-x: visible;
+        overflow-x: auto;
         font-family: Menlo, Consolas, Monaco, "Courier New", Courier, monospace;
     }
 
     .article-tag-links {
-        display: inline-block;
-        text-align: right;
+        display: block;
+        text-align: left;
         font-size: 9px;
         padding-top: 18px;
-        padding: 10px 0px 0px 0px;
+        width: 100%;
     }
 
     .article-tag-links strong {

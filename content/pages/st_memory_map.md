@@ -76,7 +76,7 @@ $00003C|Uninitialized Interrupt Vector                                  |SD
 $000040|(Unassigned, Reserved)                                          |SD
    :   |   :             :                                              | :
 $00005F|(Unassigned, Reserved)                                          |SD
-$000060|Spurious Interrupt (Bus error during interrupt)                 |SD                                          
+$000060|Spurious Interrupt (Bus error during interrupt)                 |SD
 -------+----------------------------------------------------------------+-----
 ########Auto-Vector Interrupts                                          ######
 -------+----------------------------------------------------------------+-----

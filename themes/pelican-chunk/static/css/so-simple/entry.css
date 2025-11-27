@@ -285,10 +285,16 @@ pre {
 }
 
 .article-tag-links {
-    display: inline-block;
-    text-align: right;
+    display: block;
+    text-align: left;
     font-size: 13px;
     padding-top: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+    overflow: hidden;
 }
 
 .article-tag-links strong {
