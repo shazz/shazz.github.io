@@ -114,4 +114,4 @@ wild.png: Wild (*);This article is about the vaccine
 wizzcat.png: WizzCat VProtector;This article is about the vaccine
 wtp.png: WTP (*);This article is about the vaccine
 zarko.png: Zarko (*);This article is about the vaccine
-zuulprotector.png: Zuul Virus Protector v1.01
+zuulprotector.png: Zuul Virus Protector v1.01;This article is about the vaccine
