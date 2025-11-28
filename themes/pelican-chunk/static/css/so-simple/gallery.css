@@ -1,7 +1,7 @@
 /* **********************  Gallery  ********************** */
 
 div.photo-search {
-    width: 90%;
+    width: 93%;
     padding: 12px 12px 2px 12px;
     border: 1px solid #ddd;
     border-radius: 15px;
@@ -78,12 +78,16 @@ span.photo-tag-label {
     border: 1px solid #ddd;
 }
 
+div.gallery {
+    display: inline-table;
+}
+
 div.photo-gallery {
     border: 1px solid #ccc;
     min-height: 350px;
     border-radius: 15px;
     margin-top: 10px;
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
 }
 
@@ -95,7 +99,6 @@ div.photo-gallery-image {
     min-height: 280px;
     order: 1;
 }
-
 
 
 div.photo-tags {
@@ -146,6 +149,7 @@ div.photo-gallery-image {
     min-height: 200px;
     flex-shrink: 0;
     order: 1;
+    margin-top: 10px;
     overflow: hidden;
 }
 

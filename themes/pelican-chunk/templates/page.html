@@ -47,27 +47,29 @@
 				</div>
 				{% endif %}
 				
-				{% for name, photo, thumb, exif, caption in gallery %}
-				<div class="responsive" data-tags="{{ (caption.split(';')[3].strip() if caption.split(';')|length > 3 else '')|lower }}">
-					<div class="photo-gallery">
-						<div class="photo-gallery-image">
-							<a href="{{ SITEURL }}/{{ name.split('.')[0] + '-en.html' }}" title="{{ name }}" exif="{{ exif }}" caption="{{ caption }}">
-								<img src="{{ SITEURL }}/{{ thumb }}" title="{{ caption.split(';')[0] }}" alt="{{ name }}">
-							</a>
+				<div class="gallery-grid">
+					{% for name, photo, thumb, exif, caption in gallery %}
+					<div class="responsive" data-tags="{{ (caption.split(';')[3].strip() if caption.split(';')|length > 3 else '')|lower }}">
+						<div class="photo-gallery">
+							<div class="photo-gallery-image">
+								<a href="{{ SITEURL }}/{{ name.split('.')[0] + '-en.html' }}" title="{{ name }}" exif="{{ exif }}" caption="{{ caption }}">
+									<img src="{{ SITEURL }}/{{ thumb }}" title="{{ caption.split(';')[0] }}" alt="{{ name }}">
+								</a>
+							</div>
+							<div class="photo-link"><a href="{{ SITEURL }}/{{ name.split('.')[0] + '-en.html' }}">{{ caption.split(";")[0] }}</a></div>
+							<div class="photo-desc">{{ caption.split(";")[1] }}</div>
+							{% set item_tag = caption.split(';')[3].strip() if caption.split(';')|length > 3 else '' %}
+							{% if item_tag %}
+							<div class="photo-tags">
+								{% for tag in item_tag.split(',') %}
+								<span class="photo-tag-label">{{ tag.strip() }}</span>
+								{% endfor %}
+							</div>
+							{% endif %}
 						</div>
-						<div class="photo-link"><a href="{{ SITEURL }}/{{ name.split('.')[0] + '-en.html' }}">{{ caption.split(";")[0] }}</a></div>
-						<div class="photo-desc">{{ caption.split(";")[1] }}</div>
-						{% set item_tag = caption.split(';')[3].strip() if caption.split(';')|length > 3 else '' %}
-						{% if item_tag %}
-						<div class="photo-tags">
-							{% for tag in item_tag.split(',') %}
-							<span class="photo-tag-label">{{ tag.strip() }}</span>
-							{% endfor %}
-						</div>
-						{% endif %}
 					</div>
+					{% endfor %}
 				</div>
-				{% endfor %}
 				{% endfor %}
 			</div>
 			{% else %}
