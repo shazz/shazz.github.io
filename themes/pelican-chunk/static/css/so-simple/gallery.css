@@ -87,28 +87,16 @@ div.photo-gallery {
     flex-direction: column;
 }
 
-div.photo-link {
-    margin-top: 0;
-    margin-bottom: 0;
-    order: 1;
-    z-index: 2;
-}
-
 div.photo-gallery-image {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 280px;
-    order: 2;
+    order: 1;
 }
 
-div.photo-desc {
-    padding: 0.5em;
-    margin-top: 0;
-    order: 3;
-    z-index: 2;
-}
+
 
 div.photo-tags {
     padding: 0.4rem 1.0rem;
@@ -157,7 +145,7 @@ div.photo-gallery-image {
     justify-content: center;
     min-height: 200px;
     flex-shrink: 0;
-    order: 2;
+    order: 1;
     overflow: hidden;
 }
 
@@ -194,7 +182,7 @@ div.photo-link {
     text-align: center;
     position: relative;
     z-index: 2;
-    order: 1;
+    order: 2;
     font-family: 'Oswald', sans-serif;
     font-weight: 600;
     text-transform: uppercase;
