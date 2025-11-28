@@ -54,29 +54,6 @@ button.tag-filter-btn.active {
     border-color: #36bcab;
 }
 
-/* Photo Entry Tags */
-div.photo-tags {
-    padding: 0.4rem 0;
-    margin-top: 0.4rem;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.4rem;
-    justify-content: center;
-}
-
-span.photo-tag-label {
-    display: inline-block;
-    background: #f0f0f0;
-    color: #555;
-    padding: 0.05rem 0.6rem;
-    border-radius: 3px;
-    font-size: 11px;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.3px;
-    border: 1px solid #ddd;
-}
 
 div.gallery {
     display: inline-table;
@@ -100,16 +77,6 @@ div.photo-gallery-image {
     order: 1;
 }
 
-
-div.photo-tags {
-    padding: 0.4rem 1.0rem;
-    margin-top: auto;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.2rem;
-    justify-content: left;
-    order: 4;
-}
 
 
 div.photo-gallery:hover {
@@ -200,6 +167,32 @@ div.photo-link a {
     text-decoration: none;
 }
 
+/* Photo Entry Tags */
+div.photo-tags {
+    padding: 0.4rem 0;
+    margin-top: 0.4rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.2rem;
+    justify-content: center;
+    order: 3
+}
+
+span.photo-tag-label {
+    display: inline-block;
+    background: #f0f0f0;
+    color: #555;
+    padding: 0rem 1rem 0rem 1rem;
+    border-radius: 3px;
+    font-size: 10px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    border: 1px solid #ddd;
+    order: 4
+}
+
 div.photo-desc {
     padding: 0.5em;
     margin-top: 0;
@@ -208,8 +201,9 @@ div.photo-desc {
     line-height: 1.5em;
     position: relative;
     z-index: 2;
-    order: 3;
+    order: 5;
 }
+
 
 .gallery-caption {
     color: #666;
